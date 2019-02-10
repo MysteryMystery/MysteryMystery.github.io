@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>MysteryMystery</title>
+	<title>Portfolio</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/background.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -10,20 +11,30 @@
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">>
 			<span class="navbar-toggler-icon"></span>
 		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item"><a href="https://github.com/MysteryMystery" class="nav-link">Github</a></li>
+			  <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Projects
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		        	<a class="dropdown-item" href="#pixelmc">PixelMC.co</a>
+		          <a class="dropdown-item" href="#uodtp">UOD Team Project</a>
+		        </div>
+		      </li>
+			</ul>
+		</div>
 	</nav>
 
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav mr-auto">
-			
-		</ul>
-	</div>
-
-	<div class="jumbotron jumbotron-fluid bg-info">
+	<div class="jumbotron jumbotron-fluid bg-purple text-light">
 		<div class="row">
 			<div class="col"></div>
+			<!--
 			<div class="col-5">
 				<img src="https://artfiles.alphacoders.com/759/75971.jpg" alt="Profile Picture" class="img-thumbnail img-fluid border border-primary rounded-left">
 			</div>
+		-->
 			<div class="col-6">
 				<div class="container">
 				<h1 class="display-3">Welcome to my portfolio!</h1>
@@ -31,6 +42,28 @@
 				</div>
 			</div>
 			<div class="col"></div>
+		</div>
+	</div>
+
+	<div class="row"> 
+		<div id="pixelmc" class="container">
+			<h2 id="display"><img src="https://cdn.discordapp.com/attachments/261798550151626752/397349899756371968/server-iconpixelmon.png"> PixelMC Minecraft Server</h2>
+			<hr class="my-2">
+			<p class="lead">A Minecraft server, managed by me, containing custom plugins and content.</p>
+			<div class="row">
+				<div class="col">
+					<a class="btn btn-primary" href="https://www.pixelmc.co">Website</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div id="uodtp" class="container">
+			<h2 id="display">Windows Hardening Suite</h2>
+			<hr class="my-2">
+
+			<p class="lead">An application designed to increase the privacy in windows. Currently a WIP as a part of a team project module.</p>
 		</div>
 	</div>
 
