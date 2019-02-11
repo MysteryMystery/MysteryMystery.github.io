@@ -1,0 +1,15 @@
+.row {
+	margin: 0;
+	padding: 0;
+}
+
+.showcase-section {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+	position: relative;
+}
+
+.footer {
+	height: 5em;
+}

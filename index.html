@@ -4,6 +4,7 @@
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/background.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -45,30 +46,41 @@
 		</div>
 	</div>
 
-	<div class="row"> 
-		<div id="pixelmc" class="container">
-			<h2 id="display"><img src="https://cdn.discordapp.com/attachments/261798550151626752/397349899756371968/server-iconpixelmon.png"> PixelMC Minecraft Server</h2>
-			<hr class="my-2">
-			<p class="lead">A Minecraft server, managed by me, containing custom plugins and content.</p>
-			<div class="row">
-				<div class="col">
-					<a class="btn btn-primary" href="https://www.pixelmc.co">Website</a>
+	<!-- Main content -->
+	<div class="container-fluid ">
+		<div class="row"> 
+			<div id="pixelmc" class="container showcase-section">
+				<h2 id="display"><img src="https://cdn.discordapp.com/attachments/261798550151626752/397349899756371968/server-iconpixelmon.png"> PixelMC Minecraft Server</h2>
+				<hr class="my-2">
+				<p class="lead">A Minecraft server, managed by me (but not owned by!), containing custom plugins and content.</p>
+				<p>Example plugins written include a donation system, player tracking, custom commands, and a currently work in progress plugin implimenting teams.</p>
+				<p>Written in Java, I use the Sponge API, linking in with NucleusPowered and Pixelmon Generations, with h2 database support for datastorage and SnakeYAML for config files.</p>
+				<div class="row">
+					<div class="col">
+						<a class="btn btn-primary" href="https://www.pixelmc.co">Website</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<br>
-	<div class="row">
-		<div id="uodtp" class="container">
-			<h2 id="display">Windows Hardening Suite</h2>
-			<hr class="my-2">
+		<br>
+		<div class="row">
+			<div id="uodtp" class="container showcase-section">
+				<h2 id="display">Windows Hardening Suite</h2>
+				<hr class="my-2">
 
-			<p class="lead">An application designed to increase the privacy in windows. Currently a WIP as a part of a team project module.</p>
+				<p class="lead">An application designed to increase the privacy in windows. Currently a WIP as a part of a team project module.</p>
+			</div>
 		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="container-fluid bg-dark footer">
+		
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
