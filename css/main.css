@@ -1,3 +1,17 @@
+/*https://coolors.co/343a40-4b3f72-ffc857-119da4-eaf6ff*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+:root {
+	--black: #343a40;
+	--purple: #4b3f72;
+	--yellow: #ffc857;
+	--blue: #119da4;
+	--white: #eaf6ff;
+}
+.hero-text {
+	font-family: "Raleway";
+}
+
 .row {
 	margin: 0;
 	padding: 0;
@@ -7,7 +21,64 @@
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	margin-bottom: 0.5em;
-	position: relative;
+}
+
+.custom-nav {
+	background-color: var(--black);
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.custom-nav .navbar-nav {
+}
+
+.custom-nav .navbar-nav > .nav-item {
+	background-color: var(--black);
+	margin-right: 0.1em;
+	margin-left: 0.1em;
+	color: var(--white);
+}
+
+.custom-nav .navbar-nav > .nav-item:hover {
+	
+}
+
+.custom-nav .navbar-nav > .nav-item > .nav-link {
+	color: white;
+}
+
+.custom-nav .navbar-nav > .nav-item > .nav-link:hover {
+	transition: all 0.5s;
+	color: black;
+	background-color: var(--blue);
+}
+
+.custom-nav .navbar-nav > .nav-item > .nav-link:focus {
+	background-color: var(--blue);
+	color: black;
+}
+
+.custom-nav .navbar-nav > .nav-item > .dropdown-menu {
+	background-color: var(--black);
+}
+
+.custom-nav .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item {
+	color: var(--white);
+}
+
+.custom-nav .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
+	background-color: var(--blue);
+}
+
+.navbar-text {
+	opacity: 1;
+	color: var(--white) !important;
+}
+
+.hero-bar {
+	background: var(--blue);
 }
 
 .footer {
