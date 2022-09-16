@@ -9,81 +9,76 @@
 	<link rel="stylesheet" type="text/css" href="css/background.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
-<body>
-	<div class="container-fluid hero-bar">
-		<div class="row">
-			<div class="col-sm-3">
-			</div>
-			<div class="col text-center" style="margin-top: 1em; z-index: 1; margin-bottom: -1em;">
-				<img src="https://scontent-lht6-1.xx.fbcdn.net/v/t1.0-9/29790218_1617225701727567_1739699081778631260_n.jpg?_nc_cat=109&_nc_ht=scontent-lht6-1.xx&oh=b66dba47d3e4d0d579df3e6e2ce2dd93&oe=5D45BB38" class="rounded-circle img-thumbnail" style="max-height: 10em;">
-			</div>
-			<div class="col-sm-3">
-				
-			</div>
-		</div>
-	</div>
-	<nav class="navbar sticky-top navbar-expand-md navbar-dark custom-nav" style="z-index: 0;">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">>
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-			  <li class="nav-item"><a href="http://www.linkedin.com/in/james-attfield-3ab950168" class="nav-link">LinkedIn</a></li>
-			  <li class="nav-item"><a href="https://github.com/MysteryMystery" class="nav-link">Github</a></li>
-			  <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-		          Projects
-		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		        	<a class="dropdown-item" href="#pixelmc">PixelMC.co</a>
-		          <a class="dropdown-item" href="#uodtp">UOD Team Project</a>
-		        </div>
-		      </li>
-			</ul>
-			<ul class="navbar-nav mx-auto">
-				<li class="nav-item hero-text" style="color: var(--white); margin-top: 0.5em;"><h2>James Attfield</h2></li>
-			</ul>
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item">JamesAttfield98@gmail.com</li>
-			</ul>
-		</div>
-	</nav>
-
-	<!-- Main content -->
-	<div class="container-fluid ">
-		<div class="row"> 
-			<div id="pixelmc" class="container showcase-section">
-				<h2 id="display"><img src="https://cdn.discordapp.com/attachments/261798550151626752/397349899756371968/server-iconpixelmon.png" style="max-height: 2em;"> PixelMC Minecraft Server</h2>
-				<hr class="my-2">
-				<p class="lead">A Minecraft server, managed by me (but not owned by!), containing custom plugins and content.</p>
-				<p>Example plugins written include a donation system, player tracking, custom commands, and a currently work in progress plugin implimenting teams.</p>
-				<p>Written in Java, I use the Sponge API, linking in with NucleusPowered and Pixelmon Generations, with h2 database support for datastorage and SnakeYAML for config files.</p>
+<body class="bg-slate">
+	<div class="d-flex flex-fill flex-column min-vh-100">
+		<div class="flex-shrink-1">
+			<div class="container-fluid hero-bar">
 				<div class="row">
-					<div class="col">
-						<a class="btn btn-primary" href="https://www.pixelmc.co">Website</a>
+					<div class="col text-center mt-1 mbn-1">
+						<img src="img/avatar.jpg" class="rounded-circle img-thumbnail" style="max-height: 10em;">
 					</div>
 				</div>
 			</div>
+			<nav class="navbar sticky-top navbar-expand-md navbar-dark custom-nav" style="z-index: 0;">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+					  <li class="nav-item"><a href="http://www.linkedin.com/in/james-attfield-3ab950168" class="nav-link">LinkedIn</a></li>
+					  <li class="nav-item"><a href="https://github.com/MysteryMystery" class="nav-link">Github</a></li>
+					  <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          Projects
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="#uodtp">UOD Team Project</a>
+				        </div>
+				      </li>
+					</ul>
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item hero-text" style="color: var(--white); margin-top: 0.5em;"><h2>James Attfield</h2></li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">JamesAttfield98@gmail.com</li>
+					</ul>
+				</div>
+			</nav>
 		</div>
-		<br>
-		<div class="row">
-			<div id="uodtp" class="container showcase-section">
-				<h2 id="display"><img src="http://www.littlebrotherprivacy.xyz/img/logo-no-words.png" style="max-height: 2em;"> Little Brother Privacy Suite for Windows</h2>
-				<hr class="my-2">
+		<div class="flex-grow-1 p-md-4">
+			<div class="d-flex flex-row flex-wrap justify-content-center">
+				<div class="card m-1">
+					<div class="card-body">
+						<h2 id="display"><img class="project-logo" src="https://mysterymystery.github.io/UOD-Team-Project/img/logo-no-words.png"> Little Brother Privacy Suite for Windows</h2>
+						<hr class="my-2">
 
-				<p class="lead">An application designed to increase the privacy in windows. Currently a WIP as a part of a team project module.</p>
-				<div class="row">
-					<div class="col">
-						<a class="btn btn-primary" href="https://mysterymystery.github.io/UOD-Team-Project/">Website</a>
+						<p class="lead">A windows forms appliction written in C# aimed at hardening windows by editting the registry.</p>
+						<div class="d-flex justify-content-end">
+							<a class="btn btn-primary" href="https://mysterymystery.github.io/UOD-Team-Project/">Website</a>
+						</div>
 					</div>
 				</div>
+
+				<div class="card m-1">
+					<div class="card-body">
+						<h2 id="display">More on GitHub...</h2>
+						<hr class="my-2">
+
+						<p class="lead">View my other projects on my GitHub! </p>
+						<p>There are many public projects on my github - feel free to take a look!</p>
+						<div class="d-flex justify-content-end">
+							<a class="btn btn-primary" href="https://github.com/MysteryMystery">GitHub</a>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
-	</div>
-
-	<!-- Footer -->
-	<div class="container-fluid bg-dark footer">
-		
+		<div class="flex-shrink-1">
+			<div class="bg-dark footer">
+			
+			</div>
+		</div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

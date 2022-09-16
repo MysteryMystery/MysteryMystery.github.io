@@ -8,19 +8,25 @@
 	--blue: #119da4;
 	--white: #eaf6ff;
 }
+
+body {
+	min-height: 100vh;
+}
+
 .hero-text {
 	font-family: "Raleway";
 }
 
-.row {
-	margin: 0;
-	padding: 0;
+.btn {
+	border-radius: 0;
 }
 
 .showcase-section {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 	margin-bottom: 0.5em;
+
+	background-color: var(--white);
 }
 
 .custom-nav {
@@ -83,4 +89,8 @@
 
 .footer {
 	height: 5em;
+}
+
+.project-logo {
+	max-height: 2em;
 }
