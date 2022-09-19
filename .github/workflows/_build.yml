@@ -1,3 +1,13 @@
+on:
+  workflow_call:
+    inputs:
+      source:
+        required: true
+        type: string
+      destination:
+        required: true
+        type: string
+
 jobs:
   # Build job
   build:
