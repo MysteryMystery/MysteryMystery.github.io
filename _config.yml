@@ -20,7 +20,7 @@
 
 domain: mysterymystery.github.io
 url: https://mysterymystery.github.io
-baseurl: _site
+baseurl:
 
 title: James Attfield
 email: jamesattfield98@gmail.com
@@ -35,6 +35,7 @@ github_username:  MysteryMystery
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-autoprefixer
 
 sass:
   style: compressed
