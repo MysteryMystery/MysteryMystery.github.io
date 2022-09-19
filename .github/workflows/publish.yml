@@ -22,7 +22,7 @@ concurrency:
 jobs:
   # Build job
   build:
-    uses: ./.github/workflows/build.yml
+    uses: ./.github/workflows/_build.yml
     with: 
       source: ./
       destination: ./_site
@@ -33,4 +33,4 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     needs: build
-    uses: ./.github/workflows/deploy.yml
+    uses: ./.github/workflows/_deploy.yml
