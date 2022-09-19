@@ -1,0 +1,30 @@
+<nav class="navbar sticky-top navbar-expand-md navbar-dark custom-nav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">>
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a href="http://www.linkedin.com/in/james-attfield-3ab950168" class="nav-link">LinkedIn</a></li>
+          <li class="nav-item"><a href="https://github.com/MysteryMystery" class="nav-link">Github</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                {% assign project_posts = site.posts | where: "categories", "projects" %}
+                {% if project_posts.size > 0 %}
+                    {% for post in project_posts %}
+                        <a class="dropdown-item" href="{{ post.url }}">{{ post.title }}</a>
+                    {% endfor %}
+                {% endif %}
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item hero-text"><h2>James Attfield</h2></li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">{{ site.email }}</li>
+        </ul>
+    </div>
+</nav>

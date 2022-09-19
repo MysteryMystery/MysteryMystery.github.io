@@ -1,0 +1,55 @@
+---
+--- 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@import "bootstrap-5.0.2/bootstrap";
+
+@import "variables";
+@import "nav";
+
+
+body {
+	min-height: 100vh;
+    background-color: $bodyBackground;
+}
+
+.hero-text {
+	font-family: "Raleway";
+    color: $white;
+
+    * {
+        color: $white;
+    }
+}
+
+.btn {
+	border-radius: 0;
+}
+
+.hero-bar {
+	background: $blue;
+
+    .img-thumbnail {
+        max-height: 10em;
+    }
+}
+
+.footer {
+	height: 5em;
+}
+
+.project-logo {
+	max-height: 2em;
+}
+
+.project-showcase {
+    .card-wrapper {
+        @include media-breakpoint-down(md){
+            width: 100%;
+        }
+
+        @include media-breakpoint-up(md){
+            max-width: 33%;
+        }
+    }
+}
