@@ -34,5 +34,6 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 #Autoprefixer for bootstrap
-gem "autoprefixer-rails"
-gem "jekyll-assets"
+#gem "autoprefixer-rails", group: :jekyll_plugins
+#gem "jekyll-assets", git: "https://github.com/envygeeks/jekyll-assets", group: :jekyll_plugins
+gem 'jekyll-autoprefixer'
