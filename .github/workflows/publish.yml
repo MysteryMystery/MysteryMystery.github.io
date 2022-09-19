@@ -29,8 +29,5 @@ jobs:
 
   # Deployment job
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     needs: build
     uses: ./.github/workflows/_deploy.yml
