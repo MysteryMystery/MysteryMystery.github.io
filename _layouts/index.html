@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="d-flex flex-row flex-wrap justify-content-center project-showcase">
+
+    {% assign project_posts = site.posts | where: "categories", "projects" %}
+    {% if project_posts.size > 0 %}
+        {% for post in project_posts %}
+            <div class="card-wrapper p-1">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 id="display"><img class="project-logo" src="{{ post.avatar_url }}"> {{ post.title }}</h2>
+                        <hr class="my-2">
+                
+                        <p class="lead">{{ post.lead }}</p>
+                        {% if post.description %}
+                            <p>{{ post.description }}</p>
+                        {% endif %}
+                        <div class="d-flex justify-content-end align-content-end">
+                            <a class="btn btn-secondary mx-1" href="{{ post.url }}">Blog Post</a>
+                            <a class="btn btn-primary mx-1" href="{{ post.website_url }}">Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    
+    <div class="card m-1">
+        <div class="card-body">
+            <h2 id="display">More on GitHub...</h2>
+            <hr class="my-2">
+    
+            <p class="lead">View my other projects on my GitHub! </p>
+            <p>There are many public projects on my github - feel free to take a look!</p>
+            <div class="d-flex justify-content-end">
+                <a class="btn btn-primary" href="https://github.com/MysteryMystery">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>

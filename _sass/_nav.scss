@@ -1,0 +1,53 @@
+.custom-nav {
+	background-color: $black;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+.custom-nav .navbar-nav {
+}
+
+.custom-nav .navbar-nav > .nav-item {
+	background-color: $black;
+	margin-right: 0.1em;
+	margin-left: 0.1em;
+	color: $white;
+}
+
+.custom-nav .navbar-nav > .nav-item:hover {
+	
+}
+
+.custom-nav .navbar-nav > .nav-item > .nav-link {
+	color: $white;
+}
+
+.custom-nav .navbar-nav > .nav-item > .nav-link:hover {
+	transition: all 0.5s;
+	color: $black;
+	background-color: $blue;
+}
+
+.custom-nav .navbar-nav > .nav-item > .nav-link:focus {
+	background-color: $blue;
+	color: $black;
+}
+
+.custom-nav .navbar-nav > .nav-item > .dropdown-menu {
+	background-color: $black;
+}
+
+.custom-nav .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item {
+	color: $white;
+}
+
+.custom-nav .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
+	background-color: $blue;
+}
+
+.navbar-text {
+	opacity: 1;
+	color: $white;
+}
