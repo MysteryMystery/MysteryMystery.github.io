@@ -2,9 +2,11 @@
 --- 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+$dark: #343a40; /* temp here - should be in variables */
+
 @import "bootstrap-5.0.2/bootstrap";
 
-@import "variables";
+@import "variables"; /* This line wants to be before bootstrap but it is erroring */
 @import "nav";
 
 
