@@ -8,16 +8,13 @@
 <body>
 	<div class="d-flex flex-fill flex-column min-vh-100">
 		<div class="flex-shrink-1">
-			{% include hero_bar.html path="/img/avatar.jpg" %}
-            {% include navbar.html %}
+            {% include page-header.html %}
 		</div>
-		<div class="flex-grow-1 p-md-4">
+		<div class="flex-grow-1 d-flex flex-column">
             {{ content }}
 		</div>
 		<div class="flex-shrink-1">
-			<div class="bg-dark footer">
-			
-			</div>
+			<div class="footer p-4"></div>
 		</div>
 	</div>
 
@@ -25,5 +22,7 @@
 	<!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
 </body>
 </html>

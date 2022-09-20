@@ -1,8 +1,26 @@
 ---
 layout: default
 ---
-<div class="d-flex flex-row flex-wrap justify-content-center project-showcase">
+<div class="flex-grow-1 d-flex bg-dark align-content-center justify-content-center">
+    <div>
+        <div class="border border-info rounded p-4 showcase-personal">
+            <div class="px-2">
+                <h1 class="fs-1">Hi, I'm James!</h1>
+            </div>
+            {% include hr.html %}
+            <div>
+                <p class="lead">A DevOps engineer with a creative side...</p>
+            </div>
+        </div>
 
+        <div class="text-center p-4 text-light">
+            Non - fontawesome arrow down here
+        </div>
+    </div>
+</div>
+
+
+<div class="d-flex flex-row flex-wrap justify-content-center showcase-project">
     {% assign project_posts = site.posts | where: "categories", "projects" %}
     {% if project_posts.size > 0 %}
         {% for post in project_posts %}
@@ -28,7 +46,7 @@ layout: default
     
     <div class="card m-1">
         <div class="card-body">
-            <h2 id="display">More on GitHub...</h2>
+            <h2 id="display"><img class="project-logo" src="/img/octocat-1663700451547.png"/> More on GitHub...</h2>
             <hr class="my-2">
     
             <p class="lead">View my other projects on my GitHub! </p>

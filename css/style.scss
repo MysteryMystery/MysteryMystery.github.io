@@ -12,6 +12,10 @@ body {
     background-color: $bodyBackground;
 }
 
+div.hr {
+    min-height: 0.2em;
+}
+
 .hero-text {
 	font-family: "Raleway";
     color: $white;
@@ -30,7 +34,13 @@ body {
 }
 
 .hero-bar {
-	background: $primary;
+	background: $dark;
+    color: $white;
+
+    * {
+        color: $white;
+        background: $dark;
+    }
 
     .img-thumbnail {
         max-height: 10em;
@@ -45,7 +55,7 @@ body {
 	max-height: 2em;
 }
 
-.project-showcase {
+.showcase-project {
     .card-wrapper {
         @include media-breakpoint-down(md){
             width: 100%;
@@ -54,5 +64,11 @@ body {
         @include media-breakpoint-up(md){
             max-width: 33%;
         }
+    }
+}
+
+.showcase-personal {
+    * {
+        color: $light;
     }
 }
