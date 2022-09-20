@@ -45,7 +45,7 @@ body {
 	max-height: 2em;
 }
 
-.project-showcase {
+.showcase-project {
     .card-wrapper {
         @include media-breakpoint-down(md){
             width: 100%;
@@ -55,4 +55,9 @@ body {
             max-width: 33%;
         }
     }
+}
+
+.showcase-personal {
+    background-color: $black !important;
+    color: $white !important;
 }
