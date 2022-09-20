@@ -72,3 +72,13 @@ div.hr {
         color: $light;
     }
 }
+
+.arrow-down {
+    >div {
+        width: 5em;
+
+        svg {
+            fill: $primary;
+        }
+    }
+}
