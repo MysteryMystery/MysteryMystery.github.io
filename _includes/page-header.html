@@ -1,0 +1,18 @@
+<nav class="navbar sticky-top navbar-expand-md navbar-dark custom-nav align-items-start">
+    <div class="d-flex flex-col flex-wrap justify-content-start hero-bar py-1">
+        <div class="p-3">
+            <a href="{{ site.url }}"><img src="/img/avatar.jpg" class="rounded-circle img-thumbnail"></a>
+        </div>
+        <div class="h-100">
+            <div class="p-1 px-md-3">
+                <p class="my-0 lead fs-3">{{ site.author }}</p>
+                <p class="my-0 lead fs-3">{{ site.email }}</p>
+            </div>
+            {% include hr.html %}
+        </div>
+    </div>
+
+    <div class="justify-content-end flex-grow-1">
+        {% include navbar.html %}
+    </div>
+</nav>

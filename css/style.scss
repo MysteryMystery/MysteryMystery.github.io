@@ -12,6 +12,10 @@ body {
     background-color: $bodyBackground;
 }
 
+div.hr {
+    min-height: 0.2em;
+}
+
 .hero-text {
 	font-family: "Raleway";
     color: $white;
@@ -30,7 +34,13 @@ body {
 }
 
 .hero-bar {
-	background: $primary;
+	background: $dark;
+    color: $white;
+
+    * {
+        color: $white;
+        background: $dark;
+    }
 
     .img-thumbnail {
         max-height: 10em;
@@ -58,6 +68,7 @@ body {
 }
 
 .showcase-personal {
-    background-color: $black !important;
-    color: $white !important;
+    * {
+        color: $light;
+    }
 }
