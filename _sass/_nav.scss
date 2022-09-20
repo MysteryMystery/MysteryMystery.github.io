@@ -1,5 +1,5 @@
 .custom-nav {
-	background-color: $black;
+	background-color: $dark;
 	margin-bottom: 0;
 	padding-bottom: 0;
 	padding-top: 0;
@@ -10,7 +10,7 @@
 }
 
 .custom-nav .navbar-nav > .nav-item {
-	background-color: $black;
+	background-color: $dark;
 	margin-right: 0.1em;
 	margin-left: 0.1em;
 	color: $white;
@@ -27,16 +27,16 @@
 .custom-nav .navbar-nav > .nav-item > .nav-link:hover {
 	transition: all 0.5s;
 	color: $black;
-	background-color: $blue;
+	background-color: $primary;
 }
 
 .custom-nav .navbar-nav > .nav-item > .nav-link:focus {
-	background-color: $blue;
+	background-color: $primary;
 	color: $black;
 }
 
 .custom-nav .navbar-nav > .nav-item > .dropdown-menu {
-	background-color: $black;
+	background-color: $dark;
 }
 
 .custom-nav .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item {
@@ -44,7 +44,7 @@
 }
 
 .custom-nav .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
-	background-color: $blue;
+	background-color: $primary;
 }
 
 .navbar-text {
