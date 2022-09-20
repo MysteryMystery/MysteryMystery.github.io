@@ -2,11 +2,8 @@
 --- 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-$dark: #343a40; /* temp here - should be in variables */
-
-@import "bootstrap-5.0.2/bootstrap";
-
 @import "variables"; /* This line wants to be before bootstrap but it is erroring */
+@import "bootstrap-5.0.2/bootstrap";
 @import "nav";
 
 
@@ -26,10 +23,14 @@ body {
 
 .btn {
 	border-radius: 0;
+
+    &.btn-primary {
+        color: $light;
+    }
 }
 
 .hero-bar {
-	background: $blue;
+	background: $primary;
 
     .img-thumbnail {
         max-height: 10em;
