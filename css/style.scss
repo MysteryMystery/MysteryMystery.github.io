@@ -2,10 +2,12 @@
 --- 
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-@import "variables"; /* This line wants to be before bootstrap but it is erroring */
-@import "bootstrap-5.0.2/bootstrap";
-@import "nav";
 
+@import "variables"; 
+@import "bootstrap-5.0.2/bootstrap";
+
+@import "nav";
+@import "showcase";
 
 body {
 	min-height: 100vh;
@@ -49,36 +51,9 @@ div.hr {
 
 .footer {
 	height: 5em;
+    background-color: $dark;
 }
 
 .project-logo {
 	max-height: 2em;
-}
-
-.showcase-project {
-    .card-wrapper {
-        @include media-breakpoint-down(md){
-            width: 100%;
-        }
-
-        @include media-breakpoint-up(md){
-            max-width: 33%;
-        }
-    }
-}
-
-.showcase-personal {
-    * {
-        color: $light;
-    }
-}
-
-.arrow-down {
-    >div {
-        width: 5em;
-
-        svg {
-            fill: $primary;
-        }
-    }
 }

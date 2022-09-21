@@ -3,31 +3,32 @@ layout: default
 ---
 <div class="flex-grow-1 d-flex bg-dark align-content-center justify-content-center">
     <div>
-        <div class="border border-info rounded p-4 showcase-personal">
+        <div class="showcase-dark">
             <div class="px-2">
-                <h1 class="fs-1">Hi, I'm James!</h1>
+                <h1 class="display-1">Hi, I'm James!</h1>
             </div>
             {% include hr.html %}
             <div>
-                <p class="lead">A DevOps engineer with a creative side... Check out my projects!</p>
+                <p class="lead">A DevOps engineer with a creative side...</p>
+                <p class="lead text-primary">Check out my projects!</p>
             </div>
         </div>
 
-        <div class="p-4 text-light arrow-down">
+        <div class="p-4 arrow-down">
             <div class="mx-auto">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256S114.6 512 256 512s256-114.6 256-256S397.4 0 256 0zM127 297c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l71 71L232 120c0-13.3 10.7-24 24-24s24 10.7 24 24l0 214.1 71-71c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 409c-9.4 9.4-24.6 9.4-33.9 0L127 297z"/></svg>
+                {% include icons/arrow-down.html %}
             </div>
         </div>
     </div>
 </div>
 
 
-<div class="d-flex flex-row flex-wrap justify-content-center showcase-project">
+<div class="d-flex flex-row flex-wrap justify-content-center">
     {% assign project_posts = site.posts | where: "categories", "projects" %}
     {% if project_posts.size > 0 %}
         {% for post in project_posts %}
-            <div class="card-wrapper p-1">
-                <div class="card">
+            <div class="showcase-wrapper p-1">
+                <div class="card showcase-light">
                     <div class="card-body">
                         <h2 id="display"><img class="project-logo" src="{{ post.avatar_url }}"> {{ post.title }}</h2>
                         <hr class="my-2">
@@ -45,16 +46,22 @@ layout: default
             </div>
         {% endfor %}
     {% endif %}
-    
-    <div class="card m-1">
-        <div class="card-body">
-            <h2 id="display"><img class="project-logo" src="/img/octocat-1663700451547.png"/> More on GitHub...</h2>
-            <hr class="my-2">
-    
-            <p class="lead">View my other projects on my GitHub! </p>
-            <p>There are many public projects on my github - feel free to take a look!</p>
-            <div class="d-flex justify-content-end">
-                <a class="btn btn-primary" href="https://github.com/MysteryMystery">GitHub</a>
+</div>
+
+<div class="d-flex bg-dark align-content-center justify-content-center p-4">
+    <div>
+        <div id="showcase-github" class="showcase-dark">
+            <div class="showcase-img-wrapper">
+                <img class="img-fluid" src="/img/octocat-1663700451547.png"/>
+            </div>
+            {% include hr.html %}
+            <div class="px-2">
+                <h1 class="display-2">View more on GitHub!</h1>
+                <div class="mx-auto showcase-svg-wrapper">
+                    <a href="{{ site.github }}">
+                        {% include icons/logo-github.html %}
+                    </a>
+                </div>
             </div>
         </div>
     </div>
