@@ -1,0 +1,80 @@
+@mixin showcase(){
+    border: 1px solid $light;
+    
+    @extend .rounded;
+    @extend .p-4;
+
+    .showcase-svg-wrapper {
+        width: 5em;
+    }
+
+    .showcase-img-wrapper {
+        @extend .text-center;
+    
+        >img {
+            max-height: 10em;
+        }
+    }
+}
+
+@mixin showcase-variant($border-color, $background-color, $hr-color, $text-color){
+    border-color: $border-color;
+    background-color: $background-color;
+
+    .hr {
+        background-color: $hr-color;
+    }
+
+    * {
+        color: $text-color;
+    }
+}
+
+.showcase-wrapper {
+    @include media-breakpoint-down(md){
+        width: 100%;
+    }
+
+    @include media-breakpoint-up(md){
+        width: 33%;
+    }
+}
+
+.showcase-light {
+    @include showcase();
+    @include showcase-variant(
+        $border-color: $dark, 
+        $hr-color: $primary,
+        $background-color: $light,
+        $text-color: $dark,
+    );
+}
+
+.showcase-dark {
+    @include showcase();
+    @include showcase-variant(
+        $border-color: $info, 
+        $hr-color: $primary,
+        $background-color: $dark,
+        $text-color: $light,
+    );
+}
+
+#showcase-github {
+    @include showcase-variant(
+        $border-color: $danger, 
+        $hr-color: $danger,
+        $background-color: $dark,
+        $text-color: $light,
+    );
+}
+
+.arrow-down {
+    >div {
+        width: 5em;
+
+        svg {
+            fill: $primary;
+        }
+    }
+}
