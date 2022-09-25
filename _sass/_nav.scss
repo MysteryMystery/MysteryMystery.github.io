@@ -12,18 +12,21 @@
 			margin-left: 0.1em;
 			color: $white;
 
+			text-align: center;
+
 			>.nav-link {
 				color: $white;
+				border-bottom: 0.3em solid transparent;
 
 				&:hover {
 					transition: all 0.5s;
-					color: $black;
-					background-color: $primary;
+					color: $primary;
+					border-color: $primary;
 				}
 
 				&:focus {
-					background-color: $primary;
-					color: $black;
+					color: $info;
+					border-color: $info;
 				}
 			}
 
@@ -31,9 +34,13 @@
 				background-color: $dark;
 
 				>.dropdown-item {
-					color: $white;
+					color: $light;
+					transition: all 0.1s;
+
 					&:hover {
-						background-color: $primary;
+						border-bottom: 0.2em solid transparent;
+						border-color: $primary;
+						background-color: $gray-900;
 					}
 				}
 			}

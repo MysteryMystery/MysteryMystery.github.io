@@ -1,0 +1,32 @@
+$map: (
+    (
+        "order": 1,
+        "bg-color": $info,
+        "color": $dark
+    )
+);
+
+@mixin skill-tag-variant(
+    $background-color, 
+    $color: color-contrast($background-color),
+) {
+    background-color: $background-color;
+    color: $color;
+}
+
+.skill-tag-wrapper {
+    .skill-tag {
+        background-color: $primary;
+        font-weight: bold;
+
+        @extend .m-1;
+        @extend .p-1;
+        @extend .p-md-2;
+    }
+
+    @each $theme, $color in $theme-colors {
+        .skill-tag-#{$theme} {
+            @include skill-tag-variant($color)
+        }
+    }
+}

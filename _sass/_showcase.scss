@@ -1,8 +1,8 @@
 @mixin showcase(){
     border: 1px solid $light;
-    
+    padding: 1.5rem;
+
     @extend .rounded;
-    @extend .p-4;
 
     .showcase-svg-wrapper {
         width: 5em;
@@ -28,7 +28,7 @@
     * {
         color: $text-color;
     }
-}
+} 
 
 .showcase-wrapper {
     @include media-breakpoint-down(md){
@@ -62,8 +62,8 @@
 
 #showcase-github {
     @include showcase-variant(
-        $border-color: $danger, 
-        $hr-color: $danger,
+        $border-color: $red, 
+        $hr-color: $red,
         $background-color: $dark,
         $text-color: $light,
     );
