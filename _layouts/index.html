@@ -28,19 +28,17 @@ layout: default
     {% if project_posts.size > 0 %}
         {% for post in project_posts %}
             <div class="showcase-wrapper p-1">
-                <div class="card showcase-light">
-                    <div class="card-body">
-                        <h2 id="display"><img class="project-logo" src="{{ post.avatar_url }}"> {{ post.title }}</h2>
-                        <hr class="my-2">
-                
-                        <p class="lead">{{ post.lead }}</p>
-                        {% if post.description %}
-                            <p>{{ post.description }}</p>
-                        {% endif %}
-                        <div class="d-flex justify-content-end align-content-end">
-                            <a class="btn btn-secondary mx-1" href="{{ post.url }}">Blog Post</a>
-                            <a class="btn btn-primary mx-1" href="{{ post.website_url }}">Website</a>
-                        </div>
+                <div class="showcase-light p-1">
+                    <h2 id="display"><img class="project-logo" src="{{ post.avatar_url }}"> {{ post.title }}</h2>
+                    {% include hr.html class="bg-dark" %}
+            
+                    <p class="lead">{{ post.lead }}</p>
+                    {% if post.description %}
+                        <p>{{ post.description }}</p>
+                    {% endif %}
+                    <div class="d-flex justify-content-end align-content-end">
+                        <a class="btn btn-secondary mx-1" href="{{ post.url }}">Blog Post</a>
+                        <a class="btn btn-primary mx-1" href="{{ post.website_url }}">Website</a>
                     </div>
                 </div>
             </div>
@@ -62,6 +60,25 @@ layout: default
                         {% include icons/logo-github.html %}
                     </a>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="d-flex align-content-center justify-content-center p-4">
+    <div>
+        <div id="showcase-professional" class="showcase-light">
+            <div class="px-2">
+                <h1 class="display-2">I have professional experience too!</h1>
+            </div>
+            {% include hr.html %}
+
+            <div class="d-flex flex-wrap flex-col justify-content-evenly p-1 skill-tag-wrapper">
+                {% for skill in site.data.professional_skills.skills %}
+                    <div class="skill-tag skill-tag-hero">
+                        <span>{{ skill }}</span>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>

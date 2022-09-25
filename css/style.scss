@@ -1,5 +1,6 @@
 ---
 --- 
+
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
 
@@ -8,10 +9,16 @@
 
 @import "nav";
 @import "showcase";
+@import "skill-tag";
 
 body {
 	min-height: 100vh;
     background-color: $bodyBackground;
+
+    background-image: url("/img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 div.hr {
