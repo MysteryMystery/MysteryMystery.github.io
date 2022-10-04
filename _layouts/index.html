@@ -37,7 +37,10 @@ layout: default
                         <p>{{ post.description }}</p>
                     {% endif %}
                     <div class="d-flex justify-content-end align-content-end">
-                        <a class="btn btn-secondary mx-1" href="{{ post.url }}">Blog Post</a>
+                        {% assign content = post.content | strip_newlines %}
+                        {% if content.size > 0 %}
+                           <a class="btn btn-secondary mx-1" href="{{ post.url }}">Blog Post</a>
+                        {% endif %}
                         <a class="btn btn-primary mx-1" href="{{ post.website_url }}">Website</a>
                     </div>
                 </div>
