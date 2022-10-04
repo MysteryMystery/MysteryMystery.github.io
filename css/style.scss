@@ -43,16 +43,9 @@ div.hr {
 }
 
 .hero-bar {
-	background: $dark;
-    color: $white;
-
-    * {
-        color: $white;
-        background: $dark;
-    }
-
-    .img-thumbnail {
+    .avatar-img {
         max-height: 10em;
+        border: 0.2em solid $primary;
     }
 }
 
