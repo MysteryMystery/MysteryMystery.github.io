@@ -1,3 +1,21 @@
+@each $theme-name-from, $from-value in $theme-colors {
+    @each $theme-name-to, $to-value in $theme-colors {
+        @keyframes animate-border-#{$theme-name-from}-#{$theme-name-to}{
+            0% {
+                border-color: $from-value;
+            }
+
+            50% {
+                border-color: $to-value;
+            }
+
+            100% {
+                border-color: $from-value;
+            }
+        }
+    }
+}
+
 @mixin showcase(){
     border: 1px solid $light;
     padding: 1.5rem;
@@ -27,6 +45,26 @@
 
     * {
         color: $text-color;
+    }
+
+    &:hover .btn.btn-primary {
+        @keyframes jiggle {
+            25% {
+                transform: rotate(-5deg);
+            }
+
+            50% {
+                transform: rotate(5deg);
+            }
+
+            75% {
+                transform: rotate(-5deg);
+            }
+        }
+
+        animation-name: jiggle;
+        animation-duration: 0.5s;
+        animation-iteration-count: 2;
     }
 } 
 
@@ -58,6 +96,10 @@
         $background-color: $dark,
         $text-color: $light,
     );
+
+    animation-name: animate-border-primary-warning;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 #showcase-github {
@@ -67,6 +109,10 @@
         $background-color: $dark,
         $text-color: $light,
     );
+
+    animation-name: animate-border-danger-info;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .arrow-down {

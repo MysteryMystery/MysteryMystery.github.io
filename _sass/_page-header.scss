@@ -1,13 +1,5 @@
 #page-header {
-    #avatar-wrapper {
-        @include media-breakpoint-down(md){
-            width: 25%;
-        }
-    }
-
     #contact-wrapper {
-        @include media-breakpoint-down(md){
-            width: 75%;
-        }
+        transition: all 2s;
     }
 }
