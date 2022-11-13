@@ -46,6 +46,26 @@
     * {
         color: $text-color;
     }
+
+    &:hover .btn.btn-primary {
+        @keyframes jiggle {
+            25% {
+                transform: rotate(-5deg);
+            }
+
+            50% {
+                transform: rotate(5deg);
+            }
+
+            75% {
+                transform: rotate(-5deg);
+            }
+        }
+
+        animation-name: jiggle;
+        animation-duration: 0.5s;
+        animation-iteration-count: 2;
+    }
 } 
 
 .showcase-wrapper {
