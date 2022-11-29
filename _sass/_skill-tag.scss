@@ -30,3 +30,28 @@ $map: (
         }
     }
 }
+
+.skill-tag {
+    background-color: $primary;
+    font-weight: bold;
+
+    @extend .m-1;
+    @extend .p-1;
+    @extend .p-md-2;
+}
+
+.skill-tag-slim {
+    background-color: $primary;
+    font-weight: bold;
+    @extend .p-1;
+}
+
+@each $theme, $color in map-merge($map1: $theme-colors, $map2: $technologies) {
+    .skill-tag-#{$theme} {
+        @include skill-tag-variant($color)
+    }
+
+    .skill-tag-slim-#{$theme} {
+        @include skill-tag-variant($color)
+    }
+}
