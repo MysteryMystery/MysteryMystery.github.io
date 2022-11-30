@@ -1,15 +1,29 @@
 - solution_name: "Second highest salary"
-  description: "Get the second highest salry in the table"
+  description: "Get the second highest salary in the table."
   language: mysql
+  css_language: mysql
   code_snippet: |
     select 
             MAX(salary) as SecondHighestSalary 
         from Employee
         where 
             salary <> (select MAX(salary) from Employee)
+- solution_name: "Factorial"
+  description: 
+  language: ruby
+  css_language: ruby
+  code_snippet: |
+    def factorial number
+            (number == 0 or number == 1) ? 1 : (number * factorial(number-1))
+        end
+
+        for i in 0..20 do 
+            puts i.to_s + "! = " + factorial(i).to_s
+        end
 - solution_name: "Palindrome Number"
   description: "Check if an integer is a palindrome."
-  language: csharp
+  language: c#
+  css_language: csharp
   code_snippet: |
     public class Solution {
             public bool IsPalindrome(int x) {
@@ -22,9 +36,41 @@
                 return true;
             }
         }
+- solution_name: Remove duplicates from a singly linked list
+  description: 
+  language: c#
+  css_language: csharp
+  code_snippet: |
+    /**
+        * Definition for singly-linked list.
+        * public class ListNode {
+        *     public int val;
+        *     public ListNode next;
+        *     public ListNode(int val=0, ListNode next=null) {
+        *         this.val = val;
+        *         this.next = next;
+        *     }
+        * }
+        */
+        public class Solution {
+            public ListNode DeleteDuplicates(ListNode head) {
+                ListNode? currentNode = head;
+
+                while(currentNode != null && currentNode.next != null){
+                    if(currentNode.val == currentNode.next.val){
+                        currentNode.next = currentNode.next.next;
+                        continue;
+                    }
+                    
+                    currentNode = currentNode.next;
+                }   
+                return head;
+            }
+        }
 - solution_name: "Add 2 numbers from linked lists"
   description: "Each linked list represents a series of digits which make up a number. Add these numbers together and return a new list."
-  language: csharp
+  language: c#
+  css_language: csharp
   code_snippet: |
     /**
         * Definition for singly-linked list.
