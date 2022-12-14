@@ -3,19 +3,35 @@ layout: default
 ---
 
 <div class="container-fluid shadow">
-    {% assign sortedSolutions = site.data.leetcode.solutions | sort_natural: "language" %}
-    {% for solution in sortedSolutions %}
-        <div id='{{ solution.solution_name | slugify }}' class="row">
-            <div class="col-12 col-md-2 text-light bg-dark">
-                <div class="skill-tag skill-tag-{{ solution.css_language }}">{{ solution.language | capitalize }}</div>
-                <div class="container">
-                    <h3>{{ solution.solution_name }}</h3>
-                    <p>{{ solution.description }}</p>
-                </div>
-            </div>
-            <div class="col-12 col-md-10 p-0 mb-1">
-                {% include code_snippet.html solution=solution %}
+    <div class="row">
+        <div class="col-md-1 d-none d-md-flex bg-dark">
+            <div id="CodeSnippetsScrollSpyPane" class="list-group">
+                {% assign solutions = site.data.leetcode.solutions | uniq: "css_language" | sort_natural: "css_language"  %}
+                {% for solution in solutions %}
+                    <a class="list-group-item list-group-item-action" data-technology="{{ solution.css_language }}" href="#{{ solution.css_language | slugify }}">{{ solution.language | capitalize }}</a>
+                {% endfor %}
             </div>
         </div>
-    {% endfor %}
+        <div class="col">
+            <div class="" data-bs-spy="scroll" data-bs-target="#CodeSnippetsScrollSpyPane" data-bs-offset="300" tabindex="0" style="position: relative;">
+                {% assign sortedSolutions = site.data.leetcode.solutions | sort_natural: "language" %}
+                {% assign lastLanguage = "" %}
+                {% for solution in sortedSolutions %}
+                    <div id='{{ solution.solution_name | slugify }}' class="row">
+                        <div class="col-12 col-md-2 text-light bg-dark">
+                            <div id="{% if solution.css_language != lastLanguage %}{{ solution.css_language | slugify }}{% endif %}" class="skill-tag skill-tag-{{ solution.css_language }}">{{ solution.language | capitalize }}</div>
+                            <div class="container">
+                                <h3>{{ solution.solution_name }}</h3>
+                                <p>{{ solution.description }}</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-10 p-0 mb-1">
+                            {% include code_snippet.html solution=solution %}
+                        </div>
+                    </div>
+                    {% assign lastLanguage = solution.css_language %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 </div>

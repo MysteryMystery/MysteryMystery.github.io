@@ -44,3 +44,34 @@ figure.highlight {
         }
     }
 }
+
+#CodeSnippetsScrollSpyPane{
+
+    position: fixed; 
+    left:1; 
+    top: 35%;
+
+    &.list-group {
+        .list-group-item {
+            border-bottom-width: 0.25rem;
+
+            background-color: unset;
+            color: slategray;
+    
+            &.active {
+                color: $light;
+                border-color: $primary;
+            }
+
+            @each $theme, $color in $technologies {
+                &.active[data-technology=#{$theme}] {
+                    border-color: $color;
+                }
+            }
+
+            &:hover  {
+                color: $light;
+            }
+        }
+    }
+}

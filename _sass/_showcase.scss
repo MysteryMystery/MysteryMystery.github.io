@@ -43,6 +43,10 @@
         background-color: $hr-color;
     }
 
+    div.underline {
+        fill: $hr-color;
+    }
+
     * {
         color: $text-color;
     }
