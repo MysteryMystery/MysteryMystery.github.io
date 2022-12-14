@@ -1,0 +1,77 @@
+figure.highlight {
+    min-height: 100%;
+}
+
+.code-snippet-slides {
+    .carousel-code-snippet{
+        $caroHeight: 20rem;
+    
+        max-height: $caroHeight;
+        min-height: $caroHeight;
+        background-color: $dark;
+    
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: none;
+            opacity: .7;
+        }
+    
+        figure.highlight {
+            //Make the code snippet background fill the carousel
+            min-height: $caroHeight;
+        }
+    }
+
+    .carousel-caption {
+        cursor: grab;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $dark;
+            opacity: 0.1;
+
+            padding: 0;
+        }
+    }
+}
+
+#CodeSnippetsScrollSpyPane{
+
+    position: fixed; 
+    left:1; 
+    top: 35%;
+
+    &.list-group {
+        .list-group-item {
+            border-bottom-width: 0.25rem;
+
+            background-color: unset;
+            color: slategray;
+    
+            &.active {
+                color: $light;
+                border-color: $primary;
+            }
+
+            @each $theme, $color in $technologies {
+                &.active[data-technology=#{$theme}] {
+                    border-color: $color;
+                }
+            }
+
+            &:hover  {
+                color: $light;
+            }
+        }
+    }
+}

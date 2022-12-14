@@ -11,16 +11,21 @@
 @import "showcase";
 @import "skill-tag";
 @import "page-header";
+@import "code_snippets";
+
+@import "code_snippets.css";
 
 body {
 	min-height: 100vh;
     background-color: $bodyBackground;
 
-    background-image: url("/img/bg.jpg");
+    background-image: url("/img/bg.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
+
+
 
 div.hr {
     min-height: 0.2em;
@@ -55,4 +60,14 @@ div.hr {
 
 .project-logo {
 	max-height: 2em;
+}
+
+div.underline {
+    width: 100%;
+    height: 2rem;
+    background-image: url("/img/underline.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent !important;
 }

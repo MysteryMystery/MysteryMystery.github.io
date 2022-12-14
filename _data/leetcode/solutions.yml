@@ -1,0 +1,123 @@
+- solution_name: "Second highest salary"
+  description: "Get the second highest salary in the table."
+  language: mysql
+  css_language: mysql
+  code_snippet: |
+    select 
+            MAX(salary) as SecondHighestSalary 
+        from Employee
+        where 
+            salary <> (select MAX(salary) from Employee)
+- solution_name: "Factorial"
+  description: 
+  language: ruby
+  css_language: ruby
+  code_snippet: |
+    def factorial number
+            (number == 0 or number == 1) ? 1 : (number * factorial(number-1))
+        end
+
+        for i in 0..20 do 
+            puts i.to_s + "! = " + factorial(i).to_s
+        end
+- solution_name: "Palindrome Number"
+  description: "Check if an integer is a palindrome."
+  language: c#
+  css_language: csharp
+  code_snippet: |
+    public class Solution {
+            public bool IsPalindrome(int x) {
+                string strX = x.ToString();
+                char[] letters = strX.ToCharArray();
+                for(int i = 0; i < letters.Length; i++){
+                    if(!(letters[i] == letters[letters.Length - 1 - i]))
+                        return false;
+                }
+                return true;
+            }
+        }
+- solution_name: Remove duplicates from a singly linked list
+  description: 
+  language: c#
+  css_language: csharp
+  code_snippet: |
+    /**
+        * Definition for singly-linked list.
+        * public class ListNode {
+        *     public int val;
+        *     public ListNode next;
+        *     public ListNode(int val=0, ListNode next=null) {
+        *         this.val = val;
+        *         this.next = next;
+        *     }
+        * }
+        */
+        public class Solution {
+            public ListNode DeleteDuplicates(ListNode head) {
+                ListNode? currentNode = head;
+
+                while(currentNode != null && currentNode.next != null){
+                    if(currentNode.val == currentNode.next.val){
+                        currentNode.next = currentNode.next.next;
+                        continue;
+                    }
+                    
+                    currentNode = currentNode.next;
+                }   
+                return head;
+            }
+        }
+- solution_name: "Add 2 numbers from linked lists"
+  description: "Each linked list represents a series of digits which make up a number. Add these numbers together and return a new list."
+  language: c#
+  css_language: csharp
+  code_snippet: |
+    /**
+        * Definition for singly-linked list.
+        * public class ListNode {
+        *     public int val;
+        *     public ListNode next;
+        *     public ListNode(int val=0, ListNode next=null) {
+        *         this.val = val;
+        *         this.next = next;
+        *     }
+        * }
+        */
+        public class Solution {
+            private BigInteger GetIntFromListNode(ListNode list){
+                BigInteger number = list.val;
+
+                ListNode currentNode = list;
+                int powTen = 0;
+                while (currentNode.next != null){
+                    currentNode = currentNode.next;
+                    powTen++;
+                    number += (currentNode.val *  System.Numerics.BigInteger.Pow(10, powTen));
+                }
+                return number;
+            }
+
+            private ListNode GetListNodeFromInt(BigInteger x){
+                if(x == 0)
+                    return new ListNode();
+
+                ListNode? currentNode = null;
+
+                char[] reversed = x.ToString().ToCharArray();
+                foreach(char s in reversed){
+                    int o = int.Parse(s.ToString());
+                    currentNode = new ListNode(o, currentNode);
+                }
+
+                return currentNode;
+            }
+
+            public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
+                BigInteger n1 = GetIntFromListNode(l1);
+                BigInteger n2 = GetIntFromListNode(l2);
+                
+                BigInteger answer = n1 + n2;
+
+                return GetListNodeFromInt(answer);
+            }
+        }
