@@ -7,11 +7,20 @@ layout: default
             <div class="px-2">
                 <h1 class="display-1">Hi, I'm James!</h1>
             </div>
-            <!-- {% include hr.html %}-->
-            <div class="underline"></div>
             <div>
                 <p class="lead">A DevOps engineer with a creative side...</p>
                 <p class="lead text-primary">Check out my projects!</p>
+
+                <div class="d-flex justify-content-evenly flex-wrap-1">
+                    {% for hash in site.data.socials %}
+                        {% assign logo = "icons/logo-" | append: hash[1].icon | append: ".html" %}
+                        <div class="mx-1 p-1 bg-dark rounded-circle" style="width: 4rem; height: 4rem;">
+                            <a href="{{ hash[1].url }}">
+                                {% include {{logo}} %}
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
 

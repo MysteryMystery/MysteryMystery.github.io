@@ -104,6 +104,9 @@
     animation-name: animate-border-primary-warning;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+
+    background-color: #2c3136;
+    @extend .shadow
 }
 
 #showcase-github {

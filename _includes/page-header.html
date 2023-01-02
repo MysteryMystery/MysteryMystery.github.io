@@ -4,18 +4,9 @@
             <div class="justify-content-start align-items-stretch py-0 col-6 col-md-3 ">
                 <div id="avatar-wrapper" class="p-md-1">
                     <a href="{{ site.url }}">
-                        <img src="/img/avatar.jpg" class="rounded-circle avatar-img border-primary" style="height: auto; width: auto; max-height: 10rem;">
+                        <img src="/img/avatar.jpg" class="rounded-circle avatar-img" style="height: auto; width: auto; max-height: 10rem;">
                     </a>
                 </div>
-                <!--
-                    <div id="contact-wrapper" class="h-100">
-                    <div id="author-email" class="p-md-1 px-md-3 d-flex flex-column">
-                        <p class="my-0 lead fs-3 text-light">{{ site.author }}</p>
-                        <p class="my-0 lead fs-4 text-primary">{{ site.email }}</p>
-                    </div>
-                    {% include hr.html class="bg-primary" %}
-                </div>
-                -->
             </div>
         
             <div class="col-6 d-md-none d-flex justify-content-end">
@@ -44,8 +35,9 @@
                                 {% endif %}
                             </div>
                           </li>
-                      <li class="nav-item"><a href="{{ site.linkdin }}" class="nav-link">LinkedIn</a></li>
-                      <li class="nav-item"><a href="{{ site.github }}" class="nav-link">Github</a></li>
+                        {% for hash in site.data.socials %}
+                            <li class="nav-item"><a href="{{ hash[1].url }}" class="nav-link">{{ hash[1].display_name }}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
