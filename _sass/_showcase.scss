@@ -38,6 +38,7 @@
 @mixin showcase-variant($border-color, $background-color, $hr-color, $text-color){
     border-color: $border-color;
     background-color: $background-color;
+    @extend .shadow;
 
     .hr {
         background-color: $hr-color;
@@ -72,10 +73,6 @@
     }
 } 
 
-.showcase-wrapper {
-
-}
-
 .showcase-light {
     @include showcase();
     @include showcase-variant(
@@ -100,7 +97,6 @@
     animation-iteration-count: infinite;
 
     background-color: #2c3136;
-    @extend .shadow
 }
 
 #showcase-github {

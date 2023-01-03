@@ -2,7 +2,7 @@
 layout: default
 ---
 <div id="intro-pane" class="flex-grow-1 d-flex bg-dark align-content-center justify-content-center py-4">
-    <div class="showcase-dark p-1 container" style="border: none;">
+    <div class="showcase-dark p-1 container">
         <div class="px-2">
             <h1 class="display-1">Hi, I'm James!</h1>
         </div>
@@ -50,40 +50,41 @@ layout: default
     {% endif %}
 </div>
 
-{% include leetcode_carousel.html %}
+<!--
+    {% include leetcode_carousel.html %}
+-->
 
-<div class="d-flex align-content-center justify-content-center p-1">
-    <div id="showcase-professional" class="showcase-light">
-        <div class="px-2">
-            <h1 class="display-2">I have professional experience too!</h1>
+<div id="professional-experience">
+    <div class="py-4 w-100 bg-dark">
+        <div id="showcase-professional" class="showcase-dark container">
+            <div class="px-2">
+                <h1 class="display-5 text-muted">The technologies I use in the workplace:</h1>
+            </div>
         </div>
-        {% include hr.html %}
+    </div>
 
-        <div class="d-flex flex-wrap flex-col justify-content-evenly p-1 skill-tag-wrapper">
-            {% for skill in site.data.professional_skills.skills %}
-                <div class="skill-tag skill-tag-hero">
-                    <span>{{ skill }}</span>
-                </div>
-            {% endfor %}
-        </div>
+    <div class="row g-0">
+        {% for skill in site.data.professional_skills %}
+            <div class="col-12 col-md-6 col-lg-2 px-2 py-1">
+                 <div class="showcase-light p-1">
+                    <h3>{{ skill.name }}</h3>
+                    <p>{{ skill.description }}</p>
+                 </div>
+            </div>
+        {% endfor %}
     </div>
 </div>
 
-<div class="d-flex bg-dark align-content-center justify-content-center p-1">
-    <div>
-        <div id="showcase-github" class="showcase-dark">
-            <div class="showcase-img-wrapper">
-                <img class="img-fluid" src="/img/octocat-1663700451547.png"/>
-            </div>
-            {% include hr.html %}
-            <div class="px-2">
-                <h1 class="display-2">View more on GitHub!</h1>
-                <div class="mx-auto showcase-svg-wrapper">
-                    <a href="{{ site.github }}">
-                        {% include icons/logo-github.html %}
-                    </a>
-                </div>
-            </div>
+<div class="container py-4">
+    <div class="showcase-dark container d-flex flex-column flex-wrap-1">
+        <div class="showcase-img-wrapper">
+            <img class="img-fluid bg-primary rounded" src="/img/octocat-1663700451547.png"/>
+        </div>
+        <h1 class="display-2 text-muted text-center">View more on GitHub!</h1>
+        <div class="social-icon social-icon-github align-self-center">
+            <a href="{{ site.data.socials.github.url }}">
+                {% include icons/logo-github.html %}
+            </a>
         </div>
     </div>
 </div>
