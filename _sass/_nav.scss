@@ -52,3 +52,13 @@
 	opacity: 1;
 	color: $white;
 }
+
+
+#avatar-wrapper {
+	width: fit-content;
+	background-color: $primary;
+
+	.avatar-img {
+		height: auto; width: auto; max-height: 10rem;
+	}
+}

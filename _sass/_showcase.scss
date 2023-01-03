@@ -17,7 +17,7 @@
 }
 
 @mixin showcase(){
-    border: 1px solid $light;
+    //border: 1px solid $light;
     padding: 1.5rem;
 
     @extend .rounded;
@@ -38,6 +38,7 @@
 @mixin showcase-variant($border-color, $background-color, $hr-color, $text-color){
     border-color: $border-color;
     background-color: $background-color;
+    @extend .shadow;
 
     .hr {
         background-color: $hr-color;
@@ -72,16 +73,6 @@
     }
 } 
 
-.showcase-wrapper {
-    @include media-breakpoint-down(md){
-        width: 100%;
-    }
-
-    @include media-breakpoint-up(md){
-        width: 33%;
-    }
-}
-
 .showcase-light {
     @include showcase();
     @include showcase-variant(
@@ -106,7 +97,6 @@
     animation-iteration-count: infinite;
 
     background-color: #2c3136;
-    @extend .shadow
 }
 
 #showcase-github {

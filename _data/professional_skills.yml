@@ -1,16 +1,36 @@
-skills: 
-  - "Azure Devops"
-  - "Dotnet Core/Framework"
-  - "Powershell"
-  - "Git"
-  - "TFS"
-  - "Windows Server"
-  - "SQL Server"
-  - "IIS"
-  - "Firewall"
-  - "Netscaler"
+- name: Azure DevOps
+  css_class: azure
+  description: |
+    Using Azure to create CI/CD pipelines for on premise virtual machines.
 
-  - PHP Laravel
-  - MySQL
+- name: Git & TFVC
+  css_class: git
+  description: |
+    Use of both Git and TFVC version control. 
+
+- name: SQL Server
+  css_class: sqlserver
+  description: | 
+    Knowledge of provisioning SQL Server Instances, dealing with data refreshes and permissions management in addition to application development via the use of stored procedures.
+
+- name: PHP Laravel
+  css_class: php
+  description: | 
+    Using Laravel, I have built a customer management system which takes bookings, processes payments using Worldpay and provides financial dashboards.
+
+- name: IIS
+  css_class: iis
+  description: |
+    Knowledge of windows IIS for hosting websites utilizing windows authentication.
+
+- name: Powershell
+  css_class: powershell
+  description: |
+    Used in automating environment creation in conjunction with pipelines.
+
+- name: .Net Core/Framework
+  css_class: csharp
+  description: |
+    Writing and deploying legacy and modern applications.
 
   
