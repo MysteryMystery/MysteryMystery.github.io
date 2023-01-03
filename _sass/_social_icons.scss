@@ -1,0 +1,40 @@
+@mixin social-icon($width: 4rem, $height: 4rem) {
+    @extend .mx-1;
+    @extend .p-1;
+    @extend .rounded-circle;
+
+    width: $width; 
+    height: $height;
+
+    background-color: $dark;
+
+    &:hover {
+        background-color: $secondary;
+        transition: 0.5s all;
+
+        svg {
+            fill: black;
+            transition: 0.5s all;
+        }
+    }
+}
+
+.social-icon {
+    @include social-icon();
+}
+
+.social-icon-sm {
+    @include social-icon(2rem, 2rem);
+}
+
+.social-icon-linkedin {
+    & svg {
+        fill: #0a66c2;
+    }
+}
+
+.social-icon-github {
+    & svg {
+        fill: black;
+    }
+}

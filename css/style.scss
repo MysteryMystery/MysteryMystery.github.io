@@ -12,6 +12,7 @@
 @import "skill-tag";
 @import "page-header";
 @import "code_snippets";
+@import "social_icons";
 
 @import "code_snippets.css";
 
@@ -23,6 +24,20 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+
+    position: relative;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background-color: rgba($color: $white, $alpha: .4);
+        z-index: -1;
+    }
 }
 
 
@@ -46,11 +61,6 @@ div.hr {
     &.btn-primary {
         color: $light;
     }
-}
-
-.avatar-img {
-    max-height: 10em;
-    border: 0.2em solid $primary;
 }
 
 .footer {

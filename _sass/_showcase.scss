@@ -17,7 +17,7 @@
 }
 
 @mixin showcase(){
-    border: 1px solid $light;
+    //border: 1px solid $light;
     padding: 1.5rem;
 
     @extend .rounded;
@@ -73,13 +73,7 @@
 } 
 
 .showcase-wrapper {
-    @include media-breakpoint-down(md){
-        width: 100%;
-    }
 
-    @include media-breakpoint-up(md){
-        width: 33%;
-    }
 }
 
 .showcase-light {

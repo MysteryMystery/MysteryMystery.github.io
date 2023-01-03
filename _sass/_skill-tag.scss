@@ -40,7 +40,7 @@ $map: (
     @extend .p-md-2;
 }
 
-.skill-tag-slim {
+.skill-tag-sm {
     background-color: $primary;
     font-weight: bold;
     @extend .p-1;
@@ -51,7 +51,13 @@ $map: (
         @include skill-tag-variant($color)
     }
 
-    .skill-tag-slim-#{$theme} {
+    .skill-tag-sm-#{$theme} {
         @include skill-tag-variant($color)
+    }
+
+    .inline-skill-tag-#{$theme} {
+        @include skill-tag-variant($color);
+        @extend .rounded;
+        @extend .px-1;
     }
 }

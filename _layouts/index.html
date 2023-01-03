@@ -1,43 +1,34 @@
 ---
 layout: default
 ---
-<div id="intro-pane" class="flex-grow-1 d-flex bg-dark align-content-center justify-content-center pt-1">
-    <div>
-        <div class="showcase-dark p-1" style="border: none;">
-            <div class="px-2">
-                <h1 class="display-1">Hi, I'm James!</h1>
-            </div>
-            <div>
-                <p class="lead">A DevOps engineer with a creative side...</p>
-                <p class="lead text-primary">Check out my projects!</p>
-
-                <div class="d-flex justify-content-evenly flex-wrap-1">
-                    {% for hash in site.data.socials %}
-                        {% assign logo = "icons/logo-" | append: hash[1].icon | append: ".html" %}
-                        <div class="mx-1 p-1 bg-dark rounded-circle" style="width: 4rem; height: 4rem;">
-                            <a href="{{ hash[1].url }}">
-                                {% include {{logo}} %}
-                            </a>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
+<div id="intro-pane" class="flex-grow-1 d-flex bg-dark align-content-center justify-content-center py-4">
+    <div class="showcase-dark p-1 container" style="border: none;">
+        <div class="px-2">
+            <h1 class="display-1">Hi, I'm James!</h1>
         </div>
+        <div>
+            <p class="lead text-muted">I am a <span class="inline-skill-tag-csharp">.Net</span> DevOps engineer specialising in on-premise infrastructure with a view to move to cloud! I love all things code, taking pride in automation aiming for a "one click" solution to a problem. I also have a background in web development using <span class="inline-skill-tag-php">PHP</span> Laravel, and have dabbled in various other languages such as <span class="inline-skill-tag-java">Java</span> & <span class="inline-skill-tag-ruby">Ruby</span>.</p>
 
-        <div class="p-4 arrow-down">
-            <div class="mx-auto">
-                {% include icons/arrow-down.html %}
+            <div class="d-flex justify-content-evenly flex-wrap-1">
+                {% for hash in site.data.socials %}
+                    {% assign logo = "icons/logo-" | append: hash[1].icon | append: ".html" %}
+                    <div class="social-icon social-icon-{{ hash[1].icon }}">
+                        <a href="{{ hash[1].url }}">
+                            {% include {{logo}} %}
+                        </a>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
 </div>
 
 
-<div class="d-flex flex-row flex-wrap justify-content-center">
+<div class="row g-0">
     {% assign project_posts = site.posts | where: "categories", "projects" %}
     {% if project_posts.size > 0 %}
         {% for post in project_posts %}
-            <div class="showcase-wrapper p-1">
+            <div class="showcase-wrapper p-1 col-12 col-md-6 col-lg-3">
                 <div class="showcase-light p-1">
                     <h2 id="display"><img class="project-logo" src="{{ post.avatar_url }}"> {{ post.title }}</h2>
                     {% include hr.html class="bg-dark" %}
