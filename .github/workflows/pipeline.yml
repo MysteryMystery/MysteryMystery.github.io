@@ -43,15 +43,15 @@ jobs:
         run: dotnet restore
       - name: Dotnet Publish
         working-directory: Blazor
-        run: dotnet publish -c Release -o /published --nologo
+        run: dotnet publish -c Release --nologo
       - name: copy index.html to 404.html
-        run: cp /published/wwwroot/index.html /published/wwwroot/404.html
+        run: cp Blazor/Blazor/bin/Release/net6.0/wwwroot/index.html Blazor/Blazor/bin/Release/net6.0/wwwroot/404.html
       - name: Add .nojekyll file
-        run: touch /published/wwwroot/.nojekyll
+        run: touch Blazor/Blazor/bin/Release/net6.0/wwwroot/.nojekyll
       - uses: actions/upload-artifact@master
         with:
           name: mysterymysterygithubio
-          path: /published
+          path: Blazor/Blazor/bin/Release/net6.0/
 
 # deploy if master
   deploy:
