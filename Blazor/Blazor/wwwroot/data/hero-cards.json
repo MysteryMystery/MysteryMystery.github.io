@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Azure DevOps",
+    "body": "Using a mix of VNEXT and YAML pipelines to provide effective CI/CD solutions for a wide range of applications.",
+    "footnotes": ""
+  },
+  {
+    "title": ".Net Stack",
+    "body": ".Net, .Net Core, .Net Framework, VB.Net.",
+    "footnotes": ""
+  },
+  {
+    "title": "SQL Server",
+    "body": "Provisioning and security management of SQL server.",
+    "footnotes": ""
+  },
+  {
+    "title": "Windows",
+    "body": "Creation of complete on-premise windows environments.",
+    "footnotes": ""
+  }
+]

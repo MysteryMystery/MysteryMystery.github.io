@@ -12,7 +12,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\index\" />
+    <Content Update="wwwroot\data\hero-cards.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\logo\" />
   </ItemGroup>
 
 </Project>

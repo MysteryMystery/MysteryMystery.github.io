@@ -1,5 +1,8 @@
 ﻿@page "/"
+
 @using Blazor.Shared.Components
+@inject ITextualDataService TextualDataService
+@inject IConfiguration Configuration
 
 <PageTitle>Portfolio</PageTitle>
 
@@ -8,24 +11,46 @@
         navbar
     </div>
     <div class="grow text-white container mx-auto flex items-center justify-center flex-col">
-        <div class="grid grid-cols-1 w-full md:grid-cols-2 gap-5 p-3">
-            <div class="text-left">
-                <h1 class="text-6xl">Hi, I'm James!</h1>
+
+        <div class="">
+            <div class="grid grid-cols-1 w-full md:grid-cols-2 gap-5 p-3">
+                <div class="text-center md:text-left">
+                    <h1 class="text-6xl text-hero">Hi, I'm James!</h1>
+                </div>
+                <div class="flex justify-around md:justify-end md:text-right">
+                    <div class="p-1 md:p-3 md:border-b-4 md:border-accent hover:shadow">
+                        <a href="@(Configuration["socials:github"])">
+                            <img class="w-20" src="/img/logo/github-mark-white.svg" alt="github-logo" />
+                        </a>
+                    </div>
+                    <div class="p-1 md:p-3 md:border-b-4 md:border-accent ">
+                        <a href="@(Configuration["socials:linkedin"])">
+                            <img class="w-20" src="/img/logo/LI-In-Bug.png" alt="linkedin-logo" />
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="text-center md:text-right">
-                GH, Lkdin
+
+            <div class="w-full p-3">
+                <p class="text-2xl md:text-3xl">I am a <span class="inline-skill-tag-csharp">.Net</span> DevOps engineer specialising in on-premise infrastructure with a view to move to cloud! I love all things code, taking pride in automation aiming for a "one click" solution to a problem in addition to a background in web development using <span class="inline-skill-tag-php">PHP</span> Laravel, and have dabbled in various other languages such as <span class="inline-skill-tag-java">Java</span> &amp; <span class="inline-skill-tag-ruby">Ruby</span>.</p>
             </div>
         </div>
-
-        <div class="w-full p-3">
-            <p class="text-3xl">I am a <span class="inline-skill-tag-csharp">.Net</span> DevOps engineer specialising in on-premise infrastructure with a view to move to cloud! I love all things code, taking pride in automation aiming for a "one click" solution to a problem. I also have a background in web development using <span class="inline-skill-tag-php">PHP</span> Laravel, and have dabbled in various other languages such as <span class="inline-skill-tag-java">Java</span> &amp; <span class="inline-skill-tag-ruby">Ruby</span>.</p>
-        </div> 
 
         <div class="grid grid-cols-1 md:grid-cols-4 w-full gap-4 m-3 px-2">
             @foreach (HeroCard hc in heroCards)
             {
                 <div class="md:h-56">
-                    <Card>@hc.Body</Card>
+                    <Card>
+                        <Header>
+                            @hc.Title
+                        </Header>
+                        <Body>
+                            @hc.Body
+                        </Body>
+                        <Footer>
+                            @hc.Footnotes
+                        </Footer>
+                    </Card>
                 </div>
             }
         </div>
@@ -37,14 +62,16 @@
 </div>
 
 @code{
-    class HeroCard
-    {
-        public string? Header { get; set; }
-        public string Body {get; set;}
-    }
 
-    HeroCard[] heroCards = new HeroCard[4].Select(h => new HeroCard
+    IEnumerable<HeroCard> heroCards = new HeroCard[4].Select(h => new HeroCard
     {
-        Body = "Lorem Ipsum"
-    }).ToArray(); 
+        Title = "",
+        Body = "",
+        Footnotes = ""
+    }).ToList(); 
+
+    protected override async Task OnInitializedAsync()
+    {
+        heroCards = await TextualDataService.GetHeroCardsAsync();
+    }
 }
