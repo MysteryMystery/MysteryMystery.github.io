@@ -53,7 +53,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: mysterymysterygithubio
-          path: Blazor/Blazor/bin/Release/net6.0/
+          path: Blazor/Blazor/bin/Release/net6.0/publish/
 
 # deploy if master
   deploy:
