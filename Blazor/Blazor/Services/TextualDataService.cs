@@ -16,8 +16,7 @@ namespace Blazor.Services
         }
 
         public async Task<IEnumerable<HeroCard>> GetHeroCardsAsync()
-        {
-            string file = "data/hero-cards.json";
+        { 
             var response = await _httpClient.GetAsync("data/hero-cards.json");
 
             if (response.IsSuccessStatusCode)
@@ -27,6 +26,19 @@ namespace Blazor.Services
 
             _logger.LogError("GetHeroCardsAsync - file not found");
             return new HeroCard[0];
+        }
+
+        public async Task<IEnumerable<ProjectShowcaseItem>> GetProjectShowcaseItemsAsync()
+        {
+            var response = await _httpClient.GetAsync("data/project-showcase-items.json");
+
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<IEnumerable<ProjectShowcaseItem>>();
+            }
+
+            _logger.LogError("GetHeroCardsAsync - file not found");
+            return new ProjectShowcaseItem[0];
         }
     }
 }

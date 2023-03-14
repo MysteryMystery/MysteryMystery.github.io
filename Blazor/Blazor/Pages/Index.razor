@@ -1,17 +1,16 @@
 ﻿@page "/"
 
 @using Blazor.Shared.Components
+@using Blazor.Shared.ProjectShowcase
+
 @inject ITextualDataService TextualDataService
 @inject IConfiguration Configuration
 
 <PageTitle>James Attfield</PageTitle>
 
 <div class="min-h-screen flex flex-col hero-section">
-    <div class="text-white">
-        navbar
-    </div>
     <div class="grow text-white container mx-auto flex items-center justify-center flex-col">
-
+        @* Hero text and social icons *@
         <div class="">
             <div class="grid grid-cols-1 w-full md:grid-cols-2 gap-5 p-3">
                 <div class="text-center md:text-left">
@@ -31,11 +30,13 @@
                 </div>
             </div>
 
+            @* Intro text *@
             <div class="w-full p-3">
                 <p class="text-2xl md:text-3xl">I am a <InlineLanguageText Language="csharp">.Net</InlineLanguageText> DevOps engineer specialising in on-premise infrastructure with a view to move to cloud! I love all things code, taking pride in automation aiming for a "one click" solution to a problem in addition to a background in web development using <InlineLanguageText Language="php">PHP</InlineLanguageText> Laravel, and have dabbled in various other languages such as <InlineLanguageText Language="java">Java</InlineLanguageText> &amp; <InlineLanguageText Language="ruby">Ruby</InlineLanguageText>.</p>
             </div>
         </div>
-
+        
+        @* Hero cards *@
         <div class="grid grid-cols-1 md:grid-cols-4 w-full gap-4 m-3 px-2">
             @foreach (HeroCard hc in heroCards)
             {
@@ -54,11 +55,39 @@
                 </div>
             }
         </div>
+
+        @* Nav *@
+        <div class="w-full flex flex-row flex-wrap justify-center m-1 md:mt-64 gap-1 md:gap-10">
+            <div>
+                <HashLink Text="My Projects" ScrollTo="projects"></HashLink>
+            </div>
+            <div>
+                <HashLink Text="My Education" ScrollTo="education"></HashLink>
+            </div>
+            <div>
+                <HashLink Text="About Me" ScrollTo="aboutme"></HashLink>
+            </div>
+        </div>
     </div>
 </div>
 
-<div>
-
+<div id="projects" class="flex flex-col items-center bg-[#e4e5e7] p-1 md:py-4">
+    <div class="w-full md:w-3/5">
+        <ProjectShowcase>
+            @foreach (var item in projectShowcaseItems)
+            {
+                <ProjectShowcaseItem WebsiteLink="@item.WebsiteUrl">
+                    <Thumbnail>
+                        @if(item.ThumbnailUrl is not null){
+                            <img src="@item.ThumbnailUrl" alt="@item.ThumbnailUrl" />
+                        }
+                    </Thumbnail>
+                    <HeaderText>@item.Title</HeaderText>
+                    <BodyText>@item.Body</BodyText>
+                </ProjectShowcaseItem>
+            }
+        </ProjectShowcase>
+    </div>
 </div>
 
 @code{
@@ -70,8 +99,15 @@
         Footnotes = ""
     }).ToList(); 
 
+    IEnumerable<Models.ProjectShowcaseItem> projectShowcaseItems = new Models.ProjectShowcaseItem[4].Select(h => new Models.ProjectShowcaseItem
+    {
+        Title = "",
+        Body = "",
+    }).ToList();
+
     protected override async Task OnInitializedAsync()
     {
         heroCards = await TextualDataService.GetHeroCardsAsync();
+        projectShowcaseItems = await TextualDataService.GetProjectShowcaseItemsAsync();
     }
 }

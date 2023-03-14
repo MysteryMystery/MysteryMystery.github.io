@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Windows Hardening Suite",
+    "body": "This university team project consists of a Windows Forms C# application which acts to \"lock down\" the windows operating system.",
+    "thumbnailUrl": "https://mysterymystery.github.io/UOD-Team-Project/img/logo-no-words.png",
+    "websiteUrl": ""
+  },
+  {
+    "title": "PixelMC",
+    "body": "A Minecraft community where I have designed & maintained the website and online store geared towards the community and sales of certain perks in addition to writing plugins for the server to implement extra functionality to improve sales. Currently, the server is dockerised on private virtual machines.",
+    "thumbnailUrl": "/img/pixelmc.png",
+    "websiteUrl": "https://www.pixelmc.co/"
+  }
+]

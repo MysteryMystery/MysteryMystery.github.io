@@ -1,0 +1,38 @@
+﻿@using Blazor.Shared.Components
+
+<div class="flex flex-col md:flex-row justify-center p-1 md:p-4 rounded-lg bg-light shadow-lg">
+    <div class="basis-1/3 mx-auto">
+        @Thumbnail
+    </div>
+    <div class="basis-2/3 flex flex-col">
+        <div class="text-center md:text-left p-1 md:p-4">
+            <h1 class="text-2xl">@HeaderText</h1>
+        </div>
+        <div class="grow flex items-center p-1 md:p-4">
+            <div class="text-center md:text-left">
+                <p class="">@BodyText</p>
+            </div>
+        </div>
+        <div class="text-center md:text-left p-1 md:p-4">
+            @if (WebsiteLink is not null)
+            {
+                <NavLink href="@WebsiteLink" target="_blank">Website</NavLink>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public RenderFragment Thumbnail { get; set; }
+
+    [Parameter]
+    public RenderFragment HeaderText { get; set; }
+
+    [Parameter]
+    public RenderFragment BodyText { get; set; }
+
+    [Parameter]
+    public string? WebsiteLink { get; set; }
+}
