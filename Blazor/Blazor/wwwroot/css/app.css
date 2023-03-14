@@ -624,6 +624,331 @@ video {
   gap: 1.25rem;
 }
 
+.divide-csharp > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(156 117 213 / var(--tw-divide-opacity));
+}
+
+.divide-csharp\/0 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0);
+}
+
+.divide-csharp\/10 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.1);
+}
+
+.divide-csharp\/100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 1);
+}
+
+.divide-csharp\/20 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.2);
+}
+
+.divide-csharp\/25 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.25);
+}
+
+.divide-csharp\/30 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.3);
+}
+
+.divide-csharp\/40 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.4);
+}
+
+.divide-csharp\/5 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.05);
+}
+
+.divide-csharp\/50 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.5);
+}
+
+.divide-csharp\/60 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.6);
+}
+
+.divide-csharp\/70 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.7);
+}
+
+.divide-csharp\/75 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.75);
+}
+
+.divide-csharp\/80 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.8);
+}
+
+.divide-csharp\/90 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.9);
+}
+
+.divide-csharp\/95 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(156 117 213 / 0.95);
+}
+
+.divide-java > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(80 126 156 / var(--tw-divide-opacity));
+}
+
+.divide-java\/0 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0);
+}
+
+.divide-java\/10 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.1);
+}
+
+.divide-java\/100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 1);
+}
+
+.divide-java\/20 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.2);
+}
+
+.divide-java\/25 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.25);
+}
+
+.divide-java\/30 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.3);
+}
+
+.divide-java\/40 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.4);
+}
+
+.divide-java\/5 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.05);
+}
+
+.divide-java\/50 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.5);
+}
+
+.divide-java\/60 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.6);
+}
+
+.divide-java\/70 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.7);
+}
+
+.divide-java\/75 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.75);
+}
+
+.divide-java\/80 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.8);
+}
+
+.divide-java\/90 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.9);
+}
+
+.divide-java\/95 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(80 126 156 / 0.95);
+}
+
+.divide-mysql > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(221 138 0 / var(--tw-divide-opacity));
+}
+
+.divide-mysql\/0 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0);
+}
+
+.divide-mysql\/10 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.1);
+}
+
+.divide-mysql\/100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 1);
+}
+
+.divide-mysql\/20 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.2);
+}
+
+.divide-mysql\/25 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.25);
+}
+
+.divide-mysql\/30 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.3);
+}
+
+.divide-mysql\/40 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.4);
+}
+
+.divide-mysql\/5 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.05);
+}
+
+.divide-mysql\/50 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.5);
+}
+
+.divide-mysql\/60 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.6);
+}
+
+.divide-mysql\/70 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.7);
+}
+
+.divide-mysql\/75 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.75);
+}
+
+.divide-mysql\/80 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.8);
+}
+
+.divide-mysql\/90 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.9);
+}
+
+.divide-mysql\/95 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(221 138 0 / 0.95);
+}
+
+.divide-php > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(115 119 173 / var(--tw-divide-opacity));
+}
+
+.divide-php\/0 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0);
+}
+
+.divide-php\/10 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.1);
+}
+
+.divide-php\/100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 1);
+}
+
+.divide-php\/20 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.2);
+}
+
+.divide-php\/25 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.25);
+}
+
+.divide-php\/30 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.3);
+}
+
+.divide-php\/40 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.4);
+}
+
+.divide-php\/5 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.05);
+}
+
+.divide-php\/50 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.5);
+}
+
+.divide-php\/60 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.6);
+}
+
+.divide-php\/70 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.7);
+}
+
+.divide-php\/75 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.75);
+}
+
+.divide-php\/80 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.8);
+}
+
+.divide-php\/90 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.9);
+}
+
+.divide-php\/95 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(115 119 173 / 0.95);
+}
+
+.divide-ruby > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(224 17 95 / var(--tw-divide-opacity));
+}
+
+.divide-ruby\/0 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0);
+}
+
+.divide-ruby\/10 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.1);
+}
+
+.divide-ruby\/100 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 1);
+}
+
+.divide-ruby\/20 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.2);
+}
+
+.divide-ruby\/25 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.25);
+}
+
+.divide-ruby\/30 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.3);
+}
+
+.divide-ruby\/40 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.4);
+}
+
+.divide-ruby\/5 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.05);
+}
+
+.divide-ruby\/50 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.5);
+}
+
+.divide-ruby\/60 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.6);
+}
+
+.divide-ruby\/70 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.7);
+}
+
+.divide-ruby\/75 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.75);
+}
+
+.divide-ruby\/80 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.8);
+}
+
+.divide-ruby\/90 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.9);
+}
+
+.divide-ruby\/95 > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgb(224 17 95 / 0.95);
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -632,14 +957,4617 @@ video {
   border-width: 1px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-csharp {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 117 213 / var(--tw-border-opacity));
+}
+
+.border-csharp\/0 {
+  border-color: rgb(156 117 213 / 0);
+}
+
+.border-csharp\/10 {
+  border-color: rgb(156 117 213 / 0.1);
+}
+
+.border-csharp\/100 {
+  border-color: rgb(156 117 213 / 1);
+}
+
+.border-csharp\/20 {
+  border-color: rgb(156 117 213 / 0.2);
+}
+
+.border-csharp\/25 {
+  border-color: rgb(156 117 213 / 0.25);
+}
+
+.border-csharp\/30 {
+  border-color: rgb(156 117 213 / 0.3);
+}
+
+.border-csharp\/40 {
+  border-color: rgb(156 117 213 / 0.4);
+}
+
+.border-csharp\/5 {
+  border-color: rgb(156 117 213 / 0.05);
+}
+
+.border-csharp\/50 {
+  border-color: rgb(156 117 213 / 0.5);
+}
+
+.border-csharp\/60 {
+  border-color: rgb(156 117 213 / 0.6);
+}
+
+.border-csharp\/70 {
+  border-color: rgb(156 117 213 / 0.7);
+}
+
+.border-csharp\/75 {
+  border-color: rgb(156 117 213 / 0.75);
+}
+
+.border-csharp\/80 {
+  border-color: rgb(156 117 213 / 0.8);
+}
+
+.border-csharp\/90 {
+  border-color: rgb(156 117 213 / 0.9);
+}
+
+.border-csharp\/95 {
+  border-color: rgb(156 117 213 / 0.95);
+}
+
+.border-java {
+  --tw-border-opacity: 1;
+  border-color: rgb(80 126 156 / var(--tw-border-opacity));
+}
+
+.border-java\/0 {
+  border-color: rgb(80 126 156 / 0);
+}
+
+.border-java\/10 {
+  border-color: rgb(80 126 156 / 0.1);
+}
+
+.border-java\/100 {
+  border-color: rgb(80 126 156 / 1);
+}
+
+.border-java\/20 {
+  border-color: rgb(80 126 156 / 0.2);
+}
+
+.border-java\/25 {
+  border-color: rgb(80 126 156 / 0.25);
+}
+
+.border-java\/30 {
+  border-color: rgb(80 126 156 / 0.3);
+}
+
+.border-java\/40 {
+  border-color: rgb(80 126 156 / 0.4);
+}
+
+.border-java\/5 {
+  border-color: rgb(80 126 156 / 0.05);
+}
+
+.border-java\/50 {
+  border-color: rgb(80 126 156 / 0.5);
+}
+
+.border-java\/60 {
+  border-color: rgb(80 126 156 / 0.6);
+}
+
+.border-java\/70 {
+  border-color: rgb(80 126 156 / 0.7);
+}
+
+.border-java\/75 {
+  border-color: rgb(80 126 156 / 0.75);
+}
+
+.border-java\/80 {
+  border-color: rgb(80 126 156 / 0.8);
+}
+
+.border-java\/90 {
+  border-color: rgb(80 126 156 / 0.9);
+}
+
+.border-java\/95 {
+  border-color: rgb(80 126 156 / 0.95);
+}
+
+.border-mysql {
+  --tw-border-opacity: 1;
+  border-color: rgb(221 138 0 / var(--tw-border-opacity));
+}
+
+.border-mysql\/0 {
+  border-color: rgb(221 138 0 / 0);
+}
+
+.border-mysql\/10 {
+  border-color: rgb(221 138 0 / 0.1);
+}
+
+.border-mysql\/100 {
+  border-color: rgb(221 138 0 / 1);
+}
+
+.border-mysql\/20 {
+  border-color: rgb(221 138 0 / 0.2);
+}
+
+.border-mysql\/25 {
+  border-color: rgb(221 138 0 / 0.25);
+}
+
+.border-mysql\/30 {
+  border-color: rgb(221 138 0 / 0.3);
+}
+
+.border-mysql\/40 {
+  border-color: rgb(221 138 0 / 0.4);
+}
+
+.border-mysql\/5 {
+  border-color: rgb(221 138 0 / 0.05);
+}
+
+.border-mysql\/50 {
+  border-color: rgb(221 138 0 / 0.5);
+}
+
+.border-mysql\/60 {
+  border-color: rgb(221 138 0 / 0.6);
+}
+
+.border-mysql\/70 {
+  border-color: rgb(221 138 0 / 0.7);
+}
+
+.border-mysql\/75 {
+  border-color: rgb(221 138 0 / 0.75);
+}
+
+.border-mysql\/80 {
+  border-color: rgb(221 138 0 / 0.8);
+}
+
+.border-mysql\/90 {
+  border-color: rgb(221 138 0 / 0.9);
+}
+
+.border-mysql\/95 {
+  border-color: rgb(221 138 0 / 0.95);
+}
+
+.border-php {
+  --tw-border-opacity: 1;
+  border-color: rgb(115 119 173 / var(--tw-border-opacity));
+}
+
+.border-php\/0 {
+  border-color: rgb(115 119 173 / 0);
+}
+
+.border-php\/10 {
+  border-color: rgb(115 119 173 / 0.1);
+}
+
+.border-php\/100 {
+  border-color: rgb(115 119 173 / 1);
+}
+
+.border-php\/20 {
+  border-color: rgb(115 119 173 / 0.2);
+}
+
+.border-php\/25 {
+  border-color: rgb(115 119 173 / 0.25);
+}
+
+.border-php\/30 {
+  border-color: rgb(115 119 173 / 0.3);
+}
+
+.border-php\/40 {
+  border-color: rgb(115 119 173 / 0.4);
+}
+
+.border-php\/5 {
+  border-color: rgb(115 119 173 / 0.05);
+}
+
+.border-php\/50 {
+  border-color: rgb(115 119 173 / 0.5);
+}
+
+.border-php\/60 {
+  border-color: rgb(115 119 173 / 0.6);
+}
+
+.border-php\/70 {
+  border-color: rgb(115 119 173 / 0.7);
+}
+
+.border-php\/75 {
+  border-color: rgb(115 119 173 / 0.75);
+}
+
+.border-php\/80 {
+  border-color: rgb(115 119 173 / 0.8);
+}
+
+.border-php\/90 {
+  border-color: rgb(115 119 173 / 0.9);
+}
+
+.border-php\/95 {
+  border-color: rgb(115 119 173 / 0.95);
+}
+
+.border-ruby {
+  --tw-border-opacity: 1;
+  border-color: rgb(224 17 95 / var(--tw-border-opacity));
+}
+
+.border-ruby\/0 {
+  border-color: rgb(224 17 95 / 0);
+}
+
+.border-ruby\/10 {
+  border-color: rgb(224 17 95 / 0.1);
+}
+
+.border-ruby\/100 {
+  border-color: rgb(224 17 95 / 1);
+}
+
+.border-ruby\/20 {
+  border-color: rgb(224 17 95 / 0.2);
+}
+
+.border-ruby\/25 {
+  border-color: rgb(224 17 95 / 0.25);
+}
+
+.border-ruby\/30 {
+  border-color: rgb(224 17 95 / 0.3);
+}
+
+.border-ruby\/40 {
+  border-color: rgb(224 17 95 / 0.4);
+}
+
+.border-ruby\/5 {
+  border-color: rgb(224 17 95 / 0.05);
+}
+
+.border-ruby\/50 {
+  border-color: rgb(224 17 95 / 0.5);
+}
+
+.border-ruby\/60 {
+  border-color: rgb(224 17 95 / 0.6);
+}
+
+.border-ruby\/70 {
+  border-color: rgb(224 17 95 / 0.7);
+}
+
+.border-ruby\/75 {
+  border-color: rgb(224 17 95 / 0.75);
+}
+
+.border-ruby\/80 {
+  border-color: rgb(224 17 95 / 0.8);
+}
+
+.border-ruby\/90 {
+  border-color: rgb(224 17 95 / 0.9);
+}
+
+.border-ruby\/95 {
+  border-color: rgb(224 17 95 / 0.95);
+}
+
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: rgb(0 40 102 / var(--tw-border-opacity));
 }
 
-.bg-deep-blue {
+.border-x-csharp {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(156 117 213 / var(--tw-border-opacity));
+  border-right-color: rgb(156 117 213 / var(--tw-border-opacity));
+}
+
+.border-x-csharp\/0 {
+  border-left-color: rgb(156 117 213 / 0);
+  border-right-color: rgb(156 117 213 / 0);
+}
+
+.border-x-csharp\/10 {
+  border-left-color: rgb(156 117 213 / 0.1);
+  border-right-color: rgb(156 117 213 / 0.1);
+}
+
+.border-x-csharp\/100 {
+  border-left-color: rgb(156 117 213 / 1);
+  border-right-color: rgb(156 117 213 / 1);
+}
+
+.border-x-csharp\/20 {
+  border-left-color: rgb(156 117 213 / 0.2);
+  border-right-color: rgb(156 117 213 / 0.2);
+}
+
+.border-x-csharp\/25 {
+  border-left-color: rgb(156 117 213 / 0.25);
+  border-right-color: rgb(156 117 213 / 0.25);
+}
+
+.border-x-csharp\/30 {
+  border-left-color: rgb(156 117 213 / 0.3);
+  border-right-color: rgb(156 117 213 / 0.3);
+}
+
+.border-x-csharp\/40 {
+  border-left-color: rgb(156 117 213 / 0.4);
+  border-right-color: rgb(156 117 213 / 0.4);
+}
+
+.border-x-csharp\/5 {
+  border-left-color: rgb(156 117 213 / 0.05);
+  border-right-color: rgb(156 117 213 / 0.05);
+}
+
+.border-x-csharp\/50 {
+  border-left-color: rgb(156 117 213 / 0.5);
+  border-right-color: rgb(156 117 213 / 0.5);
+}
+
+.border-x-csharp\/60 {
+  border-left-color: rgb(156 117 213 / 0.6);
+  border-right-color: rgb(156 117 213 / 0.6);
+}
+
+.border-x-csharp\/70 {
+  border-left-color: rgb(156 117 213 / 0.7);
+  border-right-color: rgb(156 117 213 / 0.7);
+}
+
+.border-x-csharp\/75 {
+  border-left-color: rgb(156 117 213 / 0.75);
+  border-right-color: rgb(156 117 213 / 0.75);
+}
+
+.border-x-csharp\/80 {
+  border-left-color: rgb(156 117 213 / 0.8);
+  border-right-color: rgb(156 117 213 / 0.8);
+}
+
+.border-x-csharp\/90 {
+  border-left-color: rgb(156 117 213 / 0.9);
+  border-right-color: rgb(156 117 213 / 0.9);
+}
+
+.border-x-csharp\/95 {
+  border-left-color: rgb(156 117 213 / 0.95);
+  border-right-color: rgb(156 117 213 / 0.95);
+}
+
+.border-x-java {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(80 126 156 / var(--tw-border-opacity));
+  border-right-color: rgb(80 126 156 / var(--tw-border-opacity));
+}
+
+.border-x-java\/0 {
+  border-left-color: rgb(80 126 156 / 0);
+  border-right-color: rgb(80 126 156 / 0);
+}
+
+.border-x-java\/10 {
+  border-left-color: rgb(80 126 156 / 0.1);
+  border-right-color: rgb(80 126 156 / 0.1);
+}
+
+.border-x-java\/100 {
+  border-left-color: rgb(80 126 156 / 1);
+  border-right-color: rgb(80 126 156 / 1);
+}
+
+.border-x-java\/20 {
+  border-left-color: rgb(80 126 156 / 0.2);
+  border-right-color: rgb(80 126 156 / 0.2);
+}
+
+.border-x-java\/25 {
+  border-left-color: rgb(80 126 156 / 0.25);
+  border-right-color: rgb(80 126 156 / 0.25);
+}
+
+.border-x-java\/30 {
+  border-left-color: rgb(80 126 156 / 0.3);
+  border-right-color: rgb(80 126 156 / 0.3);
+}
+
+.border-x-java\/40 {
+  border-left-color: rgb(80 126 156 / 0.4);
+  border-right-color: rgb(80 126 156 / 0.4);
+}
+
+.border-x-java\/5 {
+  border-left-color: rgb(80 126 156 / 0.05);
+  border-right-color: rgb(80 126 156 / 0.05);
+}
+
+.border-x-java\/50 {
+  border-left-color: rgb(80 126 156 / 0.5);
+  border-right-color: rgb(80 126 156 / 0.5);
+}
+
+.border-x-java\/60 {
+  border-left-color: rgb(80 126 156 / 0.6);
+  border-right-color: rgb(80 126 156 / 0.6);
+}
+
+.border-x-java\/70 {
+  border-left-color: rgb(80 126 156 / 0.7);
+  border-right-color: rgb(80 126 156 / 0.7);
+}
+
+.border-x-java\/75 {
+  border-left-color: rgb(80 126 156 / 0.75);
+  border-right-color: rgb(80 126 156 / 0.75);
+}
+
+.border-x-java\/80 {
+  border-left-color: rgb(80 126 156 / 0.8);
+  border-right-color: rgb(80 126 156 / 0.8);
+}
+
+.border-x-java\/90 {
+  border-left-color: rgb(80 126 156 / 0.9);
+  border-right-color: rgb(80 126 156 / 0.9);
+}
+
+.border-x-java\/95 {
+  border-left-color: rgb(80 126 156 / 0.95);
+  border-right-color: rgb(80 126 156 / 0.95);
+}
+
+.border-x-mysql {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(221 138 0 / var(--tw-border-opacity));
+  border-right-color: rgb(221 138 0 / var(--tw-border-opacity));
+}
+
+.border-x-mysql\/0 {
+  border-left-color: rgb(221 138 0 / 0);
+  border-right-color: rgb(221 138 0 / 0);
+}
+
+.border-x-mysql\/10 {
+  border-left-color: rgb(221 138 0 / 0.1);
+  border-right-color: rgb(221 138 0 / 0.1);
+}
+
+.border-x-mysql\/100 {
+  border-left-color: rgb(221 138 0 / 1);
+  border-right-color: rgb(221 138 0 / 1);
+}
+
+.border-x-mysql\/20 {
+  border-left-color: rgb(221 138 0 / 0.2);
+  border-right-color: rgb(221 138 0 / 0.2);
+}
+
+.border-x-mysql\/25 {
+  border-left-color: rgb(221 138 0 / 0.25);
+  border-right-color: rgb(221 138 0 / 0.25);
+}
+
+.border-x-mysql\/30 {
+  border-left-color: rgb(221 138 0 / 0.3);
+  border-right-color: rgb(221 138 0 / 0.3);
+}
+
+.border-x-mysql\/40 {
+  border-left-color: rgb(221 138 0 / 0.4);
+  border-right-color: rgb(221 138 0 / 0.4);
+}
+
+.border-x-mysql\/5 {
+  border-left-color: rgb(221 138 0 / 0.05);
+  border-right-color: rgb(221 138 0 / 0.05);
+}
+
+.border-x-mysql\/50 {
+  border-left-color: rgb(221 138 0 / 0.5);
+  border-right-color: rgb(221 138 0 / 0.5);
+}
+
+.border-x-mysql\/60 {
+  border-left-color: rgb(221 138 0 / 0.6);
+  border-right-color: rgb(221 138 0 / 0.6);
+}
+
+.border-x-mysql\/70 {
+  border-left-color: rgb(221 138 0 / 0.7);
+  border-right-color: rgb(221 138 0 / 0.7);
+}
+
+.border-x-mysql\/75 {
+  border-left-color: rgb(221 138 0 / 0.75);
+  border-right-color: rgb(221 138 0 / 0.75);
+}
+
+.border-x-mysql\/80 {
+  border-left-color: rgb(221 138 0 / 0.8);
+  border-right-color: rgb(221 138 0 / 0.8);
+}
+
+.border-x-mysql\/90 {
+  border-left-color: rgb(221 138 0 / 0.9);
+  border-right-color: rgb(221 138 0 / 0.9);
+}
+
+.border-x-mysql\/95 {
+  border-left-color: rgb(221 138 0 / 0.95);
+  border-right-color: rgb(221 138 0 / 0.95);
+}
+
+.border-x-php {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(115 119 173 / var(--tw-border-opacity));
+  border-right-color: rgb(115 119 173 / var(--tw-border-opacity));
+}
+
+.border-x-php\/0 {
+  border-left-color: rgb(115 119 173 / 0);
+  border-right-color: rgb(115 119 173 / 0);
+}
+
+.border-x-php\/10 {
+  border-left-color: rgb(115 119 173 / 0.1);
+  border-right-color: rgb(115 119 173 / 0.1);
+}
+
+.border-x-php\/100 {
+  border-left-color: rgb(115 119 173 / 1);
+  border-right-color: rgb(115 119 173 / 1);
+}
+
+.border-x-php\/20 {
+  border-left-color: rgb(115 119 173 / 0.2);
+  border-right-color: rgb(115 119 173 / 0.2);
+}
+
+.border-x-php\/25 {
+  border-left-color: rgb(115 119 173 / 0.25);
+  border-right-color: rgb(115 119 173 / 0.25);
+}
+
+.border-x-php\/30 {
+  border-left-color: rgb(115 119 173 / 0.3);
+  border-right-color: rgb(115 119 173 / 0.3);
+}
+
+.border-x-php\/40 {
+  border-left-color: rgb(115 119 173 / 0.4);
+  border-right-color: rgb(115 119 173 / 0.4);
+}
+
+.border-x-php\/5 {
+  border-left-color: rgb(115 119 173 / 0.05);
+  border-right-color: rgb(115 119 173 / 0.05);
+}
+
+.border-x-php\/50 {
+  border-left-color: rgb(115 119 173 / 0.5);
+  border-right-color: rgb(115 119 173 / 0.5);
+}
+
+.border-x-php\/60 {
+  border-left-color: rgb(115 119 173 / 0.6);
+  border-right-color: rgb(115 119 173 / 0.6);
+}
+
+.border-x-php\/70 {
+  border-left-color: rgb(115 119 173 / 0.7);
+  border-right-color: rgb(115 119 173 / 0.7);
+}
+
+.border-x-php\/75 {
+  border-left-color: rgb(115 119 173 / 0.75);
+  border-right-color: rgb(115 119 173 / 0.75);
+}
+
+.border-x-php\/80 {
+  border-left-color: rgb(115 119 173 / 0.8);
+  border-right-color: rgb(115 119 173 / 0.8);
+}
+
+.border-x-php\/90 {
+  border-left-color: rgb(115 119 173 / 0.9);
+  border-right-color: rgb(115 119 173 / 0.9);
+}
+
+.border-x-php\/95 {
+  border-left-color: rgb(115 119 173 / 0.95);
+  border-right-color: rgb(115 119 173 / 0.95);
+}
+
+.border-x-ruby {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(224 17 95 / var(--tw-border-opacity));
+  border-right-color: rgb(224 17 95 / var(--tw-border-opacity));
+}
+
+.border-x-ruby\/0 {
+  border-left-color: rgb(224 17 95 / 0);
+  border-right-color: rgb(224 17 95 / 0);
+}
+
+.border-x-ruby\/10 {
+  border-left-color: rgb(224 17 95 / 0.1);
+  border-right-color: rgb(224 17 95 / 0.1);
+}
+
+.border-x-ruby\/100 {
+  border-left-color: rgb(224 17 95 / 1);
+  border-right-color: rgb(224 17 95 / 1);
+}
+
+.border-x-ruby\/20 {
+  border-left-color: rgb(224 17 95 / 0.2);
+  border-right-color: rgb(224 17 95 / 0.2);
+}
+
+.border-x-ruby\/25 {
+  border-left-color: rgb(224 17 95 / 0.25);
+  border-right-color: rgb(224 17 95 / 0.25);
+}
+
+.border-x-ruby\/30 {
+  border-left-color: rgb(224 17 95 / 0.3);
+  border-right-color: rgb(224 17 95 / 0.3);
+}
+
+.border-x-ruby\/40 {
+  border-left-color: rgb(224 17 95 / 0.4);
+  border-right-color: rgb(224 17 95 / 0.4);
+}
+
+.border-x-ruby\/5 {
+  border-left-color: rgb(224 17 95 / 0.05);
+  border-right-color: rgb(224 17 95 / 0.05);
+}
+
+.border-x-ruby\/50 {
+  border-left-color: rgb(224 17 95 / 0.5);
+  border-right-color: rgb(224 17 95 / 0.5);
+}
+
+.border-x-ruby\/60 {
+  border-left-color: rgb(224 17 95 / 0.6);
+  border-right-color: rgb(224 17 95 / 0.6);
+}
+
+.border-x-ruby\/70 {
+  border-left-color: rgb(224 17 95 / 0.7);
+  border-right-color: rgb(224 17 95 / 0.7);
+}
+
+.border-x-ruby\/75 {
+  border-left-color: rgb(224 17 95 / 0.75);
+  border-right-color: rgb(224 17 95 / 0.75);
+}
+
+.border-x-ruby\/80 {
+  border-left-color: rgb(224 17 95 / 0.8);
+  border-right-color: rgb(224 17 95 / 0.8);
+}
+
+.border-x-ruby\/90 {
+  border-left-color: rgb(224 17 95 / 0.9);
+  border-right-color: rgb(224 17 95 / 0.9);
+}
+
+.border-x-ruby\/95 {
+  border-left-color: rgb(224 17 95 / 0.95);
+  border-right-color: rgb(224 17 95 / 0.95);
+}
+
+.border-y-csharp {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(156 117 213 / var(--tw-border-opacity));
+  border-bottom-color: rgb(156 117 213 / var(--tw-border-opacity));
+}
+
+.border-y-csharp\/0 {
+  border-top-color: rgb(156 117 213 / 0);
+  border-bottom-color: rgb(156 117 213 / 0);
+}
+
+.border-y-csharp\/10 {
+  border-top-color: rgb(156 117 213 / 0.1);
+  border-bottom-color: rgb(156 117 213 / 0.1);
+}
+
+.border-y-csharp\/100 {
+  border-top-color: rgb(156 117 213 / 1);
+  border-bottom-color: rgb(156 117 213 / 1);
+}
+
+.border-y-csharp\/20 {
+  border-top-color: rgb(156 117 213 / 0.2);
+  border-bottom-color: rgb(156 117 213 / 0.2);
+}
+
+.border-y-csharp\/25 {
+  border-top-color: rgb(156 117 213 / 0.25);
+  border-bottom-color: rgb(156 117 213 / 0.25);
+}
+
+.border-y-csharp\/30 {
+  border-top-color: rgb(156 117 213 / 0.3);
+  border-bottom-color: rgb(156 117 213 / 0.3);
+}
+
+.border-y-csharp\/40 {
+  border-top-color: rgb(156 117 213 / 0.4);
+  border-bottom-color: rgb(156 117 213 / 0.4);
+}
+
+.border-y-csharp\/5 {
+  border-top-color: rgb(156 117 213 / 0.05);
+  border-bottom-color: rgb(156 117 213 / 0.05);
+}
+
+.border-y-csharp\/50 {
+  border-top-color: rgb(156 117 213 / 0.5);
+  border-bottom-color: rgb(156 117 213 / 0.5);
+}
+
+.border-y-csharp\/60 {
+  border-top-color: rgb(156 117 213 / 0.6);
+  border-bottom-color: rgb(156 117 213 / 0.6);
+}
+
+.border-y-csharp\/70 {
+  border-top-color: rgb(156 117 213 / 0.7);
+  border-bottom-color: rgb(156 117 213 / 0.7);
+}
+
+.border-y-csharp\/75 {
+  border-top-color: rgb(156 117 213 / 0.75);
+  border-bottom-color: rgb(156 117 213 / 0.75);
+}
+
+.border-y-csharp\/80 {
+  border-top-color: rgb(156 117 213 / 0.8);
+  border-bottom-color: rgb(156 117 213 / 0.8);
+}
+
+.border-y-csharp\/90 {
+  border-top-color: rgb(156 117 213 / 0.9);
+  border-bottom-color: rgb(156 117 213 / 0.9);
+}
+
+.border-y-csharp\/95 {
+  border-top-color: rgb(156 117 213 / 0.95);
+  border-bottom-color: rgb(156 117 213 / 0.95);
+}
+
+.border-y-java {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(80 126 156 / var(--tw-border-opacity));
+  border-bottom-color: rgb(80 126 156 / var(--tw-border-opacity));
+}
+
+.border-y-java\/0 {
+  border-top-color: rgb(80 126 156 / 0);
+  border-bottom-color: rgb(80 126 156 / 0);
+}
+
+.border-y-java\/10 {
+  border-top-color: rgb(80 126 156 / 0.1);
+  border-bottom-color: rgb(80 126 156 / 0.1);
+}
+
+.border-y-java\/100 {
+  border-top-color: rgb(80 126 156 / 1);
+  border-bottom-color: rgb(80 126 156 / 1);
+}
+
+.border-y-java\/20 {
+  border-top-color: rgb(80 126 156 / 0.2);
+  border-bottom-color: rgb(80 126 156 / 0.2);
+}
+
+.border-y-java\/25 {
+  border-top-color: rgb(80 126 156 / 0.25);
+  border-bottom-color: rgb(80 126 156 / 0.25);
+}
+
+.border-y-java\/30 {
+  border-top-color: rgb(80 126 156 / 0.3);
+  border-bottom-color: rgb(80 126 156 / 0.3);
+}
+
+.border-y-java\/40 {
+  border-top-color: rgb(80 126 156 / 0.4);
+  border-bottom-color: rgb(80 126 156 / 0.4);
+}
+
+.border-y-java\/5 {
+  border-top-color: rgb(80 126 156 / 0.05);
+  border-bottom-color: rgb(80 126 156 / 0.05);
+}
+
+.border-y-java\/50 {
+  border-top-color: rgb(80 126 156 / 0.5);
+  border-bottom-color: rgb(80 126 156 / 0.5);
+}
+
+.border-y-java\/60 {
+  border-top-color: rgb(80 126 156 / 0.6);
+  border-bottom-color: rgb(80 126 156 / 0.6);
+}
+
+.border-y-java\/70 {
+  border-top-color: rgb(80 126 156 / 0.7);
+  border-bottom-color: rgb(80 126 156 / 0.7);
+}
+
+.border-y-java\/75 {
+  border-top-color: rgb(80 126 156 / 0.75);
+  border-bottom-color: rgb(80 126 156 / 0.75);
+}
+
+.border-y-java\/80 {
+  border-top-color: rgb(80 126 156 / 0.8);
+  border-bottom-color: rgb(80 126 156 / 0.8);
+}
+
+.border-y-java\/90 {
+  border-top-color: rgb(80 126 156 / 0.9);
+  border-bottom-color: rgb(80 126 156 / 0.9);
+}
+
+.border-y-java\/95 {
+  border-top-color: rgb(80 126 156 / 0.95);
+  border-bottom-color: rgb(80 126 156 / 0.95);
+}
+
+.border-y-mysql {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(221 138 0 / var(--tw-border-opacity));
+  border-bottom-color: rgb(221 138 0 / var(--tw-border-opacity));
+}
+
+.border-y-mysql\/0 {
+  border-top-color: rgb(221 138 0 / 0);
+  border-bottom-color: rgb(221 138 0 / 0);
+}
+
+.border-y-mysql\/10 {
+  border-top-color: rgb(221 138 0 / 0.1);
+  border-bottom-color: rgb(221 138 0 / 0.1);
+}
+
+.border-y-mysql\/100 {
+  border-top-color: rgb(221 138 0 / 1);
+  border-bottom-color: rgb(221 138 0 / 1);
+}
+
+.border-y-mysql\/20 {
+  border-top-color: rgb(221 138 0 / 0.2);
+  border-bottom-color: rgb(221 138 0 / 0.2);
+}
+
+.border-y-mysql\/25 {
+  border-top-color: rgb(221 138 0 / 0.25);
+  border-bottom-color: rgb(221 138 0 / 0.25);
+}
+
+.border-y-mysql\/30 {
+  border-top-color: rgb(221 138 0 / 0.3);
+  border-bottom-color: rgb(221 138 0 / 0.3);
+}
+
+.border-y-mysql\/40 {
+  border-top-color: rgb(221 138 0 / 0.4);
+  border-bottom-color: rgb(221 138 0 / 0.4);
+}
+
+.border-y-mysql\/5 {
+  border-top-color: rgb(221 138 0 / 0.05);
+  border-bottom-color: rgb(221 138 0 / 0.05);
+}
+
+.border-y-mysql\/50 {
+  border-top-color: rgb(221 138 0 / 0.5);
+  border-bottom-color: rgb(221 138 0 / 0.5);
+}
+
+.border-y-mysql\/60 {
+  border-top-color: rgb(221 138 0 / 0.6);
+  border-bottom-color: rgb(221 138 0 / 0.6);
+}
+
+.border-y-mysql\/70 {
+  border-top-color: rgb(221 138 0 / 0.7);
+  border-bottom-color: rgb(221 138 0 / 0.7);
+}
+
+.border-y-mysql\/75 {
+  border-top-color: rgb(221 138 0 / 0.75);
+  border-bottom-color: rgb(221 138 0 / 0.75);
+}
+
+.border-y-mysql\/80 {
+  border-top-color: rgb(221 138 0 / 0.8);
+  border-bottom-color: rgb(221 138 0 / 0.8);
+}
+
+.border-y-mysql\/90 {
+  border-top-color: rgb(221 138 0 / 0.9);
+  border-bottom-color: rgb(221 138 0 / 0.9);
+}
+
+.border-y-mysql\/95 {
+  border-top-color: rgb(221 138 0 / 0.95);
+  border-bottom-color: rgb(221 138 0 / 0.95);
+}
+
+.border-y-php {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(115 119 173 / var(--tw-border-opacity));
+  border-bottom-color: rgb(115 119 173 / var(--tw-border-opacity));
+}
+
+.border-y-php\/0 {
+  border-top-color: rgb(115 119 173 / 0);
+  border-bottom-color: rgb(115 119 173 / 0);
+}
+
+.border-y-php\/10 {
+  border-top-color: rgb(115 119 173 / 0.1);
+  border-bottom-color: rgb(115 119 173 / 0.1);
+}
+
+.border-y-php\/100 {
+  border-top-color: rgb(115 119 173 / 1);
+  border-bottom-color: rgb(115 119 173 / 1);
+}
+
+.border-y-php\/20 {
+  border-top-color: rgb(115 119 173 / 0.2);
+  border-bottom-color: rgb(115 119 173 / 0.2);
+}
+
+.border-y-php\/25 {
+  border-top-color: rgb(115 119 173 / 0.25);
+  border-bottom-color: rgb(115 119 173 / 0.25);
+}
+
+.border-y-php\/30 {
+  border-top-color: rgb(115 119 173 / 0.3);
+  border-bottom-color: rgb(115 119 173 / 0.3);
+}
+
+.border-y-php\/40 {
+  border-top-color: rgb(115 119 173 / 0.4);
+  border-bottom-color: rgb(115 119 173 / 0.4);
+}
+
+.border-y-php\/5 {
+  border-top-color: rgb(115 119 173 / 0.05);
+  border-bottom-color: rgb(115 119 173 / 0.05);
+}
+
+.border-y-php\/50 {
+  border-top-color: rgb(115 119 173 / 0.5);
+  border-bottom-color: rgb(115 119 173 / 0.5);
+}
+
+.border-y-php\/60 {
+  border-top-color: rgb(115 119 173 / 0.6);
+  border-bottom-color: rgb(115 119 173 / 0.6);
+}
+
+.border-y-php\/70 {
+  border-top-color: rgb(115 119 173 / 0.7);
+  border-bottom-color: rgb(115 119 173 / 0.7);
+}
+
+.border-y-php\/75 {
+  border-top-color: rgb(115 119 173 / 0.75);
+  border-bottom-color: rgb(115 119 173 / 0.75);
+}
+
+.border-y-php\/80 {
+  border-top-color: rgb(115 119 173 / 0.8);
+  border-bottom-color: rgb(115 119 173 / 0.8);
+}
+
+.border-y-php\/90 {
+  border-top-color: rgb(115 119 173 / 0.9);
+  border-bottom-color: rgb(115 119 173 / 0.9);
+}
+
+.border-y-php\/95 {
+  border-top-color: rgb(115 119 173 / 0.95);
+  border-bottom-color: rgb(115 119 173 / 0.95);
+}
+
+.border-y-ruby {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(224 17 95 / var(--tw-border-opacity));
+  border-bottom-color: rgb(224 17 95 / var(--tw-border-opacity));
+}
+
+.border-y-ruby\/0 {
+  border-top-color: rgb(224 17 95 / 0);
+  border-bottom-color: rgb(224 17 95 / 0);
+}
+
+.border-y-ruby\/10 {
+  border-top-color: rgb(224 17 95 / 0.1);
+  border-bottom-color: rgb(224 17 95 / 0.1);
+}
+
+.border-y-ruby\/100 {
+  border-top-color: rgb(224 17 95 / 1);
+  border-bottom-color: rgb(224 17 95 / 1);
+}
+
+.border-y-ruby\/20 {
+  border-top-color: rgb(224 17 95 / 0.2);
+  border-bottom-color: rgb(224 17 95 / 0.2);
+}
+
+.border-y-ruby\/25 {
+  border-top-color: rgb(224 17 95 / 0.25);
+  border-bottom-color: rgb(224 17 95 / 0.25);
+}
+
+.border-y-ruby\/30 {
+  border-top-color: rgb(224 17 95 / 0.3);
+  border-bottom-color: rgb(224 17 95 / 0.3);
+}
+
+.border-y-ruby\/40 {
+  border-top-color: rgb(224 17 95 / 0.4);
+  border-bottom-color: rgb(224 17 95 / 0.4);
+}
+
+.border-y-ruby\/5 {
+  border-top-color: rgb(224 17 95 / 0.05);
+  border-bottom-color: rgb(224 17 95 / 0.05);
+}
+
+.border-y-ruby\/50 {
+  border-top-color: rgb(224 17 95 / 0.5);
+  border-bottom-color: rgb(224 17 95 / 0.5);
+}
+
+.border-y-ruby\/60 {
+  border-top-color: rgb(224 17 95 / 0.6);
+  border-bottom-color: rgb(224 17 95 / 0.6);
+}
+
+.border-y-ruby\/70 {
+  border-top-color: rgb(224 17 95 / 0.7);
+  border-bottom-color: rgb(224 17 95 / 0.7);
+}
+
+.border-y-ruby\/75 {
+  border-top-color: rgb(224 17 95 / 0.75);
+  border-bottom-color: rgb(224 17 95 / 0.75);
+}
+
+.border-y-ruby\/80 {
+  border-top-color: rgb(224 17 95 / 0.8);
+  border-bottom-color: rgb(224 17 95 / 0.8);
+}
+
+.border-y-ruby\/90 {
+  border-top-color: rgb(224 17 95 / 0.9);
+  border-bottom-color: rgb(224 17 95 / 0.9);
+}
+
+.border-y-ruby\/95 {
+  border-top-color: rgb(224 17 95 / 0.95);
+  border-bottom-color: rgb(224 17 95 / 0.95);
+}
+
+.border-b-csharp {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(156 117 213 / var(--tw-border-opacity));
+}
+
+.border-b-csharp\/0 {
+  border-bottom-color: rgb(156 117 213 / 0);
+}
+
+.border-b-csharp\/10 {
+  border-bottom-color: rgb(156 117 213 / 0.1);
+}
+
+.border-b-csharp\/100 {
+  border-bottom-color: rgb(156 117 213 / 1);
+}
+
+.border-b-csharp\/20 {
+  border-bottom-color: rgb(156 117 213 / 0.2);
+}
+
+.border-b-csharp\/25 {
+  border-bottom-color: rgb(156 117 213 / 0.25);
+}
+
+.border-b-csharp\/30 {
+  border-bottom-color: rgb(156 117 213 / 0.3);
+}
+
+.border-b-csharp\/40 {
+  border-bottom-color: rgb(156 117 213 / 0.4);
+}
+
+.border-b-csharp\/5 {
+  border-bottom-color: rgb(156 117 213 / 0.05);
+}
+
+.border-b-csharp\/50 {
+  border-bottom-color: rgb(156 117 213 / 0.5);
+}
+
+.border-b-csharp\/60 {
+  border-bottom-color: rgb(156 117 213 / 0.6);
+}
+
+.border-b-csharp\/70 {
+  border-bottom-color: rgb(156 117 213 / 0.7);
+}
+
+.border-b-csharp\/75 {
+  border-bottom-color: rgb(156 117 213 / 0.75);
+}
+
+.border-b-csharp\/80 {
+  border-bottom-color: rgb(156 117 213 / 0.8);
+}
+
+.border-b-csharp\/90 {
+  border-bottom-color: rgb(156 117 213 / 0.9);
+}
+
+.border-b-csharp\/95 {
+  border-bottom-color: rgb(156 117 213 / 0.95);
+}
+
+.border-b-java {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(80 126 156 / var(--tw-border-opacity));
+}
+
+.border-b-java\/0 {
+  border-bottom-color: rgb(80 126 156 / 0);
+}
+
+.border-b-java\/10 {
+  border-bottom-color: rgb(80 126 156 / 0.1);
+}
+
+.border-b-java\/100 {
+  border-bottom-color: rgb(80 126 156 / 1);
+}
+
+.border-b-java\/20 {
+  border-bottom-color: rgb(80 126 156 / 0.2);
+}
+
+.border-b-java\/25 {
+  border-bottom-color: rgb(80 126 156 / 0.25);
+}
+
+.border-b-java\/30 {
+  border-bottom-color: rgb(80 126 156 / 0.3);
+}
+
+.border-b-java\/40 {
+  border-bottom-color: rgb(80 126 156 / 0.4);
+}
+
+.border-b-java\/5 {
+  border-bottom-color: rgb(80 126 156 / 0.05);
+}
+
+.border-b-java\/50 {
+  border-bottom-color: rgb(80 126 156 / 0.5);
+}
+
+.border-b-java\/60 {
+  border-bottom-color: rgb(80 126 156 / 0.6);
+}
+
+.border-b-java\/70 {
+  border-bottom-color: rgb(80 126 156 / 0.7);
+}
+
+.border-b-java\/75 {
+  border-bottom-color: rgb(80 126 156 / 0.75);
+}
+
+.border-b-java\/80 {
+  border-bottom-color: rgb(80 126 156 / 0.8);
+}
+
+.border-b-java\/90 {
+  border-bottom-color: rgb(80 126 156 / 0.9);
+}
+
+.border-b-java\/95 {
+  border-bottom-color: rgb(80 126 156 / 0.95);
+}
+
+.border-b-mysql {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(221 138 0 / var(--tw-border-opacity));
+}
+
+.border-b-mysql\/0 {
+  border-bottom-color: rgb(221 138 0 / 0);
+}
+
+.border-b-mysql\/10 {
+  border-bottom-color: rgb(221 138 0 / 0.1);
+}
+
+.border-b-mysql\/100 {
+  border-bottom-color: rgb(221 138 0 / 1);
+}
+
+.border-b-mysql\/20 {
+  border-bottom-color: rgb(221 138 0 / 0.2);
+}
+
+.border-b-mysql\/25 {
+  border-bottom-color: rgb(221 138 0 / 0.25);
+}
+
+.border-b-mysql\/30 {
+  border-bottom-color: rgb(221 138 0 / 0.3);
+}
+
+.border-b-mysql\/40 {
+  border-bottom-color: rgb(221 138 0 / 0.4);
+}
+
+.border-b-mysql\/5 {
+  border-bottom-color: rgb(221 138 0 / 0.05);
+}
+
+.border-b-mysql\/50 {
+  border-bottom-color: rgb(221 138 0 / 0.5);
+}
+
+.border-b-mysql\/60 {
+  border-bottom-color: rgb(221 138 0 / 0.6);
+}
+
+.border-b-mysql\/70 {
+  border-bottom-color: rgb(221 138 0 / 0.7);
+}
+
+.border-b-mysql\/75 {
+  border-bottom-color: rgb(221 138 0 / 0.75);
+}
+
+.border-b-mysql\/80 {
+  border-bottom-color: rgb(221 138 0 / 0.8);
+}
+
+.border-b-mysql\/90 {
+  border-bottom-color: rgb(221 138 0 / 0.9);
+}
+
+.border-b-mysql\/95 {
+  border-bottom-color: rgb(221 138 0 / 0.95);
+}
+
+.border-b-php {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(115 119 173 / var(--tw-border-opacity));
+}
+
+.border-b-php\/0 {
+  border-bottom-color: rgb(115 119 173 / 0);
+}
+
+.border-b-php\/10 {
+  border-bottom-color: rgb(115 119 173 / 0.1);
+}
+
+.border-b-php\/100 {
+  border-bottom-color: rgb(115 119 173 / 1);
+}
+
+.border-b-php\/20 {
+  border-bottom-color: rgb(115 119 173 / 0.2);
+}
+
+.border-b-php\/25 {
+  border-bottom-color: rgb(115 119 173 / 0.25);
+}
+
+.border-b-php\/30 {
+  border-bottom-color: rgb(115 119 173 / 0.3);
+}
+
+.border-b-php\/40 {
+  border-bottom-color: rgb(115 119 173 / 0.4);
+}
+
+.border-b-php\/5 {
+  border-bottom-color: rgb(115 119 173 / 0.05);
+}
+
+.border-b-php\/50 {
+  border-bottom-color: rgb(115 119 173 / 0.5);
+}
+
+.border-b-php\/60 {
+  border-bottom-color: rgb(115 119 173 / 0.6);
+}
+
+.border-b-php\/70 {
+  border-bottom-color: rgb(115 119 173 / 0.7);
+}
+
+.border-b-php\/75 {
+  border-bottom-color: rgb(115 119 173 / 0.75);
+}
+
+.border-b-php\/80 {
+  border-bottom-color: rgb(115 119 173 / 0.8);
+}
+
+.border-b-php\/90 {
+  border-bottom-color: rgb(115 119 173 / 0.9);
+}
+
+.border-b-php\/95 {
+  border-bottom-color: rgb(115 119 173 / 0.95);
+}
+
+.border-b-ruby {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(224 17 95 / var(--tw-border-opacity));
+}
+
+.border-b-ruby\/0 {
+  border-bottom-color: rgb(224 17 95 / 0);
+}
+
+.border-b-ruby\/10 {
+  border-bottom-color: rgb(224 17 95 / 0.1);
+}
+
+.border-b-ruby\/100 {
+  border-bottom-color: rgb(224 17 95 / 1);
+}
+
+.border-b-ruby\/20 {
+  border-bottom-color: rgb(224 17 95 / 0.2);
+}
+
+.border-b-ruby\/25 {
+  border-bottom-color: rgb(224 17 95 / 0.25);
+}
+
+.border-b-ruby\/30 {
+  border-bottom-color: rgb(224 17 95 / 0.3);
+}
+
+.border-b-ruby\/40 {
+  border-bottom-color: rgb(224 17 95 / 0.4);
+}
+
+.border-b-ruby\/5 {
+  border-bottom-color: rgb(224 17 95 / 0.05);
+}
+
+.border-b-ruby\/50 {
+  border-bottom-color: rgb(224 17 95 / 0.5);
+}
+
+.border-b-ruby\/60 {
+  border-bottom-color: rgb(224 17 95 / 0.6);
+}
+
+.border-b-ruby\/70 {
+  border-bottom-color: rgb(224 17 95 / 0.7);
+}
+
+.border-b-ruby\/75 {
+  border-bottom-color: rgb(224 17 95 / 0.75);
+}
+
+.border-b-ruby\/80 {
+  border-bottom-color: rgb(224 17 95 / 0.8);
+}
+
+.border-b-ruby\/90 {
+  border-bottom-color: rgb(224 17 95 / 0.9);
+}
+
+.border-b-ruby\/95 {
+  border-bottom-color: rgb(224 17 95 / 0.95);
+}
+
+.border-l-csharp {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(156 117 213 / var(--tw-border-opacity));
+}
+
+.border-l-csharp\/0 {
+  border-left-color: rgb(156 117 213 / 0);
+}
+
+.border-l-csharp\/10 {
+  border-left-color: rgb(156 117 213 / 0.1);
+}
+
+.border-l-csharp\/100 {
+  border-left-color: rgb(156 117 213 / 1);
+}
+
+.border-l-csharp\/20 {
+  border-left-color: rgb(156 117 213 / 0.2);
+}
+
+.border-l-csharp\/25 {
+  border-left-color: rgb(156 117 213 / 0.25);
+}
+
+.border-l-csharp\/30 {
+  border-left-color: rgb(156 117 213 / 0.3);
+}
+
+.border-l-csharp\/40 {
+  border-left-color: rgb(156 117 213 / 0.4);
+}
+
+.border-l-csharp\/5 {
+  border-left-color: rgb(156 117 213 / 0.05);
+}
+
+.border-l-csharp\/50 {
+  border-left-color: rgb(156 117 213 / 0.5);
+}
+
+.border-l-csharp\/60 {
+  border-left-color: rgb(156 117 213 / 0.6);
+}
+
+.border-l-csharp\/70 {
+  border-left-color: rgb(156 117 213 / 0.7);
+}
+
+.border-l-csharp\/75 {
+  border-left-color: rgb(156 117 213 / 0.75);
+}
+
+.border-l-csharp\/80 {
+  border-left-color: rgb(156 117 213 / 0.8);
+}
+
+.border-l-csharp\/90 {
+  border-left-color: rgb(156 117 213 / 0.9);
+}
+
+.border-l-csharp\/95 {
+  border-left-color: rgb(156 117 213 / 0.95);
+}
+
+.border-l-java {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(80 126 156 / var(--tw-border-opacity));
+}
+
+.border-l-java\/0 {
+  border-left-color: rgb(80 126 156 / 0);
+}
+
+.border-l-java\/10 {
+  border-left-color: rgb(80 126 156 / 0.1);
+}
+
+.border-l-java\/100 {
+  border-left-color: rgb(80 126 156 / 1);
+}
+
+.border-l-java\/20 {
+  border-left-color: rgb(80 126 156 / 0.2);
+}
+
+.border-l-java\/25 {
+  border-left-color: rgb(80 126 156 / 0.25);
+}
+
+.border-l-java\/30 {
+  border-left-color: rgb(80 126 156 / 0.3);
+}
+
+.border-l-java\/40 {
+  border-left-color: rgb(80 126 156 / 0.4);
+}
+
+.border-l-java\/5 {
+  border-left-color: rgb(80 126 156 / 0.05);
+}
+
+.border-l-java\/50 {
+  border-left-color: rgb(80 126 156 / 0.5);
+}
+
+.border-l-java\/60 {
+  border-left-color: rgb(80 126 156 / 0.6);
+}
+
+.border-l-java\/70 {
+  border-left-color: rgb(80 126 156 / 0.7);
+}
+
+.border-l-java\/75 {
+  border-left-color: rgb(80 126 156 / 0.75);
+}
+
+.border-l-java\/80 {
+  border-left-color: rgb(80 126 156 / 0.8);
+}
+
+.border-l-java\/90 {
+  border-left-color: rgb(80 126 156 / 0.9);
+}
+
+.border-l-java\/95 {
+  border-left-color: rgb(80 126 156 / 0.95);
+}
+
+.border-l-mysql {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(221 138 0 / var(--tw-border-opacity));
+}
+
+.border-l-mysql\/0 {
+  border-left-color: rgb(221 138 0 / 0);
+}
+
+.border-l-mysql\/10 {
+  border-left-color: rgb(221 138 0 / 0.1);
+}
+
+.border-l-mysql\/100 {
+  border-left-color: rgb(221 138 0 / 1);
+}
+
+.border-l-mysql\/20 {
+  border-left-color: rgb(221 138 0 / 0.2);
+}
+
+.border-l-mysql\/25 {
+  border-left-color: rgb(221 138 0 / 0.25);
+}
+
+.border-l-mysql\/30 {
+  border-left-color: rgb(221 138 0 / 0.3);
+}
+
+.border-l-mysql\/40 {
+  border-left-color: rgb(221 138 0 / 0.4);
+}
+
+.border-l-mysql\/5 {
+  border-left-color: rgb(221 138 0 / 0.05);
+}
+
+.border-l-mysql\/50 {
+  border-left-color: rgb(221 138 0 / 0.5);
+}
+
+.border-l-mysql\/60 {
+  border-left-color: rgb(221 138 0 / 0.6);
+}
+
+.border-l-mysql\/70 {
+  border-left-color: rgb(221 138 0 / 0.7);
+}
+
+.border-l-mysql\/75 {
+  border-left-color: rgb(221 138 0 / 0.75);
+}
+
+.border-l-mysql\/80 {
+  border-left-color: rgb(221 138 0 / 0.8);
+}
+
+.border-l-mysql\/90 {
+  border-left-color: rgb(221 138 0 / 0.9);
+}
+
+.border-l-mysql\/95 {
+  border-left-color: rgb(221 138 0 / 0.95);
+}
+
+.border-l-php {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(115 119 173 / var(--tw-border-opacity));
+}
+
+.border-l-php\/0 {
+  border-left-color: rgb(115 119 173 / 0);
+}
+
+.border-l-php\/10 {
+  border-left-color: rgb(115 119 173 / 0.1);
+}
+
+.border-l-php\/100 {
+  border-left-color: rgb(115 119 173 / 1);
+}
+
+.border-l-php\/20 {
+  border-left-color: rgb(115 119 173 / 0.2);
+}
+
+.border-l-php\/25 {
+  border-left-color: rgb(115 119 173 / 0.25);
+}
+
+.border-l-php\/30 {
+  border-left-color: rgb(115 119 173 / 0.3);
+}
+
+.border-l-php\/40 {
+  border-left-color: rgb(115 119 173 / 0.4);
+}
+
+.border-l-php\/5 {
+  border-left-color: rgb(115 119 173 / 0.05);
+}
+
+.border-l-php\/50 {
+  border-left-color: rgb(115 119 173 / 0.5);
+}
+
+.border-l-php\/60 {
+  border-left-color: rgb(115 119 173 / 0.6);
+}
+
+.border-l-php\/70 {
+  border-left-color: rgb(115 119 173 / 0.7);
+}
+
+.border-l-php\/75 {
+  border-left-color: rgb(115 119 173 / 0.75);
+}
+
+.border-l-php\/80 {
+  border-left-color: rgb(115 119 173 / 0.8);
+}
+
+.border-l-php\/90 {
+  border-left-color: rgb(115 119 173 / 0.9);
+}
+
+.border-l-php\/95 {
+  border-left-color: rgb(115 119 173 / 0.95);
+}
+
+.border-l-ruby {
+  --tw-border-opacity: 1;
+  border-left-color: rgb(224 17 95 / var(--tw-border-opacity));
+}
+
+.border-l-ruby\/0 {
+  border-left-color: rgb(224 17 95 / 0);
+}
+
+.border-l-ruby\/10 {
+  border-left-color: rgb(224 17 95 / 0.1);
+}
+
+.border-l-ruby\/100 {
+  border-left-color: rgb(224 17 95 / 1);
+}
+
+.border-l-ruby\/20 {
+  border-left-color: rgb(224 17 95 / 0.2);
+}
+
+.border-l-ruby\/25 {
+  border-left-color: rgb(224 17 95 / 0.25);
+}
+
+.border-l-ruby\/30 {
+  border-left-color: rgb(224 17 95 / 0.3);
+}
+
+.border-l-ruby\/40 {
+  border-left-color: rgb(224 17 95 / 0.4);
+}
+
+.border-l-ruby\/5 {
+  border-left-color: rgb(224 17 95 / 0.05);
+}
+
+.border-l-ruby\/50 {
+  border-left-color: rgb(224 17 95 / 0.5);
+}
+
+.border-l-ruby\/60 {
+  border-left-color: rgb(224 17 95 / 0.6);
+}
+
+.border-l-ruby\/70 {
+  border-left-color: rgb(224 17 95 / 0.7);
+}
+
+.border-l-ruby\/75 {
+  border-left-color: rgb(224 17 95 / 0.75);
+}
+
+.border-l-ruby\/80 {
+  border-left-color: rgb(224 17 95 / 0.8);
+}
+
+.border-l-ruby\/90 {
+  border-left-color: rgb(224 17 95 / 0.9);
+}
+
+.border-l-ruby\/95 {
+  border-left-color: rgb(224 17 95 / 0.95);
+}
+
+.border-r-csharp {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(156 117 213 / var(--tw-border-opacity));
+}
+
+.border-r-csharp\/0 {
+  border-right-color: rgb(156 117 213 / 0);
+}
+
+.border-r-csharp\/10 {
+  border-right-color: rgb(156 117 213 / 0.1);
+}
+
+.border-r-csharp\/100 {
+  border-right-color: rgb(156 117 213 / 1);
+}
+
+.border-r-csharp\/20 {
+  border-right-color: rgb(156 117 213 / 0.2);
+}
+
+.border-r-csharp\/25 {
+  border-right-color: rgb(156 117 213 / 0.25);
+}
+
+.border-r-csharp\/30 {
+  border-right-color: rgb(156 117 213 / 0.3);
+}
+
+.border-r-csharp\/40 {
+  border-right-color: rgb(156 117 213 / 0.4);
+}
+
+.border-r-csharp\/5 {
+  border-right-color: rgb(156 117 213 / 0.05);
+}
+
+.border-r-csharp\/50 {
+  border-right-color: rgb(156 117 213 / 0.5);
+}
+
+.border-r-csharp\/60 {
+  border-right-color: rgb(156 117 213 / 0.6);
+}
+
+.border-r-csharp\/70 {
+  border-right-color: rgb(156 117 213 / 0.7);
+}
+
+.border-r-csharp\/75 {
+  border-right-color: rgb(156 117 213 / 0.75);
+}
+
+.border-r-csharp\/80 {
+  border-right-color: rgb(156 117 213 / 0.8);
+}
+
+.border-r-csharp\/90 {
+  border-right-color: rgb(156 117 213 / 0.9);
+}
+
+.border-r-csharp\/95 {
+  border-right-color: rgb(156 117 213 / 0.95);
+}
+
+.border-r-java {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(80 126 156 / var(--tw-border-opacity));
+}
+
+.border-r-java\/0 {
+  border-right-color: rgb(80 126 156 / 0);
+}
+
+.border-r-java\/10 {
+  border-right-color: rgb(80 126 156 / 0.1);
+}
+
+.border-r-java\/100 {
+  border-right-color: rgb(80 126 156 / 1);
+}
+
+.border-r-java\/20 {
+  border-right-color: rgb(80 126 156 / 0.2);
+}
+
+.border-r-java\/25 {
+  border-right-color: rgb(80 126 156 / 0.25);
+}
+
+.border-r-java\/30 {
+  border-right-color: rgb(80 126 156 / 0.3);
+}
+
+.border-r-java\/40 {
+  border-right-color: rgb(80 126 156 / 0.4);
+}
+
+.border-r-java\/5 {
+  border-right-color: rgb(80 126 156 / 0.05);
+}
+
+.border-r-java\/50 {
+  border-right-color: rgb(80 126 156 / 0.5);
+}
+
+.border-r-java\/60 {
+  border-right-color: rgb(80 126 156 / 0.6);
+}
+
+.border-r-java\/70 {
+  border-right-color: rgb(80 126 156 / 0.7);
+}
+
+.border-r-java\/75 {
+  border-right-color: rgb(80 126 156 / 0.75);
+}
+
+.border-r-java\/80 {
+  border-right-color: rgb(80 126 156 / 0.8);
+}
+
+.border-r-java\/90 {
+  border-right-color: rgb(80 126 156 / 0.9);
+}
+
+.border-r-java\/95 {
+  border-right-color: rgb(80 126 156 / 0.95);
+}
+
+.border-r-mysql {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(221 138 0 / var(--tw-border-opacity));
+}
+
+.border-r-mysql\/0 {
+  border-right-color: rgb(221 138 0 / 0);
+}
+
+.border-r-mysql\/10 {
+  border-right-color: rgb(221 138 0 / 0.1);
+}
+
+.border-r-mysql\/100 {
+  border-right-color: rgb(221 138 0 / 1);
+}
+
+.border-r-mysql\/20 {
+  border-right-color: rgb(221 138 0 / 0.2);
+}
+
+.border-r-mysql\/25 {
+  border-right-color: rgb(221 138 0 / 0.25);
+}
+
+.border-r-mysql\/30 {
+  border-right-color: rgb(221 138 0 / 0.3);
+}
+
+.border-r-mysql\/40 {
+  border-right-color: rgb(221 138 0 / 0.4);
+}
+
+.border-r-mysql\/5 {
+  border-right-color: rgb(221 138 0 / 0.05);
+}
+
+.border-r-mysql\/50 {
+  border-right-color: rgb(221 138 0 / 0.5);
+}
+
+.border-r-mysql\/60 {
+  border-right-color: rgb(221 138 0 / 0.6);
+}
+
+.border-r-mysql\/70 {
+  border-right-color: rgb(221 138 0 / 0.7);
+}
+
+.border-r-mysql\/75 {
+  border-right-color: rgb(221 138 0 / 0.75);
+}
+
+.border-r-mysql\/80 {
+  border-right-color: rgb(221 138 0 / 0.8);
+}
+
+.border-r-mysql\/90 {
+  border-right-color: rgb(221 138 0 / 0.9);
+}
+
+.border-r-mysql\/95 {
+  border-right-color: rgb(221 138 0 / 0.95);
+}
+
+.border-r-php {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(115 119 173 / var(--tw-border-opacity));
+}
+
+.border-r-php\/0 {
+  border-right-color: rgb(115 119 173 / 0);
+}
+
+.border-r-php\/10 {
+  border-right-color: rgb(115 119 173 / 0.1);
+}
+
+.border-r-php\/100 {
+  border-right-color: rgb(115 119 173 / 1);
+}
+
+.border-r-php\/20 {
+  border-right-color: rgb(115 119 173 / 0.2);
+}
+
+.border-r-php\/25 {
+  border-right-color: rgb(115 119 173 / 0.25);
+}
+
+.border-r-php\/30 {
+  border-right-color: rgb(115 119 173 / 0.3);
+}
+
+.border-r-php\/40 {
+  border-right-color: rgb(115 119 173 / 0.4);
+}
+
+.border-r-php\/5 {
+  border-right-color: rgb(115 119 173 / 0.05);
+}
+
+.border-r-php\/50 {
+  border-right-color: rgb(115 119 173 / 0.5);
+}
+
+.border-r-php\/60 {
+  border-right-color: rgb(115 119 173 / 0.6);
+}
+
+.border-r-php\/70 {
+  border-right-color: rgb(115 119 173 / 0.7);
+}
+
+.border-r-php\/75 {
+  border-right-color: rgb(115 119 173 / 0.75);
+}
+
+.border-r-php\/80 {
+  border-right-color: rgb(115 119 173 / 0.8);
+}
+
+.border-r-php\/90 {
+  border-right-color: rgb(115 119 173 / 0.9);
+}
+
+.border-r-php\/95 {
+  border-right-color: rgb(115 119 173 / 0.95);
+}
+
+.border-r-ruby {
+  --tw-border-opacity: 1;
+  border-right-color: rgb(224 17 95 / var(--tw-border-opacity));
+}
+
+.border-r-ruby\/0 {
+  border-right-color: rgb(224 17 95 / 0);
+}
+
+.border-r-ruby\/10 {
+  border-right-color: rgb(224 17 95 / 0.1);
+}
+
+.border-r-ruby\/100 {
+  border-right-color: rgb(224 17 95 / 1);
+}
+
+.border-r-ruby\/20 {
+  border-right-color: rgb(224 17 95 / 0.2);
+}
+
+.border-r-ruby\/25 {
+  border-right-color: rgb(224 17 95 / 0.25);
+}
+
+.border-r-ruby\/30 {
+  border-right-color: rgb(224 17 95 / 0.3);
+}
+
+.border-r-ruby\/40 {
+  border-right-color: rgb(224 17 95 / 0.4);
+}
+
+.border-r-ruby\/5 {
+  border-right-color: rgb(224 17 95 / 0.05);
+}
+
+.border-r-ruby\/50 {
+  border-right-color: rgb(224 17 95 / 0.5);
+}
+
+.border-r-ruby\/60 {
+  border-right-color: rgb(224 17 95 / 0.6);
+}
+
+.border-r-ruby\/70 {
+  border-right-color: rgb(224 17 95 / 0.7);
+}
+
+.border-r-ruby\/75 {
+  border-right-color: rgb(224 17 95 / 0.75);
+}
+
+.border-r-ruby\/80 {
+  border-right-color: rgb(224 17 95 / 0.8);
+}
+
+.border-r-ruby\/90 {
+  border-right-color: rgb(224 17 95 / 0.9);
+}
+
+.border-r-ruby\/95 {
+  border-right-color: rgb(224 17 95 / 0.95);
+}
+
+.border-t-csharp {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(156 117 213 / var(--tw-border-opacity));
+}
+
+.border-t-csharp\/0 {
+  border-top-color: rgb(156 117 213 / 0);
+}
+
+.border-t-csharp\/10 {
+  border-top-color: rgb(156 117 213 / 0.1);
+}
+
+.border-t-csharp\/100 {
+  border-top-color: rgb(156 117 213 / 1);
+}
+
+.border-t-csharp\/20 {
+  border-top-color: rgb(156 117 213 / 0.2);
+}
+
+.border-t-csharp\/25 {
+  border-top-color: rgb(156 117 213 / 0.25);
+}
+
+.border-t-csharp\/30 {
+  border-top-color: rgb(156 117 213 / 0.3);
+}
+
+.border-t-csharp\/40 {
+  border-top-color: rgb(156 117 213 / 0.4);
+}
+
+.border-t-csharp\/5 {
+  border-top-color: rgb(156 117 213 / 0.05);
+}
+
+.border-t-csharp\/50 {
+  border-top-color: rgb(156 117 213 / 0.5);
+}
+
+.border-t-csharp\/60 {
+  border-top-color: rgb(156 117 213 / 0.6);
+}
+
+.border-t-csharp\/70 {
+  border-top-color: rgb(156 117 213 / 0.7);
+}
+
+.border-t-csharp\/75 {
+  border-top-color: rgb(156 117 213 / 0.75);
+}
+
+.border-t-csharp\/80 {
+  border-top-color: rgb(156 117 213 / 0.8);
+}
+
+.border-t-csharp\/90 {
+  border-top-color: rgb(156 117 213 / 0.9);
+}
+
+.border-t-csharp\/95 {
+  border-top-color: rgb(156 117 213 / 0.95);
+}
+
+.border-t-java {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(80 126 156 / var(--tw-border-opacity));
+}
+
+.border-t-java\/0 {
+  border-top-color: rgb(80 126 156 / 0);
+}
+
+.border-t-java\/10 {
+  border-top-color: rgb(80 126 156 / 0.1);
+}
+
+.border-t-java\/100 {
+  border-top-color: rgb(80 126 156 / 1);
+}
+
+.border-t-java\/20 {
+  border-top-color: rgb(80 126 156 / 0.2);
+}
+
+.border-t-java\/25 {
+  border-top-color: rgb(80 126 156 / 0.25);
+}
+
+.border-t-java\/30 {
+  border-top-color: rgb(80 126 156 / 0.3);
+}
+
+.border-t-java\/40 {
+  border-top-color: rgb(80 126 156 / 0.4);
+}
+
+.border-t-java\/5 {
+  border-top-color: rgb(80 126 156 / 0.05);
+}
+
+.border-t-java\/50 {
+  border-top-color: rgb(80 126 156 / 0.5);
+}
+
+.border-t-java\/60 {
+  border-top-color: rgb(80 126 156 / 0.6);
+}
+
+.border-t-java\/70 {
+  border-top-color: rgb(80 126 156 / 0.7);
+}
+
+.border-t-java\/75 {
+  border-top-color: rgb(80 126 156 / 0.75);
+}
+
+.border-t-java\/80 {
+  border-top-color: rgb(80 126 156 / 0.8);
+}
+
+.border-t-java\/90 {
+  border-top-color: rgb(80 126 156 / 0.9);
+}
+
+.border-t-java\/95 {
+  border-top-color: rgb(80 126 156 / 0.95);
+}
+
+.border-t-mysql {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(221 138 0 / var(--tw-border-opacity));
+}
+
+.border-t-mysql\/0 {
+  border-top-color: rgb(221 138 0 / 0);
+}
+
+.border-t-mysql\/10 {
+  border-top-color: rgb(221 138 0 / 0.1);
+}
+
+.border-t-mysql\/100 {
+  border-top-color: rgb(221 138 0 / 1);
+}
+
+.border-t-mysql\/20 {
+  border-top-color: rgb(221 138 0 / 0.2);
+}
+
+.border-t-mysql\/25 {
+  border-top-color: rgb(221 138 0 / 0.25);
+}
+
+.border-t-mysql\/30 {
+  border-top-color: rgb(221 138 0 / 0.3);
+}
+
+.border-t-mysql\/40 {
+  border-top-color: rgb(221 138 0 / 0.4);
+}
+
+.border-t-mysql\/5 {
+  border-top-color: rgb(221 138 0 / 0.05);
+}
+
+.border-t-mysql\/50 {
+  border-top-color: rgb(221 138 0 / 0.5);
+}
+
+.border-t-mysql\/60 {
+  border-top-color: rgb(221 138 0 / 0.6);
+}
+
+.border-t-mysql\/70 {
+  border-top-color: rgb(221 138 0 / 0.7);
+}
+
+.border-t-mysql\/75 {
+  border-top-color: rgb(221 138 0 / 0.75);
+}
+
+.border-t-mysql\/80 {
+  border-top-color: rgb(221 138 0 / 0.8);
+}
+
+.border-t-mysql\/90 {
+  border-top-color: rgb(221 138 0 / 0.9);
+}
+
+.border-t-mysql\/95 {
+  border-top-color: rgb(221 138 0 / 0.95);
+}
+
+.border-t-php {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(115 119 173 / var(--tw-border-opacity));
+}
+
+.border-t-php\/0 {
+  border-top-color: rgb(115 119 173 / 0);
+}
+
+.border-t-php\/10 {
+  border-top-color: rgb(115 119 173 / 0.1);
+}
+
+.border-t-php\/100 {
+  border-top-color: rgb(115 119 173 / 1);
+}
+
+.border-t-php\/20 {
+  border-top-color: rgb(115 119 173 / 0.2);
+}
+
+.border-t-php\/25 {
+  border-top-color: rgb(115 119 173 / 0.25);
+}
+
+.border-t-php\/30 {
+  border-top-color: rgb(115 119 173 / 0.3);
+}
+
+.border-t-php\/40 {
+  border-top-color: rgb(115 119 173 / 0.4);
+}
+
+.border-t-php\/5 {
+  border-top-color: rgb(115 119 173 / 0.05);
+}
+
+.border-t-php\/50 {
+  border-top-color: rgb(115 119 173 / 0.5);
+}
+
+.border-t-php\/60 {
+  border-top-color: rgb(115 119 173 / 0.6);
+}
+
+.border-t-php\/70 {
+  border-top-color: rgb(115 119 173 / 0.7);
+}
+
+.border-t-php\/75 {
+  border-top-color: rgb(115 119 173 / 0.75);
+}
+
+.border-t-php\/80 {
+  border-top-color: rgb(115 119 173 / 0.8);
+}
+
+.border-t-php\/90 {
+  border-top-color: rgb(115 119 173 / 0.9);
+}
+
+.border-t-php\/95 {
+  border-top-color: rgb(115 119 173 / 0.95);
+}
+
+.border-t-ruby {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(224 17 95 / var(--tw-border-opacity));
+}
+
+.border-t-ruby\/0 {
+  border-top-color: rgb(224 17 95 / 0);
+}
+
+.border-t-ruby\/10 {
+  border-top-color: rgb(224 17 95 / 0.1);
+}
+
+.border-t-ruby\/100 {
+  border-top-color: rgb(224 17 95 / 1);
+}
+
+.border-t-ruby\/20 {
+  border-top-color: rgb(224 17 95 / 0.2);
+}
+
+.border-t-ruby\/25 {
+  border-top-color: rgb(224 17 95 / 0.25);
+}
+
+.border-t-ruby\/30 {
+  border-top-color: rgb(224 17 95 / 0.3);
+}
+
+.border-t-ruby\/40 {
+  border-top-color: rgb(224 17 95 / 0.4);
+}
+
+.border-t-ruby\/5 {
+  border-top-color: rgb(224 17 95 / 0.05);
+}
+
+.border-t-ruby\/50 {
+  border-top-color: rgb(224 17 95 / 0.5);
+}
+
+.border-t-ruby\/60 {
+  border-top-color: rgb(224 17 95 / 0.6);
+}
+
+.border-t-ruby\/70 {
+  border-top-color: rgb(224 17 95 / 0.7);
+}
+
+.border-t-ruby\/75 {
+  border-top-color: rgb(224 17 95 / 0.75);
+}
+
+.border-t-ruby\/80 {
+  border-top-color: rgb(224 17 95 / 0.8);
+}
+
+.border-t-ruby\/90 {
+  border-top-color: rgb(224 17 95 / 0.9);
+}
+
+.border-t-ruby\/95 {
+  border-top-color: rgb(224 17 95 / 0.95);
+}
+
+.bg-csharp {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 8 54 / var(--tw-bg-opacity));
+  background-color: rgb(156 117 213 / var(--tw-bg-opacity));
+}
+
+.bg-csharp\/0 {
+  background-color: rgb(156 117 213 / 0);
+}
+
+.bg-csharp\/10 {
+  background-color: rgb(156 117 213 / 0.1);
+}
+
+.bg-csharp\/100 {
+  background-color: rgb(156 117 213 / 1);
+}
+
+.bg-csharp\/20 {
+  background-color: rgb(156 117 213 / 0.2);
+}
+
+.bg-csharp\/25 {
+  background-color: rgb(156 117 213 / 0.25);
+}
+
+.bg-csharp\/30 {
+  background-color: rgb(156 117 213 / 0.3);
+}
+
+.bg-csharp\/40 {
+  background-color: rgb(156 117 213 / 0.4);
+}
+
+.bg-csharp\/5 {
+  background-color: rgb(156 117 213 / 0.05);
+}
+
+.bg-csharp\/50 {
+  background-color: rgb(156 117 213 / 0.5);
+}
+
+.bg-csharp\/60 {
+  background-color: rgb(156 117 213 / 0.6);
+}
+
+.bg-csharp\/70 {
+  background-color: rgb(156 117 213 / 0.7);
+}
+
+.bg-csharp\/75 {
+  background-color: rgb(156 117 213 / 0.75);
+}
+
+.bg-csharp\/80 {
+  background-color: rgb(156 117 213 / 0.8);
+}
+
+.bg-csharp\/90 {
+  background-color: rgb(156 117 213 / 0.9);
+}
+
+.bg-csharp\/95 {
+  background-color: rgb(156 117 213 / 0.95);
+}
+
+.bg-deep-blue\/70 {
+  background-color: rgb(0 8 54 / 0.7);
+}
+
+.bg-java {
+  --tw-bg-opacity: 1;
+  background-color: rgb(80 126 156 / var(--tw-bg-opacity));
+}
+
+.bg-java\/0 {
+  background-color: rgb(80 126 156 / 0);
+}
+
+.bg-java\/10 {
+  background-color: rgb(80 126 156 / 0.1);
+}
+
+.bg-java\/100 {
+  background-color: rgb(80 126 156 / 1);
+}
+
+.bg-java\/20 {
+  background-color: rgb(80 126 156 / 0.2);
+}
+
+.bg-java\/25 {
+  background-color: rgb(80 126 156 / 0.25);
+}
+
+.bg-java\/30 {
+  background-color: rgb(80 126 156 / 0.3);
+}
+
+.bg-java\/40 {
+  background-color: rgb(80 126 156 / 0.4);
+}
+
+.bg-java\/5 {
+  background-color: rgb(80 126 156 / 0.05);
+}
+
+.bg-java\/50 {
+  background-color: rgb(80 126 156 / 0.5);
+}
+
+.bg-java\/60 {
+  background-color: rgb(80 126 156 / 0.6);
+}
+
+.bg-java\/70 {
+  background-color: rgb(80 126 156 / 0.7);
+}
+
+.bg-java\/75 {
+  background-color: rgb(80 126 156 / 0.75);
+}
+
+.bg-java\/80 {
+  background-color: rgb(80 126 156 / 0.8);
+}
+
+.bg-java\/90 {
+  background-color: rgb(80 126 156 / 0.9);
+}
+
+.bg-java\/95 {
+  background-color: rgb(80 126 156 / 0.95);
+}
+
+.bg-mysql {
+  --tw-bg-opacity: 1;
+  background-color: rgb(221 138 0 / var(--tw-bg-opacity));
+}
+
+.bg-mysql\/0 {
+  background-color: rgb(221 138 0 / 0);
+}
+
+.bg-mysql\/10 {
+  background-color: rgb(221 138 0 / 0.1);
+}
+
+.bg-mysql\/100 {
+  background-color: rgb(221 138 0 / 1);
+}
+
+.bg-mysql\/20 {
+  background-color: rgb(221 138 0 / 0.2);
+}
+
+.bg-mysql\/25 {
+  background-color: rgb(221 138 0 / 0.25);
+}
+
+.bg-mysql\/30 {
+  background-color: rgb(221 138 0 / 0.3);
+}
+
+.bg-mysql\/40 {
+  background-color: rgb(221 138 0 / 0.4);
+}
+
+.bg-mysql\/5 {
+  background-color: rgb(221 138 0 / 0.05);
+}
+
+.bg-mysql\/50 {
+  background-color: rgb(221 138 0 / 0.5);
+}
+
+.bg-mysql\/60 {
+  background-color: rgb(221 138 0 / 0.6);
+}
+
+.bg-mysql\/70 {
+  background-color: rgb(221 138 0 / 0.7);
+}
+
+.bg-mysql\/75 {
+  background-color: rgb(221 138 0 / 0.75);
+}
+
+.bg-mysql\/80 {
+  background-color: rgb(221 138 0 / 0.8);
+}
+
+.bg-mysql\/90 {
+  background-color: rgb(221 138 0 / 0.9);
+}
+
+.bg-mysql\/95 {
+  background-color: rgb(221 138 0 / 0.95);
+}
+
+.bg-php {
+  --tw-bg-opacity: 1;
+  background-color: rgb(115 119 173 / var(--tw-bg-opacity));
+}
+
+.bg-php\/0 {
+  background-color: rgb(115 119 173 / 0);
+}
+
+.bg-php\/10 {
+  background-color: rgb(115 119 173 / 0.1);
+}
+
+.bg-php\/100 {
+  background-color: rgb(115 119 173 / 1);
+}
+
+.bg-php\/20 {
+  background-color: rgb(115 119 173 / 0.2);
+}
+
+.bg-php\/25 {
+  background-color: rgb(115 119 173 / 0.25);
+}
+
+.bg-php\/30 {
+  background-color: rgb(115 119 173 / 0.3);
+}
+
+.bg-php\/40 {
+  background-color: rgb(115 119 173 / 0.4);
+}
+
+.bg-php\/5 {
+  background-color: rgb(115 119 173 / 0.05);
+}
+
+.bg-php\/50 {
+  background-color: rgb(115 119 173 / 0.5);
+}
+
+.bg-php\/60 {
+  background-color: rgb(115 119 173 / 0.6);
+}
+
+.bg-php\/70 {
+  background-color: rgb(115 119 173 / 0.7);
+}
+
+.bg-php\/75 {
+  background-color: rgb(115 119 173 / 0.75);
+}
+
+.bg-php\/80 {
+  background-color: rgb(115 119 173 / 0.8);
+}
+
+.bg-php\/90 {
+  background-color: rgb(115 119 173 / 0.9);
+}
+
+.bg-php\/95 {
+  background-color: rgb(115 119 173 / 0.95);
+}
+
+.bg-ruby {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 17 95 / var(--tw-bg-opacity));
+}
+
+.bg-ruby\/0 {
+  background-color: rgb(224 17 95 / 0);
+}
+
+.bg-ruby\/10 {
+  background-color: rgb(224 17 95 / 0.1);
+}
+
+.bg-ruby\/100 {
+  background-color: rgb(224 17 95 / 1);
+}
+
+.bg-ruby\/20 {
+  background-color: rgb(224 17 95 / 0.2);
+}
+
+.bg-ruby\/25 {
+  background-color: rgb(224 17 95 / 0.25);
+}
+
+.bg-ruby\/30 {
+  background-color: rgb(224 17 95 / 0.3);
+}
+
+.bg-ruby\/40 {
+  background-color: rgb(224 17 95 / 0.4);
+}
+
+.bg-ruby\/5 {
+  background-color: rgb(224 17 95 / 0.05);
+}
+
+.bg-ruby\/50 {
+  background-color: rgb(224 17 95 / 0.5);
+}
+
+.bg-ruby\/60 {
+  background-color: rgb(224 17 95 / 0.6);
+}
+
+.bg-ruby\/70 {
+  background-color: rgb(224 17 95 / 0.7);
+}
+
+.bg-ruby\/75 {
+  background-color: rgb(224 17 95 / 0.75);
+}
+
+.bg-ruby\/80 {
+  background-color: rgb(224 17 95 / 0.8);
+}
+
+.bg-ruby\/90 {
+  background-color: rgb(224 17 95 / 0.9);
+}
+
+.bg-ruby\/95 {
+  background-color: rgb(224 17 95 / 0.95);
+}
+
+.from-csharp {
+  --tw-gradient-from: #9c75d5;
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/0 {
+  --tw-gradient-from: rgb(156 117 213 / 0);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/10 {
+  --tw-gradient-from: rgb(156 117 213 / 0.1);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/100 {
+  --tw-gradient-from: rgb(156 117 213 / 1);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/20 {
+  --tw-gradient-from: rgb(156 117 213 / 0.2);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/25 {
+  --tw-gradient-from: rgb(156 117 213 / 0.25);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/30 {
+  --tw-gradient-from: rgb(156 117 213 / 0.3);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/40 {
+  --tw-gradient-from: rgb(156 117 213 / 0.4);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/5 {
+  --tw-gradient-from: rgb(156 117 213 / 0.05);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/50 {
+  --tw-gradient-from: rgb(156 117 213 / 0.5);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/60 {
+  --tw-gradient-from: rgb(156 117 213 / 0.6);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/70 {
+  --tw-gradient-from: rgb(156 117 213 / 0.7);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/75 {
+  --tw-gradient-from: rgb(156 117 213 / 0.75);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/80 {
+  --tw-gradient-from: rgb(156 117 213 / 0.8);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/90 {
+  --tw-gradient-from: rgb(156 117 213 / 0.9);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-csharp\/95 {
+  --tw-gradient-from: rgb(156 117 213 / 0.95);
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java {
+  --tw-gradient-from: #507e9c;
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/0 {
+  --tw-gradient-from: rgb(80 126 156 / 0);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/10 {
+  --tw-gradient-from: rgb(80 126 156 / 0.1);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/100 {
+  --tw-gradient-from: rgb(80 126 156 / 1);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/20 {
+  --tw-gradient-from: rgb(80 126 156 / 0.2);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/25 {
+  --tw-gradient-from: rgb(80 126 156 / 0.25);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/30 {
+  --tw-gradient-from: rgb(80 126 156 / 0.3);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/40 {
+  --tw-gradient-from: rgb(80 126 156 / 0.4);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/5 {
+  --tw-gradient-from: rgb(80 126 156 / 0.05);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/50 {
+  --tw-gradient-from: rgb(80 126 156 / 0.5);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/60 {
+  --tw-gradient-from: rgb(80 126 156 / 0.6);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/70 {
+  --tw-gradient-from: rgb(80 126 156 / 0.7);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/75 {
+  --tw-gradient-from: rgb(80 126 156 / 0.75);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/80 {
+  --tw-gradient-from: rgb(80 126 156 / 0.8);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/90 {
+  --tw-gradient-from: rgb(80 126 156 / 0.9);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-java\/95 {
+  --tw-gradient-from: rgb(80 126 156 / 0.95);
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql {
+  --tw-gradient-from: #dd8a00;
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/0 {
+  --tw-gradient-from: rgb(221 138 0 / 0);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/10 {
+  --tw-gradient-from: rgb(221 138 0 / 0.1);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/100 {
+  --tw-gradient-from: rgb(221 138 0 / 1);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/20 {
+  --tw-gradient-from: rgb(221 138 0 / 0.2);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/25 {
+  --tw-gradient-from: rgb(221 138 0 / 0.25);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/30 {
+  --tw-gradient-from: rgb(221 138 0 / 0.3);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/40 {
+  --tw-gradient-from: rgb(221 138 0 / 0.4);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/5 {
+  --tw-gradient-from: rgb(221 138 0 / 0.05);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/50 {
+  --tw-gradient-from: rgb(221 138 0 / 0.5);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/60 {
+  --tw-gradient-from: rgb(221 138 0 / 0.6);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/70 {
+  --tw-gradient-from: rgb(221 138 0 / 0.7);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/75 {
+  --tw-gradient-from: rgb(221 138 0 / 0.75);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/80 {
+  --tw-gradient-from: rgb(221 138 0 / 0.8);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/90 {
+  --tw-gradient-from: rgb(221 138 0 / 0.9);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-mysql\/95 {
+  --tw-gradient-from: rgb(221 138 0 / 0.95);
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php {
+  --tw-gradient-from: #7377ad;
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/0 {
+  --tw-gradient-from: rgb(115 119 173 / 0);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/10 {
+  --tw-gradient-from: rgb(115 119 173 / 0.1);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/100 {
+  --tw-gradient-from: rgb(115 119 173 / 1);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/20 {
+  --tw-gradient-from: rgb(115 119 173 / 0.2);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/25 {
+  --tw-gradient-from: rgb(115 119 173 / 0.25);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/30 {
+  --tw-gradient-from: rgb(115 119 173 / 0.3);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/40 {
+  --tw-gradient-from: rgb(115 119 173 / 0.4);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/5 {
+  --tw-gradient-from: rgb(115 119 173 / 0.05);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/50 {
+  --tw-gradient-from: rgb(115 119 173 / 0.5);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/60 {
+  --tw-gradient-from: rgb(115 119 173 / 0.6);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/70 {
+  --tw-gradient-from: rgb(115 119 173 / 0.7);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/75 {
+  --tw-gradient-from: rgb(115 119 173 / 0.75);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/80 {
+  --tw-gradient-from: rgb(115 119 173 / 0.8);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/90 {
+  --tw-gradient-from: rgb(115 119 173 / 0.9);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-php\/95 {
+  --tw-gradient-from: rgb(115 119 173 / 0.95);
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby {
+  --tw-gradient-from: #E0115F;
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/0 {
+  --tw-gradient-from: rgb(224 17 95 / 0);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/10 {
+  --tw-gradient-from: rgb(224 17 95 / 0.1);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/100 {
+  --tw-gradient-from: rgb(224 17 95 / 1);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/20 {
+  --tw-gradient-from: rgb(224 17 95 / 0.2);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/25 {
+  --tw-gradient-from: rgb(224 17 95 / 0.25);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/30 {
+  --tw-gradient-from: rgb(224 17 95 / 0.3);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/40 {
+  --tw-gradient-from: rgb(224 17 95 / 0.4);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/5 {
+  --tw-gradient-from: rgb(224 17 95 / 0.05);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/50 {
+  --tw-gradient-from: rgb(224 17 95 / 0.5);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/60 {
+  --tw-gradient-from: rgb(224 17 95 / 0.6);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/70 {
+  --tw-gradient-from: rgb(224 17 95 / 0.7);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/75 {
+  --tw-gradient-from: rgb(224 17 95 / 0.75);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/80 {
+  --tw-gradient-from: rgb(224 17 95 / 0.8);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/90 {
+  --tw-gradient-from: rgb(224 17 95 / 0.9);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-ruby\/95 {
+  --tw-gradient-from: rgb(224 17 95 / 0.95);
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.via-csharp {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #9c75d5, var(--tw-gradient-to);
+}
+
+.via-csharp\/0 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0), var(--tw-gradient-to);
+}
+
+.via-csharp\/10 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.1), var(--tw-gradient-to);
+}
+
+.via-csharp\/100 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 1), var(--tw-gradient-to);
+}
+
+.via-csharp\/20 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.2), var(--tw-gradient-to);
+}
+
+.via-csharp\/25 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.25), var(--tw-gradient-to);
+}
+
+.via-csharp\/30 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.3), var(--tw-gradient-to);
+}
+
+.via-csharp\/40 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.4), var(--tw-gradient-to);
+}
+
+.via-csharp\/5 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.05), var(--tw-gradient-to);
+}
+
+.via-csharp\/50 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.5), var(--tw-gradient-to);
+}
+
+.via-csharp\/60 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.6), var(--tw-gradient-to);
+}
+
+.via-csharp\/70 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.7), var(--tw-gradient-to);
+}
+
+.via-csharp\/75 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.75), var(--tw-gradient-to);
+}
+
+.via-csharp\/80 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.8), var(--tw-gradient-to);
+}
+
+.via-csharp\/90 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.9), var(--tw-gradient-to);
+}
+
+.via-csharp\/95 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(156 117 213 / 0.95), var(--tw-gradient-to);
+}
+
+.via-java {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #507e9c, var(--tw-gradient-to);
+}
+
+.via-java\/0 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0), var(--tw-gradient-to);
+}
+
+.via-java\/10 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.1), var(--tw-gradient-to);
+}
+
+.via-java\/100 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 1), var(--tw-gradient-to);
+}
+
+.via-java\/20 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.2), var(--tw-gradient-to);
+}
+
+.via-java\/25 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.25), var(--tw-gradient-to);
+}
+
+.via-java\/30 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.3), var(--tw-gradient-to);
+}
+
+.via-java\/40 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.4), var(--tw-gradient-to);
+}
+
+.via-java\/5 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.05), var(--tw-gradient-to);
+}
+
+.via-java\/50 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.5), var(--tw-gradient-to);
+}
+
+.via-java\/60 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.6), var(--tw-gradient-to);
+}
+
+.via-java\/70 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.7), var(--tw-gradient-to);
+}
+
+.via-java\/75 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.75), var(--tw-gradient-to);
+}
+
+.via-java\/80 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.8), var(--tw-gradient-to);
+}
+
+.via-java\/90 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.9), var(--tw-gradient-to);
+}
+
+.via-java\/95 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(80 126 156 / 0.95), var(--tw-gradient-to);
+}
+
+.via-mysql {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #dd8a00, var(--tw-gradient-to);
+}
+
+.via-mysql\/0 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0), var(--tw-gradient-to);
+}
+
+.via-mysql\/10 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.1), var(--tw-gradient-to);
+}
+
+.via-mysql\/100 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 1), var(--tw-gradient-to);
+}
+
+.via-mysql\/20 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.2), var(--tw-gradient-to);
+}
+
+.via-mysql\/25 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.25), var(--tw-gradient-to);
+}
+
+.via-mysql\/30 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.3), var(--tw-gradient-to);
+}
+
+.via-mysql\/40 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.4), var(--tw-gradient-to);
+}
+
+.via-mysql\/5 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.05), var(--tw-gradient-to);
+}
+
+.via-mysql\/50 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.5), var(--tw-gradient-to);
+}
+
+.via-mysql\/60 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.6), var(--tw-gradient-to);
+}
+
+.via-mysql\/70 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.7), var(--tw-gradient-to);
+}
+
+.via-mysql\/75 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.75), var(--tw-gradient-to);
+}
+
+.via-mysql\/80 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.8), var(--tw-gradient-to);
+}
+
+.via-mysql\/90 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.9), var(--tw-gradient-to);
+}
+
+.via-mysql\/95 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(221 138 0 / 0.95), var(--tw-gradient-to);
+}
+
+.via-php {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #7377ad, var(--tw-gradient-to);
+}
+
+.via-php\/0 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0), var(--tw-gradient-to);
+}
+
+.via-php\/10 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.1), var(--tw-gradient-to);
+}
+
+.via-php\/100 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 1), var(--tw-gradient-to);
+}
+
+.via-php\/20 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.2), var(--tw-gradient-to);
+}
+
+.via-php\/25 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.25), var(--tw-gradient-to);
+}
+
+.via-php\/30 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.3), var(--tw-gradient-to);
+}
+
+.via-php\/40 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.4), var(--tw-gradient-to);
+}
+
+.via-php\/5 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.05), var(--tw-gradient-to);
+}
+
+.via-php\/50 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.5), var(--tw-gradient-to);
+}
+
+.via-php\/60 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.6), var(--tw-gradient-to);
+}
+
+.via-php\/70 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.7), var(--tw-gradient-to);
+}
+
+.via-php\/75 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.75), var(--tw-gradient-to);
+}
+
+.via-php\/80 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.8), var(--tw-gradient-to);
+}
+
+.via-php\/90 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.9), var(--tw-gradient-to);
+}
+
+.via-php\/95 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(115 119 173 / 0.95), var(--tw-gradient-to);
+}
+
+.via-ruby {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), #E0115F, var(--tw-gradient-to);
+}
+
+.via-ruby\/0 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0), var(--tw-gradient-to);
+}
+
+.via-ruby\/10 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.1), var(--tw-gradient-to);
+}
+
+.via-ruby\/100 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 1), var(--tw-gradient-to);
+}
+
+.via-ruby\/20 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.2), var(--tw-gradient-to);
+}
+
+.via-ruby\/25 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.25), var(--tw-gradient-to);
+}
+
+.via-ruby\/30 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.3), var(--tw-gradient-to);
+}
+
+.via-ruby\/40 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.4), var(--tw-gradient-to);
+}
+
+.via-ruby\/5 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.05), var(--tw-gradient-to);
+}
+
+.via-ruby\/50 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.5), var(--tw-gradient-to);
+}
+
+.via-ruby\/60 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.6), var(--tw-gradient-to);
+}
+
+.via-ruby\/70 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.7), var(--tw-gradient-to);
+}
+
+.via-ruby\/75 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.75), var(--tw-gradient-to);
+}
+
+.via-ruby\/80 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.8), var(--tw-gradient-to);
+}
+
+.via-ruby\/90 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.9), var(--tw-gradient-to);
+}
+
+.via-ruby\/95 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), rgb(224 17 95 / 0.95), var(--tw-gradient-to);
+}
+
+.to-csharp {
+  --tw-gradient-to: #9c75d5;
+}
+
+.to-csharp\/0 {
+  --tw-gradient-to: rgb(156 117 213 / 0);
+}
+
+.to-csharp\/10 {
+  --tw-gradient-to: rgb(156 117 213 / 0.1);
+}
+
+.to-csharp\/100 {
+  --tw-gradient-to: rgb(156 117 213 / 1);
+}
+
+.to-csharp\/20 {
+  --tw-gradient-to: rgb(156 117 213 / 0.2);
+}
+
+.to-csharp\/25 {
+  --tw-gradient-to: rgb(156 117 213 / 0.25);
+}
+
+.to-csharp\/30 {
+  --tw-gradient-to: rgb(156 117 213 / 0.3);
+}
+
+.to-csharp\/40 {
+  --tw-gradient-to: rgb(156 117 213 / 0.4);
+}
+
+.to-csharp\/5 {
+  --tw-gradient-to: rgb(156 117 213 / 0.05);
+}
+
+.to-csharp\/50 {
+  --tw-gradient-to: rgb(156 117 213 / 0.5);
+}
+
+.to-csharp\/60 {
+  --tw-gradient-to: rgb(156 117 213 / 0.6);
+}
+
+.to-csharp\/70 {
+  --tw-gradient-to: rgb(156 117 213 / 0.7);
+}
+
+.to-csharp\/75 {
+  --tw-gradient-to: rgb(156 117 213 / 0.75);
+}
+
+.to-csharp\/80 {
+  --tw-gradient-to: rgb(156 117 213 / 0.8);
+}
+
+.to-csharp\/90 {
+  --tw-gradient-to: rgb(156 117 213 / 0.9);
+}
+
+.to-csharp\/95 {
+  --tw-gradient-to: rgb(156 117 213 / 0.95);
+}
+
+.to-java {
+  --tw-gradient-to: #507e9c;
+}
+
+.to-java\/0 {
+  --tw-gradient-to: rgb(80 126 156 / 0);
+}
+
+.to-java\/10 {
+  --tw-gradient-to: rgb(80 126 156 / 0.1);
+}
+
+.to-java\/100 {
+  --tw-gradient-to: rgb(80 126 156 / 1);
+}
+
+.to-java\/20 {
+  --tw-gradient-to: rgb(80 126 156 / 0.2);
+}
+
+.to-java\/25 {
+  --tw-gradient-to: rgb(80 126 156 / 0.25);
+}
+
+.to-java\/30 {
+  --tw-gradient-to: rgb(80 126 156 / 0.3);
+}
+
+.to-java\/40 {
+  --tw-gradient-to: rgb(80 126 156 / 0.4);
+}
+
+.to-java\/5 {
+  --tw-gradient-to: rgb(80 126 156 / 0.05);
+}
+
+.to-java\/50 {
+  --tw-gradient-to: rgb(80 126 156 / 0.5);
+}
+
+.to-java\/60 {
+  --tw-gradient-to: rgb(80 126 156 / 0.6);
+}
+
+.to-java\/70 {
+  --tw-gradient-to: rgb(80 126 156 / 0.7);
+}
+
+.to-java\/75 {
+  --tw-gradient-to: rgb(80 126 156 / 0.75);
+}
+
+.to-java\/80 {
+  --tw-gradient-to: rgb(80 126 156 / 0.8);
+}
+
+.to-java\/90 {
+  --tw-gradient-to: rgb(80 126 156 / 0.9);
+}
+
+.to-java\/95 {
+  --tw-gradient-to: rgb(80 126 156 / 0.95);
+}
+
+.to-mysql {
+  --tw-gradient-to: #dd8a00;
+}
+
+.to-mysql\/0 {
+  --tw-gradient-to: rgb(221 138 0 / 0);
+}
+
+.to-mysql\/10 {
+  --tw-gradient-to: rgb(221 138 0 / 0.1);
+}
+
+.to-mysql\/100 {
+  --tw-gradient-to: rgb(221 138 0 / 1);
+}
+
+.to-mysql\/20 {
+  --tw-gradient-to: rgb(221 138 0 / 0.2);
+}
+
+.to-mysql\/25 {
+  --tw-gradient-to: rgb(221 138 0 / 0.25);
+}
+
+.to-mysql\/30 {
+  --tw-gradient-to: rgb(221 138 0 / 0.3);
+}
+
+.to-mysql\/40 {
+  --tw-gradient-to: rgb(221 138 0 / 0.4);
+}
+
+.to-mysql\/5 {
+  --tw-gradient-to: rgb(221 138 0 / 0.05);
+}
+
+.to-mysql\/50 {
+  --tw-gradient-to: rgb(221 138 0 / 0.5);
+}
+
+.to-mysql\/60 {
+  --tw-gradient-to: rgb(221 138 0 / 0.6);
+}
+
+.to-mysql\/70 {
+  --tw-gradient-to: rgb(221 138 0 / 0.7);
+}
+
+.to-mysql\/75 {
+  --tw-gradient-to: rgb(221 138 0 / 0.75);
+}
+
+.to-mysql\/80 {
+  --tw-gradient-to: rgb(221 138 0 / 0.8);
+}
+
+.to-mysql\/90 {
+  --tw-gradient-to: rgb(221 138 0 / 0.9);
+}
+
+.to-mysql\/95 {
+  --tw-gradient-to: rgb(221 138 0 / 0.95);
+}
+
+.to-php {
+  --tw-gradient-to: #7377ad;
+}
+
+.to-php\/0 {
+  --tw-gradient-to: rgb(115 119 173 / 0);
+}
+
+.to-php\/10 {
+  --tw-gradient-to: rgb(115 119 173 / 0.1);
+}
+
+.to-php\/100 {
+  --tw-gradient-to: rgb(115 119 173 / 1);
+}
+
+.to-php\/20 {
+  --tw-gradient-to: rgb(115 119 173 / 0.2);
+}
+
+.to-php\/25 {
+  --tw-gradient-to: rgb(115 119 173 / 0.25);
+}
+
+.to-php\/30 {
+  --tw-gradient-to: rgb(115 119 173 / 0.3);
+}
+
+.to-php\/40 {
+  --tw-gradient-to: rgb(115 119 173 / 0.4);
+}
+
+.to-php\/5 {
+  --tw-gradient-to: rgb(115 119 173 / 0.05);
+}
+
+.to-php\/50 {
+  --tw-gradient-to: rgb(115 119 173 / 0.5);
+}
+
+.to-php\/60 {
+  --tw-gradient-to: rgb(115 119 173 / 0.6);
+}
+
+.to-php\/70 {
+  --tw-gradient-to: rgb(115 119 173 / 0.7);
+}
+
+.to-php\/75 {
+  --tw-gradient-to: rgb(115 119 173 / 0.75);
+}
+
+.to-php\/80 {
+  --tw-gradient-to: rgb(115 119 173 / 0.8);
+}
+
+.to-php\/90 {
+  --tw-gradient-to: rgb(115 119 173 / 0.9);
+}
+
+.to-php\/95 {
+  --tw-gradient-to: rgb(115 119 173 / 0.95);
+}
+
+.to-ruby {
+  --tw-gradient-to: #E0115F;
+}
+
+.to-ruby\/0 {
+  --tw-gradient-to: rgb(224 17 95 / 0);
+}
+
+.to-ruby\/10 {
+  --tw-gradient-to: rgb(224 17 95 / 0.1);
+}
+
+.to-ruby\/100 {
+  --tw-gradient-to: rgb(224 17 95 / 1);
+}
+
+.to-ruby\/20 {
+  --tw-gradient-to: rgb(224 17 95 / 0.2);
+}
+
+.to-ruby\/25 {
+  --tw-gradient-to: rgb(224 17 95 / 0.25);
+}
+
+.to-ruby\/30 {
+  --tw-gradient-to: rgb(224 17 95 / 0.3);
+}
+
+.to-ruby\/40 {
+  --tw-gradient-to: rgb(224 17 95 / 0.4);
+}
+
+.to-ruby\/5 {
+  --tw-gradient-to: rgb(224 17 95 / 0.05);
+}
+
+.to-ruby\/50 {
+  --tw-gradient-to: rgb(224 17 95 / 0.5);
+}
+
+.to-ruby\/60 {
+  --tw-gradient-to: rgb(224 17 95 / 0.6);
+}
+
+.to-ruby\/70 {
+  --tw-gradient-to: rgb(224 17 95 / 0.7);
+}
+
+.to-ruby\/75 {
+  --tw-gradient-to: rgb(224 17 95 / 0.75);
+}
+
+.to-ruby\/80 {
+  --tw-gradient-to: rgb(224 17 95 / 0.8);
+}
+
+.to-ruby\/90 {
+  --tw-gradient-to: rgb(224 17 95 / 0.9);
+}
+
+.to-ruby\/95 {
+  --tw-gradient-to: rgb(224 17 95 / 0.95);
+}
+
+.fill-csharp {
+  fill: #9c75d5;
+}
+
+.fill-csharp\/0 {
+  fill: rgb(156 117 213 / 0);
+}
+
+.fill-csharp\/10 {
+  fill: rgb(156 117 213 / 0.1);
+}
+
+.fill-csharp\/100 {
+  fill: rgb(156 117 213 / 1);
+}
+
+.fill-csharp\/20 {
+  fill: rgb(156 117 213 / 0.2);
+}
+
+.fill-csharp\/25 {
+  fill: rgb(156 117 213 / 0.25);
+}
+
+.fill-csharp\/30 {
+  fill: rgb(156 117 213 / 0.3);
+}
+
+.fill-csharp\/40 {
+  fill: rgb(156 117 213 / 0.4);
+}
+
+.fill-csharp\/5 {
+  fill: rgb(156 117 213 / 0.05);
+}
+
+.fill-csharp\/50 {
+  fill: rgb(156 117 213 / 0.5);
+}
+
+.fill-csharp\/60 {
+  fill: rgb(156 117 213 / 0.6);
+}
+
+.fill-csharp\/70 {
+  fill: rgb(156 117 213 / 0.7);
+}
+
+.fill-csharp\/75 {
+  fill: rgb(156 117 213 / 0.75);
+}
+
+.fill-csharp\/80 {
+  fill: rgb(156 117 213 / 0.8);
+}
+
+.fill-csharp\/90 {
+  fill: rgb(156 117 213 / 0.9);
+}
+
+.fill-csharp\/95 {
+  fill: rgb(156 117 213 / 0.95);
+}
+
+.fill-java {
+  fill: #507e9c;
+}
+
+.fill-java\/0 {
+  fill: rgb(80 126 156 / 0);
+}
+
+.fill-java\/10 {
+  fill: rgb(80 126 156 / 0.1);
+}
+
+.fill-java\/100 {
+  fill: rgb(80 126 156 / 1);
+}
+
+.fill-java\/20 {
+  fill: rgb(80 126 156 / 0.2);
+}
+
+.fill-java\/25 {
+  fill: rgb(80 126 156 / 0.25);
+}
+
+.fill-java\/30 {
+  fill: rgb(80 126 156 / 0.3);
+}
+
+.fill-java\/40 {
+  fill: rgb(80 126 156 / 0.4);
+}
+
+.fill-java\/5 {
+  fill: rgb(80 126 156 / 0.05);
+}
+
+.fill-java\/50 {
+  fill: rgb(80 126 156 / 0.5);
+}
+
+.fill-java\/60 {
+  fill: rgb(80 126 156 / 0.6);
+}
+
+.fill-java\/70 {
+  fill: rgb(80 126 156 / 0.7);
+}
+
+.fill-java\/75 {
+  fill: rgb(80 126 156 / 0.75);
+}
+
+.fill-java\/80 {
+  fill: rgb(80 126 156 / 0.8);
+}
+
+.fill-java\/90 {
+  fill: rgb(80 126 156 / 0.9);
+}
+
+.fill-java\/95 {
+  fill: rgb(80 126 156 / 0.95);
+}
+
+.fill-mysql {
+  fill: #dd8a00;
+}
+
+.fill-mysql\/0 {
+  fill: rgb(221 138 0 / 0);
+}
+
+.fill-mysql\/10 {
+  fill: rgb(221 138 0 / 0.1);
+}
+
+.fill-mysql\/100 {
+  fill: rgb(221 138 0 / 1);
+}
+
+.fill-mysql\/20 {
+  fill: rgb(221 138 0 / 0.2);
+}
+
+.fill-mysql\/25 {
+  fill: rgb(221 138 0 / 0.25);
+}
+
+.fill-mysql\/30 {
+  fill: rgb(221 138 0 / 0.3);
+}
+
+.fill-mysql\/40 {
+  fill: rgb(221 138 0 / 0.4);
+}
+
+.fill-mysql\/5 {
+  fill: rgb(221 138 0 / 0.05);
+}
+
+.fill-mysql\/50 {
+  fill: rgb(221 138 0 / 0.5);
+}
+
+.fill-mysql\/60 {
+  fill: rgb(221 138 0 / 0.6);
+}
+
+.fill-mysql\/70 {
+  fill: rgb(221 138 0 / 0.7);
+}
+
+.fill-mysql\/75 {
+  fill: rgb(221 138 0 / 0.75);
+}
+
+.fill-mysql\/80 {
+  fill: rgb(221 138 0 / 0.8);
+}
+
+.fill-mysql\/90 {
+  fill: rgb(221 138 0 / 0.9);
+}
+
+.fill-mysql\/95 {
+  fill: rgb(221 138 0 / 0.95);
+}
+
+.fill-php {
+  fill: #7377ad;
+}
+
+.fill-php\/0 {
+  fill: rgb(115 119 173 / 0);
+}
+
+.fill-php\/10 {
+  fill: rgb(115 119 173 / 0.1);
+}
+
+.fill-php\/100 {
+  fill: rgb(115 119 173 / 1);
+}
+
+.fill-php\/20 {
+  fill: rgb(115 119 173 / 0.2);
+}
+
+.fill-php\/25 {
+  fill: rgb(115 119 173 / 0.25);
+}
+
+.fill-php\/30 {
+  fill: rgb(115 119 173 / 0.3);
+}
+
+.fill-php\/40 {
+  fill: rgb(115 119 173 / 0.4);
+}
+
+.fill-php\/5 {
+  fill: rgb(115 119 173 / 0.05);
+}
+
+.fill-php\/50 {
+  fill: rgb(115 119 173 / 0.5);
+}
+
+.fill-php\/60 {
+  fill: rgb(115 119 173 / 0.6);
+}
+
+.fill-php\/70 {
+  fill: rgb(115 119 173 / 0.7);
+}
+
+.fill-php\/75 {
+  fill: rgb(115 119 173 / 0.75);
+}
+
+.fill-php\/80 {
+  fill: rgb(115 119 173 / 0.8);
+}
+
+.fill-php\/90 {
+  fill: rgb(115 119 173 / 0.9);
+}
+
+.fill-php\/95 {
+  fill: rgb(115 119 173 / 0.95);
+}
+
+.fill-ruby {
+  fill: #E0115F;
+}
+
+.fill-ruby\/0 {
+  fill: rgb(224 17 95 / 0);
+}
+
+.fill-ruby\/10 {
+  fill: rgb(224 17 95 / 0.1);
+}
+
+.fill-ruby\/100 {
+  fill: rgb(224 17 95 / 1);
+}
+
+.fill-ruby\/20 {
+  fill: rgb(224 17 95 / 0.2);
+}
+
+.fill-ruby\/25 {
+  fill: rgb(224 17 95 / 0.25);
+}
+
+.fill-ruby\/30 {
+  fill: rgb(224 17 95 / 0.3);
+}
+
+.fill-ruby\/40 {
+  fill: rgb(224 17 95 / 0.4);
+}
+
+.fill-ruby\/5 {
+  fill: rgb(224 17 95 / 0.05);
+}
+
+.fill-ruby\/50 {
+  fill: rgb(224 17 95 / 0.5);
+}
+
+.fill-ruby\/60 {
+  fill: rgb(224 17 95 / 0.6);
+}
+
+.fill-ruby\/70 {
+  fill: rgb(224 17 95 / 0.7);
+}
+
+.fill-ruby\/75 {
+  fill: rgb(224 17 95 / 0.75);
+}
+
+.fill-ruby\/80 {
+  fill: rgb(224 17 95 / 0.8);
+}
+
+.fill-ruby\/90 {
+  fill: rgb(224 17 95 / 0.9);
+}
+
+.fill-ruby\/95 {
+  fill: rgb(224 17 95 / 0.95);
+}
+
+.stroke-csharp {
+  stroke: #9c75d5;
+}
+
+.stroke-csharp\/0 {
+  stroke: rgb(156 117 213 / 0);
+}
+
+.stroke-csharp\/10 {
+  stroke: rgb(156 117 213 / 0.1);
+}
+
+.stroke-csharp\/100 {
+  stroke: rgb(156 117 213 / 1);
+}
+
+.stroke-csharp\/20 {
+  stroke: rgb(156 117 213 / 0.2);
+}
+
+.stroke-csharp\/25 {
+  stroke: rgb(156 117 213 / 0.25);
+}
+
+.stroke-csharp\/30 {
+  stroke: rgb(156 117 213 / 0.3);
+}
+
+.stroke-csharp\/40 {
+  stroke: rgb(156 117 213 / 0.4);
+}
+
+.stroke-csharp\/5 {
+  stroke: rgb(156 117 213 / 0.05);
+}
+
+.stroke-csharp\/50 {
+  stroke: rgb(156 117 213 / 0.5);
+}
+
+.stroke-csharp\/60 {
+  stroke: rgb(156 117 213 / 0.6);
+}
+
+.stroke-csharp\/70 {
+  stroke: rgb(156 117 213 / 0.7);
+}
+
+.stroke-csharp\/75 {
+  stroke: rgb(156 117 213 / 0.75);
+}
+
+.stroke-csharp\/80 {
+  stroke: rgb(156 117 213 / 0.8);
+}
+
+.stroke-csharp\/90 {
+  stroke: rgb(156 117 213 / 0.9);
+}
+
+.stroke-csharp\/95 {
+  stroke: rgb(156 117 213 / 0.95);
+}
+
+.stroke-java {
+  stroke: #507e9c;
+}
+
+.stroke-java\/0 {
+  stroke: rgb(80 126 156 / 0);
+}
+
+.stroke-java\/10 {
+  stroke: rgb(80 126 156 / 0.1);
+}
+
+.stroke-java\/100 {
+  stroke: rgb(80 126 156 / 1);
+}
+
+.stroke-java\/20 {
+  stroke: rgb(80 126 156 / 0.2);
+}
+
+.stroke-java\/25 {
+  stroke: rgb(80 126 156 / 0.25);
+}
+
+.stroke-java\/30 {
+  stroke: rgb(80 126 156 / 0.3);
+}
+
+.stroke-java\/40 {
+  stroke: rgb(80 126 156 / 0.4);
+}
+
+.stroke-java\/5 {
+  stroke: rgb(80 126 156 / 0.05);
+}
+
+.stroke-java\/50 {
+  stroke: rgb(80 126 156 / 0.5);
+}
+
+.stroke-java\/60 {
+  stroke: rgb(80 126 156 / 0.6);
+}
+
+.stroke-java\/70 {
+  stroke: rgb(80 126 156 / 0.7);
+}
+
+.stroke-java\/75 {
+  stroke: rgb(80 126 156 / 0.75);
+}
+
+.stroke-java\/80 {
+  stroke: rgb(80 126 156 / 0.8);
+}
+
+.stroke-java\/90 {
+  stroke: rgb(80 126 156 / 0.9);
+}
+
+.stroke-java\/95 {
+  stroke: rgb(80 126 156 / 0.95);
+}
+
+.stroke-mysql {
+  stroke: #dd8a00;
+}
+
+.stroke-mysql\/0 {
+  stroke: rgb(221 138 0 / 0);
+}
+
+.stroke-mysql\/10 {
+  stroke: rgb(221 138 0 / 0.1);
+}
+
+.stroke-mysql\/100 {
+  stroke: rgb(221 138 0 / 1);
+}
+
+.stroke-mysql\/20 {
+  stroke: rgb(221 138 0 / 0.2);
+}
+
+.stroke-mysql\/25 {
+  stroke: rgb(221 138 0 / 0.25);
+}
+
+.stroke-mysql\/30 {
+  stroke: rgb(221 138 0 / 0.3);
+}
+
+.stroke-mysql\/40 {
+  stroke: rgb(221 138 0 / 0.4);
+}
+
+.stroke-mysql\/5 {
+  stroke: rgb(221 138 0 / 0.05);
+}
+
+.stroke-mysql\/50 {
+  stroke: rgb(221 138 0 / 0.5);
+}
+
+.stroke-mysql\/60 {
+  stroke: rgb(221 138 0 / 0.6);
+}
+
+.stroke-mysql\/70 {
+  stroke: rgb(221 138 0 / 0.7);
+}
+
+.stroke-mysql\/75 {
+  stroke: rgb(221 138 0 / 0.75);
+}
+
+.stroke-mysql\/80 {
+  stroke: rgb(221 138 0 / 0.8);
+}
+
+.stroke-mysql\/90 {
+  stroke: rgb(221 138 0 / 0.9);
+}
+
+.stroke-mysql\/95 {
+  stroke: rgb(221 138 0 / 0.95);
+}
+
+.stroke-php {
+  stroke: #7377ad;
+}
+
+.stroke-php\/0 {
+  stroke: rgb(115 119 173 / 0);
+}
+
+.stroke-php\/10 {
+  stroke: rgb(115 119 173 / 0.1);
+}
+
+.stroke-php\/100 {
+  stroke: rgb(115 119 173 / 1);
+}
+
+.stroke-php\/20 {
+  stroke: rgb(115 119 173 / 0.2);
+}
+
+.stroke-php\/25 {
+  stroke: rgb(115 119 173 / 0.25);
+}
+
+.stroke-php\/30 {
+  stroke: rgb(115 119 173 / 0.3);
+}
+
+.stroke-php\/40 {
+  stroke: rgb(115 119 173 / 0.4);
+}
+
+.stroke-php\/5 {
+  stroke: rgb(115 119 173 / 0.05);
+}
+
+.stroke-php\/50 {
+  stroke: rgb(115 119 173 / 0.5);
+}
+
+.stroke-php\/60 {
+  stroke: rgb(115 119 173 / 0.6);
+}
+
+.stroke-php\/70 {
+  stroke: rgb(115 119 173 / 0.7);
+}
+
+.stroke-php\/75 {
+  stroke: rgb(115 119 173 / 0.75);
+}
+
+.stroke-php\/80 {
+  stroke: rgb(115 119 173 / 0.8);
+}
+
+.stroke-php\/90 {
+  stroke: rgb(115 119 173 / 0.9);
+}
+
+.stroke-php\/95 {
+  stroke: rgb(115 119 173 / 0.95);
+}
+
+.stroke-ruby {
+  stroke: #E0115F;
+}
+
+.stroke-ruby\/0 {
+  stroke: rgb(224 17 95 / 0);
+}
+
+.stroke-ruby\/10 {
+  stroke: rgb(224 17 95 / 0.1);
+}
+
+.stroke-ruby\/100 {
+  stroke: rgb(224 17 95 / 1);
+}
+
+.stroke-ruby\/20 {
+  stroke: rgb(224 17 95 / 0.2);
+}
+
+.stroke-ruby\/25 {
+  stroke: rgb(224 17 95 / 0.25);
+}
+
+.stroke-ruby\/30 {
+  stroke: rgb(224 17 95 / 0.3);
+}
+
+.stroke-ruby\/40 {
+  stroke: rgb(224 17 95 / 0.4);
+}
+
+.stroke-ruby\/5 {
+  stroke: rgb(224 17 95 / 0.05);
+}
+
+.stroke-ruby\/50 {
+  stroke: rgb(224 17 95 / 0.5);
+}
+
+.stroke-ruby\/60 {
+  stroke: rgb(224 17 95 / 0.6);
+}
+
+.stroke-ruby\/70 {
+  stroke: rgb(224 17 95 / 0.7);
+}
+
+.stroke-ruby\/75 {
+  stroke: rgb(224 17 95 / 0.75);
+}
+
+.stroke-ruby\/80 {
+  stroke: rgb(224 17 95 / 0.8);
+}
+
+.stroke-ruby\/90 {
+  stroke: rgb(224 17 95 / 0.9);
+}
+
+.stroke-ruby\/95 {
+  stroke: rgb(224 17 95 / 0.95);
 }
 
 .p-1 {
@@ -679,9 +5607,334 @@ video {
   line-height: 1.25rem;
 }
 
+.text-csharp {
+  --tw-text-opacity: 1;
+  color: rgb(156 117 213 / var(--tw-text-opacity));
+}
+
+.text-csharp\/0 {
+  color: rgb(156 117 213 / 0);
+}
+
+.text-csharp\/10 {
+  color: rgb(156 117 213 / 0.1);
+}
+
+.text-csharp\/100 {
+  color: rgb(156 117 213 / 1);
+}
+
+.text-csharp\/20 {
+  color: rgb(156 117 213 / 0.2);
+}
+
+.text-csharp\/25 {
+  color: rgb(156 117 213 / 0.25);
+}
+
+.text-csharp\/30 {
+  color: rgb(156 117 213 / 0.3);
+}
+
+.text-csharp\/40 {
+  color: rgb(156 117 213 / 0.4);
+}
+
+.text-csharp\/5 {
+  color: rgb(156 117 213 / 0.05);
+}
+
+.text-csharp\/50 {
+  color: rgb(156 117 213 / 0.5);
+}
+
+.text-csharp\/60 {
+  color: rgb(156 117 213 / 0.6);
+}
+
+.text-csharp\/70 {
+  color: rgb(156 117 213 / 0.7);
+}
+
+.text-csharp\/75 {
+  color: rgb(156 117 213 / 0.75);
+}
+
+.text-csharp\/80 {
+  color: rgb(156 117 213 / 0.8);
+}
+
+.text-csharp\/90 {
+  color: rgb(156 117 213 / 0.9);
+}
+
+.text-csharp\/95 {
+  color: rgb(156 117 213 / 0.95);
+}
+
 .text-hero {
   --tw-text-opacity: 1;
   color: rgb(151 223 252 / var(--tw-text-opacity));
+}
+
+.text-java {
+  --tw-text-opacity: 1;
+  color: rgb(80 126 156 / var(--tw-text-opacity));
+}
+
+.text-java\/0 {
+  color: rgb(80 126 156 / 0);
+}
+
+.text-java\/10 {
+  color: rgb(80 126 156 / 0.1);
+}
+
+.text-java\/100 {
+  color: rgb(80 126 156 / 1);
+}
+
+.text-java\/20 {
+  color: rgb(80 126 156 / 0.2);
+}
+
+.text-java\/25 {
+  color: rgb(80 126 156 / 0.25);
+}
+
+.text-java\/30 {
+  color: rgb(80 126 156 / 0.3);
+}
+
+.text-java\/40 {
+  color: rgb(80 126 156 / 0.4);
+}
+
+.text-java\/5 {
+  color: rgb(80 126 156 / 0.05);
+}
+
+.text-java\/50 {
+  color: rgb(80 126 156 / 0.5);
+}
+
+.text-java\/60 {
+  color: rgb(80 126 156 / 0.6);
+}
+
+.text-java\/70 {
+  color: rgb(80 126 156 / 0.7);
+}
+
+.text-java\/75 {
+  color: rgb(80 126 156 / 0.75);
+}
+
+.text-java\/80 {
+  color: rgb(80 126 156 / 0.8);
+}
+
+.text-java\/90 {
+  color: rgb(80 126 156 / 0.9);
+}
+
+.text-java\/95 {
+  color: rgb(80 126 156 / 0.95);
+}
+
+.text-mysql {
+  --tw-text-opacity: 1;
+  color: rgb(221 138 0 / var(--tw-text-opacity));
+}
+
+.text-mysql\/0 {
+  color: rgb(221 138 0 / 0);
+}
+
+.text-mysql\/10 {
+  color: rgb(221 138 0 / 0.1);
+}
+
+.text-mysql\/100 {
+  color: rgb(221 138 0 / 1);
+}
+
+.text-mysql\/20 {
+  color: rgb(221 138 0 / 0.2);
+}
+
+.text-mysql\/25 {
+  color: rgb(221 138 0 / 0.25);
+}
+
+.text-mysql\/30 {
+  color: rgb(221 138 0 / 0.3);
+}
+
+.text-mysql\/40 {
+  color: rgb(221 138 0 / 0.4);
+}
+
+.text-mysql\/5 {
+  color: rgb(221 138 0 / 0.05);
+}
+
+.text-mysql\/50 {
+  color: rgb(221 138 0 / 0.5);
+}
+
+.text-mysql\/60 {
+  color: rgb(221 138 0 / 0.6);
+}
+
+.text-mysql\/70 {
+  color: rgb(221 138 0 / 0.7);
+}
+
+.text-mysql\/75 {
+  color: rgb(221 138 0 / 0.75);
+}
+
+.text-mysql\/80 {
+  color: rgb(221 138 0 / 0.8);
+}
+
+.text-mysql\/90 {
+  color: rgb(221 138 0 / 0.9);
+}
+
+.text-mysql\/95 {
+  color: rgb(221 138 0 / 0.95);
+}
+
+.text-php {
+  --tw-text-opacity: 1;
+  color: rgb(115 119 173 / var(--tw-text-opacity));
+}
+
+.text-php\/0 {
+  color: rgb(115 119 173 / 0);
+}
+
+.text-php\/10 {
+  color: rgb(115 119 173 / 0.1);
+}
+
+.text-php\/100 {
+  color: rgb(115 119 173 / 1);
+}
+
+.text-php\/20 {
+  color: rgb(115 119 173 / 0.2);
+}
+
+.text-php\/25 {
+  color: rgb(115 119 173 / 0.25);
+}
+
+.text-php\/30 {
+  color: rgb(115 119 173 / 0.3);
+}
+
+.text-php\/40 {
+  color: rgb(115 119 173 / 0.4);
+}
+
+.text-php\/5 {
+  color: rgb(115 119 173 / 0.05);
+}
+
+.text-php\/50 {
+  color: rgb(115 119 173 / 0.5);
+}
+
+.text-php\/60 {
+  color: rgb(115 119 173 / 0.6);
+}
+
+.text-php\/70 {
+  color: rgb(115 119 173 / 0.7);
+}
+
+.text-php\/75 {
+  color: rgb(115 119 173 / 0.75);
+}
+
+.text-php\/80 {
+  color: rgb(115 119 173 / 0.8);
+}
+
+.text-php\/90 {
+  color: rgb(115 119 173 / 0.9);
+}
+
+.text-php\/95 {
+  color: rgb(115 119 173 / 0.95);
+}
+
+.text-ruby {
+  --tw-text-opacity: 1;
+  color: rgb(224 17 95 / var(--tw-text-opacity));
+}
+
+.text-ruby\/0 {
+  color: rgb(224 17 95 / 0);
+}
+
+.text-ruby\/10 {
+  color: rgb(224 17 95 / 0.1);
+}
+
+.text-ruby\/100 {
+  color: rgb(224 17 95 / 1);
+}
+
+.text-ruby\/20 {
+  color: rgb(224 17 95 / 0.2);
+}
+
+.text-ruby\/25 {
+  color: rgb(224 17 95 / 0.25);
+}
+
+.text-ruby\/30 {
+  color: rgb(224 17 95 / 0.3);
+}
+
+.text-ruby\/40 {
+  color: rgb(224 17 95 / 0.4);
+}
+
+.text-ruby\/5 {
+  color: rgb(224 17 95 / 0.05);
+}
+
+.text-ruby\/50 {
+  color: rgb(224 17 95 / 0.5);
+}
+
+.text-ruby\/60 {
+  color: rgb(224 17 95 / 0.6);
+}
+
+.text-ruby\/70 {
+  color: rgb(224 17 95 / 0.7);
+}
+
+.text-ruby\/75 {
+  color: rgb(224 17 95 / 0.75);
+}
+
+.text-ruby\/80 {
+  color: rgb(224 17 95 / 0.8);
+}
+
+.text-ruby\/90 {
+  color: rgb(224 17 95 / 0.9);
+}
+
+.text-ruby\/95 {
+  color: rgb(224 17 95 / 0.95);
 }
 
 .text-white {
@@ -689,12 +5942,2983 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.decoration-csharp {
+  text-decoration-color: #9c75d5;
+}
+
+.decoration-csharp\/0 {
+  text-decoration-color: rgb(156 117 213 / 0);
+}
+
+.decoration-csharp\/10 {
+  text-decoration-color: rgb(156 117 213 / 0.1);
+}
+
+.decoration-csharp\/100 {
+  text-decoration-color: rgb(156 117 213 / 1);
+}
+
+.decoration-csharp\/20 {
+  text-decoration-color: rgb(156 117 213 / 0.2);
+}
+
+.decoration-csharp\/25 {
+  text-decoration-color: rgb(156 117 213 / 0.25);
+}
+
+.decoration-csharp\/30 {
+  text-decoration-color: rgb(156 117 213 / 0.3);
+}
+
+.decoration-csharp\/40 {
+  text-decoration-color: rgb(156 117 213 / 0.4);
+}
+
+.decoration-csharp\/5 {
+  text-decoration-color: rgb(156 117 213 / 0.05);
+}
+
+.decoration-csharp\/50 {
+  text-decoration-color: rgb(156 117 213 / 0.5);
+}
+
+.decoration-csharp\/60 {
+  text-decoration-color: rgb(156 117 213 / 0.6);
+}
+
+.decoration-csharp\/70 {
+  text-decoration-color: rgb(156 117 213 / 0.7);
+}
+
+.decoration-csharp\/75 {
+  text-decoration-color: rgb(156 117 213 / 0.75);
+}
+
+.decoration-csharp\/80 {
+  text-decoration-color: rgb(156 117 213 / 0.8);
+}
+
+.decoration-csharp\/90 {
+  text-decoration-color: rgb(156 117 213 / 0.9);
+}
+
+.decoration-csharp\/95 {
+  text-decoration-color: rgb(156 117 213 / 0.95);
+}
+
+.decoration-java {
+  text-decoration-color: #507e9c;
+}
+
+.decoration-java\/0 {
+  text-decoration-color: rgb(80 126 156 / 0);
+}
+
+.decoration-java\/10 {
+  text-decoration-color: rgb(80 126 156 / 0.1);
+}
+
+.decoration-java\/100 {
+  text-decoration-color: rgb(80 126 156 / 1);
+}
+
+.decoration-java\/20 {
+  text-decoration-color: rgb(80 126 156 / 0.2);
+}
+
+.decoration-java\/25 {
+  text-decoration-color: rgb(80 126 156 / 0.25);
+}
+
+.decoration-java\/30 {
+  text-decoration-color: rgb(80 126 156 / 0.3);
+}
+
+.decoration-java\/40 {
+  text-decoration-color: rgb(80 126 156 / 0.4);
+}
+
+.decoration-java\/5 {
+  text-decoration-color: rgb(80 126 156 / 0.05);
+}
+
+.decoration-java\/50 {
+  text-decoration-color: rgb(80 126 156 / 0.5);
+}
+
+.decoration-java\/60 {
+  text-decoration-color: rgb(80 126 156 / 0.6);
+}
+
+.decoration-java\/70 {
+  text-decoration-color: rgb(80 126 156 / 0.7);
+}
+
+.decoration-java\/75 {
+  text-decoration-color: rgb(80 126 156 / 0.75);
+}
+
+.decoration-java\/80 {
+  text-decoration-color: rgb(80 126 156 / 0.8);
+}
+
+.decoration-java\/90 {
+  text-decoration-color: rgb(80 126 156 / 0.9);
+}
+
+.decoration-java\/95 {
+  text-decoration-color: rgb(80 126 156 / 0.95);
+}
+
+.decoration-mysql {
+  text-decoration-color: #dd8a00;
+}
+
+.decoration-mysql\/0 {
+  text-decoration-color: rgb(221 138 0 / 0);
+}
+
+.decoration-mysql\/10 {
+  text-decoration-color: rgb(221 138 0 / 0.1);
+}
+
+.decoration-mysql\/100 {
+  text-decoration-color: rgb(221 138 0 / 1);
+}
+
+.decoration-mysql\/20 {
+  text-decoration-color: rgb(221 138 0 / 0.2);
+}
+
+.decoration-mysql\/25 {
+  text-decoration-color: rgb(221 138 0 / 0.25);
+}
+
+.decoration-mysql\/30 {
+  text-decoration-color: rgb(221 138 0 / 0.3);
+}
+
+.decoration-mysql\/40 {
+  text-decoration-color: rgb(221 138 0 / 0.4);
+}
+
+.decoration-mysql\/5 {
+  text-decoration-color: rgb(221 138 0 / 0.05);
+}
+
+.decoration-mysql\/50 {
+  text-decoration-color: rgb(221 138 0 / 0.5);
+}
+
+.decoration-mysql\/60 {
+  text-decoration-color: rgb(221 138 0 / 0.6);
+}
+
+.decoration-mysql\/70 {
+  text-decoration-color: rgb(221 138 0 / 0.7);
+}
+
+.decoration-mysql\/75 {
+  text-decoration-color: rgb(221 138 0 / 0.75);
+}
+
+.decoration-mysql\/80 {
+  text-decoration-color: rgb(221 138 0 / 0.8);
+}
+
+.decoration-mysql\/90 {
+  text-decoration-color: rgb(221 138 0 / 0.9);
+}
+
+.decoration-mysql\/95 {
+  text-decoration-color: rgb(221 138 0 / 0.95);
+}
+
+.decoration-php {
+  text-decoration-color: #7377ad;
+}
+
+.decoration-php\/0 {
+  text-decoration-color: rgb(115 119 173 / 0);
+}
+
+.decoration-php\/10 {
+  text-decoration-color: rgb(115 119 173 / 0.1);
+}
+
+.decoration-php\/100 {
+  text-decoration-color: rgb(115 119 173 / 1);
+}
+
+.decoration-php\/20 {
+  text-decoration-color: rgb(115 119 173 / 0.2);
+}
+
+.decoration-php\/25 {
+  text-decoration-color: rgb(115 119 173 / 0.25);
+}
+
+.decoration-php\/30 {
+  text-decoration-color: rgb(115 119 173 / 0.3);
+}
+
+.decoration-php\/40 {
+  text-decoration-color: rgb(115 119 173 / 0.4);
+}
+
+.decoration-php\/5 {
+  text-decoration-color: rgb(115 119 173 / 0.05);
+}
+
+.decoration-php\/50 {
+  text-decoration-color: rgb(115 119 173 / 0.5);
+}
+
+.decoration-php\/60 {
+  text-decoration-color: rgb(115 119 173 / 0.6);
+}
+
+.decoration-php\/70 {
+  text-decoration-color: rgb(115 119 173 / 0.7);
+}
+
+.decoration-php\/75 {
+  text-decoration-color: rgb(115 119 173 / 0.75);
+}
+
+.decoration-php\/80 {
+  text-decoration-color: rgb(115 119 173 / 0.8);
+}
+
+.decoration-php\/90 {
+  text-decoration-color: rgb(115 119 173 / 0.9);
+}
+
+.decoration-php\/95 {
+  text-decoration-color: rgb(115 119 173 / 0.95);
+}
+
+.decoration-ruby {
+  text-decoration-color: #E0115F;
+}
+
+.decoration-ruby\/0 {
+  text-decoration-color: rgb(224 17 95 / 0);
+}
+
+.decoration-ruby\/10 {
+  text-decoration-color: rgb(224 17 95 / 0.1);
+}
+
+.decoration-ruby\/100 {
+  text-decoration-color: rgb(224 17 95 / 1);
+}
+
+.decoration-ruby\/20 {
+  text-decoration-color: rgb(224 17 95 / 0.2);
+}
+
+.decoration-ruby\/25 {
+  text-decoration-color: rgb(224 17 95 / 0.25);
+}
+
+.decoration-ruby\/30 {
+  text-decoration-color: rgb(224 17 95 / 0.3);
+}
+
+.decoration-ruby\/40 {
+  text-decoration-color: rgb(224 17 95 / 0.4);
+}
+
+.decoration-ruby\/5 {
+  text-decoration-color: rgb(224 17 95 / 0.05);
+}
+
+.decoration-ruby\/50 {
+  text-decoration-color: rgb(224 17 95 / 0.5);
+}
+
+.decoration-ruby\/60 {
+  text-decoration-color: rgb(224 17 95 / 0.6);
+}
+
+.decoration-ruby\/70 {
+  text-decoration-color: rgb(224 17 95 / 0.7);
+}
+
+.decoration-ruby\/75 {
+  text-decoration-color: rgb(224 17 95 / 0.75);
+}
+
+.decoration-ruby\/80 {
+  text-decoration-color: rgb(224 17 95 / 0.8);
+}
+
+.decoration-ruby\/90 {
+  text-decoration-color: rgb(224 17 95 / 0.9);
+}
+
+.decoration-ruby\/95 {
+  text-decoration-color: rgb(224 17 95 / 0.95);
+}
+
+.placeholder-csharp::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 117 213 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-csharp::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(156 117 213 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-csharp\/0::-moz-placeholder {
+  color: rgb(156 117 213 / 0);
+}
+
+.placeholder-csharp\/0::placeholder {
+  color: rgb(156 117 213 / 0);
+}
+
+.placeholder-csharp\/10::-moz-placeholder {
+  color: rgb(156 117 213 / 0.1);
+}
+
+.placeholder-csharp\/10::placeholder {
+  color: rgb(156 117 213 / 0.1);
+}
+
+.placeholder-csharp\/100::-moz-placeholder {
+  color: rgb(156 117 213 / 1);
+}
+
+.placeholder-csharp\/100::placeholder {
+  color: rgb(156 117 213 / 1);
+}
+
+.placeholder-csharp\/20::-moz-placeholder {
+  color: rgb(156 117 213 / 0.2);
+}
+
+.placeholder-csharp\/20::placeholder {
+  color: rgb(156 117 213 / 0.2);
+}
+
+.placeholder-csharp\/25::-moz-placeholder {
+  color: rgb(156 117 213 / 0.25);
+}
+
+.placeholder-csharp\/25::placeholder {
+  color: rgb(156 117 213 / 0.25);
+}
+
+.placeholder-csharp\/30::-moz-placeholder {
+  color: rgb(156 117 213 / 0.3);
+}
+
+.placeholder-csharp\/30::placeholder {
+  color: rgb(156 117 213 / 0.3);
+}
+
+.placeholder-csharp\/40::-moz-placeholder {
+  color: rgb(156 117 213 / 0.4);
+}
+
+.placeholder-csharp\/40::placeholder {
+  color: rgb(156 117 213 / 0.4);
+}
+
+.placeholder-csharp\/5::-moz-placeholder {
+  color: rgb(156 117 213 / 0.05);
+}
+
+.placeholder-csharp\/5::placeholder {
+  color: rgb(156 117 213 / 0.05);
+}
+
+.placeholder-csharp\/50::-moz-placeholder {
+  color: rgb(156 117 213 / 0.5);
+}
+
+.placeholder-csharp\/50::placeholder {
+  color: rgb(156 117 213 / 0.5);
+}
+
+.placeholder-csharp\/60::-moz-placeholder {
+  color: rgb(156 117 213 / 0.6);
+}
+
+.placeholder-csharp\/60::placeholder {
+  color: rgb(156 117 213 / 0.6);
+}
+
+.placeholder-csharp\/70::-moz-placeholder {
+  color: rgb(156 117 213 / 0.7);
+}
+
+.placeholder-csharp\/70::placeholder {
+  color: rgb(156 117 213 / 0.7);
+}
+
+.placeholder-csharp\/75::-moz-placeholder {
+  color: rgb(156 117 213 / 0.75);
+}
+
+.placeholder-csharp\/75::placeholder {
+  color: rgb(156 117 213 / 0.75);
+}
+
+.placeholder-csharp\/80::-moz-placeholder {
+  color: rgb(156 117 213 / 0.8);
+}
+
+.placeholder-csharp\/80::placeholder {
+  color: rgb(156 117 213 / 0.8);
+}
+
+.placeholder-csharp\/90::-moz-placeholder {
+  color: rgb(156 117 213 / 0.9);
+}
+
+.placeholder-csharp\/90::placeholder {
+  color: rgb(156 117 213 / 0.9);
+}
+
+.placeholder-csharp\/95::-moz-placeholder {
+  color: rgb(156 117 213 / 0.95);
+}
+
+.placeholder-csharp\/95::placeholder {
+  color: rgb(156 117 213 / 0.95);
+}
+
+.placeholder-java::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(80 126 156 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-java::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(80 126 156 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-java\/0::-moz-placeholder {
+  color: rgb(80 126 156 / 0);
+}
+
+.placeholder-java\/0::placeholder {
+  color: rgb(80 126 156 / 0);
+}
+
+.placeholder-java\/10::-moz-placeholder {
+  color: rgb(80 126 156 / 0.1);
+}
+
+.placeholder-java\/10::placeholder {
+  color: rgb(80 126 156 / 0.1);
+}
+
+.placeholder-java\/100::-moz-placeholder {
+  color: rgb(80 126 156 / 1);
+}
+
+.placeholder-java\/100::placeholder {
+  color: rgb(80 126 156 / 1);
+}
+
+.placeholder-java\/20::-moz-placeholder {
+  color: rgb(80 126 156 / 0.2);
+}
+
+.placeholder-java\/20::placeholder {
+  color: rgb(80 126 156 / 0.2);
+}
+
+.placeholder-java\/25::-moz-placeholder {
+  color: rgb(80 126 156 / 0.25);
+}
+
+.placeholder-java\/25::placeholder {
+  color: rgb(80 126 156 / 0.25);
+}
+
+.placeholder-java\/30::-moz-placeholder {
+  color: rgb(80 126 156 / 0.3);
+}
+
+.placeholder-java\/30::placeholder {
+  color: rgb(80 126 156 / 0.3);
+}
+
+.placeholder-java\/40::-moz-placeholder {
+  color: rgb(80 126 156 / 0.4);
+}
+
+.placeholder-java\/40::placeholder {
+  color: rgb(80 126 156 / 0.4);
+}
+
+.placeholder-java\/5::-moz-placeholder {
+  color: rgb(80 126 156 / 0.05);
+}
+
+.placeholder-java\/5::placeholder {
+  color: rgb(80 126 156 / 0.05);
+}
+
+.placeholder-java\/50::-moz-placeholder {
+  color: rgb(80 126 156 / 0.5);
+}
+
+.placeholder-java\/50::placeholder {
+  color: rgb(80 126 156 / 0.5);
+}
+
+.placeholder-java\/60::-moz-placeholder {
+  color: rgb(80 126 156 / 0.6);
+}
+
+.placeholder-java\/60::placeholder {
+  color: rgb(80 126 156 / 0.6);
+}
+
+.placeholder-java\/70::-moz-placeholder {
+  color: rgb(80 126 156 / 0.7);
+}
+
+.placeholder-java\/70::placeholder {
+  color: rgb(80 126 156 / 0.7);
+}
+
+.placeholder-java\/75::-moz-placeholder {
+  color: rgb(80 126 156 / 0.75);
+}
+
+.placeholder-java\/75::placeholder {
+  color: rgb(80 126 156 / 0.75);
+}
+
+.placeholder-java\/80::-moz-placeholder {
+  color: rgb(80 126 156 / 0.8);
+}
+
+.placeholder-java\/80::placeholder {
+  color: rgb(80 126 156 / 0.8);
+}
+
+.placeholder-java\/90::-moz-placeholder {
+  color: rgb(80 126 156 / 0.9);
+}
+
+.placeholder-java\/90::placeholder {
+  color: rgb(80 126 156 / 0.9);
+}
+
+.placeholder-java\/95::-moz-placeholder {
+  color: rgb(80 126 156 / 0.95);
+}
+
+.placeholder-java\/95::placeholder {
+  color: rgb(80 126 156 / 0.95);
+}
+
+.placeholder-mysql::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(221 138 0 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-mysql::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(221 138 0 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-mysql\/0::-moz-placeholder {
+  color: rgb(221 138 0 / 0);
+}
+
+.placeholder-mysql\/0::placeholder {
+  color: rgb(221 138 0 / 0);
+}
+
+.placeholder-mysql\/10::-moz-placeholder {
+  color: rgb(221 138 0 / 0.1);
+}
+
+.placeholder-mysql\/10::placeholder {
+  color: rgb(221 138 0 / 0.1);
+}
+
+.placeholder-mysql\/100::-moz-placeholder {
+  color: rgb(221 138 0 / 1);
+}
+
+.placeholder-mysql\/100::placeholder {
+  color: rgb(221 138 0 / 1);
+}
+
+.placeholder-mysql\/20::-moz-placeholder {
+  color: rgb(221 138 0 / 0.2);
+}
+
+.placeholder-mysql\/20::placeholder {
+  color: rgb(221 138 0 / 0.2);
+}
+
+.placeholder-mysql\/25::-moz-placeholder {
+  color: rgb(221 138 0 / 0.25);
+}
+
+.placeholder-mysql\/25::placeholder {
+  color: rgb(221 138 0 / 0.25);
+}
+
+.placeholder-mysql\/30::-moz-placeholder {
+  color: rgb(221 138 0 / 0.3);
+}
+
+.placeholder-mysql\/30::placeholder {
+  color: rgb(221 138 0 / 0.3);
+}
+
+.placeholder-mysql\/40::-moz-placeholder {
+  color: rgb(221 138 0 / 0.4);
+}
+
+.placeholder-mysql\/40::placeholder {
+  color: rgb(221 138 0 / 0.4);
+}
+
+.placeholder-mysql\/5::-moz-placeholder {
+  color: rgb(221 138 0 / 0.05);
+}
+
+.placeholder-mysql\/5::placeholder {
+  color: rgb(221 138 0 / 0.05);
+}
+
+.placeholder-mysql\/50::-moz-placeholder {
+  color: rgb(221 138 0 / 0.5);
+}
+
+.placeholder-mysql\/50::placeholder {
+  color: rgb(221 138 0 / 0.5);
+}
+
+.placeholder-mysql\/60::-moz-placeholder {
+  color: rgb(221 138 0 / 0.6);
+}
+
+.placeholder-mysql\/60::placeholder {
+  color: rgb(221 138 0 / 0.6);
+}
+
+.placeholder-mysql\/70::-moz-placeholder {
+  color: rgb(221 138 0 / 0.7);
+}
+
+.placeholder-mysql\/70::placeholder {
+  color: rgb(221 138 0 / 0.7);
+}
+
+.placeholder-mysql\/75::-moz-placeholder {
+  color: rgb(221 138 0 / 0.75);
+}
+
+.placeholder-mysql\/75::placeholder {
+  color: rgb(221 138 0 / 0.75);
+}
+
+.placeholder-mysql\/80::-moz-placeholder {
+  color: rgb(221 138 0 / 0.8);
+}
+
+.placeholder-mysql\/80::placeholder {
+  color: rgb(221 138 0 / 0.8);
+}
+
+.placeholder-mysql\/90::-moz-placeholder {
+  color: rgb(221 138 0 / 0.9);
+}
+
+.placeholder-mysql\/90::placeholder {
+  color: rgb(221 138 0 / 0.9);
+}
+
+.placeholder-mysql\/95::-moz-placeholder {
+  color: rgb(221 138 0 / 0.95);
+}
+
+.placeholder-mysql\/95::placeholder {
+  color: rgb(221 138 0 / 0.95);
+}
+
+.placeholder-php::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(115 119 173 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-php::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(115 119 173 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-php\/0::-moz-placeholder {
+  color: rgb(115 119 173 / 0);
+}
+
+.placeholder-php\/0::placeholder {
+  color: rgb(115 119 173 / 0);
+}
+
+.placeholder-php\/10::-moz-placeholder {
+  color: rgb(115 119 173 / 0.1);
+}
+
+.placeholder-php\/10::placeholder {
+  color: rgb(115 119 173 / 0.1);
+}
+
+.placeholder-php\/100::-moz-placeholder {
+  color: rgb(115 119 173 / 1);
+}
+
+.placeholder-php\/100::placeholder {
+  color: rgb(115 119 173 / 1);
+}
+
+.placeholder-php\/20::-moz-placeholder {
+  color: rgb(115 119 173 / 0.2);
+}
+
+.placeholder-php\/20::placeholder {
+  color: rgb(115 119 173 / 0.2);
+}
+
+.placeholder-php\/25::-moz-placeholder {
+  color: rgb(115 119 173 / 0.25);
+}
+
+.placeholder-php\/25::placeholder {
+  color: rgb(115 119 173 / 0.25);
+}
+
+.placeholder-php\/30::-moz-placeholder {
+  color: rgb(115 119 173 / 0.3);
+}
+
+.placeholder-php\/30::placeholder {
+  color: rgb(115 119 173 / 0.3);
+}
+
+.placeholder-php\/40::-moz-placeholder {
+  color: rgb(115 119 173 / 0.4);
+}
+
+.placeholder-php\/40::placeholder {
+  color: rgb(115 119 173 / 0.4);
+}
+
+.placeholder-php\/5::-moz-placeholder {
+  color: rgb(115 119 173 / 0.05);
+}
+
+.placeholder-php\/5::placeholder {
+  color: rgb(115 119 173 / 0.05);
+}
+
+.placeholder-php\/50::-moz-placeholder {
+  color: rgb(115 119 173 / 0.5);
+}
+
+.placeholder-php\/50::placeholder {
+  color: rgb(115 119 173 / 0.5);
+}
+
+.placeholder-php\/60::-moz-placeholder {
+  color: rgb(115 119 173 / 0.6);
+}
+
+.placeholder-php\/60::placeholder {
+  color: rgb(115 119 173 / 0.6);
+}
+
+.placeholder-php\/70::-moz-placeholder {
+  color: rgb(115 119 173 / 0.7);
+}
+
+.placeholder-php\/70::placeholder {
+  color: rgb(115 119 173 / 0.7);
+}
+
+.placeholder-php\/75::-moz-placeholder {
+  color: rgb(115 119 173 / 0.75);
+}
+
+.placeholder-php\/75::placeholder {
+  color: rgb(115 119 173 / 0.75);
+}
+
+.placeholder-php\/80::-moz-placeholder {
+  color: rgb(115 119 173 / 0.8);
+}
+
+.placeholder-php\/80::placeholder {
+  color: rgb(115 119 173 / 0.8);
+}
+
+.placeholder-php\/90::-moz-placeholder {
+  color: rgb(115 119 173 / 0.9);
+}
+
+.placeholder-php\/90::placeholder {
+  color: rgb(115 119 173 / 0.9);
+}
+
+.placeholder-php\/95::-moz-placeholder {
+  color: rgb(115 119 173 / 0.95);
+}
+
+.placeholder-php\/95::placeholder {
+  color: rgb(115 119 173 / 0.95);
+}
+
+.placeholder-ruby::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(224 17 95 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-ruby::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(224 17 95 / var(--tw-placeholder-opacity));
+}
+
+.placeholder-ruby\/0::-moz-placeholder {
+  color: rgb(224 17 95 / 0);
+}
+
+.placeholder-ruby\/0::placeholder {
+  color: rgb(224 17 95 / 0);
+}
+
+.placeholder-ruby\/10::-moz-placeholder {
+  color: rgb(224 17 95 / 0.1);
+}
+
+.placeholder-ruby\/10::placeholder {
+  color: rgb(224 17 95 / 0.1);
+}
+
+.placeholder-ruby\/100::-moz-placeholder {
+  color: rgb(224 17 95 / 1);
+}
+
+.placeholder-ruby\/100::placeholder {
+  color: rgb(224 17 95 / 1);
+}
+
+.placeholder-ruby\/20::-moz-placeholder {
+  color: rgb(224 17 95 / 0.2);
+}
+
+.placeholder-ruby\/20::placeholder {
+  color: rgb(224 17 95 / 0.2);
+}
+
+.placeholder-ruby\/25::-moz-placeholder {
+  color: rgb(224 17 95 / 0.25);
+}
+
+.placeholder-ruby\/25::placeholder {
+  color: rgb(224 17 95 / 0.25);
+}
+
+.placeholder-ruby\/30::-moz-placeholder {
+  color: rgb(224 17 95 / 0.3);
+}
+
+.placeholder-ruby\/30::placeholder {
+  color: rgb(224 17 95 / 0.3);
+}
+
+.placeholder-ruby\/40::-moz-placeholder {
+  color: rgb(224 17 95 / 0.4);
+}
+
+.placeholder-ruby\/40::placeholder {
+  color: rgb(224 17 95 / 0.4);
+}
+
+.placeholder-ruby\/5::-moz-placeholder {
+  color: rgb(224 17 95 / 0.05);
+}
+
+.placeholder-ruby\/5::placeholder {
+  color: rgb(224 17 95 / 0.05);
+}
+
+.placeholder-ruby\/50::-moz-placeholder {
+  color: rgb(224 17 95 / 0.5);
+}
+
+.placeholder-ruby\/50::placeholder {
+  color: rgb(224 17 95 / 0.5);
+}
+
+.placeholder-ruby\/60::-moz-placeholder {
+  color: rgb(224 17 95 / 0.6);
+}
+
+.placeholder-ruby\/60::placeholder {
+  color: rgb(224 17 95 / 0.6);
+}
+
+.placeholder-ruby\/70::-moz-placeholder {
+  color: rgb(224 17 95 / 0.7);
+}
+
+.placeholder-ruby\/70::placeholder {
+  color: rgb(224 17 95 / 0.7);
+}
+
+.placeholder-ruby\/75::-moz-placeholder {
+  color: rgb(224 17 95 / 0.75);
+}
+
+.placeholder-ruby\/75::placeholder {
+  color: rgb(224 17 95 / 0.75);
+}
+
+.placeholder-ruby\/80::-moz-placeholder {
+  color: rgb(224 17 95 / 0.8);
+}
+
+.placeholder-ruby\/80::placeholder {
+  color: rgb(224 17 95 / 0.8);
+}
+
+.placeholder-ruby\/90::-moz-placeholder {
+  color: rgb(224 17 95 / 0.9);
+}
+
+.placeholder-ruby\/90::placeholder {
+  color: rgb(224 17 95 / 0.9);
+}
+
+.placeholder-ruby\/95::-moz-placeholder {
+  color: rgb(224 17 95 / 0.95);
+}
+
+.placeholder-ruby\/95::placeholder {
+  color: rgb(224 17 95 / 0.95);
+}
+
+.caret-csharp {
+  caret-color: #9c75d5;
+}
+
+.caret-csharp\/0 {
+  caret-color: rgb(156 117 213 / 0);
+}
+
+.caret-csharp\/10 {
+  caret-color: rgb(156 117 213 / 0.1);
+}
+
+.caret-csharp\/100 {
+  caret-color: rgb(156 117 213 / 1);
+}
+
+.caret-csharp\/20 {
+  caret-color: rgb(156 117 213 / 0.2);
+}
+
+.caret-csharp\/25 {
+  caret-color: rgb(156 117 213 / 0.25);
+}
+
+.caret-csharp\/30 {
+  caret-color: rgb(156 117 213 / 0.3);
+}
+
+.caret-csharp\/40 {
+  caret-color: rgb(156 117 213 / 0.4);
+}
+
+.caret-csharp\/5 {
+  caret-color: rgb(156 117 213 / 0.05);
+}
+
+.caret-csharp\/50 {
+  caret-color: rgb(156 117 213 / 0.5);
+}
+
+.caret-csharp\/60 {
+  caret-color: rgb(156 117 213 / 0.6);
+}
+
+.caret-csharp\/70 {
+  caret-color: rgb(156 117 213 / 0.7);
+}
+
+.caret-csharp\/75 {
+  caret-color: rgb(156 117 213 / 0.75);
+}
+
+.caret-csharp\/80 {
+  caret-color: rgb(156 117 213 / 0.8);
+}
+
+.caret-csharp\/90 {
+  caret-color: rgb(156 117 213 / 0.9);
+}
+
+.caret-csharp\/95 {
+  caret-color: rgb(156 117 213 / 0.95);
+}
+
+.caret-java {
+  caret-color: #507e9c;
+}
+
+.caret-java\/0 {
+  caret-color: rgb(80 126 156 / 0);
+}
+
+.caret-java\/10 {
+  caret-color: rgb(80 126 156 / 0.1);
+}
+
+.caret-java\/100 {
+  caret-color: rgb(80 126 156 / 1);
+}
+
+.caret-java\/20 {
+  caret-color: rgb(80 126 156 / 0.2);
+}
+
+.caret-java\/25 {
+  caret-color: rgb(80 126 156 / 0.25);
+}
+
+.caret-java\/30 {
+  caret-color: rgb(80 126 156 / 0.3);
+}
+
+.caret-java\/40 {
+  caret-color: rgb(80 126 156 / 0.4);
+}
+
+.caret-java\/5 {
+  caret-color: rgb(80 126 156 / 0.05);
+}
+
+.caret-java\/50 {
+  caret-color: rgb(80 126 156 / 0.5);
+}
+
+.caret-java\/60 {
+  caret-color: rgb(80 126 156 / 0.6);
+}
+
+.caret-java\/70 {
+  caret-color: rgb(80 126 156 / 0.7);
+}
+
+.caret-java\/75 {
+  caret-color: rgb(80 126 156 / 0.75);
+}
+
+.caret-java\/80 {
+  caret-color: rgb(80 126 156 / 0.8);
+}
+
+.caret-java\/90 {
+  caret-color: rgb(80 126 156 / 0.9);
+}
+
+.caret-java\/95 {
+  caret-color: rgb(80 126 156 / 0.95);
+}
+
+.caret-mysql {
+  caret-color: #dd8a00;
+}
+
+.caret-mysql\/0 {
+  caret-color: rgb(221 138 0 / 0);
+}
+
+.caret-mysql\/10 {
+  caret-color: rgb(221 138 0 / 0.1);
+}
+
+.caret-mysql\/100 {
+  caret-color: rgb(221 138 0 / 1);
+}
+
+.caret-mysql\/20 {
+  caret-color: rgb(221 138 0 / 0.2);
+}
+
+.caret-mysql\/25 {
+  caret-color: rgb(221 138 0 / 0.25);
+}
+
+.caret-mysql\/30 {
+  caret-color: rgb(221 138 0 / 0.3);
+}
+
+.caret-mysql\/40 {
+  caret-color: rgb(221 138 0 / 0.4);
+}
+
+.caret-mysql\/5 {
+  caret-color: rgb(221 138 0 / 0.05);
+}
+
+.caret-mysql\/50 {
+  caret-color: rgb(221 138 0 / 0.5);
+}
+
+.caret-mysql\/60 {
+  caret-color: rgb(221 138 0 / 0.6);
+}
+
+.caret-mysql\/70 {
+  caret-color: rgb(221 138 0 / 0.7);
+}
+
+.caret-mysql\/75 {
+  caret-color: rgb(221 138 0 / 0.75);
+}
+
+.caret-mysql\/80 {
+  caret-color: rgb(221 138 0 / 0.8);
+}
+
+.caret-mysql\/90 {
+  caret-color: rgb(221 138 0 / 0.9);
+}
+
+.caret-mysql\/95 {
+  caret-color: rgb(221 138 0 / 0.95);
+}
+
+.caret-php {
+  caret-color: #7377ad;
+}
+
+.caret-php\/0 {
+  caret-color: rgb(115 119 173 / 0);
+}
+
+.caret-php\/10 {
+  caret-color: rgb(115 119 173 / 0.1);
+}
+
+.caret-php\/100 {
+  caret-color: rgb(115 119 173 / 1);
+}
+
+.caret-php\/20 {
+  caret-color: rgb(115 119 173 / 0.2);
+}
+
+.caret-php\/25 {
+  caret-color: rgb(115 119 173 / 0.25);
+}
+
+.caret-php\/30 {
+  caret-color: rgb(115 119 173 / 0.3);
+}
+
+.caret-php\/40 {
+  caret-color: rgb(115 119 173 / 0.4);
+}
+
+.caret-php\/5 {
+  caret-color: rgb(115 119 173 / 0.05);
+}
+
+.caret-php\/50 {
+  caret-color: rgb(115 119 173 / 0.5);
+}
+
+.caret-php\/60 {
+  caret-color: rgb(115 119 173 / 0.6);
+}
+
+.caret-php\/70 {
+  caret-color: rgb(115 119 173 / 0.7);
+}
+
+.caret-php\/75 {
+  caret-color: rgb(115 119 173 / 0.75);
+}
+
+.caret-php\/80 {
+  caret-color: rgb(115 119 173 / 0.8);
+}
+
+.caret-php\/90 {
+  caret-color: rgb(115 119 173 / 0.9);
+}
+
+.caret-php\/95 {
+  caret-color: rgb(115 119 173 / 0.95);
+}
+
+.caret-ruby {
+  caret-color: #E0115F;
+}
+
+.caret-ruby\/0 {
+  caret-color: rgb(224 17 95 / 0);
+}
+
+.caret-ruby\/10 {
+  caret-color: rgb(224 17 95 / 0.1);
+}
+
+.caret-ruby\/100 {
+  caret-color: rgb(224 17 95 / 1);
+}
+
+.caret-ruby\/20 {
+  caret-color: rgb(224 17 95 / 0.2);
+}
+
+.caret-ruby\/25 {
+  caret-color: rgb(224 17 95 / 0.25);
+}
+
+.caret-ruby\/30 {
+  caret-color: rgb(224 17 95 / 0.3);
+}
+
+.caret-ruby\/40 {
+  caret-color: rgb(224 17 95 / 0.4);
+}
+
+.caret-ruby\/5 {
+  caret-color: rgb(224 17 95 / 0.05);
+}
+
+.caret-ruby\/50 {
+  caret-color: rgb(224 17 95 / 0.5);
+}
+
+.caret-ruby\/60 {
+  caret-color: rgb(224 17 95 / 0.6);
+}
+
+.caret-ruby\/70 {
+  caret-color: rgb(224 17 95 / 0.7);
+}
+
+.caret-ruby\/75 {
+  caret-color: rgb(224 17 95 / 0.75);
+}
+
+.caret-ruby\/80 {
+  caret-color: rgb(224 17 95 / 0.8);
+}
+
+.caret-ruby\/90 {
+  caret-color: rgb(224 17 95 / 0.9);
+}
+
+.caret-ruby\/95 {
+  caret-color: rgb(224 17 95 / 0.95);
+}
+
+.accent-csharp {
+  accent-color: #9c75d5;
+}
+
+.accent-csharp\/0 {
+  accent-color: rgb(156 117 213 / 0);
+}
+
+.accent-csharp\/10 {
+  accent-color: rgb(156 117 213 / 0.1);
+}
+
+.accent-csharp\/100 {
+  accent-color: rgb(156 117 213 / 1);
+}
+
+.accent-csharp\/20 {
+  accent-color: rgb(156 117 213 / 0.2);
+}
+
+.accent-csharp\/25 {
+  accent-color: rgb(156 117 213 / 0.25);
+}
+
+.accent-csharp\/30 {
+  accent-color: rgb(156 117 213 / 0.3);
+}
+
+.accent-csharp\/40 {
+  accent-color: rgb(156 117 213 / 0.4);
+}
+
+.accent-csharp\/5 {
+  accent-color: rgb(156 117 213 / 0.05);
+}
+
+.accent-csharp\/50 {
+  accent-color: rgb(156 117 213 / 0.5);
+}
+
+.accent-csharp\/60 {
+  accent-color: rgb(156 117 213 / 0.6);
+}
+
+.accent-csharp\/70 {
+  accent-color: rgb(156 117 213 / 0.7);
+}
+
+.accent-csharp\/75 {
+  accent-color: rgb(156 117 213 / 0.75);
+}
+
+.accent-csharp\/80 {
+  accent-color: rgb(156 117 213 / 0.8);
+}
+
+.accent-csharp\/90 {
+  accent-color: rgb(156 117 213 / 0.9);
+}
+
+.accent-csharp\/95 {
+  accent-color: rgb(156 117 213 / 0.95);
+}
+
+.accent-java {
+  accent-color: #507e9c;
+}
+
+.accent-java\/0 {
+  accent-color: rgb(80 126 156 / 0);
+}
+
+.accent-java\/10 {
+  accent-color: rgb(80 126 156 / 0.1);
+}
+
+.accent-java\/100 {
+  accent-color: rgb(80 126 156 / 1);
+}
+
+.accent-java\/20 {
+  accent-color: rgb(80 126 156 / 0.2);
+}
+
+.accent-java\/25 {
+  accent-color: rgb(80 126 156 / 0.25);
+}
+
+.accent-java\/30 {
+  accent-color: rgb(80 126 156 / 0.3);
+}
+
+.accent-java\/40 {
+  accent-color: rgb(80 126 156 / 0.4);
+}
+
+.accent-java\/5 {
+  accent-color: rgb(80 126 156 / 0.05);
+}
+
+.accent-java\/50 {
+  accent-color: rgb(80 126 156 / 0.5);
+}
+
+.accent-java\/60 {
+  accent-color: rgb(80 126 156 / 0.6);
+}
+
+.accent-java\/70 {
+  accent-color: rgb(80 126 156 / 0.7);
+}
+
+.accent-java\/75 {
+  accent-color: rgb(80 126 156 / 0.75);
+}
+
+.accent-java\/80 {
+  accent-color: rgb(80 126 156 / 0.8);
+}
+
+.accent-java\/90 {
+  accent-color: rgb(80 126 156 / 0.9);
+}
+
+.accent-java\/95 {
+  accent-color: rgb(80 126 156 / 0.95);
+}
+
+.accent-mysql {
+  accent-color: #dd8a00;
+}
+
+.accent-mysql\/0 {
+  accent-color: rgb(221 138 0 / 0);
+}
+
+.accent-mysql\/10 {
+  accent-color: rgb(221 138 0 / 0.1);
+}
+
+.accent-mysql\/100 {
+  accent-color: rgb(221 138 0 / 1);
+}
+
+.accent-mysql\/20 {
+  accent-color: rgb(221 138 0 / 0.2);
+}
+
+.accent-mysql\/25 {
+  accent-color: rgb(221 138 0 / 0.25);
+}
+
+.accent-mysql\/30 {
+  accent-color: rgb(221 138 0 / 0.3);
+}
+
+.accent-mysql\/40 {
+  accent-color: rgb(221 138 0 / 0.4);
+}
+
+.accent-mysql\/5 {
+  accent-color: rgb(221 138 0 / 0.05);
+}
+
+.accent-mysql\/50 {
+  accent-color: rgb(221 138 0 / 0.5);
+}
+
+.accent-mysql\/60 {
+  accent-color: rgb(221 138 0 / 0.6);
+}
+
+.accent-mysql\/70 {
+  accent-color: rgb(221 138 0 / 0.7);
+}
+
+.accent-mysql\/75 {
+  accent-color: rgb(221 138 0 / 0.75);
+}
+
+.accent-mysql\/80 {
+  accent-color: rgb(221 138 0 / 0.8);
+}
+
+.accent-mysql\/90 {
+  accent-color: rgb(221 138 0 / 0.9);
+}
+
+.accent-mysql\/95 {
+  accent-color: rgb(221 138 0 / 0.95);
+}
+
+.accent-php {
+  accent-color: #7377ad;
+}
+
+.accent-php\/0 {
+  accent-color: rgb(115 119 173 / 0);
+}
+
+.accent-php\/10 {
+  accent-color: rgb(115 119 173 / 0.1);
+}
+
+.accent-php\/100 {
+  accent-color: rgb(115 119 173 / 1);
+}
+
+.accent-php\/20 {
+  accent-color: rgb(115 119 173 / 0.2);
+}
+
+.accent-php\/25 {
+  accent-color: rgb(115 119 173 / 0.25);
+}
+
+.accent-php\/30 {
+  accent-color: rgb(115 119 173 / 0.3);
+}
+
+.accent-php\/40 {
+  accent-color: rgb(115 119 173 / 0.4);
+}
+
+.accent-php\/5 {
+  accent-color: rgb(115 119 173 / 0.05);
+}
+
+.accent-php\/50 {
+  accent-color: rgb(115 119 173 / 0.5);
+}
+
+.accent-php\/60 {
+  accent-color: rgb(115 119 173 / 0.6);
+}
+
+.accent-php\/70 {
+  accent-color: rgb(115 119 173 / 0.7);
+}
+
+.accent-php\/75 {
+  accent-color: rgb(115 119 173 / 0.75);
+}
+
+.accent-php\/80 {
+  accent-color: rgb(115 119 173 / 0.8);
+}
+
+.accent-php\/90 {
+  accent-color: rgb(115 119 173 / 0.9);
+}
+
+.accent-php\/95 {
+  accent-color: rgb(115 119 173 / 0.95);
+}
+
+.accent-ruby {
+  accent-color: #E0115F;
+}
+
+.accent-ruby\/0 {
+  accent-color: rgb(224 17 95 / 0);
+}
+
+.accent-ruby\/10 {
+  accent-color: rgb(224 17 95 / 0.1);
+}
+
+.accent-ruby\/100 {
+  accent-color: rgb(224 17 95 / 1);
+}
+
+.accent-ruby\/20 {
+  accent-color: rgb(224 17 95 / 0.2);
+}
+
+.accent-ruby\/25 {
+  accent-color: rgb(224 17 95 / 0.25);
+}
+
+.accent-ruby\/30 {
+  accent-color: rgb(224 17 95 / 0.3);
+}
+
+.accent-ruby\/40 {
+  accent-color: rgb(224 17 95 / 0.4);
+}
+
+.accent-ruby\/5 {
+  accent-color: rgb(224 17 95 / 0.05);
+}
+
+.accent-ruby\/50 {
+  accent-color: rgb(224 17 95 / 0.5);
+}
+
+.accent-ruby\/60 {
+  accent-color: rgb(224 17 95 / 0.6);
+}
+
+.accent-ruby\/70 {
+  accent-color: rgb(224 17 95 / 0.7);
+}
+
+.accent-ruby\/75 {
+  accent-color: rgb(224 17 95 / 0.75);
+}
+
+.accent-ruby\/80 {
+  accent-color: rgb(224 17 95 / 0.8);
+}
+
+.accent-ruby\/90 {
+  accent-color: rgb(224 17 95 / 0.9);
+}
+
+.accent-ruby\/95 {
+  accent-color: rgb(224 17 95 / 0.95);
+}
+
 .opacity-100 {
   opacity: 1;
 }
 
-.opacity-90 {
-  opacity: 0.9;
+.shadow-csharp {
+  --tw-shadow-color: #9c75d5;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/0 {
+  --tw-shadow-color: rgb(156 117 213 / 0);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/10 {
+  --tw-shadow-color: rgb(156 117 213 / 0.1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/100 {
+  --tw-shadow-color: rgb(156 117 213 / 1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/20 {
+  --tw-shadow-color: rgb(156 117 213 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/25 {
+  --tw-shadow-color: rgb(156 117 213 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/30 {
+  --tw-shadow-color: rgb(156 117 213 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/40 {
+  --tw-shadow-color: rgb(156 117 213 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/5 {
+  --tw-shadow-color: rgb(156 117 213 / 0.05);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/50 {
+  --tw-shadow-color: rgb(156 117 213 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/60 {
+  --tw-shadow-color: rgb(156 117 213 / 0.6);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/70 {
+  --tw-shadow-color: rgb(156 117 213 / 0.7);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/75 {
+  --tw-shadow-color: rgb(156 117 213 / 0.75);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/80 {
+  --tw-shadow-color: rgb(156 117 213 / 0.8);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/90 {
+  --tw-shadow-color: rgb(156 117 213 / 0.9);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-csharp\/95 {
+  --tw-shadow-color: rgb(156 117 213 / 0.95);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java {
+  --tw-shadow-color: #507e9c;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/0 {
+  --tw-shadow-color: rgb(80 126 156 / 0);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/10 {
+  --tw-shadow-color: rgb(80 126 156 / 0.1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/100 {
+  --tw-shadow-color: rgb(80 126 156 / 1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/20 {
+  --tw-shadow-color: rgb(80 126 156 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/25 {
+  --tw-shadow-color: rgb(80 126 156 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/30 {
+  --tw-shadow-color: rgb(80 126 156 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/40 {
+  --tw-shadow-color: rgb(80 126 156 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/5 {
+  --tw-shadow-color: rgb(80 126 156 / 0.05);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/50 {
+  --tw-shadow-color: rgb(80 126 156 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/60 {
+  --tw-shadow-color: rgb(80 126 156 / 0.6);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/70 {
+  --tw-shadow-color: rgb(80 126 156 / 0.7);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/75 {
+  --tw-shadow-color: rgb(80 126 156 / 0.75);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/80 {
+  --tw-shadow-color: rgb(80 126 156 / 0.8);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/90 {
+  --tw-shadow-color: rgb(80 126 156 / 0.9);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-java\/95 {
+  --tw-shadow-color: rgb(80 126 156 / 0.95);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql {
+  --tw-shadow-color: #dd8a00;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/0 {
+  --tw-shadow-color: rgb(221 138 0 / 0);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/10 {
+  --tw-shadow-color: rgb(221 138 0 / 0.1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/100 {
+  --tw-shadow-color: rgb(221 138 0 / 1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/20 {
+  --tw-shadow-color: rgb(221 138 0 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/25 {
+  --tw-shadow-color: rgb(221 138 0 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/30 {
+  --tw-shadow-color: rgb(221 138 0 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/40 {
+  --tw-shadow-color: rgb(221 138 0 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/5 {
+  --tw-shadow-color: rgb(221 138 0 / 0.05);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/50 {
+  --tw-shadow-color: rgb(221 138 0 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/60 {
+  --tw-shadow-color: rgb(221 138 0 / 0.6);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/70 {
+  --tw-shadow-color: rgb(221 138 0 / 0.7);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/75 {
+  --tw-shadow-color: rgb(221 138 0 / 0.75);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/80 {
+  --tw-shadow-color: rgb(221 138 0 / 0.8);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/90 {
+  --tw-shadow-color: rgb(221 138 0 / 0.9);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-mysql\/95 {
+  --tw-shadow-color: rgb(221 138 0 / 0.95);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php {
+  --tw-shadow-color: #7377ad;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/0 {
+  --tw-shadow-color: rgb(115 119 173 / 0);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/10 {
+  --tw-shadow-color: rgb(115 119 173 / 0.1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/100 {
+  --tw-shadow-color: rgb(115 119 173 / 1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/20 {
+  --tw-shadow-color: rgb(115 119 173 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/25 {
+  --tw-shadow-color: rgb(115 119 173 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/30 {
+  --tw-shadow-color: rgb(115 119 173 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/40 {
+  --tw-shadow-color: rgb(115 119 173 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/5 {
+  --tw-shadow-color: rgb(115 119 173 / 0.05);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/50 {
+  --tw-shadow-color: rgb(115 119 173 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/60 {
+  --tw-shadow-color: rgb(115 119 173 / 0.6);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/70 {
+  --tw-shadow-color: rgb(115 119 173 / 0.7);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/75 {
+  --tw-shadow-color: rgb(115 119 173 / 0.75);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/80 {
+  --tw-shadow-color: rgb(115 119 173 / 0.8);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/90 {
+  --tw-shadow-color: rgb(115 119 173 / 0.9);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-php\/95 {
+  --tw-shadow-color: rgb(115 119 173 / 0.95);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby {
+  --tw-shadow-color: #E0115F;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/0 {
+  --tw-shadow-color: rgb(224 17 95 / 0);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/10 {
+  --tw-shadow-color: rgb(224 17 95 / 0.1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/100 {
+  --tw-shadow-color: rgb(224 17 95 / 1);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/20 {
+  --tw-shadow-color: rgb(224 17 95 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/25 {
+  --tw-shadow-color: rgb(224 17 95 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/30 {
+  --tw-shadow-color: rgb(224 17 95 / 0.3);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/40 {
+  --tw-shadow-color: rgb(224 17 95 / 0.4);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/5 {
+  --tw-shadow-color: rgb(224 17 95 / 0.05);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/50 {
+  --tw-shadow-color: rgb(224 17 95 / 0.5);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/60 {
+  --tw-shadow-color: rgb(224 17 95 / 0.6);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/70 {
+  --tw-shadow-color: rgb(224 17 95 / 0.7);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/75 {
+  --tw-shadow-color: rgb(224 17 95 / 0.75);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/80 {
+  --tw-shadow-color: rgb(224 17 95 / 0.8);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/90 {
+  --tw-shadow-color: rgb(224 17 95 / 0.9);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-ruby\/95 {
+  --tw-shadow-color: rgb(224 17 95 / 0.95);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.outline-csharp {
+  outline-color: #9c75d5;
+}
+
+.outline-csharp\/0 {
+  outline-color: rgb(156 117 213 / 0);
+}
+
+.outline-csharp\/10 {
+  outline-color: rgb(156 117 213 / 0.1);
+}
+
+.outline-csharp\/100 {
+  outline-color: rgb(156 117 213 / 1);
+}
+
+.outline-csharp\/20 {
+  outline-color: rgb(156 117 213 / 0.2);
+}
+
+.outline-csharp\/25 {
+  outline-color: rgb(156 117 213 / 0.25);
+}
+
+.outline-csharp\/30 {
+  outline-color: rgb(156 117 213 / 0.3);
+}
+
+.outline-csharp\/40 {
+  outline-color: rgb(156 117 213 / 0.4);
+}
+
+.outline-csharp\/5 {
+  outline-color: rgb(156 117 213 / 0.05);
+}
+
+.outline-csharp\/50 {
+  outline-color: rgb(156 117 213 / 0.5);
+}
+
+.outline-csharp\/60 {
+  outline-color: rgb(156 117 213 / 0.6);
+}
+
+.outline-csharp\/70 {
+  outline-color: rgb(156 117 213 / 0.7);
+}
+
+.outline-csharp\/75 {
+  outline-color: rgb(156 117 213 / 0.75);
+}
+
+.outline-csharp\/80 {
+  outline-color: rgb(156 117 213 / 0.8);
+}
+
+.outline-csharp\/90 {
+  outline-color: rgb(156 117 213 / 0.9);
+}
+
+.outline-csharp\/95 {
+  outline-color: rgb(156 117 213 / 0.95);
+}
+
+.outline-java {
+  outline-color: #507e9c;
+}
+
+.outline-java\/0 {
+  outline-color: rgb(80 126 156 / 0);
+}
+
+.outline-java\/10 {
+  outline-color: rgb(80 126 156 / 0.1);
+}
+
+.outline-java\/100 {
+  outline-color: rgb(80 126 156 / 1);
+}
+
+.outline-java\/20 {
+  outline-color: rgb(80 126 156 / 0.2);
+}
+
+.outline-java\/25 {
+  outline-color: rgb(80 126 156 / 0.25);
+}
+
+.outline-java\/30 {
+  outline-color: rgb(80 126 156 / 0.3);
+}
+
+.outline-java\/40 {
+  outline-color: rgb(80 126 156 / 0.4);
+}
+
+.outline-java\/5 {
+  outline-color: rgb(80 126 156 / 0.05);
+}
+
+.outline-java\/50 {
+  outline-color: rgb(80 126 156 / 0.5);
+}
+
+.outline-java\/60 {
+  outline-color: rgb(80 126 156 / 0.6);
+}
+
+.outline-java\/70 {
+  outline-color: rgb(80 126 156 / 0.7);
+}
+
+.outline-java\/75 {
+  outline-color: rgb(80 126 156 / 0.75);
+}
+
+.outline-java\/80 {
+  outline-color: rgb(80 126 156 / 0.8);
+}
+
+.outline-java\/90 {
+  outline-color: rgb(80 126 156 / 0.9);
+}
+
+.outline-java\/95 {
+  outline-color: rgb(80 126 156 / 0.95);
+}
+
+.outline-mysql {
+  outline-color: #dd8a00;
+}
+
+.outline-mysql\/0 {
+  outline-color: rgb(221 138 0 / 0);
+}
+
+.outline-mysql\/10 {
+  outline-color: rgb(221 138 0 / 0.1);
+}
+
+.outline-mysql\/100 {
+  outline-color: rgb(221 138 0 / 1);
+}
+
+.outline-mysql\/20 {
+  outline-color: rgb(221 138 0 / 0.2);
+}
+
+.outline-mysql\/25 {
+  outline-color: rgb(221 138 0 / 0.25);
+}
+
+.outline-mysql\/30 {
+  outline-color: rgb(221 138 0 / 0.3);
+}
+
+.outline-mysql\/40 {
+  outline-color: rgb(221 138 0 / 0.4);
+}
+
+.outline-mysql\/5 {
+  outline-color: rgb(221 138 0 / 0.05);
+}
+
+.outline-mysql\/50 {
+  outline-color: rgb(221 138 0 / 0.5);
+}
+
+.outline-mysql\/60 {
+  outline-color: rgb(221 138 0 / 0.6);
+}
+
+.outline-mysql\/70 {
+  outline-color: rgb(221 138 0 / 0.7);
+}
+
+.outline-mysql\/75 {
+  outline-color: rgb(221 138 0 / 0.75);
+}
+
+.outline-mysql\/80 {
+  outline-color: rgb(221 138 0 / 0.8);
+}
+
+.outline-mysql\/90 {
+  outline-color: rgb(221 138 0 / 0.9);
+}
+
+.outline-mysql\/95 {
+  outline-color: rgb(221 138 0 / 0.95);
+}
+
+.outline-php {
+  outline-color: #7377ad;
+}
+
+.outline-php\/0 {
+  outline-color: rgb(115 119 173 / 0);
+}
+
+.outline-php\/10 {
+  outline-color: rgb(115 119 173 / 0.1);
+}
+
+.outline-php\/100 {
+  outline-color: rgb(115 119 173 / 1);
+}
+
+.outline-php\/20 {
+  outline-color: rgb(115 119 173 / 0.2);
+}
+
+.outline-php\/25 {
+  outline-color: rgb(115 119 173 / 0.25);
+}
+
+.outline-php\/30 {
+  outline-color: rgb(115 119 173 / 0.3);
+}
+
+.outline-php\/40 {
+  outline-color: rgb(115 119 173 / 0.4);
+}
+
+.outline-php\/5 {
+  outline-color: rgb(115 119 173 / 0.05);
+}
+
+.outline-php\/50 {
+  outline-color: rgb(115 119 173 / 0.5);
+}
+
+.outline-php\/60 {
+  outline-color: rgb(115 119 173 / 0.6);
+}
+
+.outline-php\/70 {
+  outline-color: rgb(115 119 173 / 0.7);
+}
+
+.outline-php\/75 {
+  outline-color: rgb(115 119 173 / 0.75);
+}
+
+.outline-php\/80 {
+  outline-color: rgb(115 119 173 / 0.8);
+}
+
+.outline-php\/90 {
+  outline-color: rgb(115 119 173 / 0.9);
+}
+
+.outline-php\/95 {
+  outline-color: rgb(115 119 173 / 0.95);
+}
+
+.outline-ruby {
+  outline-color: #E0115F;
+}
+
+.outline-ruby\/0 {
+  outline-color: rgb(224 17 95 / 0);
+}
+
+.outline-ruby\/10 {
+  outline-color: rgb(224 17 95 / 0.1);
+}
+
+.outline-ruby\/100 {
+  outline-color: rgb(224 17 95 / 1);
+}
+
+.outline-ruby\/20 {
+  outline-color: rgb(224 17 95 / 0.2);
+}
+
+.outline-ruby\/25 {
+  outline-color: rgb(224 17 95 / 0.25);
+}
+
+.outline-ruby\/30 {
+  outline-color: rgb(224 17 95 / 0.3);
+}
+
+.outline-ruby\/40 {
+  outline-color: rgb(224 17 95 / 0.4);
+}
+
+.outline-ruby\/5 {
+  outline-color: rgb(224 17 95 / 0.05);
+}
+
+.outline-ruby\/50 {
+  outline-color: rgb(224 17 95 / 0.5);
+}
+
+.outline-ruby\/60 {
+  outline-color: rgb(224 17 95 / 0.6);
+}
+
+.outline-ruby\/70 {
+  outline-color: rgb(224 17 95 / 0.7);
+}
+
+.outline-ruby\/75 {
+  outline-color: rgb(224 17 95 / 0.75);
+}
+
+.outline-ruby\/80 {
+  outline-color: rgb(224 17 95 / 0.8);
+}
+
+.outline-ruby\/90 {
+  outline-color: rgb(224 17 95 / 0.9);
+}
+
+.outline-ruby\/95 {
+  outline-color: rgb(224 17 95 / 0.95);
+}
+
+.ring-csharp {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(156 117 213 / var(--tw-ring-opacity));
+}
+
+.ring-csharp\/0 {
+  --tw-ring-color: rgb(156 117 213 / 0);
+}
+
+.ring-csharp\/10 {
+  --tw-ring-color: rgb(156 117 213 / 0.1);
+}
+
+.ring-csharp\/100 {
+  --tw-ring-color: rgb(156 117 213 / 1);
+}
+
+.ring-csharp\/20 {
+  --tw-ring-color: rgb(156 117 213 / 0.2);
+}
+
+.ring-csharp\/25 {
+  --tw-ring-color: rgb(156 117 213 / 0.25);
+}
+
+.ring-csharp\/30 {
+  --tw-ring-color: rgb(156 117 213 / 0.3);
+}
+
+.ring-csharp\/40 {
+  --tw-ring-color: rgb(156 117 213 / 0.4);
+}
+
+.ring-csharp\/5 {
+  --tw-ring-color: rgb(156 117 213 / 0.05);
+}
+
+.ring-csharp\/50 {
+  --tw-ring-color: rgb(156 117 213 / 0.5);
+}
+
+.ring-csharp\/60 {
+  --tw-ring-color: rgb(156 117 213 / 0.6);
+}
+
+.ring-csharp\/70 {
+  --tw-ring-color: rgb(156 117 213 / 0.7);
+}
+
+.ring-csharp\/75 {
+  --tw-ring-color: rgb(156 117 213 / 0.75);
+}
+
+.ring-csharp\/80 {
+  --tw-ring-color: rgb(156 117 213 / 0.8);
+}
+
+.ring-csharp\/90 {
+  --tw-ring-color: rgb(156 117 213 / 0.9);
+}
+
+.ring-csharp\/95 {
+  --tw-ring-color: rgb(156 117 213 / 0.95);
+}
+
+.ring-java {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(80 126 156 / var(--tw-ring-opacity));
+}
+
+.ring-java\/0 {
+  --tw-ring-color: rgb(80 126 156 / 0);
+}
+
+.ring-java\/10 {
+  --tw-ring-color: rgb(80 126 156 / 0.1);
+}
+
+.ring-java\/100 {
+  --tw-ring-color: rgb(80 126 156 / 1);
+}
+
+.ring-java\/20 {
+  --tw-ring-color: rgb(80 126 156 / 0.2);
+}
+
+.ring-java\/25 {
+  --tw-ring-color: rgb(80 126 156 / 0.25);
+}
+
+.ring-java\/30 {
+  --tw-ring-color: rgb(80 126 156 / 0.3);
+}
+
+.ring-java\/40 {
+  --tw-ring-color: rgb(80 126 156 / 0.4);
+}
+
+.ring-java\/5 {
+  --tw-ring-color: rgb(80 126 156 / 0.05);
+}
+
+.ring-java\/50 {
+  --tw-ring-color: rgb(80 126 156 / 0.5);
+}
+
+.ring-java\/60 {
+  --tw-ring-color: rgb(80 126 156 / 0.6);
+}
+
+.ring-java\/70 {
+  --tw-ring-color: rgb(80 126 156 / 0.7);
+}
+
+.ring-java\/75 {
+  --tw-ring-color: rgb(80 126 156 / 0.75);
+}
+
+.ring-java\/80 {
+  --tw-ring-color: rgb(80 126 156 / 0.8);
+}
+
+.ring-java\/90 {
+  --tw-ring-color: rgb(80 126 156 / 0.9);
+}
+
+.ring-java\/95 {
+  --tw-ring-color: rgb(80 126 156 / 0.95);
+}
+
+.ring-mysql {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(221 138 0 / var(--tw-ring-opacity));
+}
+
+.ring-mysql\/0 {
+  --tw-ring-color: rgb(221 138 0 / 0);
+}
+
+.ring-mysql\/10 {
+  --tw-ring-color: rgb(221 138 0 / 0.1);
+}
+
+.ring-mysql\/100 {
+  --tw-ring-color: rgb(221 138 0 / 1);
+}
+
+.ring-mysql\/20 {
+  --tw-ring-color: rgb(221 138 0 / 0.2);
+}
+
+.ring-mysql\/25 {
+  --tw-ring-color: rgb(221 138 0 / 0.25);
+}
+
+.ring-mysql\/30 {
+  --tw-ring-color: rgb(221 138 0 / 0.3);
+}
+
+.ring-mysql\/40 {
+  --tw-ring-color: rgb(221 138 0 / 0.4);
+}
+
+.ring-mysql\/5 {
+  --tw-ring-color: rgb(221 138 0 / 0.05);
+}
+
+.ring-mysql\/50 {
+  --tw-ring-color: rgb(221 138 0 / 0.5);
+}
+
+.ring-mysql\/60 {
+  --tw-ring-color: rgb(221 138 0 / 0.6);
+}
+
+.ring-mysql\/70 {
+  --tw-ring-color: rgb(221 138 0 / 0.7);
+}
+
+.ring-mysql\/75 {
+  --tw-ring-color: rgb(221 138 0 / 0.75);
+}
+
+.ring-mysql\/80 {
+  --tw-ring-color: rgb(221 138 0 / 0.8);
+}
+
+.ring-mysql\/90 {
+  --tw-ring-color: rgb(221 138 0 / 0.9);
+}
+
+.ring-mysql\/95 {
+  --tw-ring-color: rgb(221 138 0 / 0.95);
+}
+
+.ring-php {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(115 119 173 / var(--tw-ring-opacity));
+}
+
+.ring-php\/0 {
+  --tw-ring-color: rgb(115 119 173 / 0);
+}
+
+.ring-php\/10 {
+  --tw-ring-color: rgb(115 119 173 / 0.1);
+}
+
+.ring-php\/100 {
+  --tw-ring-color: rgb(115 119 173 / 1);
+}
+
+.ring-php\/20 {
+  --tw-ring-color: rgb(115 119 173 / 0.2);
+}
+
+.ring-php\/25 {
+  --tw-ring-color: rgb(115 119 173 / 0.25);
+}
+
+.ring-php\/30 {
+  --tw-ring-color: rgb(115 119 173 / 0.3);
+}
+
+.ring-php\/40 {
+  --tw-ring-color: rgb(115 119 173 / 0.4);
+}
+
+.ring-php\/5 {
+  --tw-ring-color: rgb(115 119 173 / 0.05);
+}
+
+.ring-php\/50 {
+  --tw-ring-color: rgb(115 119 173 / 0.5);
+}
+
+.ring-php\/60 {
+  --tw-ring-color: rgb(115 119 173 / 0.6);
+}
+
+.ring-php\/70 {
+  --tw-ring-color: rgb(115 119 173 / 0.7);
+}
+
+.ring-php\/75 {
+  --tw-ring-color: rgb(115 119 173 / 0.75);
+}
+
+.ring-php\/80 {
+  --tw-ring-color: rgb(115 119 173 / 0.8);
+}
+
+.ring-php\/90 {
+  --tw-ring-color: rgb(115 119 173 / 0.9);
+}
+
+.ring-php\/95 {
+  --tw-ring-color: rgb(115 119 173 / 0.95);
+}
+
+.ring-ruby {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(224 17 95 / var(--tw-ring-opacity));
+}
+
+.ring-ruby\/0 {
+  --tw-ring-color: rgb(224 17 95 / 0);
+}
+
+.ring-ruby\/10 {
+  --tw-ring-color: rgb(224 17 95 / 0.1);
+}
+
+.ring-ruby\/100 {
+  --tw-ring-color: rgb(224 17 95 / 1);
+}
+
+.ring-ruby\/20 {
+  --tw-ring-color: rgb(224 17 95 / 0.2);
+}
+
+.ring-ruby\/25 {
+  --tw-ring-color: rgb(224 17 95 / 0.25);
+}
+
+.ring-ruby\/30 {
+  --tw-ring-color: rgb(224 17 95 / 0.3);
+}
+
+.ring-ruby\/40 {
+  --tw-ring-color: rgb(224 17 95 / 0.4);
+}
+
+.ring-ruby\/5 {
+  --tw-ring-color: rgb(224 17 95 / 0.05);
+}
+
+.ring-ruby\/50 {
+  --tw-ring-color: rgb(224 17 95 / 0.5);
+}
+
+.ring-ruby\/60 {
+  --tw-ring-color: rgb(224 17 95 / 0.6);
+}
+
+.ring-ruby\/70 {
+  --tw-ring-color: rgb(224 17 95 / 0.7);
+}
+
+.ring-ruby\/75 {
+  --tw-ring-color: rgb(224 17 95 / 0.75);
+}
+
+.ring-ruby\/80 {
+  --tw-ring-color: rgb(224 17 95 / 0.8);
+}
+
+.ring-ruby\/90 {
+  --tw-ring-color: rgb(224 17 95 / 0.9);
+}
+
+.ring-ruby\/95 {
+  --tw-ring-color: rgb(224 17 95 / 0.95);
+}
+
+.ring-offset-csharp {
+  --tw-ring-offset-color: #9c75d5;
+}
+
+.ring-offset-csharp\/0 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0);
+}
+
+.ring-offset-csharp\/10 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.1);
+}
+
+.ring-offset-csharp\/100 {
+  --tw-ring-offset-color: rgb(156 117 213 / 1);
+}
+
+.ring-offset-csharp\/20 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.2);
+}
+
+.ring-offset-csharp\/25 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.25);
+}
+
+.ring-offset-csharp\/30 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.3);
+}
+
+.ring-offset-csharp\/40 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.4);
+}
+
+.ring-offset-csharp\/5 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.05);
+}
+
+.ring-offset-csharp\/50 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.5);
+}
+
+.ring-offset-csharp\/60 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.6);
+}
+
+.ring-offset-csharp\/70 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.7);
+}
+
+.ring-offset-csharp\/75 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.75);
+}
+
+.ring-offset-csharp\/80 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.8);
+}
+
+.ring-offset-csharp\/90 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.9);
+}
+
+.ring-offset-csharp\/95 {
+  --tw-ring-offset-color: rgb(156 117 213 / 0.95);
+}
+
+.ring-offset-java {
+  --tw-ring-offset-color: #507e9c;
+}
+
+.ring-offset-java\/0 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0);
+}
+
+.ring-offset-java\/10 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.1);
+}
+
+.ring-offset-java\/100 {
+  --tw-ring-offset-color: rgb(80 126 156 / 1);
+}
+
+.ring-offset-java\/20 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.2);
+}
+
+.ring-offset-java\/25 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.25);
+}
+
+.ring-offset-java\/30 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.3);
+}
+
+.ring-offset-java\/40 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.4);
+}
+
+.ring-offset-java\/5 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.05);
+}
+
+.ring-offset-java\/50 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.5);
+}
+
+.ring-offset-java\/60 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.6);
+}
+
+.ring-offset-java\/70 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.7);
+}
+
+.ring-offset-java\/75 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.75);
+}
+
+.ring-offset-java\/80 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.8);
+}
+
+.ring-offset-java\/90 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.9);
+}
+
+.ring-offset-java\/95 {
+  --tw-ring-offset-color: rgb(80 126 156 / 0.95);
+}
+
+.ring-offset-mysql {
+  --tw-ring-offset-color: #dd8a00;
+}
+
+.ring-offset-mysql\/0 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0);
+}
+
+.ring-offset-mysql\/10 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.1);
+}
+
+.ring-offset-mysql\/100 {
+  --tw-ring-offset-color: rgb(221 138 0 / 1);
+}
+
+.ring-offset-mysql\/20 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.2);
+}
+
+.ring-offset-mysql\/25 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.25);
+}
+
+.ring-offset-mysql\/30 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.3);
+}
+
+.ring-offset-mysql\/40 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.4);
+}
+
+.ring-offset-mysql\/5 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.05);
+}
+
+.ring-offset-mysql\/50 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.5);
+}
+
+.ring-offset-mysql\/60 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.6);
+}
+
+.ring-offset-mysql\/70 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.7);
+}
+
+.ring-offset-mysql\/75 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.75);
+}
+
+.ring-offset-mysql\/80 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.8);
+}
+
+.ring-offset-mysql\/90 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.9);
+}
+
+.ring-offset-mysql\/95 {
+  --tw-ring-offset-color: rgb(221 138 0 / 0.95);
+}
+
+.ring-offset-php {
+  --tw-ring-offset-color: #7377ad;
+}
+
+.ring-offset-php\/0 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0);
+}
+
+.ring-offset-php\/10 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.1);
+}
+
+.ring-offset-php\/100 {
+  --tw-ring-offset-color: rgb(115 119 173 / 1);
+}
+
+.ring-offset-php\/20 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.2);
+}
+
+.ring-offset-php\/25 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.25);
+}
+
+.ring-offset-php\/30 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.3);
+}
+
+.ring-offset-php\/40 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.4);
+}
+
+.ring-offset-php\/5 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.05);
+}
+
+.ring-offset-php\/50 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.5);
+}
+
+.ring-offset-php\/60 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.6);
+}
+
+.ring-offset-php\/70 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.7);
+}
+
+.ring-offset-php\/75 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.75);
+}
+
+.ring-offset-php\/80 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.8);
+}
+
+.ring-offset-php\/90 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.9);
+}
+
+.ring-offset-php\/95 {
+  --tw-ring-offset-color: rgb(115 119 173 / 0.95);
+}
+
+.ring-offset-ruby {
+  --tw-ring-offset-color: #E0115F;
+}
+
+.ring-offset-ruby\/0 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0);
+}
+
+.ring-offset-ruby\/10 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.1);
+}
+
+.ring-offset-ruby\/100 {
+  --tw-ring-offset-color: rgb(224 17 95 / 1);
+}
+
+.ring-offset-ruby\/20 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.2);
+}
+
+.ring-offset-ruby\/25 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.25);
+}
+
+.ring-offset-ruby\/30 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.3);
+}
+
+.ring-offset-ruby\/40 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.4);
+}
+
+.ring-offset-ruby\/5 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.05);
+}
+
+.ring-offset-ruby\/50 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.5);
+}
+
+.ring-offset-ruby\/60 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.6);
+}
+
+.ring-offset-ruby\/70 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.7);
+}
+
+.ring-offset-ruby\/75 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.75);
+}
+
+.ring-offset-ruby\/80 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.8);
+}
+
+.ring-offset-ruby\/90 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.9);
+}
+
+.ring-offset-ruby\/95 {
+  --tw-ring-offset-color: rgb(224 17 95 / 0.95);
 }
 
 html, body {
@@ -760,8 +8984,9 @@ a, .btn-link {
   content: "An error has occurred."
 }
 
-.hover\:opacity-100:hover {
-  opacity: 1;
+.hover\:bg-deep-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 8 54 / var(--tw-bg-opacity));
 }
 
 .hover\:shadow:hover {
@@ -785,10 +9010,6 @@ a, .btn-link {
 
   .md\:justify-end {
     justify-content: flex-end;
-  }
-
-  .md\:border-b {
-    border-bottom-width: 1px;
   }
 
   .md\:border-b-4 {

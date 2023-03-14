@@ -1,22 +1,22 @@
 [
   {
     "title": "Azure DevOps",
-    "body": "Using a mix of VNEXT and YAML pipelines to provide effective CI/CD solutions for a wide range of applications.",
+    "body": "Using a mix of VNEXT and YAML pipelines to provide effective CI/CD solutions for a wide range of .Net applications.",
     "footnotes": ""
   },
   {
     "title": ".Net Stack",
-    "body": ".Net, .Net Core, .Net Framework, VB.Net.",
+    "body": "Knowledge of writing .Net Core & .Net Framework web applications whilst also having the need to debug VB.Net apps. Powershell is also used for automating various tasks such as environment builds.",
     "footnotes": ""
   },
   {
     "title": "SQL Server",
-    "body": "Provisioning and security management of SQL server.",
+    "body": "Knowledge of provisioning SQL Server Instances, dealing with data refreshes and permissions management.",
     "footnotes": ""
   },
   {
-    "title": "Windows",
-    "body": "Creation of complete on-premise windows environments.",
+    "title": "Networking",
+    "body": "Knowledge of cross-subnet interactions and creation of load balanced servers segregated by firewalls.",
     "footnotes": ""
   }
 ]
