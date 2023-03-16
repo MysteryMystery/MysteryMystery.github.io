@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Azure DevOps",
+    "body": "Using a mix of VNEXT and YAML pipelines to provide effective CI/CD solutions for a wide range of .Net applications.",
+    "footnotes": ""
+  },
+  {
+    "title": ".Net Stack",
+    "body": "Knowledge of writing .Net Core & .Net Framework web applications whilst also having the need to debug VB.Net apps. Powershell is also used for automating various tasks such as environment builds.",
+    "footnotes": ""
+  },
+  {
+    "title": "SQL Server",
+    "body": "Knowledge of provisioning SQL Server Instances, dealing with data refreshes and permissions management.",
+    "footnotes": ""
+  },
+  {
+    "title": "Networking",
+    "body": "Knowledge of cross-subnet interactions and creation of load balanced servers segregated by firewalls.",
+    "footnotes": ""
+  }
+]

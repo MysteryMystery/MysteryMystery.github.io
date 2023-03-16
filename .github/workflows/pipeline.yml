@@ -1,0 +1,73 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Build branch
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: 
+    - feature/*
+    - master 
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '19'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.x
+      - name: Compile Tailwind
+        working-directory: Blazor/Blazor
+        run: npx tailwindcss -i ./Css/app.css -o ./wwwroot/css/app.css --minify
+      - name: Dotnet Restore
+        working-directory: Blazor
+        run: dotnet restore
+      - name: Dotnet Publish
+        working-directory: Blazor
+        run: dotnet publish -c Release --nologo
+      - name: copy index.html to 404.html
+        run: cp bin/Release/net6.0/publish/wwwroot/index.html bin/Release/net6.0/publish/wwwroot/404.html
+        working-directory: Blazor/Blazor
+      - name: Add .nojekyll file
+        run: touch bin/Release/net6.0/publish/wwwroot/.nojekyll
+        working-directory: Blazor/Blazor
+      - uses: actions/upload-artifact@master
+        with:
+          name: mysterymysterygithubio
+          path: Blazor/Blazor/bin/Release/net6.0/publish/
+
+# deploy if master
+  deploy:
+    if: ${{ github.ref == 'ref/heads/master' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: mysterymysterygithubio
+          path: deploy
+      - name: Commit wwwroot to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            BRANCH: gh-pages
+            FOLDER: deploy/wwwroot
