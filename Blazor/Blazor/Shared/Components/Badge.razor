@@ -1,0 +1,8 @@
+﻿<span class="bg-accent text-light uppercase font-bold py-1 px-2 rounded">
+        @ChildContent
+</span>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

@@ -7,5 +7,7 @@ namespace Blazor.Services
         public Task<IEnumerable<HeroCard>> GetHeroCardsAsync();
 
         public Task<IEnumerable<ProjectShowcaseItem>> GetProjectShowcaseItemsAsync();
+
+        public Task<IEnumerable<ProjectShowcaseItem>> GetEducationShowcaseItemsAsync();
     }
 }

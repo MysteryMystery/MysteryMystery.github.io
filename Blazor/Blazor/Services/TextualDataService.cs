@@ -37,7 +37,20 @@ namespace Blazor.Services
                 return await response.Content.ReadFromJsonAsync<IEnumerable<ProjectShowcaseItem>>();
             }
 
-            _logger.LogError("GetHeroCardsAsync - file not found");
+            _logger.LogError("GetProjectShowcaseItemsAsync - file not found");
+            return new ProjectShowcaseItem[0];
+        }
+
+        public async Task<IEnumerable<ProjectShowcaseItem>> GetEducationShowcaseItemsAsync()
+        {
+            var response = await _httpClient.GetAsync("data/education-showcase-items.json");
+
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<IEnumerable<ProjectShowcaseItem>>();
+            }
+
+            _logger.LogError("GetEducationShowcaseItemsAsync - file not found");
             return new ProjectShowcaseItem[0];
         }
     }

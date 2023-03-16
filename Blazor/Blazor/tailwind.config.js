@@ -6,9 +6,11 @@ module.exports = {
             colors: {
                 "accent": "#fd1b7b",
                 "hero": "#97DFFC",
+                "primary": "#002969",
                 "secondary": "#002866",
                 "light": "#FFFFFF",
 
+                "light-grey": "#e4e5e7",
                 "deep-blue": "#000836",
 
                 "ruby": "#E0115F",
