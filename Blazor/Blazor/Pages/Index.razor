@@ -110,24 +110,6 @@
     </div>
 </div>
 
-
-<div id="education" class="flex flex-col items-center bg-light-grey p-1 md:py-4">
-    <div class="p-1 p-4">
-        <h1 class="text-4xl">My Education</h1>
-    </div>
-    <div class="w-full md:w-3/5">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-1 gap-4">
-            @foreach (var item in educationShowcaseItems)
-            {
-                <ProjectShowcaseItem Type="Education">
-                    <HeaderText>@item.Title</HeaderText>
-                    <BodyText>@item.Body</BodyText>
-                </ProjectShowcaseItem>
-            }
-        </div>
-    </div>
-</div>
-
 @code{
 
     IEnumerable<HeroCard> heroCards = new HeroCard[4].Select(h => new HeroCard
