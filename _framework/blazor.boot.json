@@ -1,0 +1,64 @@
+{
+  "cacheBootResources": true,
+  "config": [
+    "appsettings.json"
+  ],
+  "debugBuild": false,
+  "entryAssembly": "Blazor",
+  "icuDataMode": 0,
+  "linkerEnabled": true,
+  "resources": {
+    "assembly": {
+      "Blazor.dll": "sha256-2s08I0KQDXT3cm\/5jSKmwEmK2Yc7ICUKTGX022G86jA=",
+      "Microsoft.AspNetCore.Components.dll": "sha256-3eHlwAdmYeypCKCMVTf8uveIDFUJo+\/i3\/Y4Xhe3flk=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-jXhk\/XDfX0qOFNjBQnTSKvom2Pqvf3H1eMpDyQtF8ys=",
+      "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-T5jiBpaD\/PxymH0KmEEdtO7RAVEkYF0CTvFKD\/ks2K4=",
+      "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-RnuA+SzeHdWPxkhbAN\/rLqycRuu3WVTHnjWTqEOCF4Y=",
+      "Microsoft.Extensions.Configuration.dll": "sha256-UtruPnZEk3o6\/LuqS8P2sUzj3hN9k8Se5VGJg9DSkf8=",
+      "Microsoft.Extensions.Configuration.Json.dll": "sha256-boSewHLerYdMMQk1EahIMSbAXSrf7Kgky4CGjZ3uuto=",
+      "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-A7T3F4kvLlYirFJQP7Sp9NZnPFm9bFHzqmINxdkXtmA=",
+      "Microsoft.Extensions.DependencyInjection.dll": "sha256-DG4t8WcZydm0E7u9Jba98S15iYEuwN\/7Lc4ZxhOzolk=",
+      "Microsoft.Extensions.Logging.Abstractions.dll": "sha256-8ykvs4c7cNUrTIyC+HYXQyGms9AX\/v68hScHqZAirjM=",
+      "Microsoft.Extensions.Logging.dll": "sha256-uvQcmI6XrSMo7BLb8B56Haq\/wjzfQPy1LJw48RmEmDs=",
+      "Microsoft.Extensions.Options.dll": "sha256-T5jVw2iu5DWOW7fDB+sTItI3LDyjsz2wT4pCJl0cma8=",
+      "Microsoft.Extensions.Primitives.dll": "sha256-Kk9trPYi6xuop+bJh7AertZVcNJkEyzyxW3andlyf5U=",
+      "Microsoft.JSInterop.dll": "sha256-ZB7YZIIeSKCvqT+qcUy5LRM6JOBZCoAPC9LZVoITmlE=",
+      "Microsoft.JSInterop.WebAssembly.dll": "sha256-eVH22b5PZuMPdOy8EXrxcJNNXeTlKpZBQoz4lxYlp3o=",
+      "System.Collections.Concurrent.dll": "sha256-fUTKI222Dx\/KOx6h7vbUhPzq+1dRN9MQhB7Ck6yj4cU=",
+      "System.Collections.dll": "sha256-bSNZtIGa9gsptDz5fgMGhH3v0GTBx81cz0f+Jl0tdD8=",
+      "System.ComponentModel.dll": "sha256-kYvmM+4he22v26dhiHnIYrXJ8fU9VWWMiiTQi9FRe+s=",
+      "System.Linq.dll": "sha256-b\/q4HaGRn3ALmSxpEPIqXdf+IVzJ48Oo2YZ9pN0\/wTU=",
+      "System.Memory.dll": "sha256-ghYshbdp8G+EBNUE9J0CU8adN2sJL4wCvHR7wZLOw3c=",
+      "System.Net.Http.dll": "sha256-FLDK0zZW1irlhc08iaQri1MjcI5iSM4HmRXLcuz1Jo8=",
+      "System.Net.Http.Json.dll": "sha256-a1Gr2weI8p5hCxyuwjCjFVGwk4UWeOyUz4ZcnZlPsKU=",
+      "System.Net.Primitives.dll": "sha256-oelkX9bVNNbFK14n4dlRamsq\/OfLt4LgPd2LuajOETg=",
+      "System.Private.CoreLib.dll": "sha256-curYteHvtVVdpNH0q2sSXNh9SbmqdSzmdwS3hPBKXr8=",
+      "System.Private.Runtime.InteropServices.JavaScript.dll": "sha256-DVTJzBViq+qv7Nn1dDTJaYOA\/ruGSEbteZjqBlfi+30=",
+      "System.Private.Uri.dll": "sha256-fRtFvVFDvhdr1B12K\/zF\/1iIpu0Uax77sGcnsc5K7ak=",
+      "System.Runtime.CompilerServices.Unsafe.dll": "sha256-RlW7ea8ogj016tSma1YfH\/br\/wBbpbzw7IflqQ6FEsI=",
+      "System.Runtime.dll": "sha256-VNIb6liSQ8DTI3QKGQUjTAdy8LoJYEvzUAAeOaKDCYY=",
+      "System.Text.Encodings.Web.dll": "sha256-7nnVIoeWETPu7pR2jmZecmhvNJgS0JmhidpXfSZlaUo=",
+      "System.Text.Json.dll": "sha256-jqIeetKvUOshTLgtxMjLC9ucMjvZEof9j56lrFwz+7M="
+    },
+    "extensions": null,
+    "lazyAssembly": null,
+    "libraryInitializers": null,
+    "pdb": null,
+    "runtime": {
+      "dotnet.6.0.14.iiw8sbvu70.js": "sha256-54cJ6JdGhGbKaLWxHfRYzYbuyRq2wlK\/ZDzfSXD3FEs=",
+      "dotnet.timezones.blat": "sha256-SfxsI5ShckhP73xCMgz3EUrJ5z217yWRW+XFEaAdTwU=",
+      "dotnet.wasm": "sha256-L3k66or7AW72FOuf7Cp3kdMqqobLTDpICnPhrjd+5os=",
+      "icudt_CJK.dat": "sha256-WPyI4hWDPnOw62Nr27FkzGjdbucZnQD+Ph+GOPhAedw=",
+      "icudt_EFIGS.dat": "sha256-4RwaPx87Z4dvn77ie\/ro3\/QzyS+\/gGmO3Y\/0CSAXw4k=",
+      "icudt_no_CJK.dat": "sha256-OxylFgLJlFqixsj+nLxYVsv5iZLvfIKMpLf9hrWaChA=",
+      "icudt.dat": "sha256-Zuq0dWAsBm6\/2lSOsz7+H9PvFaRn61KIXHMMwXDfvyE="
+    },
+    "runtimeAssets": {
+      "dotnet.wasm": {
+        "behavior": "dotnetwasm",
+        "hash": "sha256-L3k66or7AW72FOuf7Cp3kdMqqobLTDpICnPhrjd+5os="
+      }
+    },
+    "satelliteResources": null
+  }
+}
