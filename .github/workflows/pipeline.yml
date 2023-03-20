@@ -57,7 +57,7 @@ jobs:
 
 # deploy if master
   deploy:
-    if: github.ref == 'ref/heads/master'
+    if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
