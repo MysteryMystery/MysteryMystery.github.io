@@ -25,7 +25,7 @@ module.exports = {
     safelist: [
         {
             pattern: /.+-(ruby|csharp|mysql|php|java)/,
-            variants: [],      // Optional
+            variants: [], 
         },
     ],
 }

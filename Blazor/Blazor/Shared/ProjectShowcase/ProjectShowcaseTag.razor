@@ -1,0 +1,11 @@
+﻿<Blazor.Shared.Components.Badge>
+    @ChildContent
+</Blazor.Shared.Components.Badge>
+
+@code {
+    [CascadingParameter()]
+    public ProjectShowcaseItem ProjectShowcaseItem { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

@@ -7,5 +7,7 @@
 
         public string? ThumbnailUrl { get; set; }
         public string? WebsiteUrl { get; set; }
+
+        public List<string> Tags { get; set; }
     }
 }

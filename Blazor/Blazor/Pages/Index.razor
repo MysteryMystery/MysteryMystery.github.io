@@ -101,9 +101,15 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-1 gap-4">
             @foreach (var item in educationShowcaseItems)
             {
-                <ProjectShowcaseItem Type="Education">
+                <ProjectShowcaseItem>
                     <HeaderText>@item.Title</HeaderText>
                     <BodyText>@item.Body</BodyText>
+                    <Tags>
+                        @foreach (var tag in item.Tags ?? Array.Empty<string>().ToList())
+                            {
+                            <ProjectShowcaseTag>@tag</ProjectShowcaseTag>
+                        }
+                    </Tags>
                 </ProjectShowcaseItem>
             }
         </div>
