@@ -4,7 +4,6 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-	<StaticWebAssetBasePath>Blazor</StaticWebAssetBasePath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +13,9 @@
 
   <ItemGroup>
     <Content Update="wwwroot\data\hero-cards.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\data\project-showcase-items.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
