@@ -24,7 +24,7 @@ module.exports = {
     plugins: [],
     safelist: [
         {
-            pattern: /.+-(ruby|csharp|mysql|php|java)/,
+            pattern: /.+-(ruby|csharp|mysql|php|java|secondary)/,
             variants: [], 
         },
     ],
