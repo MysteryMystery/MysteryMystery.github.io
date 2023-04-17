@@ -1,5 +1,11 @@
 [
   {
+    "title": "Clout Shoots Scraper",
+    "body": "A simple html scraper to scrape entry forms from Ian Downham's wix site.",
+    "thumbnailUrl": "",
+    "websiteUrl": "https://github.com/MysteryMystery/-CloutShoots"
+  },
+  {
     "title": "Windows Hardening Suite",
     "body": "This university team project consists of a Windows Forms C# application which acts to \"lock down\" the windows operating system.",
     "thumbnailUrl": "https://mysterymystery.github.io/UOD-Team-Project/img/logo-no-words.png",
