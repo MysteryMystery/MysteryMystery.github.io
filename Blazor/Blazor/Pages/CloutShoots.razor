@@ -1,0 +1,61 @@
+﻿@page "/CloutShoots"
+
+@inject HttpClient HttpClient;
+
+<PageTitle>Clout Shoots</PageTitle>
+
+<div class="container mx-auto py-2">
+    @if (cloutShoots is not null)
+    {
+
+            <div class="grid grid-cols-3 md:grid-cols-5 w-full gap-4 m-3 px-2 text-center font-bold">
+                <div class="px-6 py-3 text-xl">Venue</div>
+                <div class="px-6 py-3 text-xl">Round</div>
+                <div class="px-6 py-3 text-xl">Date</div>
+                    <div class="px-6 py-3 text-xl">Form</div>
+                <div class="px-6 py-3 text-xl">Maps</div>
+            </div>
+
+            @foreach (var cloutShoot in cloutShoots)
+            {
+                <div class="grid grid-cols-3 md:grid-cols-5 w-full gap-4 py-4 text-center odd:bg-light even:bg-slate-100">
+                    <div class="px-2 font-bold text-lg text-left col-span-2 md:col-span-1">@((MarkupString)cloutShoot.Name)</div>
+                    <div>@(cloutShoot.Name.Contains("*") ? "Imperial" : "Metric")</div>
+                    <div>@cloutShoot.Date.ToString("dd/MM/yyyy")</div>
+                    <div>
+                        @if (cloutShoot.FormUrl is not null)
+                        {
+                            <Blazor.Shared.Components.Btn Href="@cloutShoot.FormUrl" ButtonType="primary" Target="_blank">
+                                Form
+                            </Blazor.Shared.Components.Btn>
+                        }
+                    </div>
+                    <div>
+                        @if (cloutShoot.MapUrl is not null)
+                        {
+                            <Blazor.Shared.Components.Btn Href="@cloutShoot.MapUrl" ButtonType="secondary" Target="_blank">
+                                Map
+                            </Blazor.Shared.Components.Btn>
+                        }
+                    </div>
+                </div>
+            }
+    }
+</div>
+
+@code {
+    private int accordionCount = 0;
+    private List<CloutShoot> cloutShoots = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var shoots = await HttpClient.GetFromJsonAsync<List<CloutShoot>>("/data/CloutShoots.json");
+        cloutShoots = shoots.Select(s =>
+            {
+                s.Guid = Guid.NewGuid();
+                return s;
+            })
+            .OrderBy(c => c.Date)
+            .ToList();
+    }
+}
