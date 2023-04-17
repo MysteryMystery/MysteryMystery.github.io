@@ -15,8 +15,8 @@
     "footnotes": ""
   },
   {
-    "title": "Networking",
-    "body": "Knowledge of cross-subnet interactions and creation of load balanced servers segregated by firewalls.",
+    "title": "Infrastructure as Code",
+    "body": "Using terraform to provision cloud resources, restrict ACLs and deploy infrastructure via pipelines.",
     "footnotes": ""
   }
 ]

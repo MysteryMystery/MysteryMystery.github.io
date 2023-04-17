@@ -1,22 +1,46 @@
 [
   {
     "title": "Distributed Systems",
-    "body": "Writing a table booking app using Ruby on Rails and Ember Js, hosted using Docker & Docker-Compose."
+    "body": "Writing a table booking app using Ruby on Rails and Ember Js, hosted using Docker & Docker-Compose.",
+    "tags": [
+      "Ruby on Rails",
+      "Docker",
+      "Kubernetes"
+    ]
   },
   {
     "title": "Independent Studies",
-    "body": "Tracking mental health over time during Covid-19 using Twitter posts and sentiment analysis in order to determine the emotions a person is feeling based on the language used in a tweet."
+    "body": "Tracking mental health over time during Covid-19 using Twitter posts and sentiment analysis in order to determine the emotions a person is feeling based on the language used in a tweet.",
+    "tags": [
+      "Python",
+      "Data Mining",
+      "Sentiment Analysis"
+    ]
   },
   {
     "title": "Data Mining & Foundations of AI",
-    "body": "Using Python to mine data and learn about machine learning & classification algorithms using a range of data sets."
+    "body": "Using Python to mine data and learn about machine learning & classification algorithms using a range of data sets.",
+    "tags": [
+      "Python",
+      "Data Mining",
+      "Classification",
+      "Deep Learning"
+    ]
   },
   {
     "title": "Language Design & Implementation",
-    "body": "Created an interpreted programming language named \"Classy\" using JavaCC and abstract syntax trees."
+    "body": "Created an interpreted programming language named \"Classy\" using JavaCC and abstract syntax trees.",
+    "tags": [
+      "Java",
+      "Abstract Syntax Trees"
+    ]
   },
   {
     "title": "Systems Programming",
-    "body": "8086 Assembly and extending Xv6 operating system in C to implement outputting shapes and text in various graphics modes."
+    "body": "8086 Assembly and extending Xv6 operating system in C to implement outputting shapes and text in various graphics modes.",
+    "tags": [
+      "Assembly",
+      "C"
+    ]
   }
 ]
