@@ -7,12 +7,11 @@
 <div class="container mx-auto py-2">
     @if (cloutShoots is not null)
     {
-
-            <div class="grid grid-cols-3 md:grid-cols-5 w-full gap-4 m-3 px-2 text-center font-bold">
+            <div class="grid grid-cols-3 md:grid-cols-5 w-full gap-4 m-3 text-center font-bold">
                 <div class="px-6 py-3 text-xl">Venue</div>
                 <div class="px-6 py-3 text-xl">Round</div>
                 <div class="px-6 py-3 text-xl">Date</div>
-                    <div class="px-6 py-3 text-xl">Form</div>
+                <div class="px-6 py-3 text-xl">Form</div>
                 <div class="px-6 py-3 text-xl">Maps</div>
             </div>
 
@@ -44,11 +43,16 @@
 </div>
 
 @code {
+    [CascadingParameter]
+    public MainLayout MainLayout { get; set; }
+
     private int accordionCount = 0;
     private List<CloutShoot> cloutShoots = new();
 
     protected override async Task OnInitializedAsync()
     {
+        MainLayout.ShowNavbar = true;
+
         var shoots = await HttpClient.GetFromJsonAsync<List<CloutShoot>>("/data/CloutShoots.json");
         cloutShoots = shoots.Select(s =>
             {
