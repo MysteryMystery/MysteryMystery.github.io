@@ -1,0 +1,37 @@
+﻿<nav class="flex items-center justify-between flex-wrap @BackgroundClass px-6 py-2 shadow">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <a class="font-semibold text-xl tracking-tight text-hero hover:text-light" href="/">MysteryMystery.github.io</a>
+    </div>
+    <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-light border-teal-400 hover:text-white hover:border-white" @onclick="ToggleNav">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" /></svg>
+        </button>
+    </div>
+    <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto @(_isCollapsed ? "hidden" : "") lg:show transition">
+        <div class="lg:flex lg:justify-end lg:flex-grow gap-1">
+            @foreach (var key in _pageLinks.Keys){
+                <a href="@(_pageLinks[key])" class="block mt-4 lg:inline-block lg:mt-0 text-slate-200 hover:text-light hover:text-white mr-4 px-2">
+                    @key
+                </a>
+            }
+        </div>
+    </div>
+</nav>
+
+@code {
+    [Parameter]
+    public bool TransparentBackground { get; set; } = false;
+
+    private string BackgroundClass { get => TransparentBackground ? "bg-transparent" : "bg-primary"; }
+    private bool _isCollapsed = true;
+
+    private Dictionary<string, string> _pageLinks = new Dictionary<string, string>
+    {
+        { "Clout Shoots", "/CloutShoots" }
+    };
+
+    private void ToggleNav()
+    {
+        _isCollapsed = !_isCollapsed;
+    }
+}

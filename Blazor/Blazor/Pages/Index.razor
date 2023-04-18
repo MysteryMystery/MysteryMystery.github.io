@@ -9,6 +9,8 @@
 <PageTitle>James Attfield</PageTitle>
 
 <div class="min-h-screen flex flex-col hero-section">
+    <NavBar TransparentBackground=true></NavBar>
+
     <div class="grow text-white container mx-auto flex items-center justify-center flex-col">
         @* Hero text and social icons *@
         <div class="">
@@ -117,6 +119,8 @@
 </div>
 
 @code{
+    [CascadingParameter]
+    public MainLayout MainLayout { get; set; }
 
     IEnumerable<HeroCard> heroCards = new HeroCard[4].Select(h => new HeroCard
     {
@@ -139,6 +143,8 @@
 
     protected override async Task OnInitializedAsync()
     {
+        MainLayout.ShowNavbar = false;
+
         heroCards = await TextualDataService.GetHeroCardsAsync();
         projectShowcaseItems = await TextualDataService.GetProjectShowcaseItemsAsync();
         educationShowcaseItems = await TextualDataService.GetEducationShowcaseItemsAsync();
