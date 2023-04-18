@@ -18,6 +18,38 @@
 .inline-skill-tag-ruby[b-yc7mlmln1x] {
 }
 /* /Shared/MainLayout.razor.rz.scp.css */
+/* /Shared/NavBar.razor.rz.scp.css */
+.fade.in[b-ait6p883oo] {
+    animation-name: fadeIn-b-ait6p883oo;
+}
+
+.fade.out[b-ait6p883oo] {
+    animation-name: fadeOut-b-ait6p883oo;
+}
+
+@keyframes fadeIn-b-ait6p883oo {
+    0% {
+        opacity: 0;
+        transform: translateY(startYposition);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(endYposition);
+    }
+}
+
+@keyframes fadeOut-b-ait6p883oo {
+    0% {
+        opacity: 1;
+        transform: translateY(startYposition);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(endYposition);
+    }
+}
 /* /Shared/NavMenu.razor.rz.scp.css */
 .navbar-toggler[b-32xpj7b96w] {
     background-color: rgba(255, 255, 255, 0.1);
