@@ -15,6 +15,11 @@ namespace Blazor.Models
         public DateTime Date { get; set; }
 
         public string? MapUrl { get; set; }
+
         public string? FormUrl { get; set; }
+
+        public string? WhatThreeWords { get; set; }
+
+        public string? ResultsUrl { get; set; }
     }
 }
