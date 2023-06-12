@@ -17,7 +17,7 @@
 
             @foreach (var cloutShoot in cloutShoots)
             {
-                <div class="grid grid-cols-3 md:grid-cols-5 w-full gap-4 py-4 text-center odd:bg-light even:bg-slate-100">
+                <div class="grid grid-cols-3 md:grid-cols-5 w-full gap-4 py-4 text-center odd:bg-light even:bg-slate-100 @(IsPastDate(cloutShoot.Date) ? "text-slate-600" : "")">
                     <div class="px-2 font-bold text-lg text-left col-span-2 md:col-span-1">@((MarkupString)cloutShoot.Name)</div>
                     <div>@(cloutShoot.Name.Contains("*") ? "Imperial" : "Metric")</div>
                     <div>@cloutShoot.Date.ToString("dd/MM/yyyy")</div>
@@ -49,6 +49,8 @@
     private int accordionCount = 0;
     private List<CloutShoot> cloutShoots = new();
 
+    private DateOnly dateToday = DateOnly.FromDateTime(DateTime.Now);
+
     protected override async Task OnInitializedAsync()
     {
         MainLayout.ShowNavbar = true;
@@ -62,4 +64,6 @@
             .OrderBy(c => c.Date)
             .ToList();
     }
+
+    private bool IsPastDate(DateTime d) => dateToday > DateOnly.FromDateTime(d);
 }
