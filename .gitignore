@@ -477,3 +477,5 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+/Blazor/.vs/Blazor/DesignTimeBuild/.dtbcache.v2
+/Blazor/.vs/Blazor/v17/.suo
