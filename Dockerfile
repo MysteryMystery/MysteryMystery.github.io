@@ -10,8 +10,10 @@ ARG BuildConfiguration=Release
 WORKDIR /app
 COPY --from=nodeBuild /app .
 WORKDIR /app/Blazor/Blazor
-RUN dotnet restore
-RUN dotnet publish -c ${BuildConfiguration} -o /publish
+RUN --mount=type=cache,id=nuget,target=/root/.nuget/packages \
+    dotnet restore
+RUN --mount=type=cache,id=nuget,target=/root/.nuget/packages \
+    dotnet publish -c ${BuildConfiguration} -o /publish
 
 
 FROM nginx:1.23.3-alpine AS webserver

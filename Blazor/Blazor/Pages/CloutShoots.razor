@@ -1,44 +1,74 @@
-﻿@page "/CloutShoots"
+﻿@page "/CloutShoots/{year:int?}"
 
-@inject HttpClient HttpClient;
+@inject ICloutShootsService CloutShootsService
+@inject ILogger<CloutShoots> Logger;
 
 <PageTitle>Clout Shoots</PageTitle>
 
 <div class="container mx-auto py-2">
-    @if (cloutShoots is not null)
-    {
-            <div class="grid grid-cols-3 md:grid-cols-5 w-full gap-4 m-3 text-center font-bold">
-                <div class="px-6 py-3 text-xl">Venue</div>
-                <div class="px-6 py-3 text-xl">Round</div>
-                <div class="px-6 py-3 text-xl">Date</div>
-                <div class="px-6 py-3 text-xl">Form</div>
-                <div class="px-6 py-3 text-xl">Maps</div>
-            </div>
-
-            @foreach (var cloutShoot in cloutShoots)
+    <div class="flex justify-center">
+        <Pagination>
+            @foreach (int year in validYears)
             {
-                <div class="grid grid-cols-3 md:grid-cols-5 w-full gap-4 py-4 text-center odd:bg-light even:bg-slate-100 @(IsPastDate(cloutShoot.Date) ? "text-slate-600" : "")">
-                    <div class="px-2 font-bold text-lg text-left col-span-2 md:col-span-1">@((MarkupString)cloutShoot.Name)</div>
-                    <div>@(cloutShoot.Name.Contains("*") ? "Imperial" : "Metric")</div>
-                    <div>@cloutShoot.Date.ToString("dd/MM/yyyy")</div>
-                    <div>
-                        @if (cloutShoot.FormUrl is not null)
-                        {
-                            <Blazor.Shared.Components.Btn Href="@cloutShoot.FormUrl" ButtonType="primary" Target="_blank">
-                                Form
-                            </Blazor.Shared.Components.Btn>
-                        }
-                    </div>
-                    <div>
-                        @if (cloutShoot.MapUrl is not null)
-                        {
-                            <Blazor.Shared.Components.Btn Href="@cloutShoot.MapUrl" ButtonType="secondary" Target="_blank">
-                                Map
-                            </Blazor.Shared.Components.Btn>
-                        }
-                    </div>
-                </div>
+                <PaginationItem Href="@("/CloutShoots/" + year)" IsActive=@(year == Year)>
+                    @year
+                </PaginationItem>
             }
+        </Pagination>
+    </div>
+
+    @if(Shoots.Count() == 0){
+        <div class="flex justify-center align-center my-4 mx-1 p-4 rounded shadow">
+            <div class="text-center">
+                <h1 class="text-2xl">
+                    We could not find any shoots for @Year, please check back later!
+                </h1>
+
+                <div class="py-4">
+                    <Blazor.Shared.Components.Btn Href="@("/cloutShoots/" + dateToday.Year)" ButtonType="primary">
+                        Or go back to @(dateToday.Year)
+                    </Blazor.Shared.Components.Btn>
+                </div>
+            </div>
+        </div>
+    }
+
+    @foreach (var cloutShoot in Shoots)
+    {
+        <div class="grid grid-cols-3 md:grid-cols-7 w-full gap-4 py-4 my-4 text-center odd:bg-light even:bg-slate-100 @(IsPastDate(cloutShoot.Date) ? "text-slate-600" : "")">
+            <div class="px-2 font-bold text-lg text-left col-span-2 md:col-span-2 text-center md:text-left order-1">@((MarkupString)cloutShoot.Name)</div>
+            <div class="flex order-3 md:order-2 col-span-3 md:col-span-1 justify-center md:justify-left">
+                <span>
+                    <svg class="text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <rect x="8" y="15" width="2" height="2" /></svg>
+                </span>
+                    @cloutShoot.Date.ToString("dd/MM/yyyy")
+            </div>
+            <div class="md:col-span-1 order-2 md:order-3">@(cloutShoot.Name.Contains("*") ? "Imperial" : "Metric")</div>
+            <div class="order-4">
+                @if (cloutShoot.FormUrl is not null)
+                {
+                    <Blazor.Shared.Components.Btn Href="@cloutShoot.FormUrl" ButtonType="primary" Target="_blank">
+                        Form
+                    </Blazor.Shared.Components.Btn>
+                }
+            </div>
+            <div class="order-5">
+                @if (cloutShoot.MapUrl is not null)
+                {
+                    <Blazor.Shared.Components.Btn Href="@cloutShoot.MapUrl" ButtonType="secondary" Target="_blank">
+                            Map
+                    </Blazor.Shared.Components.Btn>
+                }
+            </div>
+            <div class="order-6">
+                @if (cloutShoot.ResultsUrl is not null)
+                {
+                    <Blazor.Shared.Components.Btn Href="@cloutShoot.ResultsUrl" ButtonType="secondary" Target="_blank">
+                        Results
+                    </Blazor.Shared.Components.Btn>
+                }
+            </div>
+        </div>
     }
 </div>
 
@@ -46,8 +76,19 @@
     [CascadingParameter]
     public MainLayout MainLayout { get; set; }
 
-    private int accordionCount = 0;
-    private List<CloutShoot> cloutShoots = new();
+    [Parameter]
+    public int? Year { get; set; }
+    private int? previousYear;
+
+    private IEnumerable<CloutShoot> _cloutShoots = new CloutShoot[0];
+
+    private IEnumerable<CloutShoot> Shoots {
+        get => _cloutShoots;
+        set {
+            _cloutShoots = value;
+        }
+    }
+    private List<int> validYears = new List<int>();
 
     private DateOnly dateToday = DateOnly.FromDateTime(DateTime.Now);
 
@@ -55,14 +96,31 @@
     {
         MainLayout.ShowNavbar = true;
 
-        var shoots = await HttpClient.GetFromJsonAsync<List<CloutShoot>>("/data/CloutShoots.json");
-        cloutShoots = shoots.Select(s =>
-            {
-                s.Guid = Guid.NewGuid();
-                return s;
-            })
-            .OrderBy(c => c.Date)
-            .ToList();
+        validYears = CloutShootsService.GetYears().ToList();
+    }
+
+    // Being called twice, 
+    // one with previous year 
+    // one with new year
+    // race condition
+    protected async override Task OnParametersSetAsync()
+    {
+        await base.OnParametersSetAsync();
+
+        if(Year is null)
+        {
+            Logger.LogInformation("setting year to: " + dateToday.Year.ToString());
+            Year = dateToday.Year;
+        }
+
+        if(Year != previousYear){
+            previousYear = Year;
+
+            Logger.LogInformation("Year to retrieve: " + Year);
+
+            Shoots = await CloutShootsService.GetCloutShoots(Year.Value);
+            Logger.LogInformation("Number of shoots retrieved for year " + Year + ": " + Shoots.Count());
+        }
     }
 
     private bool IsPastDate(DateTime d) => dateToday > DateOnly.FromDateTime(d);
