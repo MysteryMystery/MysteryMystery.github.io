@@ -95,6 +95,29 @@
     </div>
 </div>
 
+<div id="projects" class="flex flex-col items-center bg-light-grey p-1 md:py-4">
+    <div class="p-1 p-4">
+        <h1 class="text-4xl">Mini Projects</h1>
+    </div>
+    <div class="w-full md:w-3/5">
+        <div class="grid grid-cols-3 md:grid-cols-4 gap-1 gap-4">
+            @foreach (var item in miniProjectsShowcaseItems)
+            {
+                <ProjectShowcaseItem WebsiteLink="@item.WebsiteUrl" NavLinkText="View" CssClass="@item.CssClass">
+                    <HeaderText>@item.Title</HeaderText>
+                    <BodyText>@item.Body</BodyText>
+                    <Tags>
+                        @foreach (var tag in item.Tags ?? Array.Empty<string>().ToList())
+                        {
+                            <ProjectShowcaseTag>@tag</ProjectShowcaseTag>
+                        }
+                    </Tags>
+                </ProjectShowcaseItem>
+            }
+        </div>
+    </div>
+</div>
+
 <div id="education" class="flex flex-col items-center bg-light-grey p-1 md:py-4">
     <div class="p-1 p-4">
         <h1 class="text-4xl">My Education</h1>
@@ -141,6 +164,8 @@
             Body = "",
         }).ToList();
 
+    IEnumerable<Models.ProjectShowcaseItem> miniProjectsShowcaseItems = new List<Models.ProjectShowcaseItem>();
+
     protected override async Task OnInitializedAsync()
     {
         MainLayout.ShowNavbar = false;
@@ -148,5 +173,6 @@
         heroCards = await TextualDataService.GetHeroCardsAsync();
         projectShowcaseItems = await TextualDataService.GetProjectShowcaseItemsAsync();
         educationShowcaseItems = await TextualDataService.GetEducationShowcaseItemsAsync();
+        miniProjectsShowcaseItems = await TextualDataService.GetMiniProjectsShowcaseItemsAsync();
     }
 }

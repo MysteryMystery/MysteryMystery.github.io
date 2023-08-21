@@ -9,5 +9,7 @@
         public string? WebsiteUrl { get; set; }
 
         public List<string> Tags { get; set; }
+
+        public string? CssClass { get; set; }
     }
 }

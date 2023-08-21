@@ -53,5 +53,18 @@ namespace Blazor.Services
             _logger.LogError("GetEducationShowcaseItemsAsync - file not found");
             return new ProjectShowcaseItem[0];
         }
+
+        public async Task<IEnumerable<ProjectShowcaseItem>> GetMiniProjectsShowcaseItemsAsync()
+        {
+            var response = await _httpClient.GetAsync("data/mini-projects.json");
+
+            if (response.IsSuccessStatusCode)
+            {
+                return await response.Content.ReadFromJsonAsync<IEnumerable<ProjectShowcaseItem>>();
+            }
+
+            _logger.LogError("GetMiniProjectsShowcaseItemsAsync - file not found");
+            return new ProjectShowcaseItem[0];
+        }
     }
 }
