@@ -38,7 +38,7 @@ namespace Blazor.Catan.Tests
             Assert.IsTrue(board.Tiles.Count(x => x.ResourceType == ResourceType.WOOD) == 4);
             Assert.IsTrue(board.Tiles.Count(x => x.ResourceType == ResourceType.WHEAT) == 4);
             Assert.IsTrue(board.Tiles.Count(x => x.ResourceType == ResourceType.SHEEP) == 4);
-            Assert.IsTrue(board.TradeTiles.Count() == 4);
+            Assert.IsTrue(board.TradeTiles.Count() == 9);
         }
 
         [Test]
