@@ -44,10 +44,13 @@
         background: #3399cc;
         border-color: #66bbee;
     }
-        
+
         .board .water span[b-yzf87te41p] {
-            background-image: url("/img/catan/water.svg");
+            background: #66bbee;
+            /*
+                background-image: url("/img/catan/water.svg");
             background-size: cover;
+            */
         }
 
     .board .trade[b-yzf87te41p], .board .trade[b-yzf87te41p]:before, .board .trade[b-yzf87te41p]:after {
@@ -61,7 +64,7 @@
     }
 
     .board .wood[b-yzf87te41p] {
-        background: #227722;
+        background: #5e8047;
     }
 
     .board .wood span[b-yzf87te41p] {
@@ -70,7 +73,7 @@
     }
 
     .board .wheat[b-yzf87te41p] {
-        background: #eecc33;
+        background: #ffd045;
     }
 
     .board .wheat span[b-yzf87te41p] {
@@ -79,7 +82,7 @@
     }
 
     .board .ore[b-yzf87te41p] {
-        background: #999999;
+        background: #a49b9d;
     }
 
     .board .ore span[b-yzf87te41p] {
@@ -88,7 +91,7 @@
     }
 
     .board .sheep[b-yzf87te41p] {
-        background: #66ee55;
+        background: #9bc445;
     }
 
     .board .sheep span[b-yzf87te41p] {
@@ -97,7 +100,7 @@
     }
 
     .board .brick[b-yzf87te41p] {
-        background: #cc3333;
+        background: #b46734;
     }
 
     .board .brick span[b-yzf87te41p] {
@@ -106,7 +109,7 @@
     }
 
     .board .desert[b-yzf87te41p] {
-        background: #6b6446;
+        background: #e5c27e;
     }
 
     .board .desert span[b-yzf87te41p] {
