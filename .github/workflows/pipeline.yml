@@ -41,6 +41,9 @@ jobs:
       - name: Dotnet Restore
         working-directory: Blazor
         run: dotnet restore
+      - name: Dotnet Test
+        working-directory: Blazor
+        run: dotnet test
       - name: Dotnet Publish
         working-directory: Blazor
         run: dotnet publish -c Release --nologo

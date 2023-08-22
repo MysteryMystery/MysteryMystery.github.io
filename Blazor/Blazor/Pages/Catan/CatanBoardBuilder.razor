@@ -28,7 +28,12 @@
                         if (tile.GetType() == typeof(ResourceTile))
                         {
                             <div class="@(((ResourceTile) tile).ResourceType.ToString().ToLower())">
-                                <span>@(((ResourceTile)tile).DiceValue)</span>
+                                @if(((ResourceTile) tile).ResourceType != ResourceType.DESERT){
+                                    <span>@(((ResourceTile)tile).DiceValue)</span>
+                                } else
+                                {
+                                    <span>&nbsp;</span>
+                                }
                             </div>
                         }
                         else if ((tile.GetType() == typeof(SeaTile)))

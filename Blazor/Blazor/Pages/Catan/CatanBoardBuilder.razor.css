@@ -43,10 +43,13 @@
         background: #3399cc;
         border-color: #66bbee;
     }
-        
+
         .board .water span {
-            background-image: url("/img/catan/water.svg");
+            background: #66bbee;
+            /*
+                background-image: url("/img/catan/water.svg");
             background-size: cover;
+            */
         }
 
     .board .trade, .board .trade:before, .board .trade:after {
@@ -60,7 +63,7 @@
     }
 
     .board .wood {
-        background: #227722;
+        background: #5e8047;
     }
 
     .board .wood span {
@@ -69,7 +72,7 @@
     }
 
     .board .wheat {
-        background: #eecc33;
+        background: #ffd045;
     }
 
     .board .wheat span {
@@ -78,7 +81,7 @@
     }
 
     .board .ore {
-        background: #999999;
+        background: #a49b9d;
     }
 
     .board .ore span {
@@ -87,7 +90,7 @@
     }
 
     .board .sheep {
-        background: #66ee55;
+        background: #9bc445;
     }
 
     .board .sheep span {
@@ -96,7 +99,7 @@
     }
 
     .board .brick {
-        background: #cc3333;
+        background: #b46734;
     }
 
     .board .brick span {
@@ -105,7 +108,7 @@
     }
 
     .board .desert {
-        background: #6b6446;
+        background: #e5c27e;
     }
 
     .board .desert span {
