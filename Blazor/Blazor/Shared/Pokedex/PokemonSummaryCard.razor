@@ -1,0 +1,27 @@
+﻿@using Blazor.Models.Pokedex;
+
+<div class="grid grid-cols-1 md:grid-cols-3 rounded m-1 md:m-4 bg-slate-200">
+    <div class="bg-primary rounded p-2">
+        <div class="flex flex-wrap justify-center">
+            <div class="shadow shadow-inner bg-light rounded-full">
+                <img class="" src="@Entity.Sprites.FrontDefault.ToString()" />
+            </div>
+        </div>
+        <h1 class="text-center text-light text-lg capitalize">@Entity.Name</h1>
+        
+        <div class="flex justify-center">
+            @foreach(var type in Entity.Types)
+            {
+                <TypeTag Type="@type.Type.Name"></TypeTag>
+            }
+        </div>
+    </div>
+    <div>
+        stats pane
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Pokemon Entity { get; set; }
+}

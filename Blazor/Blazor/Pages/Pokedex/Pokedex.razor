@@ -1,0 +1,24 @@
+﻿@page "/Pokedex"
+
+@using Blazor.Shared.Components
+@using Blazor.Services.Pokedex
+@using Blazor.Models.Pokedex
+@using Blazor.Shared.Pokedex
+
+@inject IPokeAPIService PokeAPIService
+
+@if(_currentPokemon is not null)
+{
+    <div class="flex justify-center">
+        <PokemonSummaryCard Entity="@_currentPokemon" />
+    </div>
+}
+
+@code {
+    private Pokemon? _currentPokemon = null;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _currentPokemon = await PokeAPIService.GetPokemonAsync("charizard");
+    }
+}

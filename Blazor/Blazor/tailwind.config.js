@@ -31,5 +31,9 @@ module.exports = {
             pattern: /bg-(primary|transparent)/,
             variants: [],
         },
+        {
+            pattern: /(border|bg)-red-(3|5)00/,
+            variants: [],
+        },
     ],
 }
