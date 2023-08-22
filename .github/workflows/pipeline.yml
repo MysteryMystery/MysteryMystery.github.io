@@ -42,7 +42,7 @@ jobs:
         working-directory: Blazor
         run: dotnet restore
       - name: Dotnet Test
-        run: dotnet test **/*.Tests.csproj
+        run: dotnet test Blazor.sln
       - name: Dotnet Publish
         working-directory: Blazor
         run: dotnet publish -c Release --nologo
