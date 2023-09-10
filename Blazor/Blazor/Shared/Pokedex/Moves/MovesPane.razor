@@ -1,0 +1,55 @@
+﻿@using Blazor.Models.Pokedex
+
+<table class="border-separate border-spacing-2">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Power</th>
+            <th>PP</th>
+            <th>Priority</th>
+            <th>Learn Method</th>
+            <th>Level Learnt</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Move move in OrderedMoves ?? new List<Move>())
+        {
+            <tr>
+                <td>
+                    <p class="capitalize font-bold">@move.MoveDetails.Name</p>
+                </td>
+                <td>
+                    <p>@move.MoveDetails.FlavorTextEntries?.FirstOrDefault(x => x.Language.Name == "en")?.FlavorText</p>
+                </td>
+                <td>
+                    <p>@move.MoveDetails.Power</p>
+                </td>
+                <td>
+                    <p>@move.MoveDetails.PP</p>
+                </td>
+                <td>
+                    <p>@move.MoveDetails.Priority</p>
+                </td>
+                <td>
+                    @move.VersionGroupDetails.First().MoveLearnMethod.Name
+                </td>
+                <td>
+                    @move.VersionGroupDetails.First().LevelLearnedAt
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    [Parameter]
+    public Pokemon Pokemon { get; set; }
+
+    private List<Move> OrderedMoves { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        OrderedMoves = Pokemon.Moves.OrderBy(x => x.VersionGroupDetails.First().LevelLearnedAt).ToList();
+    }
+}

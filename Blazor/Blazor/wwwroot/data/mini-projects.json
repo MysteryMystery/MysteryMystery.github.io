@@ -2,6 +2,11 @@
   {
     "title": "Catan Board Builder",
     "websiteUrl": "/CatanBoardBuilder",
-    "cssClass":  "project-catan"
+    "cssClass": "project-catan"
+  },
+  {
+    "title": "Pokedex",
+    "websiteUrl": "/pokedex",
+    "cssClass": "project-pokedex"
   }
 ]

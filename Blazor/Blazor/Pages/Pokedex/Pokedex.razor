@@ -12,13 +12,57 @@
     <div class="flex justify-center">
         <PokemonSummaryCard Entity="@_currentPokemon" />
     </div>
+
+    <div>
+
+    </div>
 }
+
+<div class="p-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">
+        @foreach (Pokemon p in _loadedPokemon)
+        {
+            var url = "/pokedex/" + p.Id;
+            <NavLink href="@url">
+                <PokemonListItem Entity="@p" />
+            </NavLink>
+        }
+    </div>
+</div>
 
 @code {
     private Pokemon? _currentPokemon = null;
 
+    private List<Pokemon> _loadedPokemon = new();
+
     protected override async Task OnInitializedAsync()
     {
         _currentPokemon = await PokeAPIService.GetPokemonAsync("charizard");
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            LoadPokemonIncrementally();
+        }
+    }
+
+    private async void LoadPokemonIncrementally(int offset=0, int count=151)
+    {
+        for(int i = offset > 0 ? offset : 1; i < count+1; i++)
+        {
+            _loadedPokemon.Add(await PokeAPIService.GetPokemonAsync(i));
+            StateHasChanged();
+        }
+    }
+
+    private async ValueTask<ItemsProviderResult<Pokemon>> LoadPokemon(ItemsProviderRequest request)
+    {
+        int totalItems = 1008; // total number of items
+        int remainingItems = Math.Max(0, totalItems - request.StartIndex);
+        int numPokemon = Math.Min(request.Count, remainingItems);
+        Pokemon[] ps = await PokeAPIService.GetManyPokemonAsync(request.StartIndex, numPokemon);
+        return new ItemsProviderResult<Pokemon>(ps, totalItems);
     }
 }

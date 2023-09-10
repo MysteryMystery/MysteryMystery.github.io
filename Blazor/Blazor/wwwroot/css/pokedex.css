@@ -1,0 +1,215 @@
+﻿.bg-normal {
+    background-color: #a8a878;
+}
+
+.text-normal {
+    color: #a8a878;
+}
+
+.border-normal {
+    border-color: #979779;
+}
+
+.bg-fire {
+    background-color: #f08030;
+}
+
+.text-fire {
+    color: #f08030;
+}
+
+.border-fire {
+    border-color: #9c531f;
+}
+
+.bg-fighting {
+    background-color: #c03028;
+}
+
+.text-fighting {
+    color: #c03028;
+}
+
+.border-fighting {
+    border-color: #7d1f1a;
+}
+
+.bg-water {
+    background-color: #6890f0;
+}
+
+.text-water {
+    color: #6890f0;
+}
+
+.border-water {
+    border-color: #445e9c;
+}
+
+.bg-flying {
+    background-color: #a890f0;
+}
+
+.text-flying {
+    color: #a890f0;
+}
+
+.border-flying {
+    border-color: #6d5e9c;
+}
+
+.bg-grass {
+    background-color: #78c850;
+}
+
+.text-grass {
+    color: #78c850;
+}
+
+.border-grass {
+    border-color: #4e8234;
+}
+
+.bg-poison {
+    background-color: #a040a0;
+}
+
+.text-poison {
+    color: #a040a0;
+}
+
+.border-poison {
+    border-color: #682a68;
+}
+
+.bg-electric {
+    background-color: #f8d030;
+}
+
+.text-electric {
+    color: #f8d030;
+}
+
+.border-electric {
+    border-color: #a1871f;
+}
+
+.bg-ground {
+    background-color: #e0c068;
+}
+
+.text-ground {
+    color: #e0c068;
+}
+
+.border-ground {
+    border-color: #968047;
+}
+
+.bg-psychic {
+    background-color: #f85888;
+}
+
+.text-psychic {
+    color: #f85888;
+}
+
+.border-psychic {
+    border-color: #a13959;
+}
+
+.bg-rock {
+    background-color: #b8a038;
+}
+
+.text-rock {
+    color: #b8a038;
+}
+
+.border-rock {
+    border-color: #786824;
+}
+
+.bg-ice {
+    background-color: #98d8d8;
+}
+
+.text-ice {
+    color: #98d8d8;
+}
+
+.border-ice {
+    border-color: #638d8d;
+}
+
+.bg-bug {
+    background-color: #a8b820;
+}
+
+.text-bug {
+    color: #a8b820;
+}
+
+.border-bug {
+    border-color: #6d7815;
+}
+
+.bg-dragon {
+    background-color: #7038f8;
+}
+
+.text-dragon {
+    color: #7038f8;
+}
+
+.border-dragon {
+    border-color: #4924a1;
+}
+
+.bg-ghost {
+    background-color: #705898;
+}
+
+.text-ghost {
+    color: #705898;
+}
+
+.border-ghost {
+    border-color: #493963;
+}
+
+.bg-dark {
+    background-color: #705848;
+}
+
+.text-dark {
+    color: #705848;
+}
+
+.border-dark {
+    border-color: #49392f;
+}
+
+.bg-steel {
+    background-color: #b8b8d0;
+}
+
+.text-steel {
+    color: #b8b8d0;
+}
+
+.border-steel {
+    border-color: #787887;
+}
+
+.bg-fairy {
+    background-color: #ee99ac;
+}
+
+.text-fairy {
+    color: #ee99ac;
+}
+
+.border-fairy {
+    border-color: #9b6470;
+}

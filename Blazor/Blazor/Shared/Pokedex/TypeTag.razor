@@ -1,28 +1,9 @@
 ﻿
-<span class="uppercase border border-@BorderColour bg-@BgColour p-1 text-sm">
-    @Type
+<span class="uppercase text-light border-2 border-@Type.Name bg-@Type.Name p-1 text-sm font-bold m-1">
+    @Type.Name
 </span>
 
 @code {
     [Parameter]
-    public string Type { get; set; }
-
-    private Dictionary<string, string> _borderColours = new Dictionary<string, string>
-    {
-        {"fire", "red-500"}
-    };
-
-    private Dictionary<string, string> _bgColours = new Dictionary<string, string>
-    {
-        {"fire", "red-300"}
-    };
-
-    public string BorderColour {
-        get => _borderColours.ContainsKey(this.Type.ToLower()) ? _borderColours[this.Type.ToLower()] : "white";
-    }
-
-    public string BgColour
-    {
-        get => _bgColours.ContainsKey(this.Type.ToLower()) ? _bgColours[this.Type.ToLower()] : "white";
-    }
+    public Blazor.Models.Pokedex.Type Type { get; set; }
 }

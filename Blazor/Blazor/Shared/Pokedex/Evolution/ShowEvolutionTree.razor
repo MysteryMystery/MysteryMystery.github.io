@@ -1,0 +1,35 @@
+﻿@using Blazor.Models.Pokedex
+
+@inject ILogger<ShowEvolutionTree> Logger;
+
+<div class="flex">
+    <div class="self-center">
+        <img src="@Chain.Species.Varieties[0].Pokemon.Sprites.FrontDefault" />
+        <div class="flex justify-center">
+            @foreach (var type in Chain.Species.Varieties[0].Pokemon.Types)
+            {
+                <TypeTag Type="@type.Type"></TypeTag>
+            }
+        </div>
+    </div>
+
+    @if (Chain.EvolvesTo.Any())
+    {
+        <div class="">
+            @foreach(Chain child in Chain.EvolvesTo)
+            {
+                <ShowEvolutionTree Chain="@child" />
+            }
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public Chain Chain { get; set; } 
+
+    protected override async Task OnInitializedAsync()
+    {
+        Logger.LogInformation((Chain.Species.Varieties != null).ToString());
+    }
+}

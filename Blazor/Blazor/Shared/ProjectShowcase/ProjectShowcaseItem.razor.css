@@ -6,3 +6,8 @@
 .project-catan:hover {
     transform: scale(1.05);
 }
+
+.project-pokedex {
+    background-image: url("/img/pokedex/bg.jpg");
+    background-size: cover;
+}

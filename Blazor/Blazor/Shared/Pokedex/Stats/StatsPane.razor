@@ -1,0 +1,20 @@
+﻿@using Blazor.Models.Pokedex;
+
+@foreach (var stat in Entity.Stats)
+{
+    <div class="w-full rounded bg-slate-300 my-1">
+        <div class="w-[@GetWidthFraction(stat.BaseStat)%] flex flex-col bg-red-500 text-sm rounded text-right px-1">
+            @stat.BaseStat
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public Pokemon Entity { get; set; }
+
+    private double GetWidthFraction(long statValue)
+    {
+        return Math.Round((statValue / 255.0) * 100);
+    }
+}

@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor", "Blazor\Blazor.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Catan.Tests", "Blazor.Catan.Tests\Blazor.Catan.Tests.csproj", "{10311E4D-3A32-41C6-9099-12D0584278FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.Pokedex.Tests", "Blazor.Pokedex.Tests\Blazor.Pokedex.Tests.csproj", "{21271FEB-D989-4ADA-B611-C152531403CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor.Pokedex.Tests", "Blazor.Pokedex.Tests\Blazor.Pokedex.Tests.csproj", "{21271FEB-D989-4ADA-B611-C152531403CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

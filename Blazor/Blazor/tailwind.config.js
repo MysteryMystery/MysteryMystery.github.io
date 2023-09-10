@@ -34,6 +34,6 @@ module.exports = {
         {
             pattern: /(border|bg)-red-(3|5)00/,
             variants: [],
-        },
+        }
     ],
 }
