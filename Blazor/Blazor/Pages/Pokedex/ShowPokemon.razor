@@ -39,7 +39,9 @@
         <div>
             <h1 class="text-lg">Evolution Tree</h1>
             <div class="flex bg-slate-200 rounded shadow p-2">
-                <Blazor.Shared.Pokedex.Evolution.ShowEvolutionTree Chain="LoadedPokemon.Species.EvolutionChain.Chain"></Blazor.Shared.Pokedex.Evolution.ShowEvolutionTree>
+                @if(LoadedPokemon.Species.EvolutionChain.Chain.Species.Varieties != null){
+                    <Blazor.Shared.Pokedex.Evolution.ShowEvolutionTree Chain="LoadedPokemon.Species.EvolutionChain.Chain"></Blazor.Shared.Pokedex.Evolution.ShowEvolutionTree>
+                }
             </div>
         </div>
 
@@ -90,11 +92,11 @@
         // Issue here is we want to traverse the tree in the code above but its just a list of urls
         // we need to go through the whole tree and call await x.Hydrate()
         // single threaded due to wasm
-        await HydrateEvolutionTree(LoadedPokemon.Species.EvolutionChain.Chain);
+        HydrateEvolutionTree(LoadedPokemon.Species.EvolutionChain.Chain).ContinueWith(_ => StateHasChanged());
 
         foreach(var x in LoadedPokemon.Moves)
         {
-            await x.MoveDetails.Hydrate(PokeAPIService);
+            x.MoveDetails.Hydrate(PokeAPIService);
         }
     }
 

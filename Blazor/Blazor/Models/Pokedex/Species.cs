@@ -10,7 +10,7 @@
     public partial class Species : HydratableResource<Species>
     {
         [JsonPropertyName("base_happiness")]
-        public long BaseHappiness { get; set; }
+        public long? BaseHappiness { get; set; }
 
         [JsonPropertyName("capture_rate")]
         public long CaptureRate { get; set; }
@@ -55,7 +55,7 @@
         public bool HasGenderDifferences { get; set; }
 
         [JsonPropertyName("hatch_counter")]
-        public long HatchCounter { get; set; }
+        public long? HatchCounter { get; set; }
 
         [JsonPropertyName("id")]
         public long Id { get; set; }
