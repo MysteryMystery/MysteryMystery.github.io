@@ -4,7 +4,9 @@
 
 <div class="flex">
     <div class="self-center">
-        <img src="@Chain.Species.Varieties[0].Pokemon.Sprites.FrontDefault" />
+        <div class="flex justify-center">
+            <img src="@Chain.Species.Varieties[0].Pokemon.Sprites.FrontDefault" />
+        </div>
         <div class="flex justify-center">
             @foreach (var type in Chain.Species.Varieties[0].Pokemon.Types)
             {

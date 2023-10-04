@@ -10,7 +10,7 @@
 
 @if(LoadedPokemon is not null)
 {
-    <div class="h-96 bg-@(LoadedPokemon.Types[0].Type.Name) grid grid-cols-3 gap-2">
+    <div class="h-96 bg-@(LoadedPokemon.Types[0].Type.Name) grid grid-cols-1 md:grid-cols-3 gap-2">
         <div>
 
         </div>
@@ -37,13 +37,32 @@
 
         @* Evo chain Pane *@
         <div>
+            <h1 class="text-lg">Evolution Tree</h1>
             <div class="flex bg-slate-200 rounded shadow p-2">
                 <Blazor.Shared.Pokedex.Evolution.ShowEvolutionTree Chain="LoadedPokemon.Species.EvolutionChain.Chain"></Blazor.Shared.Pokedex.Evolution.ShowEvolutionTree>
             </div>
         </div>
 
+        @* Forms Pane *@
+        <div>
+            <h1 class="text-lg">Varieties</h1>
+            <div class="flex bg-slate-200 rounded shadow p-2 gap-2">
+                @foreach (Variety variety in LoadedPokemon.Species.Varieties)
+                {
+                    @if (@variety.Pokemon.Sprites.FrontDefault != null)
+                    {
+                        <div>
+                            <img class="h-[96px]" src="@variety.Pokemon.Sprites.FrontDefault" />
+                            <p class="capitalize font-bold">@variety.Pokemon.Name</p>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+
         @* Moves Pane *@
         <div>
+            <h1 class="text-lg">Moves</h1>
             <div class="bg-slate-200 rounded shadow p-2 max-h-96 overflow-y-auto">
                 <Blazor.Shared.Pokedex.Moves.MovesPane Pokemon="@LoadedPokemon"></Blazor.Shared.Pokedex.Moves.MovesPane>
             </div>
@@ -61,7 +80,10 @@
     {
         LoadedPokemon = await PokeAPIService.GetPokemonAsync(NameOrId);
         await LoadedPokemon.Species.Hydrate(PokeAPIService);
-
+        foreach (Variety variety in LoadedPokemon.Species.Varieties)
+        {
+            await variety.Pokemon.Hydrate(PokeAPIService);
+        }
 
         await LoadedPokemon.Species.EvolutionChain.Hydrate(PokeAPIService);
 
@@ -88,7 +110,11 @@
             return;
 
         await chain.Species.Hydrate(PokeAPIService);
-        await chain.Species.Varieties.First().Pokemon.Hydrate(PokeAPIService);
+
+        foreach(Variety variety in chain.Species.Varieties)
+        {
+            await variety.Pokemon.Hydrate(PokeAPIService);
+        }
 
         foreach (Chain c in chain.EvolvesTo)
         {

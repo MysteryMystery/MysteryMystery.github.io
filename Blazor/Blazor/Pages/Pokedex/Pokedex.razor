@@ -7,20 +7,18 @@
 
 @inject IPokeAPIService PokeAPIService
 
-@if(_currentPokemon is not null)
-{
-    <div class="flex justify-center">
-        <PokemonSummaryCard Entity="@_currentPokemon" />
-    </div>
-
-    <div>
-
-    </div>
-}
+<div class="p-4">
+    <EditForm Model="@_formModel">
+        <div>
+            <h3 class="text-lg">Search </h3>
+            <input class="border p-1" @bind-value:event="oninput" @bind-value="_formModel.SearchFilter"/>
+        </div>
+    </EditForm>
+</div>
 
 <div class="p-4">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 gap-4">
-        @foreach (Pokemon p in _loadedPokemon)
+        @foreach (Pokemon p in SearchedPokemon)
         {
             var url = "/pokedex/" + p.Id;
             <NavLink href="@url">
@@ -31,13 +29,27 @@
 </div>
 
 @code {
-    private Pokemon? _currentPokemon = null;
 
+    private class FormModel
+    {
+        public string SearchFilter { get; set; }
+    }
+
+    private FormModel _formModel = new();
     private List<Pokemon> _loadedPokemon = new();
+    private List<Pokemon> SearchedPokemon
+    {
+        get
+        {
+            if (_formModel.SearchFilter == null || _formModel.SearchFilter == "")
+                return _loadedPokemon;
+            return _loadedPokemon.Where(p => p.Name.StartsWith(_formModel.SearchFilter)).ToList();
+        }
+    }
 
     protected override async Task OnInitializedAsync()
     {
-        _currentPokemon = await PokeAPIService.GetPokemonAsync("charizard");
+
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
