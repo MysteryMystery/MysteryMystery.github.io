@@ -51,15 +51,17 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
+        working-directory: terraform/azure
       
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
+        working-directory: terraform/azure
 
       - name: Terraform Plan
         id: plan
         run: terraform plan -no-color -input=false -out=${{env.GITHUB_OUTPUT}}/out.tfplan -var "subscription_id=${{ env.SUBSCRIPTION_ID }}" -var "environment=prd"
-        continue-on-error: false
+        working-directory: terraform/azure
       
       - uses: actions/upload-artifact@master
         with:
@@ -85,10 +87,12 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init    
+        working-directory: terraform/azure
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve -input=false -var "subscription_id=${{ env.SUBSCRIPTION_ID }}" -var "environment=prd" ${{env.GITHUB_OUTPUT}}/out.tfplan
+        working-directory: terraform/azure
 
   build_frontend:
     runs-on: ubuntu-latest
