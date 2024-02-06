@@ -6,5 +6,5 @@ variable "environment" {
 }
 
 variable "subscription_id" {
-  
+
 }
