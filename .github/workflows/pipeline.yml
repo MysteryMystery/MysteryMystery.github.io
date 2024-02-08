@@ -80,7 +80,7 @@ jobs:
       
   
   terraform_apply:
-    if: github.ref == 'refs/heads/master'
+    #if: github.ref == 'refs/heads/master'
     needs: terraform_plan
     runs-on: ubuntu-latest
     environment: Production
