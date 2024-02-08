@@ -1,5 +1,6 @@
 # Sample workflow for building and deploying a Jekyll site to GitHub Pages
-name: Build branch
+name: Build & Deploy
+
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -69,13 +70,13 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        run: terraform plan -no-color -input=false -out=${{env.GITHUB_OUTPUT}}/out.tfplan -var "subscription_id=${{ env.ARM_SUBSCRIPTION_ID }}" -var "tenant_id=${{ env.ARM_TENANT_ID }}" -var "client_id=${{ env.ARM_CLIENT_ID }}" -var "environment=prd"
+        run: terraform plan -no-color -input=false -out=out.tfplan -var "subscription_id=${{ env.ARM_SUBSCRIPTION_ID }}" -var "tenant_id=${{ env.ARM_TENANT_ID }}" -var "client_id=${{ env.ARM_CLIENT_ID }}" -var "environment=prd"
         working-directory: terraform/azure
       
       - uses: actions/upload-artifact@master
         with:
           name: tf_out
-          path: ${{env.GITHUB_OUTPUT}}/out.tfplan
+          path: out.tfplan
       
   
   terraform_apply:
@@ -93,7 +94,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: tf_out
-          path: ${{env.GITHUB_OUTPUT}}
+          path: tf
 
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v1
@@ -114,7 +115,7 @@ jobs:
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: terraform apply -auto-approve -input=false ${{env.GITHUB_OUTPUT}}/out.tfplan
+        run: terraform apply -auto-approve -input=false tf/out.tfplan
         working-directory: terraform/azure
 
   build_frontend:
