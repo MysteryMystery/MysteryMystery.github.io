@@ -94,7 +94,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: tf_out
-          path: tf
+          path: terraform/azure
 
       - name: Install Terraform
         uses: hashicorp/setup-terraform@v1
@@ -115,7 +115,7 @@ jobs:
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: terraform apply -auto-approve -input=false tf/out.tfplan
+        run: terraform apply -auto-approve -input=false out.tfplan
         working-directory: terraform/azure
 
   build_frontend:
