@@ -25,7 +25,10 @@ env:
   TF_CLOUD_ORGANIZATION: "MysteryMystery123"
   TF_API_TOKEN: "${{ secrets.TF_API_TOKEN }}"
   TF_WORKSPACE: "Production"
-  SUBSCRIPTION_ID: "${{ secrets.SUBSCRIPTION_ID }}"
+
+  ARM_CLIENT_ID: "${{ secrets.AZURE_CLIENT_ID }}"
+  ARM_SUBSCRIPTION_ID: "${{ secrets.AZURE_SUBSCRIPTION_ID }}"
+  ARM_TENANT_ID: "${{ secrets.AZURE_TENANT_ID }}"
 
 jobs:
   terraform_plan: 
@@ -60,7 +63,7 @@ jobs:
 
       - name: Terraform Plan
         id: plan
-        run: terraform plan -no-color -input=false -out=${{env.GITHUB_OUTPUT}}/out.tfplan -var "subscription_id=${{ env.SUBSCRIPTION_ID }}" -var "environment=prd"
+        run: terraform plan -no-color -input=false -out=${{env.GITHUB_OUTPUT}}/out.tfplan -var "subscription_id=${{ env.ARM_SUBSCRIPTION_ID }}" -var "tenant_id=${{ env.ARM_TENANT_ID }}" -var "client_id=${{ env.ARM_CLIENT_ID }}" -var "environment=prd"
         working-directory: terraform/azure
       
       - uses: actions/upload-artifact@master
@@ -91,7 +94,7 @@ jobs:
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: terraform apply -auto-approve -input=false -var "subscription_id=${{ env.SUBSCRIPTION_ID }}" -var "environment=prd" ${{env.GITHUB_OUTPUT}}/out.tfplan
+        run: terraform apply -auto-approve -input=false ${{env.GITHUB_OUTPUT}}/out.tfplan
         working-directory: terraform/azure
 
   build_frontend:
