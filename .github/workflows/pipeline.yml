@@ -76,7 +76,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: tf_out
-          path: out.tfplan
+          path: terraform/azure/out.tfplan
       
   
   terraform_apply:
