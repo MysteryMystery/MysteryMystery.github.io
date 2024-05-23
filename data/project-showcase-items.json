@@ -1,5 +1,11 @@
 [
   {
+    "title": "Bloodfields Utils",
+    "body": "Bloodfields Utils is a user-friendly tool for creating and managing rosters in Bloodfields. It features an extensive database of units, customizable army lists, and real-time updates, helping players optimize their strategies and stay current with the latest game rules.",
+    "thumbnailUrl": "/img/bloodfields/logo.jpg",
+    "websiteUrl": "https://bloodfieldsutils.com/"
+  },
+  {
     "title": "Clout Shoots Scraper",
     "body": "A simple html scraper to scrape entry forms from Ian Downham's wix site.",
     "thumbnailUrl": "",
@@ -14,7 +20,7 @@
   {
     "title": "PixelMC",
     "body": "A Minecraft community where I have designed & maintained the website and online store geared towards the community and sales of certain perks in addition to writing plugins for the server to implement extra functionality to improve sales. Currently, the server is dockerised on private virtual machines.",
-    "thumbnailUrl": "/img/pixelmc.png",
+    "thumbnailUrl": "/img/pixelmc-square.png",
     "websiteUrl": "https://www.pixelmc.co/"
   }
 ]
