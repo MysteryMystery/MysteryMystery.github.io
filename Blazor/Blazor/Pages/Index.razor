@@ -84,7 +84,7 @@
                 <ProjectShowcaseItem WebsiteLink="@item.WebsiteUrl">
                     <Thumbnail>
                         @if(item.ThumbnailUrl is not null){
-                            <img src="@item.ThumbnailUrl" alt="@item.ThumbnailUrl" />
+                            <img src="@item.ThumbnailUrl" alt="@item.ThumbnailUrl" style="max-height:15rem;"/>
                         }
                     </Thumbnail>
                     <HeaderText>@item.Title</HeaderText>
