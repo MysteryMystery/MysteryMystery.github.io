@@ -1,6 +1,6 @@
-﻿<nav class="flex items-center justify-between flex-wrap @BackgroundClass px-6 py-2 shadow">
+﻿<nav class="flex items-center justify-between flex-wrap bg-dark px-6 py-2 shadow">
     <div class="flex items-center flex-shrink-0 text-white mr-6">
-        <a class="font-semibold text-xl tracking-tight text-hero hover:text-light" href="/">MysteryMystery.github.io</a>
+        <a class="font-semibold text-xl tracking-tight text-hero hover:text-light" href="/">James Attfield</a>
     </div>
     <div class="block lg:hidden">
         <button class="flex items-center px-3 py-2 border rounded text-light border-teal-400 hover:text-white hover:border-white" @onclick="ToggleNav">
@@ -22,7 +22,6 @@
     [Parameter]
     public bool TransparentBackground { get; set; } = false;
 
-    private string BackgroundClass { get => TransparentBackground ? "bg-transparent" : "bg-primary"; }
     private bool _isCollapsed = true;
 
     private Dictionary<string, string> _pageLinks = new Dictionary<string, string>

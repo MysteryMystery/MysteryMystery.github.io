@@ -4,14 +4,16 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                "accent": "#fd1b7b",
-                "hero": "#97DFFC",
-                "primary": "#002969",
+                "hero": "#eac251",
+                "primary": "#44595e",
                 "secondary": "#002866",
                 "light": "#FFFFFF",
+                "dark": "#34474d",
+                "darker": "#2c3d44",
 
-                "light-grey": "#e4e5e7",
-                "deep-blue": "#000836",
+                "pale-yellow": "#fdfbe4",
+
+                "light-grey": "#e2debb",
 
                 "ruby": "#E0115F",
                 "csharp": "#9c75d5",
