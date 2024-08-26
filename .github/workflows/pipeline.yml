@@ -33,6 +33,8 @@ jobs:
           node-version: '19.7.x'
       - name: install dependencies
         run: npm ci
+      - name: build
+        run: npm run build
       - name: Add .nojekyll file
         run: touch dist/.nojekyll
       - uses: actions/upload-artifact@v3
