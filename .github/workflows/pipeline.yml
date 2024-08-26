@@ -30,33 +30,15 @@ jobs:
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
-          node-version: '19'
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: 6.x
-      - name: Compile Tailwind
-        working-directory: Blazor/Blazor
-        run: npx tailwindcss -i ./Css/app.css -o ./wwwroot/css/app.css --minify
-      - name: Dotnet Restore
-        working-directory: Blazor
-        run: dotnet restore
-      - name: Dotnet Test
-        working-directory: Blazor
-        run: dotnet test
-      - name: Dotnet Publish
-        working-directory: Blazor
-        run: dotnet publish -c Release --nologo
-      - name: copy index.html to 404.html
-        run: cp bin/Release/net6.0/publish/wwwroot/index.html bin/Release/net6.0/publish/wwwroot/404.html
-        working-directory: Blazor/Blazor
+          node-version: '19.7.x'
+      - name: install dependencies
+        run: npm ci
       - name: Add .nojekyll file
-        run: touch bin/Release/net6.0/publish/wwwroot/.nojekyll
-        working-directory: Blazor/Blazor
+        run: touch dist/.nojekyll
       - uses: actions/upload-artifact@v3
         with:
           name: mysterymysterygithubio
-          path: Blazor/Blazor/bin/Release/net6.0/publish/
+          path: dist
 
 # deploy if master
   deploy:
@@ -74,4 +56,4 @@ jobs:
         with:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
             BRANCH: gh-pages
-            FOLDER: deploy/wwwroot
+            FOLDER: deploy
