@@ -1,0 +1,5 @@
+<div class="h-full w-full drop-shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md p-2 flex flex-col {{ this.classes }}">
+    {{yield (hash header=(component "card-header"))}}
+    {{yield (hash body=(component "card-body"))}}
+    {{yield (hash footer=(component "card-footer"))}}
+</div>

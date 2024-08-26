@@ -1,8 +1,0 @@
-﻿.project-catan {
-    background-image: url("/img/catan/background.jpg");
-    background-size: cover;
-}
-
-.project-catan:hover {
-    transform: scale(1.05);
-}

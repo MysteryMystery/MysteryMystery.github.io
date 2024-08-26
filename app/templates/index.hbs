@@ -1,0 +1,330 @@
+<div class="container mx-auto">
+    <div class="w-full p-4">
+        <Card as |card|>
+            <card.header>
+                Hi, I'm James!
+            </card.header>
+            <card.body>
+               <p class="text-lg">
+                 As a DevOps engineer specializing in Azure, Azure DevOps, and the .NET stack, I streamline cloud infrastructure, automate deployments, and enhance application performance. My expertise ensures seamless integration, robust security, and efficient CI/CD pipelines, driving innovation and operational excellence. Take a look below at my personal projects!
+               </p>
+            </card.body>
+        </Card>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 p-4">
+        <Card as |card|>
+            <card.header>
+                Terraform
+            </card.header>
+            <card.body>
+                <img src="logos/terraform.svg" alt="terraform" class="mx-auto" height="100" width="100"/>
+            </card.body>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+                Azure
+            </card.header>
+            <card.body>
+                <img src="logos/azure.svg" alt="azure" class="mx-auto" height="100" width="100"/>
+            </card.body>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+                Azure Devops
+            </card.header>
+            <card.body>
+                <img src="logos/azure-devops.svg" alt="azure-devops" class="mx-auto" height="100" width="100"/>
+            </card.body>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+                .Net Stack
+            </card.header>
+            <card.body>
+                <img src="logos/dotnet.svg" alt="dotnet" class="mx-auto" height="100" width="100"/>
+            </card.body>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+                OnPrem Connectivity
+            </card.header>
+            <card.body>
+                <img src="logos/azure-arc.svg" alt="azure arc" class="mx-auto" height="100" width="100"/>
+            </card.body>
+        </Card>
+
+        <Card @class="col-span-2 lg:col-span-5" as |card|>
+            <card.header>
+                My Skill Set
+            </card.header>
+            <card.body>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-1">
+                    <Card @type="secondary" as |card|>
+                        <card.body>
+                            On-premise to Azure Migrations
+                        </card.body>
+                    </Card>
+                    <Card @type="secondary" as |card|>
+                        <card.body>
+                            Providing team guidance, support & training
+                        </card.body>
+                    </Card>
+                    <Card @type="secondary" as |card|>
+                        <card.body>
+                            Deploying resilent infrastructure using Terraform
+                        </card.body>
+                    </Card>
+                    <Card @type="secondary" as |card|>
+                        <card.body>
+                            Identity & Authorisation Governence using Principle of least access
+                        </card.body>
+                    </Card>
+                    <Card @type="secondary" as |card|>
+                        <card.body>
+                            Azure DevOps Yaml Pipelines (Git flow/Trunk branching)
+                        </card.body>
+                    </Card>
+                    <Card @type="secondary" as |card|>
+                        <card.body>
+                            Communicating with the ADO REST API using Powershell/.Net
+                        </card.body>
+                    </Card>
+                    <Card @type="secondary" as |card|>
+                        <card.body>
+                          Implementing an automated environment refresh process
+                        </card.body>
+                    </Card>
+                </div>
+            </card.body>
+        </Card>
+
+    </div>
+
+
+    <div id="projects" class="p-4">
+        <Card @type="primary" as |card|> 
+            <card.header>
+                <h1 class="text-2xl text-center">Explore My Projects!</h1>
+            </card.header>
+        </Card>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 p-4">
+        <Card as |card|>
+            <card.header>
+                Bloodfields Utils
+            </card.header>
+            <card.body>
+                <img src="logos/bloodfields-utils.jpg" alt="azure arc" class="mx-auto" height="200" width="200"/>
+
+                <p>
+                    Bloodfields Utils is a user-friendly tool for creating and managing rosters in Bloodfields. It features an extensive database of units, customizable army lists, and real-time updates, helping players optimize their strategies and stay current with the latest game rules.
+                </p>
+            </card.body>
+            <card.footer>
+                <BadgeRow>
+                    <Badge @type="primary">
+                        .Net 6
+                    </Badge>
+                    <Badge @type="primary">
+                        Blazor Wasm
+                    </Badge>
+                </BadgeRow>
+            </card.footer>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+                Clout Shoots Scraper
+            </card.header>
+            <card.body>
+                <img src="logos/clout-shoots.jpeg" alt="azure arc" class="mx-auto" height="200" width="200"/>
+                <p>
+                    A simple html scraper to scrape entry forms from Ian Downham's wix site.
+                </p>
+            </card.body>
+            <card.footer>
+                 <BadgeRow>
+                    <Badge @type="primary">
+                        .Net 6
+                    </Badge>
+                    <Badge @type="primary">
+                        Blazor Wasm
+                    </Badge>
+                    <Badge @type="primary">
+                        Web Scraping
+                    </Badge>
+                </BadgeRow>
+            </card.footer>
+        </Card>
+        <Card as |card|>
+            <card.header>
+                Windows Hardening Suite
+            </card.header>
+            <card.body>
+                <img src="logos/windows-hardening-suite.png" alt="azure arc" class="mx-auto" height="200" width="200"/>
+                <p>
+                     This university team project consists of a Windows Forms C# application which acts to "lock down" the windows operating system.
+                </p>
+            </card.body>
+            <card.footer>
+                <BadgeRow>
+                    <Badge @type="primary">
+                        WinForms
+                    </Badge>
+                    <Badge @type="primary">
+                        Bootstrap
+                    </Badge>
+                </BadgeRow>
+            </card.footer>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+                PixelMC
+            </card.header>
+            <card.body>
+                <img src="logos/pixelmc-square.png" alt="azure arc" class="mx-auto" height="200" width="200"/>
+                <p>
+                    A Minecraft community where I have designed & maintained the website and online store geared towards the community and sales of certain perks in addition to writing plugins for the server to implement extra functionality to improve sales. Currently, the server is dockerised on private virtual machines.
+                </p>
+            </card.body>
+            <card.footer>
+                 <BadgeRow>
+                    <Badge @type="primary">
+                        Java
+                    </Badge>
+                    <Badge @type="primary">
+                        Spigot API
+                    </Badge>
+                    <Badge @type="primary">
+                        MySql
+                    </Badge>
+                    <Badge @type="primary">
+                        Jekyll
+                    </Badge>
+                    <Badge @type="primary">
+                        Docker
+                    </Badge>
+                </BadgeRow>
+            </card.footer>
+        </Card>
+    </div>
+
+
+    <div id="eduction" class="p-4">
+        <Card @type="primary" as |card|> 
+            <card.header>
+                <h1 class="text-2xl text-center">Explore My Education!</h1>
+            </card.header>
+        </Card>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+        <Card as |card|>
+            <card.header>
+                Distributed Systems
+            </card.header>
+            <card.body>
+                Writing a table booking app using Ruby on Rails and Ember Js, hosted using Docker & Docker-Compose.
+            </card.body>
+            <card.footer>
+                 <BadgeRow>
+                    <Badge @type="primary">
+                        Ruby on Rails
+                    </Badge>
+                    <Badge @type="primary">
+                        Docker
+                    </Badge>
+                    <Badge @type="primary">
+                        Kubernetes
+                    </Badge>
+                </BadgeRow>
+            </card.footer>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+                Independent Studies
+            </card.header>
+            <card.body>
+                Tracking mental health over time during Covid-19 using Twitter posts and sentiment analysis in order to determine the emotions a person is feeling based on the language used in a tweet.
+            </card.body>
+            <card.footer>
+                <BadgeRow>
+                    <Badge @type="primary">
+                        Python
+                    </Badge>
+                    <Badge @type="primary">
+                        Sentiment Analysis
+                    </Badge>
+                </BadgeRow>
+            </card.footer>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+               Data Mining & Foundations of AI
+            </card.header>
+            <card.body>
+               Using Python to mine data and learn about machine learning & classification algorithms using a range of data sets.
+            </card.body>
+            <card.footer>
+                 <BadgeRow>
+                    <Badge @type="primary">
+                        Python
+                    </Badge>
+                    <Badge @type="primary">
+                        Classification Algorithms
+                    </Badge>
+                    <Badge @type="primary">
+                        Deep learning
+                    </Badge>
+                </BadgeRow>
+            </card.footer>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+               Language Design & Implementation
+            </card.header>
+            <card.body>
+               Created an interpreted programming language named "Classy" using JavaCC and abstract syntax trees.
+            </card.body>
+            <card.footer>
+                 <BadgeRow>
+                    <Badge @type="primary">
+                        JavaCC
+                    </Badge>
+                    <Badge @type="primary">
+                        Abstract Syntax Trees
+                    </Badge>
+                </BadgeRow>
+            </card.footer>
+        </Card>
+
+        <Card as |card|>
+            <card.header>
+               Systems Programming
+            </card.header>
+            <card.body>
+              8086 Assembly and extending Xv6 operating system in C to implement outputting shapes and text in various graphics modes.
+            </card.body>
+            <card.footer>
+                 <BadgeRow>
+                    <Badge @type="primary">
+                        Assembly
+                    </Badge>
+                    <Badge @type="primary">
+                        C
+                    </Badge>
+                </BadgeRow>
+            </card.footer>
+        </Card>
+    </div>
+</div>
