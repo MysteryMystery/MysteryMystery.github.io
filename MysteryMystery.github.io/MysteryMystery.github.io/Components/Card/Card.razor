@@ -1,0 +1,26 @@
+﻿@inherits AbstractThemedComponent
+
+<div class="h-full w-full drop-shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md p-2 flex flex-col @(this.Classes)">
+    @if (Header is not null)
+    {
+        <div class="shrink p-2">
+            <h1 class="text-2xl">
+                @Header
+            </h1>
+        </div>
+    }
+    
+    @if (Body is not null)
+    {
+        <div class="grow p-4">
+            @Body
+        </div>
+    }
+
+    @if (Footer is not null)
+    {
+        <div class="shrink p-2">
+            @Footer
+        </div>
+    }
+</div>

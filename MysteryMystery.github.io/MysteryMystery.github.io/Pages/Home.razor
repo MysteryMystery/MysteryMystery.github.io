@@ -1,0 +1,224 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<div class="container mx-auto">
+    <div class="w-full p-4">
+        <Card>
+            <Header>
+                Hi, I'm James!
+            </Header>
+            <Body>
+                <p class="text-lg">
+                    As a DevOps engineer specializing in Azure, Azure DevOps, and the .NET stack, I streamline cloud infrastructure, automate deployments, and enhance application performance. My expertise ensures seamless integration, robust security, and efficient CI/CD pipelines, driving innovation and operational excellence. Take a look below at my personal projects!
+                </p>
+            </Body>
+        </Card>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 p-4">
+        <Card>
+            <Header>
+                Terraform
+            </Header>
+            <Body>
+                <img src="img/logos/terraform.svg" alt="terraform" class="mx-auto" height="100" width="100" />
+            </Body>
+        </Card>
+
+        <Card>
+            <Header>
+                Azure
+            </Header>
+            <Body>
+                <img src="img/logos/azure.svg" alt="azure" class="mx-auto" height="100" width="100" />
+            </Body>
+        </Card>
+
+        <Card>
+            <Header>
+                Azure DevOps
+            </Header>
+            <Body>
+               <img src="img/logos/azure-devops.svg" alt="azure-devops" class="mx-auto" height="100" width="100"/>
+            </Body>
+        </Card>
+
+        <Card>
+            <Header>
+                .Net Stack
+            </Header>
+            <Body>
+                <img src="img/logos/dotnet.svg" alt="dotnet" class="mx-auto" height="100" width="100" />
+            </Body>
+        </Card>
+        <Card>
+            <Header>
+                OnPrem Connectivity
+            </Header>
+            <Body>
+                <img src="img/logos/azure-arc.svg" alt="azure arc" class="mx-auto" height="100" width="100" />
+            </Body>
+        </Card>
+
+        <Card Class="col-span-2 lg:col-span-5">
+            <Header>
+                My Skill Set
+            </Header>
+            <Body>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-1">
+                    <Card Type="secondary">
+                        <Body>
+                            On-premise to Azure Migrations
+                        </Body>
+                    </Card>
+                    <Card Type="secondary">
+                        <Body>
+                            Providing team guidance, support & training
+                        </Body>
+                    </Card>
+                    <Card Type="secondary">
+                        <Body>
+                            Deploying resilent infrastructure using Terraform
+                        </Body>
+                    </Card>
+                    <Card Type="secondary">
+                        <Body>
+                            Identity & Authorisation Governence using Principle of least access
+                        </Body>
+                    </Card>
+                    <Card Type="secondary">
+                        <Body>
+                            Azure DevOps Yaml Pipelines (Git flow/Trunk branching)
+                        </Body>
+                    </Card>
+                    <Card Type="secondary">
+                        <Body>
+                            Communicating with the ADO REST API using Powershell/.Net
+                        </Body>
+                    </Card>
+                    <Card Type="secondary">
+                        <Body>
+                            Implementing an automated environment refresh process
+                        </Body>
+                    </Card>
+                </div>
+            </Body>
+        </Card>
+    </div>
+
+    <div id="projects" class="p-4">
+        <Card Type="primary">
+            <Header>
+                <h1 class="text-2xl text-center">Explore My Projects!</h1>
+            </Header>
+        </Card>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 p-4">
+        <Card>
+            <Header>
+                BloodFields Utils 
+            </Header>
+            <Body>
+                <img src="img/logos/bloodfields-utils.jpg" alt="azure arc" class="mx-auto" height="200" width="200" />
+
+                <p>
+                    Bloodfields Utils is a user-friendly tool for creating and managing rosters in Bloodfields. It features an extensive database of units, customizable army lists, and real-time updates, helping players optimize their strategies and stay current with the latest game rules.
+                </p>
+            </Body>
+            <Footer>
+                <BadgeRow>
+                    <Badge Type="primary">
+                        .Net 6
+                    </Badge>
+                    <Badge Type="primary">
+                        Blazor Wasm
+                    </Badge>
+                </BadgeRow>
+            </Footer>
+        </Card>
+
+        <Card>
+            <Header>
+                Clout Shoots Scraper
+            </Header>
+            <Body>
+                <img src="img/logos/clout-shoots.jpeg" alt="azure arc" class="mx-auto" height="200" width="200" />
+                <p>
+                    A simple html scraper to scrape entry forms from Ian Downham's wix site.
+                </p>
+            </Body>
+            <Footer>
+                <BadgeRow>
+                    <Badge Type="primary">
+                        .Net 6
+                    </Badge>
+                    <Badge Type="primary">
+                        Blazor Wasm
+                    </Badge>
+                    <Badge Type="primary">
+                        Web Scraping
+                    </Badge>
+                </BadgeRow>
+            </Footer>
+        </Card>
+
+        <Card>
+            <Header>
+                Windows Hardening Suite
+            </Header>
+            <Body>
+                <img src="img/logos/windows-hardening-suite.png" alt="azure arc" class="mx-auto" height="200" width="200" />
+                <p>
+                    This university team project consists of a Windows Forms C# application which acts to "lock down" the windows operating system.
+                </p>
+            </Body>
+            <Footer>
+                <BadgeRow>
+                    <Badge Type="primary">
+                        WinForms
+                    </Badge>
+                    <Badge Type="primary">
+                        Bootstrap
+                    </Badge>
+                </BadgeRow>
+            </Footer>
+        </Card>
+
+        <Card>
+            <Header>
+                PixelMC
+            </Header>
+            <Body>
+                <img src="img/logos/pixelmc-square.png" alt="azure arc" class="mx-auto" height="200" width="200" />
+
+                <p>
+                    A Minecraft community where I have designed & maintained the website and online store geared towards the community and sales of certain perks in addition to writing plugins for the server to implement extra functionality to improve sales. Currently, the server is dockerised on private virtual machines.
+                </p>
+            </Body>
+            <Footer>
+                <BadgeRow>
+                    <Badge Type="primary">
+                        Java
+                    </Badge>
+                    <Badge Type="primary">
+                        Spigot API
+                    </Badge>
+                    <Badge Type="primary">
+                        MySql
+                    </Badge>
+                    <Badge Type="primary">
+                        Jekyll
+                    </Badge>
+                    <Badge Type="primary">
+                        Docker
+                    </Badge>
+                </BadgeRow>
+            </Footer>
+        </Card>
+    </div>
+
+
+</div>
+
