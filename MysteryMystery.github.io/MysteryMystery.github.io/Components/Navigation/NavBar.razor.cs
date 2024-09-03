@@ -6,8 +6,8 @@ namespace MysteryMystery.github.io.Components.Navigation
     {
         private class Link
         {
-            public string Display { get; set; }
-            public string Url { get; set; }
+            public required string Display { get; set; }
+            public required string Url { get; set; }
         }
 
         private List<Link> _links = new List<Link>
