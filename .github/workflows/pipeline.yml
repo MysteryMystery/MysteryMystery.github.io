@@ -33,10 +33,10 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v3
         with:
-          dotnet-version: 6.x
+          dotnet-version: 8.x
       - name: Compile Tailwind
-        working-directory: MysteryMystery.github.io/MysteryMystery.github.io/wwwroot/css
-        run: npx tailwindcss -i app.css -o app.min.css --minify
+        working-directory: MysteryMystery.github.io
+        run: npx tailwindcss -i MysteryMystery.github.io/wwwroot/css/app.css -o MysteryMystery.github.io/wwwroot/css/app.min.css --minify
       - name: Dotnet Restore
         working-directory: MysteryMystery.github.io
         run: dotnet restore
