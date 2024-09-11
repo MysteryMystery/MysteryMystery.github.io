@@ -1,0 +1,33 @@
+﻿@page "/pokedex"
+
+@if(_pokemon is not null)
+{
+    <div class="grid gap-4 grid-cols-2 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-10 p-4">
+        @foreach (var pokemon in _pokemon)
+        {
+            <Card Class="hover:bg-indigo-100">
+                <Header>
+                    <span class="w-full text-center capitalize">@(pokemon.Name)</span>
+                </Header>
+                <Body>
+                    <div class="bg-gray-300 dark:bg-gray-600 rounded-full p-2">
+                        <img src="@(pokemon.Sprites.FrontDefault)" alt="@(pokemon.Name)" class="mx-auto" height="100" width="100" />
+                    </div>
+
+                    <h2 class="text-center rounded-full text-xl">#@(pokemon.Id.ToString().PadLeft(3, '0'))</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        @foreach(var type in pokemon.Types.OrderBy(t => t.Slot))
+                        {
+                            <div>
+                                <TypeTag Type="@(type.Type.Name)">
+                                    @(type.Type.Name)
+                                </TypeTag>
+                            </div>
+                        }
+                    </div>
+                </Body>
+            </Card>
+        }
+    </div>
+}
