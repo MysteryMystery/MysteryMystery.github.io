@@ -10,9 +10,6 @@ namespace MysteryMystery.github.io.Models.Pokedex
         [JsonProperty("name")]
         public required string Name { get; set; }
 
-        [JsonProperty("url")]
-        public string Url { get; set; }
-
         [JsonProperty("sprites")]
         public PokemonSprite Sprites { get; set; }
 

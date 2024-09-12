@@ -21,7 +21,7 @@ namespace MysteryMystery.github.io.Pages.Pokedex
         [Inject]
         public HttpClient HttpClient { get; set; }
 
-        private ListResponse<Pokemon> _pokemonResponse = null;
+        private ListResponse<NamedAPIResource> _pokemonResponse = null;
 
         private List<Pokemon> _pokemon = new List<Pokemon>();
 
@@ -46,9 +46,9 @@ namespace MysteryMystery.github.io.Pages.Pokedex
             }
 
             string content = await response.Content.ReadAsStringAsync();
-            _pokemonResponse = JsonConvert.DeserializeObject<ListResponse<Pokemon>>(content)!;
+            _pokemonResponse = JsonConvert.DeserializeObject<ListResponse<NamedAPIResource>>(content)!;
 
-            foreach (Pokemon pokemon in _pokemonResponse.Results)
+            foreach (NamedAPIResource pokemon in _pokemonResponse.Results)
             {
                 _ = Task.Run(async () =>
                 {
