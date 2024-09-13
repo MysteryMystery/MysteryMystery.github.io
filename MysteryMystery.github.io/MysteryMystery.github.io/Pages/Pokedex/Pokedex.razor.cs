@@ -33,22 +33,26 @@ namespace MysteryMystery.github.io.Pages.Pokedex
 
             await base.OnInitializedAsync();
 
+            await LoadPokemonSummaryAsync();
             await LoadPokemonAsync();
         }
 
-        private async Task LoadPokemonAsync()
+        private async Task LoadPokemonSummaryAsync()
         {
-            HttpResponseMessage response = await HttpClient.GetAsync(Configuration["PokeApiBaseUrl"] + "/pokemon");
+            HttpResponseMessage response = await HttpClient.GetAsync(Configuration["PokeApiBaseUrl"] + "/pokemon?offset=0&limit=99999");
 
-            if(!response.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode)
             {
                 return;
             }
 
             string content = await response.Content.ReadAsStringAsync();
             _pokemonResponse = JsonConvert.DeserializeObject<ListResponse<NamedAPIResource>>(content)!;
+        }
 
-            foreach (NamedAPIResource pokemon in _pokemonResponse.Results)
+        private async Task LoadPokemonAsync(int offset = 0, int count = 50)
+        {
+            foreach (NamedAPIResource pokemon in _pokemonResponse.Results.Skip(offset).Take(count))
             {
                 _ = Task.Run(async () =>
                 {
