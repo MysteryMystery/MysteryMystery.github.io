@@ -1,5 +1,11 @@
 ﻿@page "/pokedex"
 
+@if(_pokemonResponse is not null)
+{
+    <div class="pt-4">
+        <PokemonSearchBar Pokemon="_pokemonResponse.Results" />
+    </div>
+}
 
 @if(_pokemon is not null)
 {

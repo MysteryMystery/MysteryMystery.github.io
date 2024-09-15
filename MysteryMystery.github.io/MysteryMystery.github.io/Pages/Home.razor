@@ -116,6 +116,39 @@
     </div>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 p-4">
+
+        @if (IsPokedexEnabled)
+        {
+            <Card>
+                <Header>
+                    Pokedex
+                </Header>
+                <Body>
+                    <img src="img/logos/pokeball.svg" alt="pokeball" class="mx-auto" height="200" width="200" />
+
+                    <p>
+                        A Pokedex, using the PokeAPI as a backend!
+                    </p>
+
+                    <div class="flex justify-center p-4">
+                        <NavLink href="/pokedex">
+                            <Button Type="primary">Find out more!</Button>
+                        </NavLink>
+                    </div>
+                </Body>
+                <Footer>
+                    <BadgeRow>
+                        <Badge Type="primary">
+                            .Net 6
+                        </Badge>
+                        <Badge Type="primary">
+                            Blazor Wasm
+                        </Badge>
+                    </BadgeRow>
+                </Footer>
+            </Card>
+        }
+
         <Card>
             <Header>
                 BloodFields Utils 
