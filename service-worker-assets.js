@@ -33,15 +33,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-Z3qt8MmsTvQ7xj9B6ODUx7+S74xvUcdAYMNhPGeV5PY=",
+      "hash": "sha256-3mrI0OPYpWWlRtaWf3IUuT+B2VH5t4svsNcIc8J7rr0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
-      "hash": "sha256-4xMjLKXYxPiE1dQtJAgmPCqiDCI5CKqla7lfIIFEzrA=",
+      "hash": "sha256-sk55X09j5qDpWgmwFDIJnuJp2oW+9FWpFFfBHwb9lQI=",
+      "url": "_framework\/Microsoft.AspNetCore.Components.Forms.wasm"
+    },
+    {
+      "hash": "sha256-gBEdvTeyj0nAsHdOS1x\/BlA\/wIh4QUpB6jX\/\/0sou3c=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm"
     },
     {
-      "hash": "sha256-7KkqwwQtcN+NHevIKYhJ2gLZJa3f0aShCl2ldtegyXw=",
+      "hash": "sha256-Z7UGCK1d7vsP1VCwPsrf4NfGjj6r\/GCGAOk+jEt8ZF4=",
       "url": "_framework\/Microsoft.AspNetCore.Components.Web.wasm"
     },
     {
@@ -113,7 +117,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-CjeH44R4EB6Dak9AlLUCRFoTXvv5Wf+wLNCuArr0y\/g=",
+      "hash": "sha256-xubMfnJIUWBI0aoc631MzA2ZY7DZna4e0O+\/e4\/xJek=",
       "url": "_framework\/MysteryMystery.github.io.wasm"
     },
     {
@@ -177,15 +181,15 @@
       "url": "_framework\/System.Drawing.wasm"
     },
     {
-      "hash": "sha256-8GSqA\/CrR7nkIqR6HGjdB\/mwC5swxC03e1Q845FrSiA=",
+      "hash": "sha256-8xvkYEjSOVTIrSZY5nVPas00s1c\/g53NcO4OVdkBLHk=",
       "url": "_framework\/System.Linq.Expressions.wasm"
     },
     {
-      "hash": "sha256-vxwkLSKkpBzTVmUIP9dtPvwukjEo8AaFP3LslAuuGWw=",
+      "hash": "sha256-3mEWpJ17\/p1fj29fQB8\/KgW8Eh477Q6gco5DdSiuVkQ=",
       "url": "_framework\/System.Linq.wasm"
     },
     {
-      "hash": "sha256-6\/G11vxTbcriqPUK7g+vWDhKlVduFde+WxaUB0NL0z4=",
+      "hash": "sha256-8Q6W3g73FF1wGgUUjhhdhMv5Gr7WWHsjgYxoAlkOpBY=",
       "url": "_framework\/System.Memory.wasm"
     },
     {
@@ -201,7 +205,7 @@
       "url": "_framework\/System.ObjectModel.wasm"
     },
     {
-      "hash": "sha256-laCWLKSk1z3d2o2ytzQGEVmU0RsHyhIbcr\/qoqvc8r4=",
+      "hash": "sha256-S02w9Mn+18310SEvZdC+M1R4dlbztPGZQXj77KwbHMc=",
       "url": "_framework\/System.Private.CoreLib.wasm"
     },
     {
@@ -249,7 +253,7 @@
       "url": "_framework\/System.Runtime.Serialization.Primitives.wasm"
     },
     {
-      "hash": "sha256-YuMiAqe\/448drKgXQ\/S1SnYyXeabsK45GK1\/TVCNy5Y=",
+      "hash": "sha256-lPYEfHLWlIjjgBnyAJFDmm2B5E8ZgeAW6zrFQVVK8RM=",
       "url": "_framework\/System.Runtime.wasm"
     },
     {
@@ -301,7 +305,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-FACjmkot3AqKyzllFhZXpsa7Oc0iZZKFvuprabWggkQ=",
+      "hash": "sha256-YSGExLM8Ajn\/xHFjfKKj5DcuODaCGMxao+NTzuKgDAg=",
       "url": "css\/app.min.css"
     },
     {
@@ -345,6 +349,10 @@
       "url": "img\/logos\/pixelmc-square.png"
     },
     {
+      "hash": "sha256-mq1YtRVoV+NAIBKaHUX6vmQaA+85U0yfUtL6XLH\/h1A=",
+      "url": "img\/logos\/pokeball.svg"
+    },
+    {
       "hash": "sha256-gGISPTL78HxckSyS3ecCkHavSdf6TVZbKekRjlDj1XU=",
       "url": "img\/logos\/terraform.svg"
     },
@@ -365,5 +373,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "\/KJfac5H"
+  "version": "eMTKaS1a"
 };
