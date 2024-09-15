@@ -50,7 +50,7 @@ namespace MysteryMystery.github.io.Pages.Pokedex
             _pokemonResponse = JsonConvert.DeserializeObject<ListResponse<NamedAPIResource>>(content)!;
         }
 
-        private async Task LoadPokemonAsync(int offset = 0, int count = 50)
+        private async Task LoadPokemonAsync(int offset = 0, int count = 25)
         {
             foreach (NamedAPIResource pokemon in _pokemonResponse.Results.Skip(offset).Take(count))
             {
