@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 using MysteryMystery.github.io.Components.Abstract;
 
 namespace MysteryMystery.github.io.Components.Button
@@ -7,5 +8,8 @@ namespace MysteryMystery.github.io.Components.Button
     {
         [Parameter]
         public required RenderFragment ChildContent { get; set; }
+
+        [Parameter]
+        public EventCallback<MouseEventArgs> OnClick { get; set; }
     }
 }

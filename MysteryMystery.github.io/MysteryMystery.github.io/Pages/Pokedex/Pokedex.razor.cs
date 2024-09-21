@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Extensions.Primitives;
 using Microsoft.FeatureManagement;
 using MysteryMystery.github.io.Models.Pokedex;
@@ -50,7 +51,7 @@ namespace MysteryMystery.github.io.Pages.Pokedex
             _pokemonResponse = JsonConvert.DeserializeObject<ListResponse<NamedAPIResource>>(content)!;
         }
 
-        private async Task LoadPokemonAsync(int offset = 0, int count = 25)
+        public async Task LoadPokemonAsync(int offset = 0, int count = 25)
         {
             foreach (NamedAPIResource pokemon in _pokemonResponse.Results.Skip(offset).Take(count))
             {
@@ -66,6 +67,12 @@ namespace MysteryMystery.github.io.Pages.Pokedex
                     StateHasChanged();
                 });
             }
+        }
+
+        private async Task LoadMorePokemon(MouseEventArgs args)
+        {
+            var offset = _pokemon.Count();
+            await LoadPokemonAsync(offset);
         }
     }
 }

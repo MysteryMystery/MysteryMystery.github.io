@@ -3,27 +3,36 @@
 
 @if(_pokemon is not null)
 {
-    <Card Class="hover:bg-indigo-100">
-        <Header>
-            <span class="block text-center capitalize">@(_pokemon.Name)</span>
-        </Header>
-        <Body>
-            <div class="bg-gray-300 dark:bg-gray-600 rounded-full shadow-inner p-2">
-                <img src="@(_pokemon.Sprites.OtherSprites.OfficialArtwork.FrontDefault)" alt="@(_pokemon.Name)" class="mx-auto" height="100" width="100" />
+    <div class="w-full bg-pokemon-@(_pokemon.Types.First().Type.Name) p-4">
+        <div class="container mx-auto grid grid-cols-2 gap-4">
+            <div>
+                <div class="bg-light dark:bg-dark rounded-sm shadow-inner p-2">
+                    <img src="@(_pokemon.Sprites.OtherSprites.OfficialArtwork.FrontDefault)" alt="@(_pokemon.Name)" class="mx-auto" height="200" width="200" />
+                </div>
+                <h2 class="text-center rounded-full text-xl">#@(_pokemon.Id.ToString().PadLeft(3, '0'))</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    @foreach (var type in _pokemon.Types.OrderBy(t => t.Slot))
+                    {
+                        <div>
+                            <TypeTag Type="@(type.Type.Name)">
+                                @(type.Type.Name)
+                            </TypeTag>
+                        </div>
+                    }
+                </div>
             </div>
 
-            <h2 class="text-center rounded-full text-xl">#@(_pokemon.Id.ToString().PadLeft(3, '0'))</h2>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-                @foreach (var type in _pokemon.Types.OrderBy(t => t.Slot))
-                {
-                    <div>
-                        <TypeTag Type="@(type.Type.Name)">
-                            @(type.Type.Name)
-                        </TypeTag>
-                    </div>
-                }
+            <div>
+                <h1 class="text-3xl capitalize text-center bg-light dark:bg-dark text-dark dark:bg-light">@(_pokemon.Name)</h1>
+                <div class="grid grid-cols-4 gap-2">
+                    @foreach (string url in GetAllFrontDefaultSprites())
+                    {
+                        <div class="p-2">
+                            <img src="@(url)" alt="@(_pokemon.Name)" class="my-auto mx-auto" height="100" width="100" />
+                        </div>
+                    }
+                </div>
             </div>
-        </Body>
-    </Card>
+        </div>
+    </div>
 }
