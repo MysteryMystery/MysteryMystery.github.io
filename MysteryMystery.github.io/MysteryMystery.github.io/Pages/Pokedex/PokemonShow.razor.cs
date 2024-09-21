@@ -49,5 +49,23 @@ namespace MysteryMystery.github.io.Pages.Pokedex
             string content = await response.Content.ReadAsStringAsync();
             _pokemon = JsonConvert.DeserializeObject<Pokemon>(content)!;
         }
+
+        public IEnumerable<string> GetAllFrontDefaultSprites()
+        {
+            return new List<string?>()
+            {
+                _pokemon.Sprites.Versions.GenerationI.RedBlue.FrontDefault,
+                _pokemon.Sprites.Versions.GenerationII.Crystal.FrontDefault,
+                _pokemon.Sprites.Versions.GenerationIII.FireRed.FrontDefault,
+                _pokemon.Sprites.Versions.GenerationIV.DiamondPearl.FrontDefault,
+                _pokemon.Sprites.Versions.GenerationV.BlackWhite.FrontDefault,
+                _pokemon.Sprites.Versions.GenerationVI.XY.FrontDefault,
+                _pokemon.Sprites.Versions.GenerationVII.SunMoon.FrontDefault
+            }
+            .Where(x => x != null)
+            .Select(x => x!)
+            .ToList();
+           
+        }
     }
 }
