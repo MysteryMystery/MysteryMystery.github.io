@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Components.Web;
 using Microsoft.Extensions.Primitives;
 using Microsoft.FeatureManagement;
 using MysteryMystery.github.io.Models.Pokedex;
+using MysteryMystery.github.io.Repositories.Pokedex;
 using Newtonsoft.Json;
 using System.Net.Http.Json;
 
@@ -20,9 +21,12 @@ namespace MysteryMystery.github.io.Pages.Pokedex
         public NavigationManager NavigationManager { get; set; }
 
         [Inject]
+        public IPokemonRepository PokemonRepository { get; set; }
+
+        [Inject]
         public HttpClient HttpClient { get; set; }
 
-        private ListResponse<NamedAPIResource> _pokemonResponse = null;
+        private ListResponse<NamedAPIResource>? _pokemonResponse = null;
 
         private List<Pokemon> _pokemon = new List<Pokemon>();
 
@@ -34,21 +38,8 @@ namespace MysteryMystery.github.io.Pages.Pokedex
 
             await base.OnInitializedAsync();
 
-            await LoadPokemonSummaryAsync();
+            _pokemonResponse = await PokemonRepository.GetPokemonListAsync();
             await LoadPokemonAsync();
-        }
-
-        private async Task LoadPokemonSummaryAsync()
-        {
-            HttpResponseMessage response = await HttpClient.GetAsync(Configuration["PokeApiBaseUrl"] + "/pokemon?offset=0&limit=99999");
-
-            if (!response.IsSuccessStatusCode)
-            {
-                return;
-            }
-
-            string content = await response.Content.ReadAsStringAsync();
-            _pokemonResponse = JsonConvert.DeserializeObject<ListResponse<NamedAPIResource>>(content)!;
         }
 
         public async Task LoadPokemonAsync(int offset = 0, int count = 25)
@@ -57,10 +48,12 @@ namespace MysteryMystery.github.io.Pages.Pokedex
             {
                 _ = Task.Run(async () =>
                 {
-                    HttpResponseMessage response = await HttpClient.GetAsync(pokemon.Url);
-                    string content = await response.Content.ReadAsStringAsync();
-                    Pokemon p = JsonConvert.DeserializeObject<Pokemon>(content)!;
-                    _pokemon.Add(p);
+                    Pokemon? p = await PokemonRepository.GetPokemonAsync(pokemon.Name);
+
+                    if (p != null)
+                    {
+                        _pokemon.Add(p);
+                    }
 
                     _pokemon = _pokemon.OrderBy(p => p.Id).ToList();
 

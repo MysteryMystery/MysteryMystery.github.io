@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.FeatureManagement;
 using MysteryMystery.github.io.Models.Pokedex;
+using MysteryMystery.github.io.Repositories.Pokedex;
 using Newtonsoft.Json;
 
 namespace MysteryMystery.github.io.Pages.Pokedex
@@ -20,10 +21,17 @@ namespace MysteryMystery.github.io.Pages.Pokedex
         [Inject]
         public HttpClient HttpClient { get; set; }
 
+        [Inject]
+        public IPokemonRepository PokemonRepository { get; set; }
+
         [Parameter]
         public required string NameOrId { get; set; }
 
-        private Pokemon _pokemon { get; set; }
+        private Pokemon? _pokemon { get; set; }
+
+        private ListResponse<NamedAPIResource>? _pokemonResponse = null;
+
+        private bool _isLoading = true;
 
         protected override async Task OnInitializedAsync()
         {
@@ -33,21 +41,20 @@ namespace MysteryMystery.github.io.Pages.Pokedex
             }
 
             await base.OnInitializedAsync();
-
-            await LoadPokemonAsync();
         }
 
-        private async Task LoadPokemonAsync()
+        protected async override Task OnParametersSetAsync()
         {
-            HttpResponseMessage response = await HttpClient.GetAsync(Configuration["PokeApiBaseUrl"] + "/pokemon/" + NameOrId);
+            _isLoading = true;
 
-            if (!response.IsSuccessStatusCode)
+            _pokemon = await PokemonRepository.GetPokemonAsync(NameOrId);
+
+            if (_pokemon is null)
             {
-                return;
+                _pokemonResponse = await PokemonRepository.GetPokemonListAsync();
             }
 
-            string content = await response.Content.ReadAsStringAsync();
-            _pokemon = JsonConvert.DeserializeObject<Pokemon>(content)!;
+            _isLoading = false;
         }
 
         public IEnumerable<string> GetAllFrontDefaultSprites()
