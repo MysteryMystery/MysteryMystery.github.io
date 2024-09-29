@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Components.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace MysteryMystery.github.io.Components.Navigation
 {
@@ -15,12 +16,12 @@ namespace MysteryMystery.github.io.Components.Navigation
             new()
             {
                 Display = "My Projects",
-                Url = "#projects"
+                Url = "/#projects"
             },
             new()
             {
                 Display = "My Education",
-                Url = "#education"
+                Url = "/#education"
             },
         };
     }
