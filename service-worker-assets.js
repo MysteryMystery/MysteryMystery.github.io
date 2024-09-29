@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-PSTdzJVddPvGU+ZmxREnZLXgOfqb\/OyYPUJyO59odcE=",
+      "hash": "sha256-r6uhQjrC2mC0R2nRSkNJZWRSsiRsoS8SJy6OOEJAJs4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -41,7 +41,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.Forms.wasm"
     },
     {
-      "hash": "sha256-gBEdvTeyj0nAsHdOS1x\/BlA\/wIh4QUpB6jX\/\/0sou3c=",
+      "hash": "sha256-wg1RDuRIsISZNzOKjzcqQ7u1s7NzgfoFW8je\/IOjx80=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm"
     },
     {
@@ -117,7 +117,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-pE8bCJOHQQ5+\/3ONm2gscbzljzUu1EVOJUHNYuqqb90=",
+      "hash": "sha256-8JGNCbnYc86Sg3VIt2o4SiKbOZYU8DlxfM6R9gHYh1M=",
       "url": "_framework\/MysteryMystery.github.io.wasm"
     },
     {
@@ -301,24 +301,40 @@
       "url": "appsettings.json"
     },
     {
+      "hash": "sha256-238lNuF0LOLZSbV7EcQFwCmuLYqn1opuZKK2uOWDtmQ=",
+      "url": "android-chrome-192x192.png"
+    },
+    {
+      "hash": "sha256-TGvyQgXZO3eWEsOg+\/uoOSJknWflQHdg+iL\/41VLvSg=",
+      "url": "android-chrome-512x512.png"
+    },
+    {
+      "hash": "sha256-EPEtsw3bJjpu1vN9Lxy5AJmRJWdJ2Cn0NSDb9fUMAUM=",
+      "url": "apple-touch-icon.png"
+    },
+    {
       "hash": "sha256-xStDWIm4yDmZ\/5Qznx6qX11sVYhiaFsrGJgYJQCKcIU=",
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-ZIPvfjpH082\/Q37Uv9rqGlDr3Tbg29NDwECSoaHqa1o=",
+      "hash": "sha256-EyJsmaAnmUxUqXtSmh74mUtiS82tuiXNxfRvWIBbibI=",
       "url": "css\/app.min.css"
     },
     {
-      "hash": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=",
-      "url": "favicon.png"
+      "hash": "sha256-sX8Wjx4gOnXAiZnHHxhPFaVKdsCzeoM09siCK0nCuKw=",
+      "url": "favicon-16x16.png"
     },
     {
-      "hash": "sha256-DbpQaq68ZSb5IoPosBErM1QWBfsbTxpJqhU0REi6wP4=",
-      "url": "icon-192.png"
+      "hash": "sha256-gxbIu3mmMUWDmuVuLa+m+rKvHOnVYNDolNo37Qx11JQ=",
+      "url": "favicon-32x32.png"
     },
     {
-      "hash": "sha256-oEo6d+KqX5fjxTiZk\/w9NB3Mi0+ycS5yLwCKwr4IkbA=",
-      "url": "icon-512.png"
+      "hash": "sha256-mmq80HD7gz+EyWmuxz3AO51CssbfPOc5B52L7PkLjyA=",
+      "url": "favicon.ico"
+    },
+    {
+      "hash": "sha256-Rnesy67nlKdTeFHGND3N7hhLcYl3j0QHz0d\/Zg\/21O0=",
+      "url": "img\/avatar.jpeg"
     },
     {
       "hash": "sha256-d7sX\/d2fKKX5Bxl\/lipJL4BL8GCzjkG8TpF\/jwVhW3I=",
@@ -361,11 +377,11 @@
       "url": "img\/logos\/windows-hardening-suite.png"
     },
     {
-      "hash": "sha256-5afkOhbzEOYQgqPJPL+k5vu3gjBcHySP61q66M6PhOQ=",
+      "hash": "sha256-Q1BBbpOoi2fjrMAK\/YNtzPuaRkqsKSs6rLtDRZv2ypM=",
       "url": "index.html"
     },
     {
-      "hash": "sha256-9WewK1tu9bRbWt6qfPosuKOLBm0BgzhGzP+SANzKQJI=",
+      "hash": "sha256-4XQjPX8Swm\/PZf0NHs9TLlAE\/JFNSHw3npPKedwZQPM=",
       "url": "manifest.webmanifest"
     },
     {
@@ -373,5 +389,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "+mVe0dlr"
+  "version": "3efMMMmZ"
 };
