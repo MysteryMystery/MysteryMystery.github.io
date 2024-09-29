@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-r6uhQjrC2mC0R2nRSkNJZWRSsiRsoS8SJy6OOEJAJs4=",
+      "hash": "sha256-TeVxkUU2tzI\/C049QTcYU4DioVg0eBOv5mydo9UtVsc=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -117,7 +117,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-8JGNCbnYc86Sg3VIt2o4SiKbOZYU8DlxfM6R9gHYh1M=",
+      "hash": "sha256-YL9qdZ7VoeO+Rp28NwDPrLJede8w38zJNQ3cJbTR8f8=",
       "url": "_framework\/MysteryMystery.github.io.wasm"
     },
     {
@@ -317,7 +317,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-EyJsmaAnmUxUqXtSmh74mUtiS82tuiXNxfRvWIBbibI=",
+      "hash": "sha256-Ex+jmsEBg2PivIR9ATzHLOj2X0zYyvQA+QB74U3C2k4=",
       "url": "css\/app.min.css"
     },
     {
@@ -377,7 +377,7 @@
       "url": "img\/logos\/windows-hardening-suite.png"
     },
     {
-      "hash": "sha256-Q1BBbpOoi2fjrMAK\/YNtzPuaRkqsKSs6rLtDRZv2ypM=",
+      "hash": "sha256-3tobCgKSDUa3g4jZZdvhPWXGlyR1z3H5\/lPCN\/Y4OQY=",
       "url": "index.html"
     },
     {
@@ -389,5 +389,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "3efMMMmZ"
+  "version": "0eAJdPm4"
 };
