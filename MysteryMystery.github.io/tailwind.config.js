@@ -9,7 +9,8 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                dark: '#1D1E18',
+                darker: '#1D1E18',
+                dark: "#39393A",
                 light: '#edf0ee',
 
                 primary: {
@@ -18,7 +19,7 @@ module.exports = {
                 },
                 secondary: {
                     light: '#83B5D1',
-                    dark: '#83B5D1',
+                    dark: '#618499',
                 },
                 pokemon: {
                     normal: '#a0a0a0',
