@@ -11,9 +11,15 @@ namespace MysteryMystery.github.io.Models.Pokedex
         public required string Name { get; set; }
 
         [JsonProperty("sprites")]
-        public PokemonSprite Sprites { get; set; }
+        public required PokemonSprite Sprites { get; set; }
+
+        [JsonProperty("species")]
+        public required NamedAPIResource Species { get; set; }
+
+        [JsonProperty("abilities")]
+        public required IEnumerable<PokemonAbility> Abilities { get; set; }
 
         [JsonProperty("types")]
-        public IEnumerable<PokemonType> Types { get; set; }
+        public required IEnumerable<PokemonType> Types { get; set; }
     }
 }

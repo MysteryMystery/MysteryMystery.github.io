@@ -10,7 +10,7 @@
                     <img src="@(_pokemon.Sprites.OtherSprites.OfficialArtwork.FrontDefault)" alt="@(_pokemon.Name)" class="mx-auto" height="200" width="200" />
                 </div>
                 <h2 class="text-center rounded-full text-xl">#@(_pokemon.Id.ToString().PadLeft(3, '0'))</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div class="grid grid-cols-2 gap-2">
                     @foreach (var type in _pokemon.Types.OrderBy(t => t.Slot))
                     {
                         <div>
@@ -20,20 +20,49 @@
                         </div>
                     }
                 </div>
-            </div>
-
-            <div>
-                <h1 class="text-3xl capitalize text-center bg-light dark:bg-dark text-dark dark:bg-light">@(_pokemon.Name)</h1>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
-                    @foreach (string url in GetAllFrontDefaultSprites())
+                <div class="grid grid-cols-2 gap-2 mt-2">
+                    @foreach (var ability in _pokemon.Abilities.OrderBy(t => t.Slot))
                     {
-                        <div class="p-2">
-                            <img src="@(url)" alt="@(_pokemon.Name)" class="my-auto mx-auto" height="100" width="100" />
+                        <div>
+                            <TypeTag Type="secondary">
+                                @(ability.Ability.Name)
+                            </TypeTag>
                         </div>
                     }
                 </div>
             </div>
+
+            <div>
+                <h1 class="text-3xl capitalize text-center bg-light dark:bg-dark text-dark dark:text-light">@(_pokemon.Name)</h1>
+
+                <div class="flex flex-row flex-wrap justify-center">
+                    @foreach (var pokemon in _evolutionChain)
+                    {
+                        <NavLink href="@(pokemon != null ? $"pokemon/{pokemon?.Id}" : "#")">
+                            <div class="bg-light dark:bg-dark rounded-sm shadow-inner p-2 m-2">
+                                @if (pokemon is not null)
+                                {
+                                    <img src="@(pokemon.Sprites.OtherSprites.OfficialArtwork.FrontDefault)" alt="@(pokemon.Name)" class="mx-auto" height="100" width="100" />
+                                }
+                                else
+                                {
+                                    <p>We could not find this pokemon!</p>
+                                }
+                            </div>
+                        </NavLink>
+                    }
+                </div>
+            </div>
         </div>
+    </div>
+
+    <div class="flex flex-row flex-wrap justify-center bg-secondary-light dark:bg-secondary-dark">
+        @foreach (string url in GetAllFrontDefaultSprites())
+        {
+            <div class="p-2">
+                <img src="@(url)" alt="@(_pokemon.Name)" class="my-auto mx-auto" height="100" width="100" />
+            </div>
+        }
     </div>
 } 
 else

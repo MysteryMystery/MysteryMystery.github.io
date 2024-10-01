@@ -9,5 +9,9 @@ namespace MysteryMystery.github.io.Repositories.Pokedex
         public Task<Pokemon?> GetPokemonAsync(string name);
 
         public Task<Pokemon?> GetPokemonAsync(int id);
+
+        public Task<T> GetApiResource<T>(NamedAPIResource resource);
+
+        public Task<T> GetApiResource<T>(APIResource resource);
     }
 }

@@ -43,5 +43,23 @@ namespace MysteryMystery.github.io.Repositories.Pokedex
             string content = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<ListResponse<NamedAPIResource>>(content)!;
         }
+
+        public async Task<T> GetApiResource<T>(NamedAPIResource resource)
+        {
+            return await GetApiResource<T>(new APIResource() { Url = resource.Url });
+        }
+
+        public async Task<T> GetApiResource<T>(APIResource resource)
+        {
+            HttpResponseMessage response = await _httpClient.GetAsync(resource.Url);
+
+            if (!response.IsSuccessStatusCode)
+            {
+                return default(T)!;
+            }
+
+            string content = await response.Content.ReadAsStringAsync();
+            return JsonConvert.DeserializeObject<T>(content)!;
+        }
     }
 }

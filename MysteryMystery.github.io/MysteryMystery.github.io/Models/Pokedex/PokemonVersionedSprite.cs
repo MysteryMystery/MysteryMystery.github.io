@@ -15,5 +15,8 @@ namespace MysteryMystery.github.io.Models.Pokedex
 
         [JsonProperty("back_shiny")]
         public string? BackShiny { get; set; }
+
+        [JsonProperty("front_transparent")]
+        public string? FrontTransparent { get; set; }
     }
 }
