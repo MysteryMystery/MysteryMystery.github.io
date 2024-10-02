@@ -1,0 +1,17 @@
+﻿<div class="flex flex-row flex-wrap justify-center">
+    @foreach (var pokemon in _evolutionChain)
+    {
+        <NavLink href="@(pokemon != null ? $"pokemon/{pokemon?.Id}" : "#")">
+            <div class="bg-light dark:bg-dark rounded-sm shadow-inner p-2 m-2">
+                @if (pokemon is not null)
+                {
+                    <img src="@(pokemon.Sprites.OtherSprites.OfficialArtwork.FrontDefault)" alt="@(pokemon.Name)" class="mx-auto" height="100" width="100" />
+                }
+                else
+                {
+                    <p>We could not find this pokemon!</p>
+                }
+            </div>
+        </NavLink>
+    }
+</div>
