@@ -21,5 +21,8 @@ namespace MysteryMystery.github.io.Models.Pokedex
 
         [JsonProperty("types")]
         public required IEnumerable<PokemonType> Types { get; set; }
+
+        [JsonProperty("stats")]
+        public required IEnumerable<PokemonStat> Stats { get; set; }
     }
 }
