@@ -1,17 +1,40 @@
-﻿<div class="flex flex-row flex-wrap justify-center">
-    @foreach (var pokemon in _evolutionChain)
-    {
-        <NavLink href="@(pokemon != null ? $"pokemon/{pokemon?.Id}" : "#")">
-            <div class="bg-light dark:bg-dark rounded-sm shadow-inner p-2 m-2">
-                @if (pokemon is not null)
-                {
-                    <img src="@(pokemon.Sprites.OtherSprites.OfficialArtwork.FrontDefault)" alt="@(pokemon.Name)" class="mx-auto" height="100" width="100" />
-                }
-                else
-                {
-                    <p>We could not find this pokemon!</p>
-                }
+﻿@if(_evolutionChain.Count() == 0)
+{
+    <LoadingWidget />
+} else
+{
+    <div class="flex flex-row flex-wrap justify-center">
+        @foreach (ChainLinkViewModel? model in _evolutionChain)
+        {
+            <div>
+                <NavLink href="@(model?.Pokemon != null ? $"pokemon/{model.Pokemon!.Id}" : "#")">
+                    <div class="bg-light dark:bg-dark rounded-sm shadow-inner p-2 m-2">
+                        @if (model?.Pokemon is not null)
+                        {
+                            <img src="@(model.Pokemon.Sprites.OtherSprites.OfficialArtwork.FrontDefault)" alt="@(model.Pokemon.Name)" class="mx-auto" height="100" width="100" />
+                        }
+                        else
+                        {
+                            <p>We could not find this pokemon!</p>
+                        }
+                    </div>
+                </NavLink>
+
+                <div class="flex flex-row flex-wrap justify-center">
+                    @if (model?.EvolutionDetails?.MinLevel is not null)
+                    {
+                        <p>Lvl @(model.EvolutionDetails.MinLevel)</p>
+                    }
+                    @if (model?.EvolutionDetails?.TimeOfDay == "day")
+                    {
+                        <SunIcon class="h-6 w-6"></SunIcon>
+                    }
+                    else if (model?.EvolutionDetails?.TimeOfDay == "night")
+                    {
+                        <MoonIcon class="h-6 w-6"></MoonIcon>
+                    }
+                </div>
             </div>
-        </NavLink>
-    }
-</div>
+        }
+    </div>
+}

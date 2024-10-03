@@ -4,6 +4,7 @@ using Microsoft.VisualBasic;
 using MysteryMystery.github.io.Models.Pokedex;
 using MysteryMystery.github.io.Repositories.Pokedex;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace MysteryMystery.github.io.Pages.Pokedex
 {
@@ -26,6 +27,8 @@ namespace MysteryMystery.github.io.Pages.Pokedex
         public required string NameOrId { get; set; }
 
         private Pokemon? _pokemon { get; set; }
+
+        private PokemonSpecies _species { get; set; }
 
         private ListResponse<NamedAPIResource>? _pokemonResponse = null;
 
@@ -50,6 +53,9 @@ namespace MysteryMystery.github.io.Pages.Pokedex
             if (_pokemon is null)
             {
                 _pokemonResponse = await PokemonRepository.GetPokemonListAsync();
+            } else
+            {
+                _species = await PokemonRepository.GetApiResource<PokemonSpecies>(_pokemon.Species);
             }
 
             _isLoading = false;
@@ -70,6 +76,25 @@ namespace MysteryMystery.github.io.Pages.Pokedex
             .Where(x => x != null)
             .Select(x => x!)
             .ToList();
+        }
+
+        private string NormaliseString(string s)
+        {
+            StringBuilder sb = new StringBuilder(s.Length);
+            foreach (char c in s)
+            {
+                if ((int)c > 127)
+                    continue;
+                if ((int)c < 32) 
+                    continue;
+                if (c == '%')
+                    continue;
+                if (c == '?')
+                    continue;
+                sb.Append(c);
+            }
+
+            return sb.ToString();
         }
     }
 }

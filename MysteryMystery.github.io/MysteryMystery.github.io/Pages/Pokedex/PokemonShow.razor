@@ -35,7 +35,15 @@
             <div>
                 <h1 class="text-3xl capitalize text-center bg-light dark:bg-dark text-dark dark:text-light">@(_pokemon.Name)</h1>
 
-                <EvolutionChain Pokemon="_pokemon"/>
+                <p class="text-lg text-center shadow-inner bg-light dark:bg-dark text-dark dark:text-light my-4 p-2">
+                    @if(_species is not null)
+                    {
+                        @(_species.FlavourTextEntries.FirstOrDefault(x => x.Language.Name == "en" && x.Version.Name == "sword")?.FlavourText)
+                    } else
+                    {
+                        <LoadingWidget/>
+                    }
+                </p>
             </div>
         </div>
     </div>
@@ -49,8 +57,18 @@
         }
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-2 p-4">
-        <PokemonStatsPane Stats="_pokemon.Stats" />
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 p-4">
+        <Card>
+            <Body>
+                <PokemonStatsPane Stats="_pokemon.Stats" />
+            </Body>
+        </Card>
+
+        <Card>
+            <Body>
+                <EvolutionChain Pokemon="_pokemon" />
+            </Body>
+        </Card>
     </div>
 } 
 else
