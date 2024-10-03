@@ -33,15 +33,19 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-Mgf\/fNGOgx7SJYnQ02nCurqQUAlAjghsDhuHoKTZDiQ=",
+      "hash": "sha256-JVrVly4HYu7lMk\/jg6dGo6YpwsgVZsn2HuhWaCUWisU=",
       "url": "_framework\/blazor.boot.json"
+    },
+    {
+      "hash": "sha256-o7cu535NdjHnq\/Gue6IURtbl2cxzP69Lzhf4A7OEunE=",
+      "url": "_framework\/Blazor.Heroicons.wasm"
     },
     {
       "hash": "sha256-sk55X09j5qDpWgmwFDIJnuJp2oW+9FWpFFfBHwb9lQI=",
       "url": "_framework\/Microsoft.AspNetCore.Components.Forms.wasm"
     },
     {
-      "hash": "sha256-D75cH5AIZaiZ+NgD+TmNnf1kvmwiw1TWZ1jdOFU3CC0=",
+      "hash": "sha256-uGqwor5ITw6FKqRzDWhboNjtLBUTH8eVKOl0BtLtvw0=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm"
     },
     {
@@ -117,7 +121,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-VoOm9Cl9qED0mriSXxo9g8Q2q1G2Z\/42GsOWxVF\/FQw=",
+      "hash": "sha256-L7UqqKTHfN+YBv7GwaF+skmUMThTF4wZJ72n5+Tw+t0=",
       "url": "_framework\/MysteryMystery.github.io.wasm"
     },
     {
@@ -185,7 +189,7 @@
       "url": "_framework\/System.Linq.Expressions.wasm"
     },
     {
-      "hash": "sha256-3mEWpJ17\/p1fj29fQB8\/KgW8Eh477Q6gco5DdSiuVkQ=",
+      "hash": "sha256-ygl\/NW+lvLEsfp+1oduCytQdbf7OdrixMCsyXnx8aF8=",
       "url": "_framework\/System.Linq.wasm"
     },
     {
@@ -205,7 +209,7 @@
       "url": "_framework\/System.ObjectModel.wasm"
     },
     {
-      "hash": "sha256-S02w9Mn+18310SEvZdC+M1R4dlbztPGZQXj77KwbHMc=",
+      "hash": "sha256-x5ruc2Ri9gh9vHREbceK\/zqVRhg\/JOt21V0X5Rgy4SI=",
       "url": "_framework\/System.Private.CoreLib.wasm"
     },
     {
@@ -253,7 +257,7 @@
       "url": "_framework\/System.Runtime.Serialization.Primitives.wasm"
     },
     {
-      "hash": "sha256-lFdegIYo8XOg3zpl99ylRVqzZupns2\/FxnTvT5AM\/VY=",
+      "hash": "sha256-nSR4mzJ3fYWYXgeVnKo3Lbt4mBr11b4SrrLVSeNCZjo=",
       "url": "_framework\/System.Runtime.wasm"
     },
     {
@@ -317,7 +321,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-uZvnBQ7H1FCrmYbwGUttxsFoKcU4hrSvRiDbtcdvc44=",
+      "hash": "sha256-d9ZwTQcgj3K4NUG6uD9e49CVqZpFgDwxpDOgqOUrv5Y=",
       "url": "css\/app.min.css"
     },
     {
@@ -389,5 +393,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "pmf3jda3"
+  "version": "VCGR8+vi"
 };
