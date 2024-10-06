@@ -12,6 +12,8 @@ namespace MysteryMystery.github.io.Components.Pokedex
             public Pokemon? Pokemon { get; set; }
 
             public PokemonEvolutionDetails? EvolutionDetails { get; set; }
+
+            public PokemonItem? EvolutionItem { get; set; }
         }
 
         [Parameter]
@@ -47,12 +49,22 @@ namespace MysteryMystery.github.io.Components.Pokedex
             {
                 PokemonSpecies species = await PokemonRepository.GetApiResource<PokemonSpecies>(link.Species);
                 Pokemon? pokemon = Pokemon?.Id == species.Id ? Pokemon : await PokemonRepository.GetPokemonAsync(species.Id);
+
+                PokemonEvolutionDetails? evolutionDetails = link.EvolutionDetails != null && link.EvolutionDetails.Count() > 0 
+                    ? link.EvolutionDetails?.FirstOrDefault() 
+                    : default;
+
+                PokemonItem? item = evolutionDetails?.Item != null ?
+                    await PokemonRepository.GetApiResource<PokemonItem>(evolutionDetails.Item) :
+                    null;
+
                 if (pokemon != null)
                 {
                     chain.Add(new()
                     {
                         Pokemon = pokemon,
-                        EvolutionDetails = link.EvolutionDetails.FirstOrDefault()
+                        EvolutionDetails = evolutionDetails,
+                        EvolutionItem = item
                     });
                 }
 

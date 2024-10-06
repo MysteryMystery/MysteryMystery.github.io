@@ -10,7 +10,13 @@ namespace MysteryMystery.github.io.Models.Pokedex
         [JsonProperty("time_of_day")]
         public string? TimeOfDay { get; set; }
 
+        [JsonProperty("gender")]
+        public int? Gender { get; set; }
+
         [JsonProperty("trigger")]
         public required NamedAPIResource Trigger { get; set; }
+
+        [JsonProperty("item")]
+        public required NamedAPIResource Item { get; set; }
     }
 }

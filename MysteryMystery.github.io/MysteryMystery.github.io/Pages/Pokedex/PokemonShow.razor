@@ -57,18 +57,23 @@
         }
     </div>
 
+    @* Masonry layout *@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 p-4">
-        <Card>
-            <Body>
-                <PokemonStatsPane Stats="_pokemon.Stats" />
-            </Body>
-        </Card>
+        <div class="grid gap-2">
+            <Card>
+                <Body>
+                    <PokemonStatsPane Stats="_pokemon.Stats" />
+                </Body>
+            </Card>
+        </div>
 
-        <Card>
-            <Body>
-                <EvolutionChain Pokemon="_pokemon" />
-            </Body>
-        </Card>
+        <div class="grid gap-2">
+            <Card>
+                <Body>
+                    <EvolutionChain Pokemon="_pokemon" />
+                </Body>
+            </Card>
+        </div>
     </div>
 } 
 else

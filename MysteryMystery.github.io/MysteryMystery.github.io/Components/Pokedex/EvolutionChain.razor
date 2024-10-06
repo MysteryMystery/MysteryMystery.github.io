@@ -33,6 +33,19 @@
                     {
                         <MoonIcon class="h-6 w-6"></MoonIcon>
                     }
+                    @if(model?.EvolutionDetails?.Gender == 1)
+                    {
+                        <img class="h-6 w-6" src="img/icons/female.svg"/>
+                    }
+                    else if (model?.EvolutionDetails?.Gender == 2)
+                    {
+                        <img class="h-6 w-6" src="img/icons/male.svg" />
+                    }
+
+                    @if (model?.EvolutionItem != null)
+                    {
+                        <img class="h-6 w-6" src="@(model!.EvolutionItem.Sprites.Default)"/>
+                    }
                 </div>
             </div>
         }
