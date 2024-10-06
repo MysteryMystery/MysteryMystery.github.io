@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-JVrVly4HYu7lMk\/jg6dGo6YpwsgVZsn2HuhWaCUWisU=",
+      "hash": "sha256-07T64lfl1aIB7xZhXcvaXhwm0Vwk2yNSVDzeb5Te9Vg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -121,7 +121,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-L7UqqKTHfN+YBv7GwaF+skmUMThTF4wZJ72n5+Tw+t0=",
+      "hash": "sha256-EDrgWPtUFx+r0hFI9AmZ0YrDfFEwEyyKWIynfoG3j\/s=",
       "url": "_framework\/MysteryMystery.github.io.wasm"
     },
     {
@@ -341,6 +341,14 @@
       "url": "img\/avatar.jpeg"
     },
     {
+      "hash": "sha256-HFqKIyrTz3p\/MZmLmv8ICdCAchacalxlG4FC2gDbmf8=",
+      "url": "img\/icons\/female.svg"
+    },
+    {
+      "hash": "sha256-ws7HMF6ZWSaPhzSvxsrDpnb+6ohcMd0o0TdywmbT1F4=",
+      "url": "img\/icons\/male.svg"
+    },
+    {
       "hash": "sha256-d7sX\/d2fKKX5Bxl\/lipJL4BL8GCzjkG8TpF\/jwVhW3I=",
       "url": "img\/logos\/azure-arc.svg"
     },
@@ -393,5 +401,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "VCGR8+vi"
+  "version": "IVWYX92x"
 };
