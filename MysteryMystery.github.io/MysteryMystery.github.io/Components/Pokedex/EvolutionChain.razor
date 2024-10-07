@@ -46,6 +46,11 @@
                     {
                         <img class="h-6 w-6" src="@(model!.EvolutionItem.Sprites.Default)"/>
                     }
+
+                    @if (model?.EvolutionDetails?.MinHappiness is not null && model.EvolutionDetails.MinHappiness > 0)
+                    {
+                        <Blazor.Heroicons.Outline.FaceSmileIcon class="h-6 w-6" />
+                    }
                 </div>
             </div>
         }

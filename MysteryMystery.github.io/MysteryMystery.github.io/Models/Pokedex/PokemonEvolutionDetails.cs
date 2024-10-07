@@ -10,6 +10,9 @@ namespace MysteryMystery.github.io.Models.Pokedex
         [JsonProperty("time_of_day")]
         public string? TimeOfDay { get; set; }
 
+        [JsonProperty("min_happiness")]
+        public int? MinHappiness { get; set; }
+
         [JsonProperty("gender")]
         public int? Gender { get; set; }
 

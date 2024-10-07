@@ -13,8 +13,8 @@ namespace MysteryMystery.github.io.Components.Abstract
             { "default", "bg-white dark:bg-dark text-dark dark:text-light" }
         };
 
-        [Parameter]
-        public string Class { get; set; } = "";
+        [Parameter(CaptureUnmatchedValues = true)]
+        public Dictionary<string, object> HtmlAttributes { get; set; } = new();
 
         [Parameter]
         public string Type { get; set; } = "default";
@@ -23,7 +23,7 @@ namespace MysteryMystery.github.io.Components.Abstract
         {
             get
             {
-                string classes = Class;
+                string classes = HtmlAttributes.ContainsKey("class") ? HtmlAttributes["class"].ToString()! : "";
 
                 if (this.Themes.ContainsKey(Type))
                 {
