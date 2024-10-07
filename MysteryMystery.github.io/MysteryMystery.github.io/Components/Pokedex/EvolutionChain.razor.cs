@@ -50,22 +50,26 @@ namespace MysteryMystery.github.io.Components.Pokedex
                 PokemonSpecies species = await PokemonRepository.GetApiResource<PokemonSpecies>(link.Species);
                 Pokemon? pokemon = Pokemon?.Id == species.Id ? Pokemon : await PokemonRepository.GetPokemonAsync(species.Id);
 
-                PokemonEvolutionDetails? evolutionDetails = link.EvolutionDetails != null && link.EvolutionDetails.Count() > 0 
-                    ? link.EvolutionDetails?.FirstOrDefault() 
-                    : default;
-
-                PokemonItem? item = evolutionDetails?.Item != null ?
-                    await PokemonRepository.GetApiResource<PokemonItem>(evolutionDetails.Item) :
-                    null;
-
                 if (pokemon != null)
                 {
+                    PokemonEvolutionDetails? evolutionDetails = link.EvolutionDetails != null && link.EvolutionDetails.Count() > 0
+                    ? link.EvolutionDetails?.FirstOrDefault()
+                    : default;
+
+                    PokemonItem? item = evolutionDetails?.Item != null 
+                        ? await PokemonRepository.GetApiResource<PokemonItem>(evolutionDetails.Item) 
+                        : null;
+
                     chain.Add(new()
                     {
                         Pokemon = pokemon,
                         EvolutionDetails = evolutionDetails,
                         EvolutionItem = item
                     });
+                } 
+                else
+                {
+                    chain.Add(null);
                 }
 
                 if (link.EvolvesTo == null)
