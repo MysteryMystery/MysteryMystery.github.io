@@ -1,5 +1,7 @@
 ﻿@page "/pokedex"
 
+@using Models.Pokedex
+
 @if(_pokemonResponse is not null)
 {
     <div class="pt-4">
@@ -10,9 +12,16 @@
 @if(_pokemon is not null)
 {
     <div class="grid gap-4 grid-cols-2 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-10 p-4">
-        @foreach (var pokemon in _pokemon)
+        @foreach (Pokemon? pokemon in _pokemon)
         {
-            <PokedexCard Pokemon="pokemon"/>
+            @if(pokemon is null)
+            {
+                <Card></Card>
+            } 
+            else
+            {
+                <PokedexCard Pokemon="pokemon" />
+            }
         }
     </div>
 

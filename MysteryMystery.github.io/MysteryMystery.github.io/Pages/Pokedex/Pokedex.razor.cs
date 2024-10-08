@@ -5,6 +5,7 @@ using Microsoft.FeatureManagement;
 using MysteryMystery.github.io.Models.Pokedex;
 using MysteryMystery.github.io.Repositories.Pokedex;
 using Newtonsoft.Json;
+using System;
 using System.Net.Http.Json;
 
 namespace MysteryMystery.github.io.Pages.Pokedex
@@ -28,7 +29,7 @@ namespace MysteryMystery.github.io.Pages.Pokedex
 
         private ListResponse<NamedAPIResource>? _pokemonResponse = null;
 
-        private List<Pokemon> _pokemon = new List<Pokemon>();
+        private List<Pokemon?> _pokemon = new List<Pokemon?>();
 
         protected override async Task OnInitializedAsync()
         {
@@ -44,21 +45,30 @@ namespace MysteryMystery.github.io.Pages.Pokedex
 
         public async Task LoadPokemonAsync(int offset = 0, int count = 25)
         {
+            if (_pokemon.Capacity != offset + count)
+            {
+                _pokemon.AddRange(new Pokemon[count]);
+            }
+
+            int index = offset;
+            TaskFactory taskFactory = new();
             foreach (NamedAPIResource pokemon in _pokemonResponse.Results.Skip(offset).Take(count))
             {
-                _ = Task.Run(async () =>
+                Action<object?> action = async (position) =>
                 {
                     Pokemon? p = await PokemonRepository.GetPokemonAsync(pokemon.Name);
 
-                    if (p != null)
+                    if (p is not null)
                     {
-                        _pokemon.Add(p);
+                        _pokemon[(int)position!] = p;
                     }
 
-                    _pokemon = _pokemon.OrderBy(p => p.Id).ToList();
-
                     StateHasChanged();
-                });
+                };
+
+                _ = taskFactory.StartNew(action, index);
+
+                index++;
             }
         }
 
