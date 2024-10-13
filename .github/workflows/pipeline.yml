@@ -35,7 +35,7 @@ jobs:
         with:
           dotnet-version: 8.x
       - name: Install Dotnet Wasm Tools
-        run: dotnet workload install
+        run: dotnet workload install wasm-tools
       - name: Compile Tailwind
         working-directory: MysteryMystery.github.io
         run: npx tailwindcss -i MysteryMystery.github.io/wwwroot/css/app.css -o MysteryMystery.github.io/wwwroot/css/app.min.css --minify
