@@ -13,5 +13,8 @@ namespace MysteryMystery.github.io.Components.Card
 
         [Parameter]
         public RenderFragment? Footer { get; set; } = null!;
+
+        [Parameter]
+        public bool EnableDivider { get; set; } = false;
     }
 }
