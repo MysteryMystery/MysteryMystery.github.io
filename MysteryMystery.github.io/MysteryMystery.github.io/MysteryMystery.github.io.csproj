@@ -8,6 +8,7 @@
 
 	  <RunAOTCompilation>true</RunAOTCompilation>
 	  <WasmStripILAfterAOT>false</WasmStripILAfterAOT>
+	  <WasmEnableWebcil>true</WasmEnableWebcil>
   </PropertyGroup>
 
   <ItemGroup>
