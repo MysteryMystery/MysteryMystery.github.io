@@ -6,9 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
 
-	  <RunAOTCompilation>true</RunAOTCompilation>
-	  <WasmStripILAfterAOT>false</WasmStripILAfterAOT>
-	  <WasmEnableWebcil>true</WasmEnableWebcil>
+	<RunAOTCompilation>true</RunAOTCompilation>
+	<WasmStripILAfterAOT>false</WasmStripILAfterAOT>
+	<WasmEnableWebcil>true</WasmEnableWebcil>
+	<BlazorWebAssemblyEnableDebugging>false</BlazorWebAssemblyEnableDebugging>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +22,7 @@
   <ItemGroup>
     <PackageReference Include="Blazor.Heroicons" Version="2.1.5" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.2" />
+	<PackageReference Include="Microsoft.NET.Runtime.WebAssembly.Sdk" Version="8.0.2" PrivateAssets="all" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.2" PrivateAssets="all" />
     <PackageReference Include="Microsoft.FeatureManagement" Version="3.5.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
