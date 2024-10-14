@@ -25,7 +25,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-n\/glAqZ9xeblHfd+lhptCafpYk++7RC0xWht42rOTME=",
+      "hash": "sha256-zpPNycqwpUDjY07sPjipcaEwnl9GtSRZFrwUVZEBtv0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -33,7 +33,7 @@
       "url": "_framework\/dotnet.native.8.0.10.bk37auix74.js"
     },
     {
-      "hash": "sha256-M5rQc3u0y51QsVue2DViQY2qz\/9S2uF9SsHxbOiFdA8=",
+      "hash": "sha256-rmIC9SPYBwr7WxxUSRc7FX2Jef4E\/D06ciDX7QB6Ing=",
       "url": "_framework\/dotnet.native.wasm"
     },
     {
@@ -121,7 +121,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-KHSlfONTqpnD8eRtidORWTe862lUoi0eLhukuCSk4Yc=",
+      "hash": "sha256-HKaaDijaQIuHpxwWK9uo2dlwSTP4Cg8z\/LmwA7kn1sA=",
       "url": "_framework\/MysteryMystery.github.io.wasm"
     },
     {
@@ -321,7 +321,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-YmcLOiU4P7VEFIZBlDZEYzGb+zzpB+OsQTD4YHUKfvQ=",
+      "hash": "sha256-jw5NZYzDRsybGLlTM5Fap2jdQRVMTOYyL6LKGFx21Xc=",
       "url": "css\/app.min.css"
     },
     {
@@ -405,5 +405,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "BVNtdrSX"
+  "version": "cFOuKQuY"
 };
