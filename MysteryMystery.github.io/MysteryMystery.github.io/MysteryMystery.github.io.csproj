@@ -6,12 +6,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <ServiceWorkerAssetsManifest>service-worker-assets.js</ServiceWorkerAssetsManifest>
 
-	<RunAOTCompilation>false</RunAOTCompilation>
+	<RunAOTCompilation>true</RunAOTCompilation>
 	<WasmStripILAfterAOT>false</WasmStripILAfterAOT>
-	<WasmEnableWebcil>false</WasmEnableWebcil>
-	<BlazorWebAssemblyEnableDebugging>true</BlazorWebAssemblyEnableDebugging>
+	<WasmEnableWebcil>true</WasmEnableWebcil>
+  </PropertyGroup>
+	
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'">
+	  <BlazorWebAssemblyEnableDebugging>true</BlazorWebAssemblyEnableDebugging>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+	<BlazorWebAssemblyEnableDebugging>false</BlazorWebAssemblyEnableDebugging>
+  </PropertyGroup>
+	
   <ItemGroup>
     <Compile Remove="NewFolder1\**" />
     <Content Remove="NewFolder1\**" />

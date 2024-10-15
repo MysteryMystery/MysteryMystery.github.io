@@ -36,6 +36,9 @@ jobs:
           dotnet-version: 8.x
       - name: Install Dotnet Wasm Tools
         run: dotnet workload install wasm-tools
+      - name: Npm Install
+        working-directory: MysteryMystery.github.io
+        run: npm install
       - name: Dotnet Restore
         working-directory: MysteryMystery.github.io
         run: dotnet restore
