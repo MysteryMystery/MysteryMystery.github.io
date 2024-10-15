@@ -2,6 +2,7 @@
 
 namespace MysteryMystery.github.io.Components.Abstract
 {
+    [Obsolete("Moving towards scoped css rules.")]
     public abstract partial class AbstractThemedComponent : ComponentBase
     {
         protected virtual Dictionary<string, string> Themes { get; set; } = new Dictionary<string, string>();

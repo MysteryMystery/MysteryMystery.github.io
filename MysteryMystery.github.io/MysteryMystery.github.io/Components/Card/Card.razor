@@ -1,6 +1,4 @@
-﻿@inherits AbstractThemedComponent
-
-<div class="drop-shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md p-2 flex flex-col @(this.Classes)">
+﻿<div class="base @(HtmlAttributes.ContainsKey("class") ? HtmlAttributes["class"].ToString()! : "")">
     @if (Header is not null)
     {
         <div class="shrink p-2">

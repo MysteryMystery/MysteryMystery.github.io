@@ -1,0 +1,12 @@
+﻿.base {
+    @apply drop-shadow-lg bg-clip-padding backdrop-filter backdrop-blur-md p-2 flex flex-col;
+    @apply bg-white dark:bg-dark text-dark dark:text-light;
+}
+
+.primary {
+    @apply bg-primary-light dark:bg-primary-dark text-white;
+}
+
+.secondary {
+    @apply bg-secondary-light dark:bg-secondary-dark text-dark dark:text-light;
+}

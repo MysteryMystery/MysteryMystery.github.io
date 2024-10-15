@@ -3,8 +3,11 @@ using MysteryMystery.github.io.Components.Abstract;
 
 namespace MysteryMystery.github.io.Components.Card
 {
-    public partial class Card : AbstractThemedComponent
+    public partial class Card
     {
+        [Parameter(CaptureUnmatchedValues = true)]
+        public Dictionary<string, object> HtmlAttributes { get; set; } = new();
+
         [Parameter]
         public RenderFragment? Header { get; set; } = null!;
 
