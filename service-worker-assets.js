@@ -25,7 +25,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-zpPNycqwpUDjY07sPjipcaEwnl9GtSRZFrwUVZEBtv0=",
+      "hash": "sha256-zkGH\/g1bqYn5scY0oL26WYpcm4VrfzbombzIFU9HG74=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -33,7 +33,7 @@
       "url": "_framework\/dotnet.native.8.0.10.bk37auix74.js"
     },
     {
-      "hash": "sha256-rmIC9SPYBwr7WxxUSRc7FX2Jef4E\/D06ciDX7QB6Ing=",
+      "hash": "sha256-Xj0ZUrOVZA8QNOINFTz4a9gKxoOd0GmsFXpF7sCs0JM=",
       "url": "_framework\/dotnet.native.wasm"
     },
     {
@@ -45,7 +45,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.Forms.wasm"
     },
     {
-      "hash": "sha256-uGqwor5ITw6FKqRzDWhboNjtLBUTH8eVKOl0BtLtvw0=",
+      "hash": "sha256-ReAUQSmjr4MRe8y+gdKmdL2nDZdf2IZ+1Ntme2M3qc0=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm"
     },
     {
@@ -121,7 +121,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-HKaaDijaQIuHpxwWK9uo2dlwSTP4Cg8z\/LmwA7kn1sA=",
+      "hash": "sha256-3i+AKbmYkLgNkQ4EOFNLVFlNg25KyYIP3pdgVd1P530=",
       "url": "_framework\/MysteryMystery.github.io.wasm"
     },
     {
@@ -305,6 +305,10 @@
       "url": "appsettings.json"
     },
     {
+      "hash": "sha256-a+unMIwxSRoc+kLQ5X4nsG\/T9zISI8SE2HjuLz6U0YA=",
+      "url": "MysteryMystery.github.io.styles.css"
+    },
+    {
       "hash": "sha256-238lNuF0LOLZSbV7EcQFwCmuLYqn1opuZKK2uOWDtmQ=",
       "url": "android-chrome-192x192.png"
     },
@@ -321,7 +325,7 @@
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-jw5NZYzDRsybGLlTM5Fap2jdQRVMTOYyL6LKGFx21Xc=",
+      "hash": "sha256-CwVMWMiv3gMkb3TCtwSqF4RdPIVx5tnzU8Shy9gpFas=",
       "url": "css\/app.min.css"
     },
     {
@@ -393,7 +397,7 @@
       "url": "img\/logos\/windows-hardening-suite.png"
     },
     {
-      "hash": "sha256-3tobCgKSDUa3g4jZZdvhPWXGlyR1z3H5\/lPCN\/Y4OQY=",
+      "hash": "sha256-Ux3dBpiOXH2zqKzPgSJAAER6bgdnPqNJ2FpH7Q4U96I=",
       "url": "index.html"
     },
     {
@@ -405,5 +409,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "cFOuKQuY"
+  "version": "ENuwJt9y"
 };
