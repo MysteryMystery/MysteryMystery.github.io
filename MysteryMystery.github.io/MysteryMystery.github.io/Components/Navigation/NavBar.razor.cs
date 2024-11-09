@@ -24,5 +24,12 @@ namespace MysteryMystery.github.io.Components.Navigation
                 Url = "/#education"
             },
         };
+
+        private bool _isMobileCollapsed = true;
+
+        private async Task ToggleNav(MouseEventArgs args)
+        {
+            _isMobileCollapsed = !_isMobileCollapsed;
+        }
     }
 }
