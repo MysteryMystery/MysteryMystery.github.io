@@ -109,3 +109,8 @@
 @media (prefers-color-scheme: dark) {.secondary[b-3ck3hwk64b] {--tw-bg-opacity: 1;background-color: rgb(97 132 153 / var(--tw-bg-opacity));--tw-text-opacity: 1;color: rgb(237 240 238 / var(--tw-text-opacity))
     }
 }
+/* /Pages/Home.razor.rz.scp.css */
+#home[b-hc3tqgx7gt] {
+    background-image: url('/img/background.jpeg');
+    background-size: cover;
+}
