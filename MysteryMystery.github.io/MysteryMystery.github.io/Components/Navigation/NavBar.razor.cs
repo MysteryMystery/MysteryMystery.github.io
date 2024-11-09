@@ -27,7 +27,7 @@ namespace MysteryMystery.github.io.Components.Navigation
 
         private bool _isMobileCollapsed = true;
 
-        private async Task ToggleNav(MouseEventArgs args)
+        private void ToggleNav(MouseEventArgs args)
         {
             _isMobileCollapsed = !_isMobileCollapsed;
         }
