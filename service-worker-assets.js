@@ -25,7 +25,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-BET9YPNEgVhMi+tmh45IN0IRxvaTnGLcG9qPMyh0WKw=",
+      "hash": "sha256-H0qdSbseKrc4vKgPyN1cKwKgM12fGxgHlFKaTN0KX9I=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -33,7 +33,7 @@
       "url": "_framework\/dotnet.native.8.0.11.bk37auix74.js"
     },
     {
-      "hash": "sha256-yBbhAUbRjMMNECLKDzLGLcl3n0UNQDyufrNkgsmWcnc=",
+      "hash": "sha256-0CYTme7ZNUYEZ59oe25WjBOnZ2p3prTz6oXsuSUBVQQ=",
       "url": "_framework\/dotnet.native.wasm"
     },
     {
@@ -45,7 +45,7 @@
       "url": "_framework\/Microsoft.AspNetCore.Components.Forms.wasm"
     },
     {
-      "hash": "sha256-ReAUQSmjr4MRe8y+gdKmdL2nDZdf2IZ+1Ntme2M3qc0=",
+      "hash": "sha256-jWd7KSAks3WSBCKaAyoORwNDX8WdGvoMAEZOL90K+ms=",
       "url": "_framework\/Microsoft.AspNetCore.Components.wasm"
     },
     {
@@ -121,7 +121,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-ofo8Mg25ruK2jqEf7BUiZsYZosnt42vGFZcMDtlsTZ4=",
+      "hash": "sha256-IwNVR42jTy1UerkEx23chzBdKQH17Ocmbe5go5mcymE=",
       "url": "_framework\/MysteryMystery.github.io.wasm"
     },
     {
@@ -209,7 +209,7 @@
       "url": "_framework\/System.ObjectModel.wasm"
     },
     {
-      "hash": "sha256-jfgeJAuW+puHrZuDYAa3D\/f2uknMZ59wrDBXWqcnzP8=",
+      "hash": "sha256-dnzSzUb0cCkYgYv04nnJT\/Nsy1fj4xWTqtBt2i3f5n4=",
       "url": "_framework\/System.Private.CoreLib.wasm"
     },
     {
@@ -321,11 +321,11 @@
       "url": "apple-touch-icon.png"
     },
     {
-      "hash": "sha256-xStDWIm4yDmZ\/5Qznx6qX11sVYhiaFsrGJgYJQCKcIU=",
+      "hash": "sha256-++HIVhGGsDkXLxzsUkl12CqYlwfvpwlXs0QyyE\/qREs=",
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-LFZJoKUNEJIol+0lTpYZw32dzgFmDLgwf7REOIEiYSY=",
+      "hash": "sha256-YOvErCEg3WRcbrns4fGqSF24e2ULTzPJrsBz82mFVhA=",
       "url": "css\/app.min.css"
     },
     {
@@ -355,6 +355,10 @@
     {
       "hash": "sha256-ws7HMF6ZWSaPhzSvxsrDpnb+6ohcMd0o0TdywmbT1F4=",
       "url": "img\/icons\/male.svg"
+    },
+    {
+      "hash": "sha256-WeCGE6FHDOsPpORcRgIFOl+NAUgJRmQK1S2kwmthOks=",
+      "url": "img\/landing_background.png"
     },
     {
       "hash": "sha256-d7sX\/d2fKKX5Bxl\/lipJL4BL8GCzjkG8TpF\/jwVhW3I=",
@@ -409,5 +413,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "CivwbywB"
+  "version": "M0BWcZ5b"
 };
