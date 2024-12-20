@@ -21,6 +21,26 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  oidc_token: 
+    runs-on: ubuntu-latest
+    outputs: 
+      staticWebAppOIDCToken: ${{ steps.export_id_token.outputs.idtoken }}
+    steps:
+      - name: Install OIDC Client from Core Package
+        run: npm install @actions/core@1.6.0 @actions/http-client
+      - name: Get Id Token
+        uses: actions/github-script@v6
+        id: generate_id_token
+        with:
+          script: |
+            const core = require('@actions/core');
+            const idToken = await core.getIDToken();
+            core.setOutput("id_token", idToken);
+            console.log(`id_token=${idToken}`);
+      - name: Export Id Token to ENV
+        id: export_id_token
+        run: echo "ID_TOKEN=${{ steps.idtoken.outputs.id_token }}" >> $GITHUB_ENV
+
   # Build job
   build:
     runs-on: ubuntu-latest
@@ -60,7 +80,9 @@ jobs:
           path: MysteryMystery.github.io/MysteryMystery.github.io/bin/Release/net8.0/publish/
 
   deployStaging: 
-    needs: build 
+    needs: 
+      - oidc_token
+      - build 
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/download-artifact@v3
@@ -74,7 +96,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AGREEABLE_CLIFF_07B6A5203 }}
           action: "upload"
           app_location: "deploy/wwwroot"
-          github_id_token: ${{ steps.idtoken.outputs.result }}
+          github_id_token: ${{ needs.oidc_token.outputs.staticWebAppOIDCToken }}
           skip_app_build: true
 
   deployProduction:
