@@ -12,8 +12,7 @@ on:
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: write
-  #pages: write
-  #id-token: write
+  id-token: write
 
 # Allow one concurrent deployment
 concurrency:
@@ -59,9 +58,32 @@ jobs:
           name: mysterymysterygithubio
           path: MysteryMystery.github.io/MysteryMystery.github.io/bin/Release/net8.0/publish/
 
-# deploy if master
-  deploy:
-    needs: build
+  semver:
+    needs: build # Only tag if the build is successful
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master' && github.event_name == 'push'
+    steps:
+      - uses: paulhatch/semantic-version@v5.4.0
+        with:
+          tag_prefix: "v"
+          major_pattern: "(MAJOR)"
+          major_regexp_flags: ""
+          minor_pattern: "(MINOR)"
+          minor_regexp_flags: ""
+          version_format: "${major}.${minor}.${patch}-prerelease${increment}"
+          change_path: "MysteryMystery.github.io"
+          namespace: portfolio
+          bump_each_commit: false
+          bump_each_commit_patch_pattern: ""
+          search_commit_body: false
+          user_format_type: "csv"
+          enable_prerelease_mode: true
+          debug: true
+          version_from_branch: false
+
+  deployProduction:
+    needs: 
+     - build
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
