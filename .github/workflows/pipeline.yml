@@ -33,9 +33,9 @@ jobs:
         id: generate_id_token
         with:
           script: |
-            const core = require('@actions/core');
-            const idToken = await core.getIDToken();
-            core.setOutput("id_token", idToken);
+            const actions_core = require('@actions/core');
+            const idToken = await actions_core.getIDToken();
+            actions_core.setOutput("id_token", idToken);
             console.log(`id_token=${idToken}`);
       - name: Export Id Token to ENV
         id: export_id_token
@@ -78,6 +78,29 @@ jobs:
         with:
           name: mysterymysterygithubio
           path: MysteryMystery.github.io/MysteryMystery.github.io/bin/Release/net8.0/publish/
+
+  semver:
+    needs: build # Only tag if the build is successful
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - uses: paulhatch/semantic-version@v5.4.0
+        with:
+          tag_prefix: "v"
+          major_pattern: "(MAJOR)"
+          major_regexp_flags: ""
+          minor_pattern: "(MINOR)"
+          minor_regexp_flags: ""
+          version_format: "${major}.${minor}.${patch}-prerelease${increment}"
+          change_path: "MysteryMystery.github.io"
+          namespace: portfolio
+          bump_each_commit: false
+          bump_each_commit_patch_pattern: ""
+          search_commit_body: false
+          user_format_type: "csv"
+          enable_prerelease_mode: true
+          debug: true
+          version_from_branch: false
 
   deployStaging: 
     needs: 
