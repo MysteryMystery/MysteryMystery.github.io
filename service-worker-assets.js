@@ -25,7 +25,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-g0UMbgzod+9KIQqdxZypewOHu6K2r0eR4PtkJeylLRg=",
+      "hash": "sha256-DaYEOnTrJYcoVbyRaTvIGRnGpeAjs8ndqdVAY6AaEIQ=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -33,7 +33,7 @@
       "url": "_framework\/dotnet.native.8.0.11.bk37auix74.js"
     },
     {
-      "hash": "sha256-5fZXgZREoOw\/HQK8bxD5EiGgzTzhswGig9EulGmfDs4=",
+      "hash": "sha256-ms27RbsNXv65h\/GnVu2+QaIfZMHOuW7YC77q13q8po8=",
       "url": "_framework\/dotnet.native.wasm"
     },
     {
@@ -113,7 +113,7 @@
       "url": "_framework\/Microsoft.FeatureManagement.wasm"
     },
     {
-      "hash": "sha256-1vXTFGB8f1xknhrY0hxfr04x1\/JK+bA0IxTp2CBzmhY=",
+      "hash": "sha256-5LzWPaF07OS+xrK2mnetBWvna6Yg1QrnaVssBV++Yc0=",
       "url": "_framework\/Microsoft.JSInterop.wasm"
     },
     {
@@ -121,7 +121,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-mzUXftYgcqH0BnNt0a4wFCAbxHNPT9ibBRpRA06OVuw=",
+      "hash": "sha256-Jo3T3AbccYN5YW8czTOibJl028m8j4ellzMqhOlMu4o=",
       "url": "_framework\/MysteryMystery.github.io.wasm"
     },
     {
@@ -257,7 +257,7 @@
       "url": "_framework\/System.Runtime.Serialization.Primitives.wasm"
     },
     {
-      "hash": "sha256-\/VdO3T0foD9aD+cKMGT8P3TQPze9AaeT20L4uqboeKc=",
+      "hash": "sha256-\/rC\/ipGxe11zjNrad537zKRXmNk9yOfeYfprBZBxWYE=",
       "url": "_framework\/System.Runtime.wasm"
     },
     {
@@ -307,6 +307,10 @@
     {
       "hash": "sha256-qgUpk18hsgWB1GALqIQV50AG0pFiXtyrNdVVV65IWsk=",
       "url": "MysteryMystery.github.io.styles.css"
+    },
+    {
+      "hash": "sha256-rIavuiMfLxtYpAD7syi035UviiqFcKaNqpURg9ZKiYM=",
+      "url": "Pages\/Home.razor.js"
     },
     {
       "hash": "sha256-238lNuF0LOLZSbV7EcQFwCmuLYqn1opuZKK2uOWDtmQ=",
@@ -405,6 +409,10 @@
       "url": "index.html"
     },
     {
+      "hash": "sha256-t4takDBA7GGgJZ9VKB4orMynkE8WDpzB6PpSaM1NQZ0=",
+      "url": "js\/FadeHelpers.js"
+    },
+    {
       "hash": "sha256-4XQjPX8Swm\/PZf0NHs9TLlAE\/JFNSHw3npPKedwZQPM=",
       "url": "manifest.webmanifest"
     },
@@ -413,5 +421,5 @@
       "url": "sample-data\/weather.json"
     }
   ],
-  "version": "3HCPLQHl"
+  "version": "S+8TR45i"
 };
