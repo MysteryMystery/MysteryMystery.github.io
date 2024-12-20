@@ -59,9 +59,28 @@ jobs:
           name: mysterymysterygithubio
           path: MysteryMystery.github.io/MysteryMystery.github.io/bin/Release/net8.0/publish/
 
-# deploy if master
-  deploy:
-    needs: build
+  deployStaging: 
+    needs: build 
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/download-artifact@v3
+        with:
+          name: mysterymysterygithubio
+          path: deploy
+      - name: Deploy to Static Web App
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AGREEABLE_CLIFF_07B6A5203 }}
+          action: "upload"
+          app_location: "deploy/wwwroot"
+          github_id_token: ${{ steps.idtoken.outputs.result }}
+          skip_app_build: true
+
+  deployProduction:
+    needs: 
+     - build 
+     - deployStaging
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
