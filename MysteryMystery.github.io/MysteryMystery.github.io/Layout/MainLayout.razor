@@ -1,8 +1,13 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="flex flex-col h-screen w-screen">
-    <NavBar/>
-    <div class="grow flex flex-col w-full">
+@using MysteryMystery.github.io.Layout.Components
+
+<div class="min-h-screen flex flex-col">
+   <Navbar/>
+
+    <main class="flex-1">
         @Body
-    </div>
+    </main>
+
+    <Footer />
 </div>

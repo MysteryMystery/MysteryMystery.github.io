@@ -1,12 +1,14 @@
-﻿<Router AppAssembly="@typeof(App).Assembly">
+﻿@using MysteryMystery.github.io.Pages
+
+<Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
         <FocusOnNavigate RouteData="@routeData" Selector="h1" />
     </Found>
     <NotFound>
-        <PageTitle>Not found</PageTitle>
-        <LayoutView Layout="@typeof(MainLayout)">
-            <MysteryMystery.github.io.Pages.Status._404 />
-        </LayoutView>
-    </NotFound>
+    <LayoutView Layout="@typeof(MainLayout)">
+      <_404 />
+    </LayoutView>
+  </NotFound>
+
 </Router>

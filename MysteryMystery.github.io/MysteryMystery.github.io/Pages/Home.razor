@@ -1,301 +1,279 @@
 ﻿@page "/"
 
-@layout LandingLayout
-
-<PageTitle>Home</PageTitle>
-
-<div style="background-image: url('/img/landing_background.png'); background-position: center; background-attachment:fixed; background-size: cover;">
-    <div class="min-h-screen w-screen flex flex-col">
-        <NavBar />
-
-        <div class="flex flex-col justify-between grow">
-            <div class="md:w-1/3 h-fit m-2 p-4 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60">
-                <div class="py-2">
-                    <h1 class="text-2xl antialiased text-center dark:text-primary-dark">
-                        Hi, I am <span class="text-3xl font-syne-mono">James</span>
-                    </h1>
-                    <h1 class="text-4xl font-semibold antialiased text-center text-primary-light dark:text-primary-dark font-syne-mono">DevOps Engineer</h1>
-                </div>
-                <div class="flex justify-between">
-                    <img src="img/logos/terraform.svg" alt="terraform" class="mx-auto" height="50" width="50" />
-                    <img src="img/logos/azure.svg" alt="azure" class="mx-auto" height="50" width="50" />
-                    <img src="img/logos/azure-devops.svg" alt="azure-devops" class="mx-auto" height="50" width="50" />
-                    <img src="img/logos/dotnet.svg" alt="dotnet" class="mx-auto" height="50" width="50" />
-                    <img src="img/logos/azure-arc.svg" alt="azure arc" class="mx-auto" height="50" width="50" />
-                </div>
+<!-- Hero section with gradient background -->
+<section class="relative overflow-hidden bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-gradient-flow text-white">
+    <div class="max-w-6xl mx-auto px-4 pt-16 pb-10 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+            <div class="inline-flex items-center gap-2 rounded-full bg-white/20 text-white px-3 py-1 text-xs border border-white/30">
+                Available for Freelance • Midlands/Remote (UK)
             </div>
-
-            <div class="p-2">
-                <div class="w-fit mx-auto text-dark bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 p-3">
-                    <h1 class="text-5xl antialiased text-center dark:text-primary-dark font-syne-mono">
-                        Join my journey <ArrowDownCircleIcon class="h-10 w-10 inline" />
-                    </h1>
-                </div>
-            </div>
-
-            <div class="p-2">
-                <div class="grid gap-2 grid-cols-2 md:grid-cols-6 hero-fade-container">
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <ArrowTrendingUpIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            On-premise to Azure Migrations
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <ChatBubbleLeftRightIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            Team Guidance & Training
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <BoltIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            Terraform Specialist
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <ShieldCheckIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            Budget Management
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <WrenchIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            Azure DevOps Yaml Pipelines
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <CommandLineIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            .Net Development
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-3 container mx-auto">
-        <TimeLine>
-            <TimeLineItem Date="@(new DateOnly(2019, 01, 01))">
-                <Title>Developer by Trade</Title>
-                <Icon>
-                    <Cog6ToothIcon style="w-10 h-10"/>
-                </Icon>
-                <Description>
-                    Creating booking systems in PHP Laravel.
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Enthusiast by Night</Title>
-                <Icon>
-                    <HeartIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Tech grows, stay up to date, see how green the grass is on the other side.
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Become a DevOps Engineer</Title>
-                <Icon>
-                    <ArrowPathRoundedSquareIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Leave customer facing development behind, create applications focussing around environment refreshes, developer utilities, and resiliant CI/CD pipelines.
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>What is that in the cloud?</Title>
-                <Icon>
-                    <CloudIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Upskill on Azure & Terraform
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Hire the Right Team</Title>
-                <Icon>
-                    <UserPlusIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Conduct interviews to expand the team 
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Train the Team</Title>
-                <Icon>
-                    <BookOpenIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Conduct interviews to expand the team
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Take Ownership</Title>
-                <Icon>
-                    <CloudArrowUpIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Spearhead an azure migration
-                </Description>
-            </TimeLineItem>
-        </TimeLine>
-    </div>
-
-    <div class="p-2">
-        <div class="w-fit mx-auto text-dark bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 p-3">
-            <h1 class="text-3xl antialiased text-center dark:text-primary-dark font-syne-mono">
-                Undertake <span class="text-5xl">Your</span> Journey <ArrowTrendingDownIcon class="h-10 w-10 inline" />
+            <h1 class="mt-4 text-4xl md:text-6xl font-extrabold leading-tight">
+                Cloud-first DevOps, <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-yellow-200">made reliable</span>.
             </h1>
-            <p class="text-xl text-right antialiased dark:text-primary-dark">
-                <span class="text-3xl">Explore</span> My Side Projects
+            <p class="mt-4 text-white/90 max-w-prose">
+                I design and operate Azure platforms using Terraform and modern CI/CD.
+                I build guardrails, automate toil, and turn firefighting into predictable delivery.
             </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <!-- Primary: LinkedIn -->
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 bg-white text-[#0A66C2] font-medium px-4 py-2 rounded-md hover:bg-slate-100">
+                    <!-- LinkedIn icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                        <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V24h-4V8.5zM8.5 8.5h3.8v2.1h.05c.53-1 1.83-2.1 3.77-2.1 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.9c0-1.88-.03-4.3-2.62-4.3-2.62 0-3.02 2.05-3.02 4.16V24h-4V8.5z" />
+                    </svg>
+                    Connect on LinkedIn
+                </a>
+
+                <!-- Secondary: GitHub -->
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 border border-white/50 text-white hover:bg-white/10 px-4 py-2 rounded-md">
+                    <!-- GitHub icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                        <path fill-rule="evenodd" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.26 3.4.96.11-.75.41-1.26.75-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.08.8 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.68.8.56A10.99 10.99 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z" clip-rule="evenodd" />
+                    </svg>
+                    View GitHub
+                </a>
+            </div>
+            <div class="mt-6 text-xs text-white/80">
+                Azure • Terraform • Azure Pipelines • PaaS • Observability • Resilience Engineering
+            </div>
+        </div>
+
+        <div class="flex justify-center md:justify-end">
+            <img src="img/logo.png" class="w-50 h-50" />
         </div>
     </div>
+</section>
 
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 p-4">
+<!-- Quick Facts -->
+<section class="bg-white">
+    <div class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
 
-        @if (IsPokedexEnabled)
-        {
-            <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-                <div>
-                    <img src="img/logos/pokeball.svg" alt="pokeball" class="mx-auto" height="200" width="200" />
-                    <div class="p-3">
-                        <BadgeRow>
-                            <Badge class="primary">
-                                .Net 6
-                            </Badge>
-                            <Badge class="primary">
-                                Blazor Wasm
-                            </Badge>
-                            <NavLink href="/pokedex">
-                                <Blazor.Heroicons.Outline.ArrowTopRightOnSquareIcon class="w-5 h-5" />
-                            </NavLink>
-                        </BadgeRow>
+        <!-- Fact 1 -->
+        <div class="group">
+            <div class="h-[2px] w-12 mx-auto mb-3 bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-gradient-flow rounded-full"></div>
+            <p class="text-2xl font-bold text-slate-900">8+ years</p>
+            <p class="text-sm text-slate-600">in DevOps & Cloud</p>
+        </div>
+
+        <!-- Fact 2 -->
+        <div class="group">
+            <div class="h-[2px] w-12 mx-auto mb-3 bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-gradient-flow rounded-full"></div>
+            <p class="text-2xl font-bold text-slate-900">Azure Certified</p>
+            <p class="text-sm text-slate-600">Platform & Security</p>
+        </div>
+
+        <!-- Fact 3 -->
+        <div class="group">
+            <div class="h-[2px] w-12 mx-auto mb-3 bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-gradient-flow rounded-full"></div>
+            <p class="text-2xl font-bold text-slate-900">40% reduction</p>
+            <p class="text-sm text-slate-600">in incident load</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Skills section (neutral background) -->
+<section id="skills" class="border-t border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">Core skills</h2>
+        <p class="mt-2 text-slate-600">What I use to turn systems into stable platforms.</p>
+
+        <div class="mt-8 grid md:grid-cols-3 gap-6">
+            @for (int i = 0; i < Skills.Count; i++)
+            {
+                var skill = Skills[i];
+                <div class="group relative overflow-hidden rounded-lg bg-white border border-slate-200 p-5 opacity-0 animate-fade-in-up transition-transform transition-shadow duration-300 hover:scale-[1.03] hover:shadow-lg"
+                     style="animation-delay:@(0.1 + (i * 0.1))s">
+                    <span class="pointer-events-none absolute top-0 left-0 w-full h-1 z-10 bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-border-gradient opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+                    <h3 class="font-semibold">@skill.Title</h3>
+                    <p class="mt-2 text-sm text-slate-600">@skill.Description</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Projects section (neutral background) -->
+<section id="projects" class="border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">Selected projects</h2>
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+            @for (int i = 0; i < Projects.Count; i++)
+            {
+                var project = Projects[i];
+                <article class="group relative overflow-hidden rounded-lg bg-white border border-slate-200 p-5 pt-8 opacity-0 animate-fade-in-up transition-transform transition-shadow duration-300 hover:scale-[1.03] hover:shadow-lg" style="animation-delay:@(0.1 + (i * 0.1))s">
+
+                    <!-- Shimmer strip -->
+                    <span class="pointer-events-none absolute top-0 left-0 w-full h-1 z-10 bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-border-gradient opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+
+                    <!-- Icon in top-right with gradient background animation -->
+                    <div class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-md text-white transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 bg-[length:200%_200%] group-hover:bg-gradient-to-r group-hover:from-[#4c6cff] group-hover:via-[#ff6cab] group-hover:to-[#ffc95e] group-hover:animate-gradient-flow" style="background-color: @(project.IconColor)">
+                        @((MarkupString)project.IconSvg)
                     </div>
-                </div>
-                <div class="px-2">
-                    <h1 class="text-xl">Pokedex</h1>
-                    <p>
-                        A Pokedex, using the PokeAPI as a backend.
-                    </p>
-                </div>
-            </div>
-        }
 
-        <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-            <div>
-                <img src="img/logos/bloodfields-utils.jpg" alt="azure arc" class="mx-auto" height="200" width="200" />
-                <div class="p-3">
-                    <BadgeRow>
-                        <Badge class="primary">
-                            .Net 6
-                        </Badge>
-                        <Badge class="primary">
-                            Blazor Wasm
-                        </Badge>
-
-                        <NavLink href="@(_bloodfieldsUtilsUrl)" target="_blank">
-                            <Blazor.Heroicons.Outline.ArrowTopRightOnSquareIcon class="w-5 h-5" />
-                        </NavLink>
-                    </BadgeRow>
-                </div>
-            </div>
-            <div class="px-2">
-                <h1 class="text-xl">BloodFields Utils</h1>
-                <p>
-                    Bloodfields Utils is a user-friendly tool for creating and managing rosters in Bloodfields. It features an extensive database of units, customizable army lists, and real-time updates, helping players optimize their strategies and stay current with the latest game rules.
-                </p>
-            </div>
-        </div>
-
-        <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-            <div>
-                <img src="img/logos/clout-shoots.jpeg" alt="azure arc" class="mx-auto" height="200" width="200" />
-                <div class="p-3">
-                    <BadgeRow>
-                        <Badge class="primary">
-                            .Net 6
-                        </Badge>
-                        <Badge class="primary">
-                            Blazor Wasm
-                        </Badge>
-                        <Badge class="primary">
-                            Web Scraping
-                        </Badge>
-
-                        <NavLink href="@(_cloutShootsUrl)" target="_blank">
-                            <Blazor.Heroicons.Outline.ArrowTopRightOnSquareIcon class="w-5 h-5" />
-                        </NavLink>
-                    </BadgeRow>
-                </div>
-            </div>
-            <div class="px-2">
-                <h1 class="text-xl">Clout Shoots Scraper</h1>
-                <p>
-                    A simple html scraper to scrape entry forms from Ian Downham's wix site.
-                </p>
-            </div>
-        </div>
-
-        <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-            <div>
-                <img src="img/logos/windows-hardening-suite.png" alt="azure arc" class="mx-auto" height="200" width="200" />
-                <div class="p-3">
-                    <BadgeRow>
-                        <Badge class="primary">
-                            WinForms
-                        </Badge>
-                        <Badge class="primary">
-                            Bootstrap
-                        </Badge>
-                    </BadgeRow>
-                </div>
-            </div>
-            <div class="px-2">
-                <h1 class="text-xl">Windows Hardening Suite</h1>
-                <p>
-                    This university team project consists of a Windows Forms C# application which acts to "lock down" the windows operating system.
-                </p>
-            </div>
-        </div>
-
-        <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-            <div>
-                <img src="img/logos/pixelmc-square.png" alt="azure arc" class="mx-auto" height="200" width="200" />
-                <div class="p-3">
-                    <BadgeRow>
-                        <Badge class="primary">
-                            Java
-                        </Badge>
-                        <Badge class="primary">
-                            Spigot API
-                        </Badge>
-                        <Badge class="primary">
-                            MySql
-                        </Badge>
-                        <Badge class="primary">
-                            Jekyll
-                        </Badge>
-                        <Badge class="primary">
-                            Docker
-                        </Badge>
-
-                        <NavLink href="@(_pixelmcUrl)" target="_blank">
-                            <Blazor.Heroicons.Outline.ArrowTopRightOnSquareIcon class="w-5 h-5" />
-                        </NavLink>
-                    </BadgeRow>
-                </div>
-            </div>
-            <div class="px-2">
-                <h1 class="text-xl">PixelMC</h1>
-                <p>
-                    A Minecraft community where I have designed & maintained the website and online store geared towards the community and sales of certain perks in addition to writing plugins for the server to implement extra functionality to improve sales. Currently, the server is dockerised on private virtual machines.
-                </p>
-            </div>
+                    <!-- Text content -->
+                    <h3 class="font-semibold pr-12">@project.Title</h3>
+                    <p class="mt-2 text-sm text-slate-600">@project.Description</p>
+                </article>
+            }
         </div>
     </div>
-</div>
+</section>
+
+<!-- Contact section (neutral background) -->
+<section id="journey" class="border-t border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">My Journey</h2>
+        <p class="mt-2 text-slate-600">From writing my first lines of code to leading cloud transformations.</p>
+
+        <div class="mt-10 relative">
+            <!-- Animated gradient spine -->
+            <div class="pointer-events-none absolute left-5 top-0 h-full w-[3px] bg-gradient-to-b from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-gradient-flow rounded-full"></div>
+
+            @for (int i = 0; i < Timeline.Count; i++)
+            {
+                var item = Timeline[i];
+                <div class="relative pl-14 md:pl-16 mb-10 opacity-0 animate-fade-in-up" style="animation-delay:@(0.1 + (i * 0.1))s">
+                    <!-- Marker -->
+                    <span class="absolute left-5 top-1.5 -translate-x-1/2 w-5 h-5 rounded-full ring-8 ring-slate-50" style="background-color:@item.Colour"></span>
+                    <!-- Content -->
+                    <time class="block mb-1 text-sm text-slate-500">@item.Year</time>
+                    <h3 class="text-lg font-semibold text-slate-900">@item.Title</h3>
+                    <p class="text-slate-600">@item.Description</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- GitHub Projects section (neutral background) -->
+<section id="github-projects" class="border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-2xl font-bold">GitHub Projects</h2>
+        <p class="mt-2 text-slate-600">A selection of open‑source and personal projects I've shared on GitHub.</p>
+
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+            @for (int i = 0; i < GitHubProjects.Count; i++)
+            {
+                var project = GitHubProjects[i];
+                <article class="group relative overflow-hidden rounded-lg bg-white border border-slate-200 p-5 pt-8 opacity-0 animate-fade-in-up transition-transform transition-shadow duration-300 hover:scale-[1.03] hover:shadow-lg"
+                         style="animation-delay:@(0.1 + (i * 0.1))s">
+
+                    <!-- Shimmer strip -->
+                    <span class="pointer-events-none absolute top-0 left-0 w-full h-1 z-10 bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-border-gradient opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+
+                    <!-- Title & description -->
+                    <h3 class="font-semibold">@project.Name</h3>
+                    <p class="mt-2 text-sm text-slate-600">@project.Description</p>
+
+                    <!-- Links -->
+                    <div class="mt-4 flex gap-4 text-sm font-medium">
+                        <!-- GitHub link -->
+                        <a href="@project.RepoUrl" target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center gap-1 text-[#4c6cff] hover:text-[#3b54cc] transition-colors duration-300">
+                            <span class="transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-[1px]">
+                                <!-- GitHub icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+                                    <path fill-rule="evenodd" d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.35-1.3-1.71-1.3-1.71-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.26 3.4.96.11-.75.41-1.26.75-1.55-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.21-1.49 3.18-1.18 3.18-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.08.8 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.68.8.56A10.99 10.99 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z" clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            Repo
+                        </a>
+
+                        @if (!string.IsNullOrWhiteSpace(project.LiveUrl))
+                        {
+                            <!-- Live site link -->
+                            <a href="@project.LiveUrl" target="_blank" rel="noopener noreferrer"
+                               class="inline-flex items-center gap-1 text-[#ff6cab] hover:text-[#e05597] transition-colors duration-300">
+                                <span class="transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-[1px]">
+                                    <!-- External link icon -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H19.5M19.5 6V12M19.5 6L10.5 15M6 6h.01M6 12h.01M6 18h.01" />
+                                    </svg>
+                                </span>
+                                Live
+                            </a>
+                        }
+                    </div>
+                </article>
+            }
+        </div>
+    </div>
+</section>
+
+@code {
+
+    private readonly List<Skill> Skills = new()
+    {
+        new Skill("Azure architecture", "Landing zones, PaaS-first, cost governance, identity with Entra ID.", "#4c6cff"),
+        new Skill("Infrastructure as Code", "Terraform modules, policy-as-code, drift detection, environment parity.", "#ff6cab"),
+        new Skill("CI/CD & reliability", "Azure Pipelines, gated releases, canary/blue‑green, observability & SLOs.", "#ffc95e"),
+        new Skill(".NET Development", "Blazor WebAssembly, Web APIs, Azure Functions, and App Services for scalable, cloud‑native solutions.", "#4c6cff"),
+        new Skill("Team support & stakeholder management", "Mentoring engineers, facilitating cross‑team collaboration, and translating technical detail into clear, actionable updates for stakeholders.", "#ff6cab")
+    };
+
+    private readonly List<Project> Projects = new()
+    {
+        new Project("Company-wide Azure landing zone",
+            "Standardised networking, identity, and guardrails. Reduced incident load by 40%.",
+            // Heroicon: Building Office
+            "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M3 21h18M9 21V9h6v12M9 9V3h6v6'/></svg>",
+            "#4c6cff"),
+
+        new Project("PaaS modernization",
+            "Migrated legacy services to App Service & Functions. Lowered costs by 25%.",
+            // Heroicon: Cloud
+            "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M3 15a4 4 0 014-4h1a5 5 0 019.9-1.5A4.5 4.5 0 0120 19H7a4 4 0 01-4-4z'/></svg>",
+            "#ff6cab"),
+
+        new Project("Implementing security scanning in Azure Pipelines",
+            "Integrated Veracode, Checkov, and TFLint into CI/CD to enforce security and compliance early.",
+            // Heroicon: Shield Check
+            "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M12 3l8.485 4.243a2 2 0 01.879 2.379l-3.03 9.09a2 2 0 01-1.9 1.288H7.566a2 2 0 01-1.9-1.288l-3.03-9.09a2 2 0 01.879-2.379L12 3z'/><path stroke-linecap='round' stroke-linejoin='round' d='M9 12l2 2 4-4'/></svg>",
+            "#ffc95e"),
+
+        new Project("Azure announcements RSS reader",
+            "Built an RSS reader to surface Azure announcements and EOL alerts directly to the team.",
+            // Heroicon: Rss
+            "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M4 4a16 16 0 0116 16M4 11a9 9 0 019 9M6 18a2 2 0 11-4 0 2 2 0 014 0z'/></svg>",
+            "#4c6cff"),
+
+        new Project("Terraform best practices & automation",
+            "Implemented reusable modules, policy-as-code, and automated drift detection to improve reliability.",
+            // Heroicon: Cog
+            "<svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' d='M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.89 3.31.877 2.42 2.42a1.724 1.724 0 001.065 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.065 2.573c.89 1.543-.877 3.31-2.42 2.42a1.724 1.724 0 00-2.573 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.065c-1.543.89-3.31-.877-2.42-2.42a1.724 1.724 0 00-1.065-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.065-2.573c-.89-1.543.877-3.31 2.42-2.42.996.574 2.247.574 3.243 0z'/><path stroke-linecap='round' stroke-linejoin='round' d='M15 12a3 3 0 11-6 0 3 3 0 016 0z'/></svg>",
+            "#ff6cab")
+    };
+
+    private readonly List<TimelineItem> Timeline = new()
+    {
+        new("2015", "Started my career as a Developer", "Built and maintained web applications, learning the foundations of clean code and scalable design.", "#4c6cff"),
+        new("2016–2018", "Created side projects", "Explored new tech stacks, automated personal workflows, and experimented with cloud hosting.", "#ff6cab"),
+        new("2019", "Became a DevOps Engineer", "Shifted focus to infrastructure-as-code, CI/CD pipelines, and cloud-native operations.", "#ffc95e"),
+        new("2020", "Defined company-wide standards", "Architected and documented infrastructure patterns, security baselines, and deployment processes.", "#4c6cff"),
+        new("2021", "Helped with recruitment", "Interviewed candidates, assessed technical skills, and shaped hiring criteria for engineering roles.", "#ff6cab"),
+        new("2022", "Upskilled the team", "Ran workshops, created documentation, and mentored engineers to improve cloud and automation skills.", "#ffc95e"),
+        new("2023–Present", "Led on-prem to cloud migration", "Took ownership of a full-scale migration, ensuring minimal downtime and long-term scalability.", "#4c6cff")
+    };
+
+    private readonly List<GitHubProject> GitHubProjects = new()
+    {
+        new("Azure Landing Zone Templates",
+            "Terraform modules and policies for enterprise‑grade Azure landing zones.",
+            "https://github.com/yourusername/azure-landing-zone",
+            null),
+
+        new("PaaS Modernization Toolkit",
+            "Scripts and IaC for migrating legacy workloads to Azure App Service & Functions.",
+            "https://github.com/yourusername/paas-modernization",
+            "https://modernization-demo.yoursite.com"),
+
+        new("Azure Announcements RSS Reader",
+            "RSS reader that surfaces Azure announcements and EOL alerts to Teams.",
+            "https://github.com/yourusername/azure-announcements-rss",
+            null)
+    };
+
+}
