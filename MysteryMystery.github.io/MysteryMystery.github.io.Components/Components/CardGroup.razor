@@ -1,0 +1,21 @@
+﻿@for (int i = 0; i < Cards.Count; i++)
+{
+    var card = Cards[i];
+    <article class="group relative overflow-hidden rounded-lg bg-white border border-slate-200 p-5 pt-8 opacity-0 animate-fade-in-up transition-transform transition-shadow duration-300 hover:scale-[1.03] hover:shadow-lg" style="animation-delay:@(0.1 + (i * 0.1))s">
+
+        <!-- Shimmer strip -->
+        <span class="pointer-events-none absolute top-0 left-0 w-full h-1 z-10 bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-border-gradient opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+
+        @if (card.IconSvg != null)
+        {
+            <!-- Icon in top-right with gradient background animation -->
+            <div class="absolute top-3 right-3 w-8 h-8 flex items-center justify-center rounded-md text-white transform transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 bg-[length:200%_200%] group-hover:bg-gradient-to-r group-hover:from-[#4c6cff] group-hover:via-[#ff6cab] group-hover:to-[#ffc95e] group-hover:animate-gradient-flow" style="background-color: @(card.IconColor)">
+                @((MarkupString)card.IconSvg)
+            </div>
+        }
+
+        <!-- Text content -->
+        <h3 class="font-semibold pr-12">@card.Title</h3>
+        <p class="mt-2 text-sm text-slate-600">@card.Description</p>
+    </article>
+}

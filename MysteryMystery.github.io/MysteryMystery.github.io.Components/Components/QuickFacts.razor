@@ -1,0 +1,10 @@
+﻿<div class="max-w-6xl mx-auto px-4 py-6 grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+    @foreach (var fact in Facts)
+    {
+        <div class="group">
+            <div class="h-[2px] w-12 mx-auto mb-3 bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-gradient-flow rounded-full"></div>
+            <p class="text-2xl font-bold text-slate-900">@(fact.Title)</p>
+            <p class="text-sm text-slate-600">@(fact.Subtitle)</p>
+        </div>
+    }
+</div>
