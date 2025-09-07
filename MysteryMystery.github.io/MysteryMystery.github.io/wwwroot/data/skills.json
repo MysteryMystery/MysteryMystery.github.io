@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Azure architecture",
+    "description": "Landing zones, PaaS-first, cost governance, identity with Entra ID.",
+    "iconSvg": null,
+    "colour": "#4c6cff"
+  },
+  {
+    "title": "Infrastructure as Code",
+    "description": "Terraform modules, policy-as-code, drift detection, environment parity.",
+    "iconSvg": null,
+    "colour": "#ff6cab"
+  },
+  {
+    "title": "CI/CD & reliability",
+    "description": "Azure Pipelines, gated releases, canary/blue‑green, observability & SLOs.",
+    "iconSvg": null,
+    "colour": "#ffc95e"
+  },
+  {
+    "title": ".NET Development",
+    "description": "Blazor WebAssembly, Web APIs, Azure Functions, and App Services for scalable, cloud‑native solutions.",
+    "iconSvg": null,
+    "colour": "#4c6cff"
+  },
+  {
+    "title": "Team support & stakeholder management",
+    "description": "Mentoring engineers, facilitating cross‑team collaboration, and translating technical detail into clear, actionable updates for stakeholders.",
+    "iconSvg": null,
+    "colour": "#ff6cab"
+  }
+]
