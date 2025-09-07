@@ -1,4 +1,6 @@
-﻿<footer class="border-t border-slate-200 bg-slate-50">
+﻿@using MysteryMystery.github.io.Components.Components.Icons;
+
+<footer class="border-t border-slate-200 bg-slate-50">
     <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
 
         <!-- Left: Logo + copyright -->
@@ -9,10 +11,14 @@
 
         <!-- Right: Minimal links -->
         <div class="flex gap-4">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
-               class="hover:text-[#4c6cff] transition-colors">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
-               class="hover:text-[#ff6cab] transition-colors">LinkedIn</a>
+            <a href="@GithubUrl" target="_blank" rel="noopener noreferrer"
+               class="hover:text-[#4c6cff] transition-colors">
+                <GitHub Fill="currentColor" Class="w-5 h-5" />
+           </a>
+            <a href="@LinkedInUrl" target="_blank" rel="noopener noreferrer"
+               class="hover:text-[#ff6cab] transition-colors">
+                <LinkedIn Fill="currentColor" Class="w-5 h-5" />
+           </a>
         </div>
 
     </div>
