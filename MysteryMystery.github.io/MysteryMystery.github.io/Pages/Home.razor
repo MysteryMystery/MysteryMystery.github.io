@@ -46,57 +46,39 @@
     </div>
 </section>
 
-<!-- Quick Facts -->
-<section class="bg-white">
+<StripedSection Id="facts" Index="@(SectionIndex.Next())" IsCompact="true">
     <QuickFacts Facts="Facts"/>
-</section>
+</StripedSection>
 
-<!-- Skills section (neutral background) -->
-<section id="skills" class="border-t border-slate-200 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-14">
-        <h2 class="text-2xl font-bold">Core skills</h2>
-        <p class="mt-2 text-slate-600">What I use to turn systems into stable platforms.</p>
-
-        <div class="mt-8 grid md:grid-cols-3 gap-6">
-            <CardGroup Cards="Skills" />
-        </div>
+<StripedSection Id="skills" Index="@(SectionIndex.Next())">
+    <SectionTitle Title="Core skills" Description="What I use to turn systems into stable platforms." />
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <CardGroup Cards="Skills" />
     </div>
-</section>
+</StripedSection>
 
-@if(CaseStudy != null){
-    <section id="migration" class="border-t border-slate-200">
+@if (CaseStudy != null)
+{
+    <StripedSection Id="migration" Index="@(SectionIndex.Next())">
         <CaseStudy Study="CaseStudy" />
-    </section>
+    </StripedSection>
 }
 
-<!-- Projects section (neutral background) -->
-<section id="projects" class="border-t border-slate-200 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-14">
-        <h2 class="text-2xl font-bold">Selected projects</h2>
-        <div class="mt-8 grid md:grid-cols-2 gap-6">
-            <CardGroup Cards="Projects" />
-        </div>
+<StripedSection Id="projects" Index="@(SectionIndex.Next())">
+    <SectionTitle Title="Selected Projects" Description="Real-world impact through cloud migrations, automation, and platform engineering. Each project reflects a challenge solved and a system improved." />
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <CardGroup Cards="Projects" />
     </div>
-</section>
+</StripedSection>
 
-<!-- Journey section (neutral background) -->
-<section id="journey" class="border-t border-slate-200">
-    <div class="max-w-6xl mx-auto px-4 py-14">
-        <h2 class="text-2xl font-bold">My Journey</h2>
-        <p class="mt-2 text-slate-600">From writing my first lines of code to leading cloud transformations.</p>
+<StripedSection Id="journey" Index="@(SectionIndex.Next())">
+    <SectionTitle Title="My Journey" Description="A timeline of growth — from writing my first lines of code to leading company-wide transformations in cloud and DevOps." />
+    <Timeline Items="Timeline" />
+</StripedSection>
 
-        <Timeline Items="Timeline"/>
+<StripedSection Id="github-projects" Index="@(SectionIndex.Next())">
+    <SectionTitle Title="GitHub Projects" Description="Open-source tools and personal experiments that showcase my approach to infrastructure, automation, and developer enablement." />
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <GithubCardGroup Cards="GitHubProjects" />
     </div>
-</section>
-
-<!-- GitHub Projects section (neutral background) -->
-<section id="github-projects" class="border-t border-slate-200 bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-14">
-        <h2 class="text-2xl font-bold">GitHub Projects</h2>
-        <p class="mt-2 text-slate-600">A selection of open‑source and personal projects I've shared on GitHub.</p>
-
-        <div class="mt-8 grid md:grid-cols-2 gap-6">
-            <GithubCardGroup Cards="GitHubProjects" />
-        </div>
-    </div>
-</section>
+</StripedSection>

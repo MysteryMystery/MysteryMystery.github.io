@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 using System.Security.Principal;
 using Microsoft.AspNetCore.Components;
 using MysteryMystery.github.io.Repositories;
+using MysteryMystery.github.io.Components.Helpers;
 
 namespace MysteryMystery.github.io.Pages
 {
@@ -24,8 +25,12 @@ namespace MysteryMystery.github.io.Pages
         private List<Fact> Facts = new();
         private Components.Models.CaseStudy.CaseStudy CaseStudy = null!;
 
+        private SectionIndex SectionIndex = new();
+
         protected override async Task OnInitializedAsync()
         {
+            SectionIndex.Reset();
+
             Skills = await Repository.LoadAsync<List<Card>>("data/skills.json") ?? new();
             Projects = await Repository.LoadAsync<List<Card>>("data/projects.json") ?? new();
             GitHubProjects = await Repository.LoadAsync<List<GitHubCard>>("data/github-projects.json") ?? new();

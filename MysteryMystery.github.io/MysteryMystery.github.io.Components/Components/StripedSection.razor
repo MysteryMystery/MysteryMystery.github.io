@@ -1,0 +1,13 @@
+﻿@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public string? Id { get; set; }
+    [Parameter] public int Index { get; set; } = 0;
+
+    [Parameter] public bool IsCompact { get; set; } = false;
+}
+
+<section id="@Id" class="border-t border-slate-200 @(Index % 2 == 0 ? "bg-slate-100" : "bg-white")">
+    <div class="max-w-6xl mx-auto px-4 @(IsCompact ? "py-2" : "py-7")">
+        @ChildContent
+    </div>
+</section>
