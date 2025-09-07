@@ -66,22 +66,38 @@ namespace MysteryMystery.github.io.Pages
             new("2023–Present", "Led on-prem to cloud migration", "Took ownership of a full-scale migration, ensuring minimal downtime and long-term scalability.", "#4c6cff")
         };
 
-        private readonly List<GitHubProject> GitHubProjects = new()
+        private readonly List<GitHubCard> GitHubProjects = new()
         {
             new("Azure Landing Zone Templates",
                 "Terraform modules and policies for enterprise‑grade Azure landing zones.",
                 "https://github.com/yourusername/azure-landing-zone",
-                null),
+                null,
+                new()
+                {
+                    new("Terraform"),
+                    new("Azure Pipelines")
+                }),
 
             new("PaaS Modernization Toolkit",
                 "Scripts and IaC for migrating legacy workloads to Azure App Service & Functions.",
                 "https://github.com/yourusername/paas-modernization",
-                "https://modernization-demo.yoursite.com"),
+                "https://modernization-demo.yoursite.com",
+                 new List<TechTag>
+                {
+                    new("C#", new(){ "Azure Functions" }),
+                    new("Terraform"),
+                    new("Docker")
+                }),
 
             new("Azure Announcements RSS Reader",
                 "RSS reader that surfaces Azure announcements and EOL alerts to Teams.",
                 "https://github.com/yourusername/azure-announcements-rss",
-                null)
+                null, 
+                new List<TechTag>
+                {
+                    new("C#", new(){ "Azure Functions" }),
+                    new("Terraform")
+                })
         };
 
         private readonly List<Fact> Facts = new()
