@@ -24,6 +24,7 @@ namespace MysteryMystery.github.io.Pages
         private List<TimelineItem> Timeline = new();
         private List<Fact> Facts = new();
         private Components.Models.CaseStudy.CaseStudy CaseStudy = null!;
+        private bool IsLoaded = false;
 
         private SectionIndex SectionIndex = new();
 
@@ -37,6 +38,8 @@ namespace MysteryMystery.github.io.Pages
             Timeline = await Repository.LoadAsync<List<TimelineItem>>("data/timeline.json") ?? new();
             Facts = await Repository.LoadAsync<List<Fact>>("data/facts.json") ?? new();
             CaseStudy = await Repository.LoadAsync<Components.Models.CaseStudy.CaseStudy>("data/case-study.json") ?? null!;
+
+            IsLoaded = true;
         }
     }
 }

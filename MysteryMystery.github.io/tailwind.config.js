@@ -39,6 +39,10 @@ module.exports = {
                 'border-gradient': {
                     '0%': { 'background-position': '0% 50%' },
                     '100%': { 'background-position': '100% 50%' },
+                },
+                'shimmer-vert': {
+                    '0%': { backgroundPosition: '0% 0%' },
+                    '100%': { backgroundPosition: '0% 100%' }
                 }
             },
             animation: {
@@ -47,7 +51,7 @@ module.exports = {
                 'fade-slide-down': 'fade-slide-down 0.3s ease-out forwards',
                 'gradient-flow': 'gradient-flow 12s ease-in-out infinite',
                 'border-gradient': 'border-gradient 3s linear infinite',
-
+                'shimmer-vert': 'shimmer-vert 12s linear infinite'
             },
             backgroundSize: {
                 '200%': '200% 200%',

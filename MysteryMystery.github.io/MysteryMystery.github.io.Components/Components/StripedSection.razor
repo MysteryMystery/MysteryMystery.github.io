@@ -2,12 +2,30 @@
     [Parameter] public RenderFragment? ChildContent { get; set; }
     [Parameter] public string? Id { get; set; }
     [Parameter] public int Index { get; set; } = 0;
+    [Parameter] public bool IsLoaded { get; set; } = true;
+    [Parameter] public bool AnimateOnLoad { get; set; } = true;
 
     [Parameter] public bool IsCompact { get; set; } = false;
+
+    private string _dynamicClasses = "";
+
+    protected override void OnParametersSet()
+    {
+        _dynamicClasses = "";
+        _dynamicClasses += Index % 2 == 0 ? " bg-white" : " bg-slate-100";
+        if (AnimateOnLoad)
+            _dynamicClasses += " animate-fade-in-up";
+    }
 }
 
-<section id="@Id" class="border-t border-slate-200 @(Index % 2 == 0 ? "bg-slate-100" : "bg-white")">
+<section id="@Id" class="scroll-mt-[3.8rem] border-t border-slate-200 @(_dynamicClasses)">
     <div class="max-w-6xl mx-auto px-4 @(IsCompact ? "py-2" : "py-7")">
-        @ChildContent
+        @if(IsLoaded){
+            @ChildContent
+        }
+        else
+        {
+            <div class="h-32 md:h-48 lg:h-64 w-full @(Index % 2 == 0 ? " bg-white" : " bg-slate-100") animate-pulse rounded-lg"></div>
+        }
     </div>
 </section>

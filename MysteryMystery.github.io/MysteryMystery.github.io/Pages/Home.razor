@@ -46,37 +46,37 @@
     </div>
 </section>
 
-<StripedSection Id="facts" Index="@(SectionIndex.Next())" IsCompact="true">
+<StripedSection Id="facts" Index="@(SectionIndex.Next())" IsCompact="true" IsLoaded="IsLoaded" AnimateOnLoad="false">
     <QuickFacts Facts="Facts"/>
 </StripedSection>
 
-<StripedSection Id="skills" Index="@(SectionIndex.Next())">
+<StripedSection Id="skills" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
     <SectionTitle Title="Core skills" Description="What I use to turn systems into stable platforms." />
     <div class="mt-8 grid md:grid-cols-3 gap-6">
         <CardGroup Cards="Skills" />
     </div>
 </StripedSection>
 
-@if (CaseStudy != null)
-{
-    <StripedSection Id="migration" Index="@(SectionIndex.Next())">
+<StripedSection Id="migration" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
+    @if (CaseStudy != null)
+    {
         <CaseStudy Study="CaseStudy" />
-    </StripedSection>
-}
+    }
+</StripedSection>
 
-<StripedSection Id="projects" Index="@(SectionIndex.Next())">
+<StripedSection Id="projects" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
     <SectionTitle Title="Selected Projects" Description="Real-world impact through cloud migrations, automation, and platform engineering. Each project reflects a challenge solved and a system improved." />
     <div class="mt-8 grid md:grid-cols-2 gap-6">
         <CardGroup Cards="Projects" />
     </div>
 </StripedSection>
 
-<StripedSection Id="journey" Index="@(SectionIndex.Next())">
+<StripedSection Id="journey" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
     <SectionTitle Title="My Journey" Description="A timeline of growth — from writing my first lines of code to leading company-wide transformations in cloud and DevOps." />
     <Timeline Items="Timeline" />
 </StripedSection>
 
-<StripedSection Id="github-projects" Index="@(SectionIndex.Next())">
+<StripedSection Id="github-projects" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
     <SectionTitle Title="GitHub Projects" Description="Open-source tools and personal experiments that showcase my approach to infrastructure, automation, and developer enablement." />
     <div class="mt-8 grid md:grid-cols-2 gap-6">
         <GithubCardGroup Cards="GitHubProjects" />
