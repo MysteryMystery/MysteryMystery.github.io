@@ -4,7 +4,7 @@ WORKDIR /app
 
 # System Dependencies
 RUN apt update 
-RUN apt upgrade
+RUN apt upgrade -y
 RUN apt install nodejs npm -y
 
 COPY . . 

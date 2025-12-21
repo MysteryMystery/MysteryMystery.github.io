@@ -47,9 +47,9 @@ jobs:
       - name: Dotnet Publish
         working-directory: MysteryMystery.github.io
         run: dotnet publish -c Release --nologo
-      - name: copy index.html to 404.html
-        run: cp bin/Release/net8.0/publish/wwwroot/index.html bin/Release/net8.0/publish/wwwroot/404.html
-        working-directory: MysteryMystery.github.io/MysteryMystery.github.io
+      # - name: copy index.html to 404.html
+      #   run: cp bin/Release/net8.0/publish/wwwroot/index.html bin/Release/net8.0/publish/wwwroot/404.html
+      #   working-directory: MysteryMystery.github.io/MysteryMystery.github.io
       - name: Add .nojekyll file
         run: touch bin/Release/net8.0/publish/wwwroot/.nojekyll
         working-directory: MysteryMystery.github.io/MysteryMystery.github.io
