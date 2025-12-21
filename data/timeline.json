@@ -1,0 +1,44 @@
+[
+  {
+    "year": "2015",
+    "title": "Started my career as a Developer",
+    "description": "Built and maintained web applications, learning the foundations of clean code and scalable design.",
+    "colour": "#4c6cff"
+  },
+  {
+    "year": "2016–2018",
+    "title": "Created side projects",
+    "description": "Explored new tech stacks, automated personal workflows, and experimented with cloud hosting.",
+    "colour": "#ff6cab"
+  },
+  {
+    "year": "2019",
+    "title": "Became a DevOps Engineer",
+    "description": "Shifted focus to infrastructure-as-code, CI/CD pipelines, and cloud-native operations.",
+    "colour": "#ffc95e"
+  },
+  {
+    "year": "2020",
+    "title": "Defined company-wide standards",
+    "description": "Architected and documented infrastructure patterns, security baselines, and deployment processes.",
+    "colour": "#4c6cff"
+  },
+  {
+    "year": "2021",
+    "title": "Helped with recruitment",
+    "description": "Interviewed candidates, assessed technical skills, and shaped hiring criteria for engineering roles.",
+    "colour": "#ff6cab"
+  },
+  {
+    "year": "2022",
+    "title": "Upskilled the team",
+    "description": "Ran workshops, created documentation, and mentored engineers to improve cloud and automation skills.",
+    "colour": "#ffc95e"
+  },
+  {
+    "year": "2023-Present",
+    "title": "Led on-prem to cloud migration",
+    "description": "Took ownership of a full-scale migration, ensuring minimal downtime and long-term scalability.",
+    "colour": "#4c6cff"
+  }
+]
