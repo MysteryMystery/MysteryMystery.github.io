@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Azure Landing Zone Templates",
+    "description": "Terraform modules and policies for enterprise‑grade Azure landing zones.",
+    "repoUrl": "https://github.com/yourusername/azure-landing-zone",
+    "liveUrl": null,
+    "tech": [
+      {
+        "language": "Terraform",
+        "frameworks": []
+      },
+      {
+        "language": "Azure Pipelines",
+        "frameworks": []
+      }
+    ]
+  },
+  {
+    "name": "PaaS Modernization Toolkit",
+    "description": "Scripts and IaC for migrating legacy workloads to Azure App Service & Functions.",
+    "repoUrl": "https://github.com/yourusername/paas-modernization",
+    "liveUrl": "https://modernization-demo.yoursite.com",
+    "tech": [
+      {
+        "language": "C#",
+        "frameworks": [ "Azure Functions" ]
+      },
+      {
+        "language": "Terraform",
+        "frameworks": []
+      },
+      {
+        "language": "Docker",
+        "frameworks": []
+      }
+    ]
+  },
+  {
+    "name": "Azure Announcements RSS Reader",
+    "description": "RSS reader that surfaces Azure announcements and EOL alerts to Teams.",
+    "repoUrl": "https://github.com/yourusername/azure-announcements-rss",
+    "liveUrl": null,
+    "tech": [
+      {
+        "language": "C#",
+        "frameworks": [ "Azure Functions" ]
+      },
+      {
+        "language": "Terraform",
+        "frameworks": []
+      }
+    ]
+  }
+]

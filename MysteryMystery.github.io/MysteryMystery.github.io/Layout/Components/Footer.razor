@@ -1,0 +1,25 @@
+﻿@using MysteryMystery.github.io.Components.Components.Icons;
+
+<footer class="border-t border-slate-200 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+
+        <!-- Left: Logo + copyright -->
+        <div class="flex items-center gap-3">
+            <img src="img/logo.png" alt="Logo" class="w-8 h-8 opacity-80" />
+            <span>© @(DateTime.Now.Year) James — All rights reserved.</span>
+        </div>
+
+        <!-- Right: Minimal links -->
+        <div class="flex gap-4">
+            <a href="@GithubUrl" target="_blank" rel="noopener noreferrer"
+               class="hover:text-[#4c6cff] transition-colors">
+                <GitHub Fill="currentColor" Class="w-5 h-5" />
+           </a>
+            <a href="@LinkedInUrl" target="_blank" rel="noopener noreferrer"
+               class="hover:text-[#ff6cab] transition-colors">
+                <LinkedIn Fill="currentColor" Class="w-5 h-5" />
+           </a>
+        </div>
+
+    </div>
+</footer>

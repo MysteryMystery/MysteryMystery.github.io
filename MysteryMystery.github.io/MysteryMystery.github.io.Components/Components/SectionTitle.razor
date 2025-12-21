@@ -1,0 +1,21 @@
+﻿@code {
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public string? Description { get; set; }
+    [Parameter] public string? Class { get; set; }
+}
+
+<div class="@Class">
+    <div class="flex items-start gap-1">
+        <!-- Vertical shimmer bar -->
+        <div class="w-[2px] h-8 min-h-[24px] bg-gradient-to-b from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:100%_200%] animate-[shimmer-vert_3s_linear_infinite] rounded-full opacity-80 transition-opacity"></div>
+
+        <!-- Title and description -->
+        <div>
+            <h2 class="text-2xl font-bold">@Title</h2>
+            @if (!string.IsNullOrWhiteSpace(Description))
+            {
+                <p class="mt-2 text-slate-600">@Description</p>
+            }
+        </div>
+    </div>
+</div>

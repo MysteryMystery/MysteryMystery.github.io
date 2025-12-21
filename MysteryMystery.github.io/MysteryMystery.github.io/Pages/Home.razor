@@ -1,301 +1,84 @@
 ﻿@page "/"
 
-@layout LandingLayout
+@using MysteryMystery.github.io.Components.Components.Icons;
 
-<PageTitle>Home</PageTitle>
-
-<div style="background-image: url('/img/landing_background.png'); background-position: center; background-attachment:fixed; background-size: cover;">
-    <div class="min-h-screen w-screen flex flex-col">
-        <NavBar />
-
-        <div class="flex flex-col justify-between grow">
-            <div class="md:w-1/3 h-fit m-2 p-4 bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60">
-                <div class="py-2">
-                    <h1 class="text-2xl antialiased text-center dark:text-primary-dark">
-                        Hi, I am <span class="text-3xl font-syne-mono">James</span>
-                    </h1>
-                    <h1 class="text-4xl font-semibold antialiased text-center text-primary-light dark:text-primary-dark font-syne-mono">DevOps Engineer</h1>
-                </div>
-                <div class="flex justify-between">
-                    <img src="img/logos/terraform.svg" alt="terraform" class="mx-auto" height="50" width="50" />
-                    <img src="img/logos/azure.svg" alt="azure" class="mx-auto" height="50" width="50" />
-                    <img src="img/logos/azure-devops.svg" alt="azure-devops" class="mx-auto" height="50" width="50" />
-                    <img src="img/logos/dotnet.svg" alt="dotnet" class="mx-auto" height="50" width="50" />
-                    <img src="img/logos/azure-arc.svg" alt="azure arc" class="mx-auto" height="50" width="50" />
-                </div>
+<!-- Hero section with gradient background -->
+<section class="relative overflow-hidden bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-gradient-flow text-white">
+    <div class="max-w-6xl mx-auto px-4 pt-16 pb-10 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+            <div class="inline-flex items-center gap-2 rounded-full bg-white/20 text-white px-3 py-1 text-xs border border-white/30">
+                @(bool.Parse(Configuration["Metadata:AvailableForFreelance"]!) ? "Available for Freelance" : "Not Available for Freelance") • @(Configuration["Metadata:Location"])
             </div>
-
-            <div class="p-2">
-                <div class="w-fit mx-auto text-dark bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 p-3">
-                    <h1 class="text-5xl antialiased text-center dark:text-primary-dark font-syne-mono">
-                        Join my journey <ArrowDownCircleIcon class="h-10 w-10 inline" />
-                    </h1>
-                </div>
-            </div>
-
-            <div class="p-2">
-                <div class="grid gap-2 grid-cols-2 md:grid-cols-6 hero-fade-container">
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <ArrowTrendingUpIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            On-premise to Azure Migrations
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <ChatBubbleLeftRightIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            Team Guidance & Training
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <BoltIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            Terraform Specialist
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <ShieldCheckIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            Budget Management
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <WrenchIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            Azure DevOps Yaml Pipelines
-                        </p>
-                    </div>
-                    <div class="hero-fade text-white bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 p-3">
-                        <CommandLineIcon class="h-6 w-6" />
-                        <p class="text-lg text-center">
-                            .Net Development
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bg-gray-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 p-3 container mx-auto">
-        <TimeLine>
-            <TimeLineItem Date="@(new DateOnly(2019, 01, 01))">
-                <Title>Developer by Trade</Title>
-                <Icon>
-                    <Cog6ToothIcon style="w-10 h-10"/>
-                </Icon>
-                <Description>
-                    Creating booking systems in PHP Laravel.
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Enthusiast by Night</Title>
-                <Icon>
-                    <HeartIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Tech grows, stay up to date, see how green the grass is on the other side.
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Become a DevOps Engineer</Title>
-                <Icon>
-                    <ArrowPathRoundedSquareIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Leave customer facing development behind, create applications focussing around environment refreshes, developer utilities, and resiliant CI/CD pipelines.
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>What is that in the cloud?</Title>
-                <Icon>
-                    <CloudIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Upskill on Azure & Terraform
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Hire the Right Team</Title>
-                <Icon>
-                    <UserPlusIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Conduct interviews to expand the team 
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Train the Team</Title>
-                <Icon>
-                    <BookOpenIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Conduct interviews to expand the team
-                </Description>
-            </TimeLineItem>
-            <TimeLineItem Date="@(new DateOnly(2020, 01, 01))">
-                <Title>Take Ownership</Title>
-                <Icon>
-                    <CloudArrowUpIcon style="w-10 h-10" />
-                </Icon>
-                <Description>
-                    Spearhead an azure migration
-                </Description>
-            </TimeLineItem>
-        </TimeLine>
-    </div>
-
-    <div class="p-2">
-        <div class="w-fit mx-auto text-dark bg-white rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 p-3">
-            <h1 class="text-3xl antialiased text-center dark:text-primary-dark font-syne-mono">
-                Undertake <span class="text-5xl">Your</span> Journey <ArrowTrendingDownIcon class="h-10 w-10 inline" />
+            <h1 class="mt-4 text-4xl md:text-6xl font-extrabold leading-tight">
+                Cloud-first DevOps, <span class="bg-clip-text text-transparent bg-gradient-to-r from-white to-yellow-200">made reliable</span>.
             </h1>
-            <p class="text-xl text-right antialiased dark:text-primary-dark">
-                <span class="text-3xl">Explore</span> My Side Projects
+            <p class="mt-4 text-white/90 max-w-prose">
+                I design and operate Azure platforms using Terraform and modern CI/CD.
+                I build guardrails, automate toil, and turn firefighting into predictable delivery.
             </p>
+            <div class="mt-6 flex flex-wrap gap-3">
+                <!-- Primary: LinkedIn -->
+                <a href="@(Configuration["Metadata:LinkedInUrl"])" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 bg-white text-[#0A66C2] font-medium px-4 py-2 rounded-md hover:bg-slate-100 w-full md:w-fit">
+                    <!-- LinkedIn icon -->
+                    <LinkedIn Fill="currentColor" Class="w-4 h-4"/>
+                    Connect on LinkedIn
+                </a>
+
+                <!-- Secondary: GitHub -->
+                <a href="@(Configuration["Metadata:GitHubUrl"])" target="_blank" rel="noopener noreferrer"
+                class="inline-flex items-center gap-2 border border-white/50 text-white hover:bg-white/10 px-4 py-2 rounded-md w-full md:w-fit">
+                    <!-- GitHub icon -->
+                    <GitHub Fill="currentColor" Class="w-4 h-4" />
+                    View GitHub
+                </a>
+            </div>
+            <div class="mt-6 text-xs text-white/80">
+                Azure • Terraform • Azure Pipelines • PaaS • Observability • Resilience Engineering
+            </div>
+        </div>
+
+        <div class="flex justify-center md:justify-end">
+            <img src="img/logo.png" class="w-50 h-50" />
         </div>
     </div>
+</section>
 
-    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 p-4">
+<StripedSection Id="facts" Index="@(SectionIndex.Next())" IsCompact="true" IsLoaded="IsLoaded" AnimateOnLoad="false">
+    <QuickFacts Facts="Facts"/>
+</StripedSection>
 
-        @if (IsPokedexEnabled)
-        {
-            <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-                <div>
-                    <img src="img/logos/pokeball.svg" alt="pokeball" class="mx-auto" height="200" width="200" />
-                    <div class="p-3">
-                        <BadgeRow>
-                            <Badge class="primary">
-                                .Net 6
-                            </Badge>
-                            <Badge class="primary">
-                                Blazor Wasm
-                            </Badge>
-                            <NavLink href="/pokedex">
-                                <Blazor.Heroicons.Outline.ArrowTopRightOnSquareIcon class="w-5 h-5" />
-                            </NavLink>
-                        </BadgeRow>
-                    </div>
-                </div>
-                <div class="px-2">
-                    <h1 class="text-xl">Pokedex</h1>
-                    <p>
-                        A Pokedex, using the PokeAPI as a backend.
-                    </p>
-                </div>
-            </div>
-        }
-
-        <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-            <div>
-                <img src="img/logos/bloodfields-utils.jpg" alt="azure arc" class="mx-auto" height="200" width="200" />
-                <div class="p-3">
-                    <BadgeRow>
-                        <Badge class="primary">
-                            .Net 6
-                        </Badge>
-                        <Badge class="primary">
-                            Blazor Wasm
-                        </Badge>
-
-                        <NavLink href="@(_bloodfieldsUtilsUrl)" target="_blank">
-                            <Blazor.Heroicons.Outline.ArrowTopRightOnSquareIcon class="w-5 h-5" />
-                        </NavLink>
-                    </BadgeRow>
-                </div>
-            </div>
-            <div class="px-2">
-                <h1 class="text-xl">BloodFields Utils</h1>
-                <p>
-                    Bloodfields Utils is a user-friendly tool for creating and managing rosters in Bloodfields. It features an extensive database of units, customizable army lists, and real-time updates, helping players optimize their strategies and stay current with the latest game rules.
-                </p>
-            </div>
-        </div>
-
-        <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-            <div>
-                <img src="img/logos/clout-shoots.jpeg" alt="azure arc" class="mx-auto" height="200" width="200" />
-                <div class="p-3">
-                    <BadgeRow>
-                        <Badge class="primary">
-                            .Net 6
-                        </Badge>
-                        <Badge class="primary">
-                            Blazor Wasm
-                        </Badge>
-                        <Badge class="primary">
-                            Web Scraping
-                        </Badge>
-
-                        <NavLink href="@(_cloutShootsUrl)" target="_blank">
-                            <Blazor.Heroicons.Outline.ArrowTopRightOnSquareIcon class="w-5 h-5" />
-                        </NavLink>
-                    </BadgeRow>
-                </div>
-            </div>
-            <div class="px-2">
-                <h1 class="text-xl">Clout Shoots Scraper</h1>
-                <p>
-                    A simple html scraper to scrape entry forms from Ian Downham's wix site.
-                </p>
-            </div>
-        </div>
-
-        <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-            <div>
-                <img src="img/logos/windows-hardening-suite.png" alt="azure arc" class="mx-auto" height="200" width="200" />
-                <div class="p-3">
-                    <BadgeRow>
-                        <Badge class="primary">
-                            WinForms
-                        </Badge>
-                        <Badge class="primary">
-                            Bootstrap
-                        </Badge>
-                    </BadgeRow>
-                </div>
-            </div>
-            <div class="px-2">
-                <h1 class="text-xl">Windows Hardening Suite</h1>
-                <p>
-                    This university team project consists of a Windows Forms C# application which acts to "lock down" the windows operating system.
-                </p>
-            </div>
-        </div>
-
-        <div class="text-white bg-gray-700 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-70 p-3 grid grid-cols-2">
-            <div>
-                <img src="img/logos/pixelmc-square.png" alt="azure arc" class="mx-auto" height="200" width="200" />
-                <div class="p-3">
-                    <BadgeRow>
-                        <Badge class="primary">
-                            Java
-                        </Badge>
-                        <Badge class="primary">
-                            Spigot API
-                        </Badge>
-                        <Badge class="primary">
-                            MySql
-                        </Badge>
-                        <Badge class="primary">
-                            Jekyll
-                        </Badge>
-                        <Badge class="primary">
-                            Docker
-                        </Badge>
-
-                        <NavLink href="@(_pixelmcUrl)" target="_blank">
-                            <Blazor.Heroicons.Outline.ArrowTopRightOnSquareIcon class="w-5 h-5" />
-                        </NavLink>
-                    </BadgeRow>
-                </div>
-            </div>
-            <div class="px-2">
-                <h1 class="text-xl">PixelMC</h1>
-                <p>
-                    A Minecraft community where I have designed & maintained the website and online store geared towards the community and sales of certain perks in addition to writing plugins for the server to implement extra functionality to improve sales. Currently, the server is dockerised on private virtual machines.
-                </p>
-            </div>
-        </div>
+<StripedSection Id="skills" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
+    <SectionTitle Title="Core skills" Description="What I use to turn systems into stable platforms." />
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+        <CardGroup Cards="Skills" />
     </div>
-</div>
+</StripedSection>
+
+<StripedSection Id="migration" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
+    @if (CaseStudy != null)
+    {
+        <CaseStudy Study="CaseStudy" />
+    }
+</StripedSection>
+
+<StripedSection Id="projects" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
+    <SectionTitle Title="Selected Projects" Description="Real-world impact through cloud migrations, automation, and platform engineering. Each project reflects a challenge solved and a system improved." />
+    <div class="mt-8 grid md:grid-cols-2 gap-6">
+        <CardGroup Cards="Projects" />
+    </div>
+</StripedSection>
+
+<StripedSection Id="journey" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
+    <SectionTitle Title="My Journey" Description="A timeline of growth — from writing my first lines of code to leading company-wide transformations in cloud and DevOps." />
+    <Timeline Items="Timeline" />
+</StripedSection>
+
+@if (FeatureFlags.Value.EnableGitHubShowCase) { 
+    <StripedSection Id="github-projects" Index="@(SectionIndex.Next())" IsLoaded="IsLoaded">
+        <SectionTitle Title="GitHub Projects" Description="Open-source tools and personal experiments that showcase my approach to infrastructure, automation, and developer enablement." />
+        <div class="mt-8 grid md:grid-cols-2 gap-6">
+            <GithubCardGroup Cards="GitHubProjects" />
+        </div>
+    </StripedSection>
+}

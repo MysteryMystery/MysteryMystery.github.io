@@ -1,0 +1,17 @@
+﻿<div class="mt-10 relative">
+    <!-- Animated gradient spine -->
+    <div class="pointer-events-none absolute left-5 top-0 h-full w-[3px] bg-gradient-to-b from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-gradient-flow rounded-full"></div>
+
+    @for (int i = 0; i < Items.Count; i++)
+    {
+        var item = Items[i];
+        <div class="relative pl-14 md:pl-16 mb-10 opacity-0 animate-fade-in-up" style="animation-delay:@(0.1 + (i * 0.1))s">
+            <!-- Marker -->
+            <span class="absolute left-5 top-1.5 -translate-x-1/2 w-5 h-5 rounded-full ring-8 ring-slate-50" style="background-color:@item.Colour"></span>
+            <!-- Content -->
+            <time class="block mb-1 text-sm text-slate-500">@item.Year</time>
+            <h3 class="text-lg font-semibold text-slate-900">@item.Title</h3>
+            <p class="text-slate-600">@item.Description</p>
+        </div>
+    }
+</div>

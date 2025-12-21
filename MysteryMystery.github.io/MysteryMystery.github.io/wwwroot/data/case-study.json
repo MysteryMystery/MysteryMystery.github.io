@@ -1,0 +1,9 @@
+{
+  "title": "On‑Prem to Cloud Migration Expertise",
+  "summary": "Led the end‑to‑end migration of critical workloads — including Big Data processing pipelines and high‑availability financial systems — from on‑premises data centres to Azure.\nEnsured minimal downtime, regulatory compliance, and long‑term scalability.",
+  "bullets": [
+    "Architected hybrid connectivity and identity integration for secure, compliant financial operations.",
+    "Optimised Big Data ingestion and processing pipelines for cloud‑native scalability and cost efficiency.",
+    "Reduced operational overhead by 35% through PaaS adoption and CI/CD automation."
+  ]
+}
