@@ -7,6 +7,8 @@ using System.Security.Principal;
 using Microsoft.AspNetCore.Components;
 using MysteryMystery.github.io.Repositories;
 using MysteryMystery.github.io.Components.Helpers;
+using Microsoft.Extensions.Options;
+using MysteryMystery.github.io.Components.Models.Options;
 
 namespace MysteryMystery.github.io.Pages
 {
@@ -14,6 +16,9 @@ namespace MysteryMystery.github.io.Pages
     {
         [Inject]
         public IConfiguration Configuration { get; set; } = null!;
+
+        [Inject]
+        public IOptions<FeatureFlagOptions> FeatureFlags { get; set; } = null!;
 
         [Inject]
         public IJsonRepository Repository { get; set; } = null!;
@@ -34,7 +39,12 @@ namespace MysteryMystery.github.io.Pages
 
             Skills = await Repository.LoadAsync<List<Card>>("data/skills.json") ?? new();
             Projects = await Repository.LoadAsync<List<Card>>("data/projects.json") ?? new();
-            GitHubProjects = await Repository.LoadAsync<List<GitHubCard>>("data/github-projects.json") ?? new();
+
+            if (FeatureFlags.Value.EnableGitHubShowCase)
+            {
+                GitHubProjects = await Repository.LoadAsync<List<GitHubCard>>("data/github-projects.json") ?? new();
+            }
+
             Timeline = await Repository.LoadAsync<List<TimelineItem>>("data/timeline.json") ?? new();
             Facts = await Repository.LoadAsync<List<Fact>>("data/facts.json") ?? new();
             CaseStudy = await Repository.LoadAsync<Components.Models.CaseStudy.CaseStudy>("data/case-study.json") ?? null!;

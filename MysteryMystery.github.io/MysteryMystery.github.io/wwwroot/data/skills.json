@@ -1,4 +1,10 @@
 [
+   {
+    "title": "Low level solution design & Implementration",
+    "description": "Convert high level requirements into detailed technical designs and implement robust solutions.",
+    "iconSvg": null,
+    "colour": "#ff6cab"
+  },
   {
     "title": "Azure architecture",
     "description": "Landing zones, PaaS-first, cost governance, identity with Entra ID.",
