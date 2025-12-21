@@ -16,4 +16,8 @@
     <Folder Include="Components\NewFolder\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MysteryMystery.github.io.Services\MysteryMystery.github.io.Services.csproj" />
+  </ItemGroup>
 </Project>

@@ -2,12 +2,12 @@
 
     <!-- Left: Text -->
     <div class="opacity-0 animate-fade-in-up" style="animation-delay:0.1s">
-        <h2 class="text-2xl font-bold">@(Study.Title)</h2>
-        <p class="mt-4 text-slate-600">
+        <h2 class="text-2xl font-bold dark:text-white">@(Study.Title)</h2>
+        <p class="mt-4 text-slate-600 dark:text-slate-400">
             @(Study.Description)
         </p>
         <!-- Key outcomes -->
-        <ul class="mt-6 space-y-3 text-slate-700">
+        <ul class="mt-6 space-y-3 text-slate-700 dark:text-slate-300">
             @foreach(var bullet in Study.Bullets){
                 <li class="flex items-start gap-2">
                     <span class="mt-1 w-2 h-2 rounded-full bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e]"></span>
@@ -18,7 +18,7 @@
 
         <!-- CTA -->
         <div class="mt-6">
-            <a href="#projects" class="inline-flex items-center gap-2 border border-slate-300 text-slate-800 hover:bg-slate-100 px-4 py-2 rounded-md transition">
+            <a href="#projects" class="inline-flex items-center gap-2 border border-slate-300 dark:border-slate-600 text-slate-800 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 px-4 py-2 rounded-md transition">
                 View related projects
             </a>
         </div>

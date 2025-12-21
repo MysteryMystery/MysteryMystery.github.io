@@ -27,6 +27,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MysteryMystery.github.io.Components\MysteryMystery.github.io.Components.csproj" />
     <ProjectReference Include="..\MysteryMystery.github.io.Repositories\MysteryMystery.github.io.Repositories.csproj" />
+    <ProjectReference Include="..\MysteryMystery.github.io.Services\MysteryMystery.github.io.Services.csproj" />
   </ItemGroup>
 
   <ItemGroup>
