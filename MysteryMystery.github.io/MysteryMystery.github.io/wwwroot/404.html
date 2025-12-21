@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>var path = location.pathname;
+
+  // List of subpaths that should NOT be handled by Blazor
+        var excluded = [
+            '/BloodFieldsUtils/',
+            '/anotherapp/'
+        ];
+
+  if (excluded.some(p => path.startsWith(p))) {
+    // Let GitHub Pages serve its own content
+    window.location.href = path;
+  } else {
+    // Normal Blazor fallback
+    var redirect = '/' + path + location.search + location.hash;
+    window.location.replace(redirect);
+  }</script>
+</body>
+</html>
