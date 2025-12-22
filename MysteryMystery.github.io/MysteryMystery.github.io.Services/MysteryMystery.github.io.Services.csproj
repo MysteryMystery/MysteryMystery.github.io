@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.JSInterop" Version="8.0.13" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MysteryMystery.github.io.Repositories\MysteryMystery.github.io.Repositories.csproj" />
+  </ItemGroup>
+
 </Project>

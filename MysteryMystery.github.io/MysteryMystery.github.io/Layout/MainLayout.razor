@@ -1,6 +1,7 @@
 ﻿@inherits LayoutComponentBase
 
 @using MysteryMystery.github.io.Layout.Components
+@using MysteryMystery.github.io.Services
 
 <div class="min-h-screen flex flex-col bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
    <Navbar/>
@@ -11,3 +12,14 @@
 
     <Footer />
 </div>
+
+@code {
+    [Inject]
+    public IDarkModeService DarkModeService { get; set; } = null!;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+            await DarkModeService.ApplyThemeClasses();
+    }
+}

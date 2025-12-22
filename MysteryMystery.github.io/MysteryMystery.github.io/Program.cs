@@ -13,6 +13,9 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services.Configure<FeatureFlagOptions>(builder.Configuration.GetSection("FeatureFlags"));
 builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddScoped<IJsonRepository, JsonRepository>();
+builder.Services.AddScoped<IBrowserStorageRepository, LocalStorageRepository>();
 builder.Services.AddScoped<IDarkModeService, DarkModeService>();
 
-await builder.Build().RunAsync();
+var host = builder.Build();
+
+await host.RunAsync();

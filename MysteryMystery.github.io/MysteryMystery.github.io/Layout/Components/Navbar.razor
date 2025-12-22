@@ -4,26 +4,12 @@
         <!-- Logo + Name -->
         <div class="flex items-center gap-3">
             <img class="w-9 h-9" src="img/logo.png" alt="logo" />
-            <span class="font-semibold dark:text-white">James • DevOps</span>
+            <span class="font-semibold dark:text-white">James &middot; DevOps</span>
         </div>
 
         <!-- Desktop nav -->
         <nav class="hidden md:flex gap-6 text-sm items-center">
-            @{
-                var navLinks = new List<NavLink>
-                {
-                    new NavLink("/", "Home"),
-                    new NavLink("#skills", "Skills"),
-                    new NavLink("#projects", "Projects"),
-                    new NavLink("#journey", "My Journey")
-                };
-
-                if (FeatureFlags.Value.EnableGitHubShowCase)
-                {
-                    navLinks.Add(new NavLink("#github-projects", "Github Projects"));
-                }
-            }
-            @foreach (var link in navLinks)
+            @foreach (var link in NavLinks)
             {
                 <a href="@link.Href" class="relative hover:text-[#4c6cff] dark:text-slate-300 dark:hover:text-[#7a93ff] transition-colors after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-[#4c6cff] after:via-[#ff6cab] after:to-[#ffc95e] after:transition-all after:duration-300 hover:after:w-full scroll-mt-20">
                     @link.Label
@@ -58,21 +44,7 @@
     @if (isMobileMenuOpen)
     {
         <nav class="md:hidden bg-white/95 dark:bg-slate-900/95 border-t border-slate-200 dark:border-slate-700 px-4 py-4 flex flex-col gap-4 text-sm animate-fade-slide-down">
-            @{
-                var mobileNavLinks = new List<NavLink>
-                {
-                    new NavLink("/", "Home"),
-                    new NavLink("#skills", "Skills"),
-                    new NavLink("#projects", "Projects"),
-                    new NavLink("#journey", "My Journey")
-                };
-
-                if (FeatureFlags.Value.EnableGitHubShowCase)
-                {
-                    mobileNavLinks.Add(new NavLink("#github-projects", "Github Projects"));
-                }
-            }
-            @foreach (var link in mobileNavLinks)
+            @foreach (var link in NavLinks)
             {
                 <a href="@link.Href" @onclick="CloseMobileMenu" class="relative hover:text-[#4c6cff] dark:text-slate-300 dark:hover:text-[#7a93ff] transition-colors after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-[#4c6cff] after:via-[#ff6cab] after:to-[#ffc95e] after:transition-all after:duration-300 hover:after:w-full">
                     @link.Label

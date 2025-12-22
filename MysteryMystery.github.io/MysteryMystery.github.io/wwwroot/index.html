@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,16 +11,8 @@
     <link href="manifest.webmanifest" rel="manifest" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
-    
-    <!-- Dark mode initialization (prevent flash) -->
-    <script>
-        (function() {
-            const darkMode = localStorage.getItem('darkMode');
-            if (darkMode === 'true' || (!darkMode && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                document.documentElement.classList.add('dark');
-            }
-        })();
-    </script>
+
+    <script src="js/dark-mode.js"></script>
 </head>
 
 <body>
@@ -40,28 +31,5 @@
     </div>
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
-    
-    <!-- Dark mode helper functions -->
-    <script>
-        window.darkMode = {
-            initialize: function() {
-                const darkMode = localStorage.getItem('darkMode');
-                const isDark = darkMode === 'true' || (!darkMode && window.matchMedia('(prefers-color-scheme: dark)').matches);
-                if (isDark) {
-                    document.documentElement.classList.add('dark');
-                }
-                return isDark;
-            },
-            toggle: function() {
-                const isDark = document.documentElement.classList.toggle('dark');
-                localStorage.setItem('darkMode', isDark.toString());
-                return isDark;
-            },
-            get: function() {
-                return document.documentElement.classList.contains('dark');
-            }
-        };
-    </script>
 </body>
-
 </html>

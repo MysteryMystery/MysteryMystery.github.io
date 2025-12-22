@@ -1,34 +1,47 @@
 using Microsoft.JSInterop;
+using MysteryMystery.github.io.Repositories;
 
 namespace MysteryMystery.github.io.Services
 {
+    public enum ColourScheme
+    {
+        DARK,
+        LIGHT
+    }
+
     public class DarkModeService : IDarkModeService
     {
-        private readonly IJSRuntime _jsRuntime;
-        private bool _isDarkMode;
+        private IBrowserStorageRepository _browserStorageRepository;
+        private IJSRuntime _js;
+        private readonly string _key = "theme";
 
-        public event Action? OnChange;
-
-        public DarkModeService(IJSRuntime jsRuntime)
-        {
-            _jsRuntime = jsRuntime;
+        public DarkModeService(IBrowserStorageRepository browserStorageRepository, IJSRuntime js) {
+            _browserStorageRepository = browserStorageRepository;    
+            _js = js;
         }
 
-        public async Task InitializeAsync()
+        public async Task<ColourScheme> GetMode()
         {
-            _isDarkMode = await _jsRuntime.InvokeAsync<bool>("darkMode.initialize");
-            OnChange?.Invoke();
+            var theme = await _browserStorageRepository.GetItemAsync<string>(_key);
+
+            if (string.IsNullOrWhiteSpace(theme))
+                return ColourScheme.LIGHT;
+
+            if (Enum.TryParse(theme, ignoreCase: true, out ColourScheme scheme))
+                return scheme;
+
+            return ColourScheme.LIGHT;
         }
 
-        public async Task ToggleDarkModeAsync()
-        {
-            _isDarkMode = await _jsRuntime.InvokeAsync<bool>("darkMode.toggle");
-            OnChange?.Invoke();
+        public async Task SetMode(ColourScheme scheme) { 
+            await _browserStorageRepository.SetItemAsync(_key, scheme.ToString());
+            await ApplyThemeClasses();
         }
 
-        public async Task<bool> IsDarkModeAsync()
+        public async Task ApplyThemeClasses()
         {
-            return await Task.FromResult(_isDarkMode);
+            var mode = await GetMode();
+            await _js.InvokeVoidAsync("window.applyDarkMode", mode.ToString().ToLower());
         }
     }
 }
