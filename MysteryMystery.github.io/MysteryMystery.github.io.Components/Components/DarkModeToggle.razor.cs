@@ -13,7 +13,7 @@ namespace MysteryMystery.github.io.Components.Components
         private async Task ToggleDarkMode()
         {
             _isDarkMode = !_isDarkMode;
-            await DarkModeService.SetMode(_isDarkMode ? ColourScheme.DARK : ColourScheme.LIGHT);
+            await DarkModeService.SetScheme(_isDarkMode ? ColourScheme.DARK : ColourScheme.LIGHT);
         }
     }
 }

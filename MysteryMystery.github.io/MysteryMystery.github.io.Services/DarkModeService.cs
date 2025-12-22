@@ -20,12 +20,12 @@ namespace MysteryMystery.github.io.Services
             _js = js;
         }
 
-        public async Task<ColourScheme> GetMode()
+        public async Task<ColourScheme> GetScheme()
         {
             var theme = await _browserStorageRepository.GetItemAsync(_key);
 
             if (string.IsNullOrWhiteSpace(theme))
-                return ColourScheme.LIGHT;
+                return await GetPreferredColourScheme();
 
             if (Enum.TryParse(theme, ignoreCase: true, out ColourScheme scheme))
                 return scheme;
@@ -33,14 +33,21 @@ namespace MysteryMystery.github.io.Services
             return ColourScheme.LIGHT;
         }
 
-        public async Task SetMode(ColourScheme scheme) { 
+        public async Task SetScheme(ColourScheme scheme)
+        {
             await _browserStorageRepository.SetItemAsync(_key, scheme.ToString());
             await ApplyThemeClasses();
         }
 
+        public async Task<ColourScheme> GetPreferredColourScheme()
+        {
+            var isDark = await _js.InvokeAsync<bool>("window.prefersDarkMode");
+            return isDark ? ColourScheme.DARK : ColourScheme.LIGHT;
+        }
+
         public async Task ApplyThemeClasses()
         {
-            var mode = await GetMode();
+            var mode = await GetScheme();
             await _js.InvokeVoidAsync("window.applyDarkMode", mode.ToString().ToLower());
         }
     }
