@@ -12,20 +12,15 @@ namespace MysteryMystery.github.io.Repositories
             _js = js;
         }
 
-        public async Task SetItemAsync<T>(string key, T value)
+        public async Task SetItemAsync(string key, string value)
         {
-            var json = JsonConvert.SerializeObject(value);
-            await _js.InvokeVoidAsync("localStorage.setItem", key, json);
+            await _js.InvokeVoidAsync("localStorage.setItem", key, value);
         }
 
-        public async Task<T?> GetItemAsync<T>(string key)
+        public async Task<string> GetItemAsync(string key)
         {
-            var json = await _js.InvokeAsync<string>("localStorage.getItem", key);
-
-            if (string.IsNullOrWhiteSpace(json))
-                return default;
-
-            return JsonConvert.DeserializeObject<T>(json);
+            var str = await _js.InvokeAsync<string>("localStorage.getItem", key);
+            return str;
         }
 
         public async Task RemoveItemAsync(string key)

@@ -15,12 +15,11 @@
                     @link.Label
                 </a>
             }
-            <DarkModeToggle />
+            <DarkModeToggle/>
         </nav>
 
         <!-- Mobile controls (dark mode toggle + menu button) -->
         <div class="md:hidden flex items-center gap-2">
-            <DarkModeToggle />
             <button @onclick="ToggleMobileMenu" class="flex items-center justify-center w-9 h-9 rounded hover:bg-slate-100 dark:hover:bg-slate-700 transition">
                 @if (!isMobileMenuOpen)
                 {
@@ -50,6 +49,7 @@
                     @link.Label
                 </a>
             }
+            <DarkModeToggle />
         </nav>
     }
 </header>

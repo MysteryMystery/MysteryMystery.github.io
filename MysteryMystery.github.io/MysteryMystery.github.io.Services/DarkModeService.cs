@@ -22,7 +22,7 @@ namespace MysteryMystery.github.io.Services
 
         public async Task<ColourScheme> GetMode()
         {
-            var theme = await _browserStorageRepository.GetItemAsync<string>(_key);
+            var theme = await _browserStorageRepository.GetItemAsync(_key);
 
             if (string.IsNullOrWhiteSpace(theme))
                 return ColourScheme.LIGHT;
