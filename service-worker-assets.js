@@ -1,20 +1,20 @@
 self.assetsManifest = {
-  "version": "taB4p+Dp",
+  "version": "Cb68orVG",
   "assets": [
     {
       "hash": "sha256-K0kd0yVaz9vQtOeC6wK2c/JImhgHhkRRRDsv9r6JreQ=",
       "url": "404.html"
     },
     {
-      "hash": "sha256-FyRXgGsP2fSLmdyZnDjH4adaEAGq8twKS6VRbV+aAos=",
+      "hash": "sha256-DRjjRylWEPuQaNbOA0by+zcptkrqPfcICgzeFYGs09A=",
       "url": "_framework/Microsoft.AspNetCore.Components.Web.wasm"
     },
     {
-      "hash": "sha256-z60CSRS/KGZlxpGL+xPUV1hjQ+rrBkn0zzdJ9EUI7ZU=",
+      "hash": "sha256-iht5JxlFi7tJWxjlzJO5L0dZxmke3Kgzu5OXx6lZA88=",
       "url": "_framework/Microsoft.AspNetCore.Components.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-NwFmUzHtnCM7vsgSopNMjC0HHWcJyYzkmdjiJJ0+2S4=",
+      "hash": "sha256-XK9NOHPV/Ud8ODyx0GEQLrfvfUtr56+Q2uiQybuAj3c=",
       "url": "_framework/Microsoft.AspNetCore.Components.wasm"
     },
     {
@@ -66,27 +66,31 @@ self.assetsManifest = {
       "url": "_framework/Microsoft.Extensions.Primitives.wasm"
     },
     {
-      "hash": "sha256-Er3EU62JKub/Tddrc/l1rx0KLJ+pxedOLcOrCupZjRo=",
+      "hash": "sha256-jY5jCfGtvxvrCqIe6qLo82M6eF/a19pO3pO7KbeBzSg=",
       "url": "_framework/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-afd0w7LMMVq7RMdUr1N6s3HgL3LaLSZbvYBOTNKCNMA=",
+      "hash": "sha256-VsRfNL4tWG+0Pdz0lxZMAuGGVWMNj2LKKWjH6c+cIUI=",
       "url": "_framework/Microsoft.JSInterop.wasm"
     },
     {
-      "hash": "sha256-ThJMiTl00v7FpdSPYdjlYenpeZqgGDSHL09RXqFh+A0=",
+      "hash": "sha256-TZCiCkqVvkuUkeZTMVGvtNysjOp+c8Y/sIOytZos5P4=",
       "url": "_framework/MysteryMystery.github.io.Components.wasm"
     },
     {
-      "hash": "sha256-q0U0p/uT2GBcXLNpXavXL5+18EkkLlEbplBf/df+oFs=",
+      "hash": "sha256-G+BdtIPfBZht+e7oAnZ4zDX9afsTL0hGRTJ3U6OkjE8=",
       "url": "_framework/MysteryMystery.github.io.Repositories.wasm"
     },
     {
-      "hash": "sha256-sTcobicoWxAY1No7ZJNYwxWb9j08QCo+zPGwDNWHHF4=",
+      "hash": "sha256-DgBlF9BxKh8/f8p44hQOsE5rc8A4XB4w0EFZWuxo4ME=",
+      "url": "_framework/MysteryMystery.github.io.Services.wasm"
+    },
+    {
+      "hash": "sha256-0l0+nipAe53GflQTmJtJ7dHkR72+KcekUcouxffQzig=",
       "url": "_framework/MysteryMystery.github.io.wasm"
     },
     {
-      "hash": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
+      "hash": "sha256-s8KVuknfxWl1cuDvQM/OnpBfnpM1rxzvzq21S1cF36U=",
       "url": "_framework/Newtonsoft.Json.wasm"
     },
     {
@@ -166,7 +170,7 @@ self.assetsManifest = {
       "url": "_framework/System.ObjectModel.wasm"
     },
     {
-      "hash": "sha256-if6X/gCo+Ifdpjnr4picEAs9HRGU9iZ7Q9KYUNm4ZEI=",
+      "hash": "sha256-sjFUqgEL/fd2nlwc5DIaDCWbSdFgweGpJTzz9szbzJ4=",
       "url": "_framework/System.Private.CoreLib.wasm"
     },
     {
@@ -214,7 +218,7 @@ self.assetsManifest = {
       "url": "_framework/System.Runtime.Serialization.Primitives.wasm"
     },
     {
-      "hash": "sha256-QCS/dejwye+Ncvu1CsHvOMPlUOU3+H0SBLlJrtqTXAI=",
+      "hash": "sha256-GYTbDc4k5WsLw+uv8HQocJ5DhDlrCFnqah3MNAFc2D8=",
       "url": "_framework/System.Runtime.wasm"
     },
     {
@@ -258,7 +262,7 @@ self.assetsManifest = {
       "url": "_framework/System.wasm"
     },
     {
-      "hash": "sha256-8J2+aoJl1BgplJDMkpWdX1Aqvx2wHpjKXJMbSthcIbw=",
+      "hash": "sha256-kMsWiE4+o4wh5BnoR7g6tPYWwKvGs0q5SZeLAsSIPUU=",
       "url": "_framework/blazor.boot.json"
     },
     {
@@ -306,7 +310,7 @@ self.assetsManifest = {
       "url": "css/app.css"
     },
     {
-      "hash": "sha256-hH2sKVupTG8LJULJbfPgkt2DpUHaGTJUMmduZ42ItRM=",
+      "hash": "sha256-rZihrij0q24u05p+YFreRHZbnQq4WI+Bcs08J6A3qTY=",
       "url": "css/app.min.css"
     },
     {
@@ -366,8 +370,12 @@ self.assetsManifest = {
       "url": "img/logo.png"
     },
     {
-      "hash": "sha256-tNwtxQyug8Gu7gvRDNnQXHRe0xNj/54O2YAKtJvur3U=",
+      "hash": "sha256-U8AZIdq1740Og/g8P7zFONLV9pA1rI+7zaqcKn02900=",
       "url": "index.html"
+    },
+    {
+      "hash": "sha256-S2hVT6uudrE6g8hTTGw0eBFCLTepd7cxKAFwEZsRiws=",
+      "url": "js/dark-mode.js"
     },
     {
       "hash": "sha256-vFY7YKAPs/sTOL2TFJXP2lurymynC65UhJOitpXmskg=",

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "MysteryMystery.github.io",
   "resources": {
-    "hash": "sha256-LSgdTfdLfMr8b4n+2gNWFv6C92YI4kuMWy65Q+ifbG0=",
+    "hash": "sha256-GIQfuJQ1ocsaceQey/ZauQOM/q8CTHWa4y7Hjq2JmRo=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-vtotCeXt2UD6oc459laJT32vBgigZ+eLoUmdeFkvYDk="
     },
@@ -18,9 +18,9 @@
     },
     "coreAssembly": {},
     "assembly": {
-      "Microsoft.AspNetCore.Components.wasm": "sha256-NwFmUzHtnCM7vsgSopNMjC0HHWcJyYzkmdjiJJ0+2S4=",
-      "Microsoft.AspNetCore.Components.Web.wasm": "sha256-FyRXgGsP2fSLmdyZnDjH4adaEAGq8twKS6VRbV+aAos=",
-      "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-z60CSRS/KGZlxpGL+xPUV1hjQ+rrBkn0zzdJ9EUI7ZU=",
+      "Microsoft.AspNetCore.Components.wasm": "sha256-XK9NOHPV/Ud8ODyx0GEQLrfvfUtr56+Q2uiQybuAj3c=",
+      "Microsoft.AspNetCore.Components.Web.wasm": "sha256-DRjjRylWEPuQaNbOA0by+zcptkrqPfcICgzeFYGs09A=",
+      "Microsoft.AspNetCore.Components.WebAssembly.wasm": "sha256-iht5JxlFi7tJWxjlzJO5L0dZxmke3Kgzu5OXx6lZA88=",
       "Microsoft.Extensions.Configuration.wasm": "sha256-MNaShIheSJ2nXeA6sWU0gKv9r1pO+Zi7w4ROG15X+Xg=",
       "Microsoft.Extensions.Configuration.Abstractions.wasm": "sha256-Gk/QLO8c/FFsF6Tla746scGjMmhxsrcXxjyMnhWawHA=",
       "Microsoft.Extensions.Configuration.Binder.wasm": "sha256-CbWPXVGkXJo7/2pLAYv0YG0N1aNpkYlHFm6kiLUcpL0=",
@@ -32,9 +32,9 @@
       "Microsoft.Extensions.Options.wasm": "sha256-IEXNzMtt1J2ZxZMVCedrjJCbrJQMMvG00cvSqcNwxGw=",
       "Microsoft.Extensions.Options.ConfigurationExtensions.wasm": "sha256-+n78BzFUXHmm2PZgXYhJrbdjc4E2v+w57MuBqflZ1FE=",
       "Microsoft.Extensions.Primitives.wasm": "sha256-xyqqv0SMCahnrOs+p5QYDHoh/BAYlbNtyjTTpqmRW/g=",
-      "Microsoft.JSInterop.wasm": "sha256-afd0w7LMMVq7RMdUr1N6s3HgL3LaLSZbvYBOTNKCNMA=",
-      "Microsoft.JSInterop.WebAssembly.wasm": "sha256-Er3EU62JKub/Tddrc/l1rx0KLJ+pxedOLcOrCupZjRo=",
-      "Newtonsoft.Json.wasm": "sha256-GlXMWKvDs45M2pACoR3Y4Qh8mcrOZGljqmvJY+6JZ5s=",
+      "Microsoft.JSInterop.wasm": "sha256-VsRfNL4tWG+0Pdz0lxZMAuGGVWMNj2LKKWjH6c+cIUI=",
+      "Microsoft.JSInterop.WebAssembly.wasm": "sha256-jY5jCfGtvxvrCqIe6qLo82M6eF/a19pO3pO7KbeBzSg=",
+      "Newtonsoft.Json.wasm": "sha256-s8KVuknfxWl1cuDvQM/OnpBfnpM1rxzvzq21S1cF36U=",
       "Microsoft.CSharp.wasm": "sha256-RSM9bLqHq1CY3b3BGT2IJO9Is3QoOl1xdNRJdKdRmzo=",
       "System.Collections.Concurrent.wasm": "sha256-7+Qzlpk9/hmG4qemeFXtIVsPOl42epj7K9ImYap56oM=",
       "System.Collections.NonGeneric.wasm": "sha256-B2KYOcws7YVTvfd7nCRo+NREua+lKaxIbcGL/sRSvOs=",
@@ -66,7 +66,7 @@
       "System.Runtime.Numerics.wasm": "sha256-SnyPMc9C5wPJ1An7NJl9CEQN/mhqe4cTdr88NU3sLA4=",
       "System.Runtime.Serialization.Formatters.wasm": "sha256-++TwLS7EZURHXOZ+HUuHDSjO9gkmpo8rS0eI3hAy1G0=",
       "System.Runtime.Serialization.Primitives.wasm": "sha256-9TszdHAIuILR1cMEBmUTJ2EaEWsbpgKU7EQ/tgpY0xA=",
-      "System.Runtime.wasm": "sha256-QCS/dejwye+Ncvu1CsHvOMPlUOU3+H0SBLlJrtqTXAI=",
+      "System.Runtime.wasm": "sha256-GYTbDc4k5WsLw+uv8HQocJ5DhDlrCFnqah3MNAFc2D8=",
       "System.Security.Cryptography.wasm": "sha256-4GwvphISR8h43hPreV3okwJAaRCDAwaZasR/bItjRgw=",
       "System.Text.Encoding.Extensions.wasm": "sha256-MRHVGg1CUAJXNqF7yDNRWwuf4K0OinIFOvme3AT3IKA=",
       "System.Text.Encodings.Web.wasm": "sha256-ZfCb2TSGxncfpyCkdqhIDqbsmxhl1+L2kv26ZWtTdWE=",
@@ -77,10 +77,11 @@
       "System.Xml.ReaderWriter.wasm": "sha256-JqHNRadi7o9o2ZKbFYQXflwRdPe7logWLWGuIv0T/CQ=",
       "System.Xml.XDocument.wasm": "sha256-f29r8GBh1YK6WSVZ2F/k8SqkCPZ+4MXtwNpyz44taW4=",
       "System.wasm": "sha256-I4hhyMuUoHdrzDopL9tlnkL/Skg+0OO+gmkOXNT3dcg=",
-      "System.Private.CoreLib.wasm": "sha256-if6X/gCo+Ifdpjnr4picEAs9HRGU9iZ7Q9KYUNm4ZEI=",
-      "MysteryMystery.github.io.Components.wasm": "sha256-ThJMiTl00v7FpdSPYdjlYenpeZqgGDSHL09RXqFh+A0=",
-      "MysteryMystery.github.io.Repositories.wasm": "sha256-q0U0p/uT2GBcXLNpXavXL5+18EkkLlEbplBf/df+oFs=",
-      "MysteryMystery.github.io.wasm": "sha256-sTcobicoWxAY1No7ZJNYwxWb9j08QCo+zPGwDNWHHF4="
+      "System.Private.CoreLib.wasm": "sha256-sjFUqgEL/fd2nlwc5DIaDCWbSdFgweGpJTzz9szbzJ4=",
+      "MysteryMystery.github.io.Components.wasm": "sha256-TZCiCkqVvkuUkeZTMVGvtNysjOp+c8Y/sIOytZos5P4=",
+      "MysteryMystery.github.io.Repositories.wasm": "sha256-G+BdtIPfBZht+e7oAnZ4zDX9afsTL0hGRTJ3U6OkjE8=",
+      "MysteryMystery.github.io.Services.wasm": "sha256-DgBlF9BxKh8/f8p44hQOsE5rc8A4XB4w0EFZWuxo4ME=",
+      "MysteryMystery.github.io.wasm": "sha256-0l0+nipAe53GflQTmJtJ7dHkR72+KcekUcouxffQzig="
     }
   },
   "cacheBootResources": true,
