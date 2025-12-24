@@ -12,20 +12,20 @@
     protected override void OnParametersSet()
     {
         _dynamicClasses = "";
-        _dynamicClasses += Index % 2 == 0 ? " bg-white" : " bg-slate-100";
+        _dynamicClasses += Index % 2 == 0 ? " bg-white dark:bg-slate-900" : " bg-slate-100 dark:bg-slate-800";
         if (AnimateOnLoad)
             _dynamicClasses += " animate-fade-in-up";
     }
 }
 
-<section id="@Id" class="scroll-mt-[3.8rem] border-t border-slate-200 @(_dynamicClasses)">
+<section id="@Id" class="scroll-mt-[3.8rem] border-t border-slate-200 dark:border-slate-700 @(_dynamicClasses)">
     <div class="max-w-6xl mx-auto px-4 @(IsCompact ? "py-2" : "py-7")">
         @if(IsLoaded){
             @ChildContent
         }
         else
         {
-            <div class="h-32 md:h-48 lg:h-64 w-full @(Index % 2 == 0 ? " bg-white" : " bg-slate-100") animate-pulse rounded-lg"></div>
+            <div class="h-32 md:h-48 lg:h-64 w-full @(Index % 2 == 0 ? " bg-white dark:bg-slate-900" : " bg-slate-100 dark:bg-slate-800") animate-pulse rounded-lg"></div>
         }
     </div>
 </section>

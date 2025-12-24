@@ -7,11 +7,11 @@
         var item = Items[i];
         <div class="relative pl-14 md:pl-16 mb-10 opacity-0 animate-fade-in-up" style="animation-delay:@(0.1 + (i * 0.1))s">
             <!-- Marker -->
-            <span class="absolute left-5 top-1.5 -translate-x-1/2 w-5 h-5 rounded-full ring-8 ring-slate-50" style="background-color:@item.Colour"></span>
+            <span class="absolute left-5 top-1.5 -translate-x-1/2 w-5 h-5 rounded-full ring-8 ring-slate-50 dark:ring-slate-900" style="background-color:@item.Colour"></span>
             <!-- Content -->
-            <time class="block mb-1 text-sm text-slate-500">@item.Year</time>
-            <h3 class="text-lg font-semibold text-slate-900">@item.Title</h3>
-            <p class="text-slate-600">@item.Description</p>
+            <time class="block mb-1 text-sm text-slate-500 dark:text-slate-400">@item.Year</time>
+            <h3 class="text-lg font-semibold text-slate-900 dark:text-white">@item.Title</h3>
+            <p class="text-slate-600 dark:text-slate-400">@item.Description</p>
         </div>
     }
 </div>

@@ -1,7 +1,7 @@
 ﻿@for (int i = 0; i < Cards.Count; i++)
 {
     var card = Cards[i];
-    <article class="group relative overflow-hidden rounded-lg bg-white border border-slate-200 p-5 pt-8 opacity-0 animate-fade-in-up transition-transform transition-shadow duration-300 hover:scale-[1.03] hover:shadow-lg" style="animation-delay:@(0.1 + (i * 0.1))s">
+    <article class="group relative overflow-hidden rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-5 pt-8 opacity-0 animate-fade-in-up transition-transform transition-shadow duration-300 hover:scale-[1.03] hover:shadow-lg dark:hover:shadow-slate-700/50" style="animation-delay:@(0.1 + (i * 0.1))s">
 
         <!-- Shimmer strip -->
         <span class="pointer-events-none absolute top-0 left-0 w-full h-1 z-10 bg-gradient-to-r from-[#4c6cff] via-[#ff6cab] to-[#ffc95e] bg-[length:200%_200%] animate-border-gradient opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
@@ -15,7 +15,7 @@
         }
 
         <!-- Text content -->
-        <h3 class="font-semibold pr-12">@card.Title</h3>
-        <p class="mt-2 text-sm text-slate-600">@card.Description</p>
+        <h3 class="font-semibold pr-12 dark:text-white">@card.Title</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400">@card.Description</p>
     </article>
 }
