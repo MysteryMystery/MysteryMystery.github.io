@@ -16,6 +16,4 @@ builder.Services.AddScoped<IJsonRepository, JsonRepository>();
 builder.Services.AddScoped<IBrowserStorageRepository, LocalStorageRepository>();
 builder.Services.AddScoped<IDarkModeService, DarkModeService>();
 
-var host = builder.Build();
-
-await host.RunAsync();
+await builder.Build().RunAsync();
